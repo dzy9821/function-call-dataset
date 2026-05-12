@@ -8,7 +8,7 @@
 | -- | --- | --- | --- | --- | --- |
 | 1 | list_application | 应用管理 | 列出此手机上安装的应用程序。 | 无 | 无 |
 | 2 | open_application | 应用管理 | 打开指定应用程序。 | application_name | 无 |
-| 3 | set_brightness | 显示控制 | 设置当前屏幕亮度到指定级别。 | level | 无 |
+| 3 | set_brightness | 显示控制 | 调节屏幕亮度。 | 无 | level, direction |
 | 4 | send_email | 通信 | 发送电子邮件。 | contact_name, subject | message |
 | 5 | phone_call | 通信 | 拨打指定联系人的电话。 | contact_name | 无 |
 | 6 | phone_sms | 通信 | 发送短信。 | contact_name | message |
@@ -28,7 +28,7 @@
 | 20 | create_contact | 通讯录 | 创建联系人。 | contact_name | email, phone_number |
 | 21 | search_contacts | 通讯录 | 搜索联系人。 | contact_name | 无 |
 | 22 | set_alarm | 提醒与时间 | 设置一个闹钟。 | datetime | label, repeat |
-| 23 | set_volume | 声音控制 | 设置设备音量。 | level | 无 |
+| 23 | set_volume | 声音控制 | 调节设备音量。 | 无 | level, direction |
 | 24 | set_mute | 声音控制 | 设置设备静音状态。 | enable | 无 |
 | 25 | search_web | 浏览与搜索 | 使用搜索引擎进行搜索。 | query | 无 |
 | 26 | toggle_dnd | 系统模式 | 开启或关闭勿扰模式。 | enable | 无 |

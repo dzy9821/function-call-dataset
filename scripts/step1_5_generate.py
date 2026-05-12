@@ -67,6 +67,21 @@ def load_existing(tool_name):
     return items, seen
 
 
+def validate_args(tool_name, args):
+    """校验参数合法性。"""
+    # set_brightness / set_volume: level 和 direction 二选一
+    if tool_name in ("set_brightness", "set_volume"):
+        has_level = "level" in args
+        has_dir = "direction" in args
+        if has_level and has_dir:
+            return False  # 不能同时有
+        if not has_level and not has_dir:
+            return False  # 不能都没有
+        if has_dir and args["direction"] not in ("high", "low"):
+            return False
+    return True
+
+
 def generate_batch(tool_name, count):
     """生成一批数据，返回 list[dict]。"""
     tp = TOOL_PROMPTS[tool_name]
@@ -107,11 +122,13 @@ def generate_batch(tool_name, count):
                 text = "\n".join(lines[1:-1]) if len(lines) > 2 else text.strip("`")
             result = json.loads(text)
             if "user_question" in result and "arguments" in result:
-                items.append({
-                    "tool_name": tool_name,
-                    "user_question": result["user_question"].strip(),
-                    "arguments": result.get("arguments", {}),
-                })
+                args = result.get("arguments", {})
+                if validate_args(tool_name, args):
+                    items.append({
+                        "tool_name": tool_name,
+                        "user_question": result["user_question"].strip(),
+                        "arguments": args,
+                    })
         except Exception as e:
             print(f"    gen error: {e}")
     return items

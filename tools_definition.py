@@ -32,16 +32,20 @@ TOOLS = [
     {
         "function": {
             "name": "set_brightness",
-            "description": "设置当前屏幕亮度到指定级别。",
+            "description": "调节屏幕亮度。",
             "parameters": {
                 "type": "OBJECT",
                 "properties": {
                     "level": {
                         "type": "STRING",
-                        "description": "亮度级别，范围 0 到 100。"
+                        "description": "目标亮度数值，范围 0 到 100。与 direction 二选一。"
+                    },
+                    "direction": {
+                        "type": "STRING",
+                        "description": "调节方向，'high' 为调高，'low' 为调低。与 level 二选一。"
                     }
                 },
-                "required": ["level"]
+                "required": []
             }
         }
     },
@@ -377,16 +381,20 @@ TOOLS = [
     {
         "function": {
             "name": "set_volume",
-            "description": "设置设备音量。",
+            "description": "调节设备音量。",
             "parameters": {
                 "type": "OBJECT",
                 "properties": {
                     "level": {
                         "type": "STRING",
-                        "description": "音量级别，范围 0 到 100。"
+                        "description": "目标音量数值，范围 0 到 100。与 direction 二选一。"
+                    },
+                    "direction": {
+                        "type": "STRING",
+                        "description": "调节方向，'high' 为调高，'low' 为调低。与 level 二选一。"
                     }
                 },
-                "required": ["level"]
+                "required": []
             }
         }
     },
