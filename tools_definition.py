@@ -62,7 +62,7 @@ TOOLS = [
                         "type": "STRING",
                         "description": "邮件主题。"
                     },
-                    "body": {
+                    "message": {
                         "type": "STRING",
                         "description": "邮件正文内容。"
                     }
@@ -96,11 +96,11 @@ TOOLS = [
                 "properties": {
                     "contact_name": {
                         "type": "STRING",
-                        "description": "短信收件人的姓名。"
+                        "description": "收件人姓名。"
                     },
-                    "sms_message": {
+                    "message": {
                         "type": "STRING",
-                        "description": "要发送的短信内容。"
+                        "description": "短信内容。"
                     }
                 },
                 "required": ["contact_name"]
@@ -264,16 +264,16 @@ TOOLS = [
     {
         "function": {
             "name": "show_map",
-            "description": "在地图上显示位置。",
+            "description": "在地图上显示指定位置。",
             "parameters": {
                 "type": "OBJECT",
                 "properties": {
-                    "query": {
+                    "destination": {
                         "type": "STRING",
-                        "description": "要搜索的位置，可以是地点名称、商家或地址。"
+                        "description": "要显示的位置，可以是地址、地点名称或坐标。"
                     }
                 },
-                "required": ["query"]
+                "required": ["destination"]
             }
         }
     },
@@ -486,6 +486,10 @@ TOOLS = [
                     "city": {
                         "type": "STRING",
                         "description": "要查询天气的城市名称。不提供则查询当前位置天气。"
+                    },
+                    "datetime": {
+                        "type": "STRING",
+                        "description": "要查询天气的日期和时间，格式为 YYYY-MM-DDTHH:MM:SS。不提供则查询当前天气。"
                     }
                 },
                 "required": []
@@ -505,12 +509,16 @@ TOOLS = [
                         "type": "STRING",
                         "description": "事件标题。"
                     },
-                    "datetime": {
+                    "start_date": {
                         "type": "STRING",
-                        "description": "事件的日期和时间，格式为 YYYY-MM-DDTHH:MM:SS。"
+                        "description": "事件开始日期和时间，格式为 YYYY-MM-DDTHH:MM:SS。"
+                    },
+                    "end_date": {
+                        "type": "STRING",
+                        "description": "事件结束日期和时间，格式为 YYYY-MM-DDTHH:MM:SS。"
                     }
                 },
-                "required": ["title", "datetime"]
+                "required": ["title", "start_date", "end_date"]
             }
         }
     },

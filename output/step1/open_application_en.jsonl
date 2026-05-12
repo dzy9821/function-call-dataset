@@ -1,0 +1,30 @@
+{"en": "Open Gmail.", "arguments": {"application_name": "Gmail"}}
+{"en": "Launch the Maps app.", "arguments": {"application_name": "Maps"}}
+{"en": "Please open Camera for me.", "arguments": {"application_name": "Camera"}}
+{"en": "Start Chrome.", "arguments": {"application_name": "Chrome"}}
+{"en": "Can you open YouTube?", "arguments": {"application_name": "YouTube"}}
+{"en": "Open Calendar.", "arguments": {"application_name": "Calendar"}}
+{"en": "Launch the WhatsApp app.", "arguments": {"application_name": "WhatsApp"}}
+{"en": "Please open Spotify for me.", "arguments": {"application_name": "Spotify"}}
+{"en": "Start Settings.", "arguments": {"application_name": "Settings"}}
+{"en": "Can you open Calculator?", "arguments": {"application_name": "Calculator"}}
+{"en": "Open Photos.", "arguments": {"application_name": "Photos"}}
+{"en": "Launch the Drive app.", "arguments": {"application_name": "Drive"}}
+{"en": "Please open Slack for me.", "arguments": {"application_name": "Slack"}}
+{"en": "Start Zoom.", "arguments": {"application_name": "Zoom"}}
+{"en": "Can you open Telegram?", "arguments": {"application_name": "Telegram"}}
+{"en": "Open LinkedIn.", "arguments": {"application_name": "LinkedIn"}}
+{"en": "Launch the Docs app.", "arguments": {"application_name": "Docs"}}
+{"en": "Please open Sheets for me.", "arguments": {"application_name": "Sheets"}}
+{"en": "Start Clock.", "arguments": {"application_name": "Clock"}}
+{"en": "Can you open Contacts?", "arguments": {"application_name": "Contacts"}}
+{"en": "Open Messages.", "arguments": {"application_name": "Messages"}}
+{"en": "Launch the Phone app.", "arguments": {"application_name": "Phone"}}
+{"en": "Please open Files for me.", "arguments": {"application_name": "Files"}}
+{"en": "Start Weather.", "arguments": {"application_name": "Weather"}}
+{"en": "Can you open Notes?", "arguments": {"application_name": "Notes"}}
+{"en": "Open Amazon.", "arguments": {"application_name": "Amazon"}}
+{"en": "Launch the Uber app.", "arguments": {"application_name": "Uber"}}
+{"en": "Please open Discord for me.", "arguments": {"application_name": "Discord"}}
+{"en": "Start Facebook.", "arguments": {"application_name": "Facebook"}}
+{"en": "Can you open Instagram?", "arguments": {"application_name": "Instagram"}}

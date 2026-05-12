@@ -1,0 +1,226 @@
+[
+  {
+    "tool": "battery_status",
+    "source_count": 120,
+    "need_translate": 120,
+    "need_generate": 0,
+    "source": "dataset"
+  },
+  {
+    "tool": "create_calendar_event",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "create_contact",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "list_application",
+    "source_count": 120,
+    "need_translate": 120,
+    "need_generate": 0,
+    "source": "dataset"
+  },
+  {
+    "tool": "open_application",
+    "source_count": 120,
+    "need_translate": 120,
+    "need_generate": 0,
+    "source": "dataset"
+  },
+  {
+    "tool": "phone_call",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "phone_sms",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "send_email",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "set_brightness",
+    "source_count": 120,
+    "need_translate": 120,
+    "need_generate": 0,
+    "source": "dataset"
+  },
+  {
+    "tool": "show_map",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "take_picture",
+    "source_count": 120,
+    "need_translate": 120,
+    "need_generate": 0,
+    "source": "dataset"
+  },
+  {
+    "tool": "take_screenshot",
+    "source_count": 120,
+    "need_translate": 120,
+    "need_generate": 0,
+    "source": "dataset"
+  },
+  {
+    "tool": "toggle_wifi",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "create_note",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "get_location",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "dataset"
+  },
+  {
+    "tool": "get_weather",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "navigate",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "open_browser",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "pause_music",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "dataset"
+  },
+  {
+    "tool": "play_music",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "search_calendar_events",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "search_contacts",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "search_web",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "set_alarm",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "set_flashlight",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "set_mute",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "set_volume",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "toggle_airplane_mode",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "toggle_bluetooth",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "toggle_dnd",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "toggle_mobile_data",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "toggle_power_saving_mode",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  }
+]
