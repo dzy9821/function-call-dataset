@@ -15,7 +15,6 @@ ALI_PATH = os.path.join(PROJECT_ROOT, "ori-datasets", "AliRGHZ-Mobile-Actions.js
 GOOGLE_PATH = os.path.join(PROJECT_ROOT, "ori-datasets", "google-mobile-actions.jsonl")
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "output", "step1")
 
-NAME_MAP = {"open_wifi_settings": "toggle_wifi"}
 MAX_PER_TOOL = 120
 
 
@@ -50,7 +49,7 @@ def get_source_params():
                 if m.get("role") == "assistant" and "tool_calls" in m:
                     tc = m["tool_calls"][0]["function"]
                     raw_name = tc["name"]
-                    mapped = NAME_MAP.get(raw_name, raw_name)
+                    mapped = raw_name
                     args = tc.get("arguments", {})
                     param_set = set(args.keys())
                     if mapped not in result:
@@ -70,7 +69,7 @@ def get_source_params():
                     tc = m.get("tool_calls")
                     if tc and len(tc) > 0:
                         raw_name = tc[0]["function"]["name"]
-                        mapped = NAME_MAP.get(raw_name, raw_name)
+                        mapped = raw_name
                         args = tc[0]["function"].get("arguments", {})
                         param_set = {k for k, v in args.items() if v is not None}
                         if mapped not in result:
@@ -115,7 +114,7 @@ def extract_matching():
                 if m.get("role") == "assistant" and "tool_calls" in m:
                     tc = m["tool_calls"][0]["function"]
                     raw_name = tc["name"]
-                    mapped = NAME_MAP.get(raw_name, raw_name)
+                    mapped = raw_name
                     if mapped in matching:
                         tool_name = mapped
                         tool_args = tc.get("arguments", {})
@@ -139,7 +138,7 @@ def extract_matching():
                     tc = m.get("tool_calls")
                     if tc and len(tc) > 0:
                         raw_name = tc[0]["function"]["name"]
-                        mapped = NAME_MAP.get(raw_name, raw_name)
+                        mapped = raw_name
                         if mapped in matching:
                             tool_name = mapped
                             raw_args = tc[0]["function"].get("arguments", {})

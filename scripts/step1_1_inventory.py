@@ -15,11 +15,6 @@ OUTPUT_DIR = os.path.join(PROJECT_ROOT, "output", "step1")
 ALI_PATH = os.path.join(PROJECT_ROOT, "ori-datasets", "AliRGHZ-Mobile-Actions.jsonl")
 GOOGLE_PATH = os.path.join(PROJECT_ROOT, "ori-datasets", "google-mobile-actions.jsonl")
 
-# 工具名映射：原始数据集 → 我们的名称
-NAME_MAP = {
-    "open_wifi_settings": "toggle_wifi",
-}
-
 
 def load_our_tools():
     """加载 32 个目标工具名称。"""
@@ -45,8 +40,7 @@ def scan_ali(path: str) -> Counter:
                     tool_name = tc["name"]
                     break
             if tool_name:
-                mapped = NAME_MAP.get(tool_name, tool_name)
-                counter[mapped] += 1
+                counter[tool_name] += 1
     return counter
 
 
@@ -64,8 +58,7 @@ def scan_google(path: str) -> Counter:
                     tc = m.get("tool_calls")
                     if tc and len(tc) > 0:
                         tool_name = tc[0]["function"]["name"]
-                        mapped = NAME_MAP.get(tool_name, tool_name)
-                        counter[mapped] += 1
+                        counter[tool_name] += 1
                         break
     return counter
 

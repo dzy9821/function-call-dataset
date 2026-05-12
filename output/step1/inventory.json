@@ -29,10 +29,10 @@
   },
   {
     "tool": "open_application",
-    "source_count": 120,
-    "need_translate": 120,
-    "need_generate": 0,
-    "source": "dataset"
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
   },
   {
     "tool": "phone_call",
@@ -82,13 +82,6 @@
     "need_translate": 120,
     "need_generate": 0,
     "source": "dataset"
-  },
-  {
-    "tool": "toggle_wifi",
-    "source_count": 0,
-    "need_translate": 0,
-    "need_generate": 100,
-    "source": "llm"
   },
   {
     "tool": "create_note",
@@ -218,6 +211,13 @@
   },
   {
     "tool": "toggle_power_saving_mode",
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
+  },
+  {
+    "tool": "toggle_wifi",
     "source_count": 0,
     "need_translate": 0,
     "need_generate": 100,
