@@ -1,0 +1,100 @@
+{"tool_name": "search_web", "user_question": "搜一下北京天气预报", "arguments": {"query": "北京天气预报"}}
+{"tool_name": "search_web", "user_question": "请问一下，去杭州西湖怎么坐地铁比较方便？", "arguments": {"query": "杭州西湖 地铁交通路线"}}
+{"tool_name": "search_web", "user_question": "最近天气怎么样啊，能帮我查一下北京明天的天气预报吗？", "arguments": {"query": "北京明天天气预报"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京最近天气怎么样？", "arguments": {"query": "北京最近天气怎么样"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京今天天气怎么样，气温在多少度？", "arguments": {"query": "北京今天天气 气温"}}
+{"tool_name": "search_web", "user_question": "我刚看完电影《流浪地球2》，想查查它的票房成绩是多少，你能帮我搜一下吗？", "arguments": {"query": "流浪地球2 票房成绩"}}
+{"tool_name": "search_web", "user_question": "我想找一下最近在杭州举办的国际人工智能大会的详细日程安排，包括哪些专家会来演讲，还有报名参加的链接在哪里可以找到？", "arguments": {"query": "杭州 国际人工智能大会 日程 安排 专家 演讲 报名链接"}}
+{"tool_name": "search_web", "user_question": "哎，你说我能不能搜一下北京明天的天气啊？", "arguments": {"query": "北京明天天气"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京附近有什么适合周末去的温泉度假村，最好有评价好的！", "arguments": {"query": "北京附近 周末温泉度假村 推荐 评价好"}}
+{"tool_name": "search_web", "user_question": "搜索一下北京天气预报", "arguments": {"query": "北京天气预报"}}
+{"tool_name": "search_web", "user_question": "你好，能帮我查一下北京天气预报吗？", "arguments": {"query": "北京天气预报"}}
+{"tool_name": "search_web", "user_question": "怎么查一下北京最近的天气情况？", "arguments": {"query": "北京最近天气情况"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下最近去杭州旅游有哪些值得去的景点？", "arguments": {"query": "杭州旅游 值得去的景点"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京2023年人均GDP是多少", "arguments": {"query": "北京2023年人均GDP"}}
+{"tool_name": "search_web", "user_question": "我刚看完电影，想查查最近上映的科幻片有哪些，帮我搜一下吧", "arguments": {"query": "最近上映的科幻片"}}
+{"tool_name": "search_web", "user_question": "我想查一下最近北京地铁4号线在早高峰时段的客流情况，有没有相关的统计数据或者新闻报道可以看一下？", "arguments": {"query": "北京地铁4号线 早高峰 客流统计 新闻"}}
+{"tool_name": "search_web", "user_question": "哎，你能不能帮我查一下北京的天气怎么样啊？", "arguments": {"query": "北京天气预报"}}
+{"tool_name": "search_web", "user_question": "你好，我想查一下最近深圳南山科技园附近的咖啡馆推荐，有什么好的吗？", "arguments": {"query": "深圳南山科技园附近 咖啡馆 推荐"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京天气预报", "arguments": {"query": "北京天气预报"}}
+{"tool_name": "search_web", "user_question": "麻烦帮我查一下北京最近的天气怎么样？", "arguments": {"query": "北京近期天气预报"}}
+{"tool_name": "search_web", "user_question": "怎么查一下北京天气预报？", "arguments": {"query": "北京天气预报"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下最近热门的电影有哪些", "arguments": {"query": "最近热门电影"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京今天气温是多少度", "arguments": {"query": "北京今天气温是多少度"}}
+{"tool_name": "search_web", "user_question": "我刚看完那篇关于北京天气的新闻，想查查明天会不会下雨，用搜索功能帮我查一下吧", "arguments": {"query": "北京明天会不会下雨"}}
+{"tool_name": "search_web", "user_question": "我想查一下北京最近天气怎么样，还有明天会不会下雨，有没有适合户外活动的建议？", "arguments": {"query": "北京最近天气 明天会不会下雨 户外活动建议"}}
+{"tool_name": "search_web", "user_question": "哎，能帮我查一下杭州最近有什么热门的旅游景点吗？", "arguments": {"query": "杭州最近热门旅游景点"}}
+{"tool_name": "search_web", "user_question": "帮我查一下北京三里屯附近有哪些值得推荐的火锅店，最近评价好的那种。", "arguments": {"query": "北京三里屯 火锅店 推荐 最近评价好"}}
+{"tool_name": "search_web", "user_question": "你好，能帮我查一下北京故宫的开放时间吗？", "arguments": {"query": "北京故宫 开放时间"}}
+{"tool_name": "search_web", "user_question": "怎么找到最近的星巴克店？", "arguments": {"query": "最近的星巴克店"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下最近北京天气怎么样，明天要不要带伞？", "arguments": {"query": "北京天气预报 明天是否需要带伞"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下杭州西湖景区今天早上8点的游客人数大概是多少？", "arguments": {"query": "杭州西湖景区 今天早上8点 游客人数"}}
+{"tool_name": "search_web", "user_question": "我刚看完那部新上映的电影，想查查它的评分和演员表，用搜索一下吧。", "arguments": {"query": "最近上映电影《流浪地球2》 评分 演员表"}}
+{"tool_name": "search_web", "user_question": "我想查一下最近北京天气怎么样，特别是这周末会不会下雨，顺便看看有没有适合郊游的地方推荐一下。", "arguments": {"query": "北京周末天气预报 郊游推荐"}}
+{"tool_name": "search_web", "user_question": "哎，你帮我搜一下北京南站到首都机场最近的路线是啥？", "arguments": {"query": "北京南站到首都机场最近的路线"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京最近天气怎么样，还有明天适合穿什么衣服？", "arguments": {"query": "北京最近天气 明天穿衣建议"}}
+{"tool_name": "search_web", "user_question": "搜一下北京天气怎么样", "arguments": {"query": "北京天气怎么样"}}
+{"tool_name": "search_web", "user_question": "我想查一下北京故宫的开放时间是几点到几点？", "arguments": {"query": "北京故宫 开放时间"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下最近武汉天气怎么样，有没有下雨", "arguments": {"query": "最近武汉天气怎么样 下雨"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京天气预报，明天的气温是多少度？", "arguments": {"query": "北京天气预报 明天气温"}}
+{"tool_name": "search_web", "user_question": "我刚看完电影，想查查最近有什么新上映的科幻片，用百度搜一下", "arguments": {"query": "最近上映的科幻电影"}}
+{"tool_name": "search_web", "user_question": "我想查一下最近北京天气怎么样，还有明天有没有可能下雨，麻烦帮我搜一下最新的天气预报信息。", "arguments": {"query": "北京天气预报 明天是否下雨"}}
+{"tool_name": "search_web", "user_question": "我是不是该搜一下北京颐和园的开放时间啊？", "arguments": {"query": "北京颐和园 开放时间"}}
+{"tool_name": "search_web", "user_question": "我朋友刚从北京回来，说那里的故宫特别值得去，你能帮我搜一下最近故宫的开放时间和门票价格吗？", "arguments": {"query": "故宫开放时间 门票价格 最新"}}
+{"tool_name": "search_web", "user_question": "你能帮我查一下最近北京天气怎么样吗？", "arguments": {"query": "北京天气 最近"}}
+{"tool_name": "search_web", "user_question": "怎么查找北京最近的星巴克门店？", "arguments": {"query": "北京最近的星巴克门店"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下最近有哪些热门的电影推荐？", "arguments": {"query": "最近热门电影推荐"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京中关村附近的星巴克有几家店", "arguments": {"query": "北京中关村附近的星巴克有几家店"}}
+{"tool_name": "search_web", "user_question": "我刚看完那个关于北京天气的新闻，想查查最近有没有适合去郊游的地方推荐。", "arguments": {"query": "北京附近适合郊游的景点推荐 2024"}}
+{"tool_name": "search_web", "user_question": "我最近想找个靠谱的装修公司，能帮我搜一下北京口碑比较好的装修公司的名字和联系方式吗？", "arguments": {"query": "北京 口碑好的装修公司 名字 联系方式"}}
+{"tool_name": "search_web", "user_question": "你能帮我搜一下张伟在杭州的联系方式吗？", "arguments": {"query": "张伟 杭州 联系方式"}}
+{"tool_name": "search_web", "user_question": "帮我查一下北京颐和园的开放时间和门票价格，我打算周末去玩。", "arguments": {"query": "北京颐和园 开放时间 门票价格"}}
+{"tool_name": "search_web", "user_question": "查一下北京天气怎么样", "arguments": {"query": "北京天气怎么样"}}
+{"tool_name": "search_web", "user_question": "你好，能帮我查一下北京市海淀区中关村大街有哪些好的餐厅吗？", "arguments": {"query": "北京市海淀区中关村大街 好的餐厅"}}
+{"tool_name": "search_web", "user_question": "怎么查一下北京天气预报呢？", "arguments": {"query": "北京天气预报"}}
+{"tool_name": "search_web", "user_question": "帮我在网上查一下最近热门的旅游景点有哪些，特别是云南的", "arguments": {"query": "最近热门旅游景点 云南"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京地铁4号线的运营时间，从最早一班到最晚一班", "arguments": {"query": "北京地铁4号线 运营时间 最早一班 最晚一班"}}
+{"tool_name": "search_web", "user_question": "我刚看完电影，想查一下最近上映的科幻片有哪些，能帮我搜一下吗？", "arguments": {"query": "最近上映的科幻片"}}
+{"tool_name": "search_web", "user_question": "我想找一下最近北京天气怎么样，尤其是明天会不会下雨，还有气温大概在多少度左右，能帮我查一下吗？", "arguments": {"query": "北京明天天气预报 降雨 气温"}}
+{"tool_name": "search_web", "user_question": "能不能帮我查一下北京烤鸭哪家店最好吃啊？", "arguments": {"query": "北京烤鸭 哪家店最好吃"}}
+{"tool_name": "search_web", "user_question": "你好，我想找一下北京中关村附近有什么好吃的餐厅推荐，能帮我搜一下吗？", "arguments": {"query": "北京中关村附近好吃的餐厅推荐"}}
+{"tool_name": "search_web", "user_question": "怎么查一下北京天气预报明天会下雨吗？", "arguments": {"query": "北京天气预报 明天会下雨吗"}}
+{"tool_name": "search_web", "user_question": "帮我想一下最近有什么好看的电影推荐吗？", "arguments": {"query": "最近热门电影推荐2024"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京中关村附近哪家餐厅的评分在4.8以上，而且人均消费不超过150元的", "arguments": {"query": "北京中关村 4.8分以上 人均150元以下 餐厅"}}
+{"tool_name": "search_web", "user_question": "我刚看完那个新出的电影，想查查它的评分和演员阵容，能帮我搜一下《奥本海默》的详细信息吗？", "arguments": {"query": "奥本海默 电影 评分 演员阵容"}}
+{"tool_name": "search_web", "user_question": "我想查一下最近北京天气怎么样，还有明天有没有雨，顺便看看有没有适合周末去的周边旅游景点推荐一下。", "arguments": {"query": "北京天气 明天有没有雨 周末周边旅游景点推荐"}}
+{"tool_name": "search_web", "user_question": "哎，你能帮我搜一下北京故宫的开放时间吗？", "arguments": {"query": "北京故宫 开放时间"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下最近上海天气怎么样，我想明天出门带伞", "arguments": {"query": "上海 最近天气 明天带伞"}}
+{"tool_name": "search_web", "user_question": "你好，请帮我搜一下北京故宫的开放时间，谢谢！", "arguments": {"query": "北京故宫 开放时间"}}
+{"tool_name": "search_web", "user_question": "怎么查一下北京故宫的开放时间啊？", "arguments": {"query": "北京故宫 开放时间"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下最近有什么热门的电影推荐吗？", "arguments": {"query": "最近热门电影推荐"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京今天天气怎么样，温度是多少度？", "arguments": {"query": "北京今天天气 温度"}}
+{"tool_name": "search_web", "user_question": "我刚看完电影，想查查《流浪地球2》的票房成绩怎么样了？", "arguments": {"query": "流浪地球2 票房成绩"}}
+{"tool_name": "search_web", "user_question": "我想查一下最近杭州哪里有卖新款iPhone的，最好是有现货的，顺便看看价格跟京东上比哪个更便宜，你能帮我搜一下吗？", "arguments": {"query": "杭州 新款iPhone 有货 价格 京东对比"}}
+{"tool_name": "search_web", "user_question": "你能帮我搜一下北京望京那边最近有什么新餐厅吗？", "arguments": {"query": "北京望京 新餐厅 2024"}}
+{"tool_name": "search_web", "user_question": "帮我查一下最近北京天气怎么样，明天会不会下雨？", "arguments": {"query": "北京明天天气预报 是否下雨"}}
+{"tool_name": "search_web", "user_question": "麻烦帮我搜一下北京天气预报，看看明天会不会下雨。", "arguments": {"query": "北京天气预报 明天会不会下雨"}}
+{"tool_name": "search_web", "user_question": "怎么查一下北京地铁的最新线路图啊？", "arguments": {"query": "北京地铁最新线路图"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下最近杭州天气怎么样？", "arguments": {"query": "最近杭州天气怎么样"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京最近三天的天气预报，具体到小时的", "arguments": {"query": "北京最近三天天气预报 小时级"}}
+{"tool_name": "search_web", "user_question": "我刚看完那部电影，想查一下它的主演是谁，能帮我搜一下吗？", "arguments": {"query": "电影《流浪地球2》主演是谁"}}
+{"tool_name": "search_web", "user_question": "我想查一下最近南京长江大桥附近有没有什么特别的活动或者展览，能帮我搜一下吗？", "arguments": {"query": "南京长江大桥附近 最近 活动 展览"}}
+{"tool_name": "search_web", "user_question": "我找个杭州最近的地铁站是哪个啊？", "arguments": {"query": "杭州最近的地铁站"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京颐和园的门票价格和开放时间，最近去玩一趟。", "arguments": {"query": "北京颐和园 门票价格 开放时间"}}
+{"tool_name": "search_web", "user_question": "你好，请帮我搜一下北京天气预报，今天适合穿什么衣服？", "arguments": {"query": "北京天气预报 今天适合穿什么衣服"}}
+{"tool_name": "search_web", "user_question": "怎么查一下杭州西湖的旅游攻略？", "arguments": {"query": "杭州西湖 旅游攻略"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下最近北京天气怎么样？", "arguments": {"query": "北京天气 最近"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京地铁10号线的运营时间是从几点到几点？", "arguments": {"query": "北京地铁10号线 运营时间"}}
+{"tool_name": "search_web", "user_question": "我刚看完电影，想查一下最近热门的科幻片有哪些，能帮我搜一下吗？", "arguments": {"query": "最近热门科幻电影"}}
+{"tool_name": "search_web", "user_question": "我想查一下最近北京天气怎么样，还有明天有没有可能下雨，顺便看看北京奥运场馆的开放时间是几点到几点？", "arguments": {"query": "北京天气 明天是否下雨 奥运场馆 开放时间"}}
+{"tool_name": "search_web", "user_question": "我这个周末去杭州玩，能查一下那边有什么值得推荐的景点吗？", "arguments": {"query": "杭州周末旅游推荐景点"}}
+{"tool_name": "search_web", "user_question": "嘿，我想查一下最近北京奥运会的举办时间，你能帮我搜一下吗？", "arguments": {"query": "北京奥运会 举办时间"}}
+{"tool_name": "search_web", "user_question": "麻烦帮我查一下最近北京天气怎么样？", "arguments": {"query": "北京天气最新情况"}}
+{"tool_name": "search_web", "user_question": "怎么查北京奥运会的开幕式时间？", "arguments": {"query": "北京奥运会开幕式时间"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下最近有什么好看的电影推荐呗", "arguments": {"query": "最近好看的电影推荐"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京的天气预报，明天最高气温是多少度？", "arguments": {"query": "北京 天气预报 明天 最高气温"}}
+{"tool_name": "search_web", "user_question": "我刚看完电影，想查查最近哪家电影院有《奥本海默》的放映，能帮我搜一下吗？", "arguments": {"query": "奥本海默 电影院 放映时间"}}
+{"tool_name": "search_web", "user_question": "我想找一下最近在杭州举办的一场关于人工智能的大会，具体时间、地点和报名方式都查一下，能帮我搜一下吗？", "arguments": {"query": "杭州 人工智能 大会 时间 地点 报名方式"}}
+{"tool_name": "search_web", "user_question": "哎，你知道最近上海迪士尼的门票多少钱吗？能帮我搜一下吗？", "arguments": {"query": "上海迪士尼门票价格 2024"}}
+{"tool_name": "search_web", "user_question": "帮我搜一下北京最近天气怎么样，明天会不会下雨？", "arguments": {"query": "北京 最近天气 明天会不会下雨"}}
+{"user_question": "百度一下今天的热搜是什么", "arguments": {"query": "今日热搜"}, "tool_name": "search_web"}

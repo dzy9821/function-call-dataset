@@ -1,0 +1,100 @@
+{"tool_name": "search_calendar_events", "user_question": "查一下下周三上午的会议安排", "arguments": {"start_date": "2024-04-10", "end_date": "2024-04-11"}}
+{"tool_name": "search_calendar_events", "user_question": "麻烦帮我查一下下周二上午九点到十点之间，公司会议室里有什么会议安排？", "arguments": {"start_date": "2024-04-16", "end_date": "2024-04-17"}}
+{"tool_name": "search_calendar_events", "user_question": "我最近有什么会议吗？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上个月6号到10号之间，名字里有‘开会’的那些日程", "arguments": {"query": "开会", "start_date": "2023-06-06", "end_date": "2023-06-10"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上周二到上周五之间，标题里有‘会议’的日历事件有哪些？", "arguments": {"query": "会议", "start_date": "2024-04-02", "end_date": "2024-04-05"}}
+{"tool_name": "search_calendar_events", "user_question": "我刚开完会，想看看这周还有没有别的安排，查一下从今天到周五的日历事件吧。", "arguments": {"start_date": "2024-04-05", "end_date": "2024-04-09"}}
+{"tool_name": "search_calendar_events", "user_question": "我想查一下上个月底到这个月初我日历里有哪些会议，特别是名字里带‘项目’两个字的，还有就是最近一周有没有安排去上海的出差会议？", "arguments": {"query": "项目", "start_date": "2023-11-26", "end_date": "2024-01-05"}}
+{"tool_name": "search_calendar_events", "user_question": "哎，我昨天是不是有个会议啊？能查一下日历里最近有什么事件吗？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "帮我找一下上个月在公司会议室开过的会议，特别是关于新产品发布的那些", "arguments": {"query": "新产品发布", "start_date": "2023-10-01", "end_date": "2023-10-31"}}
+{"tool_name": "search_calendar_events", "user_question": "查一下我下周三上午的会议安排", "arguments": {"start_date": "2024-04-10", "end_date": "2024-04-11"}}
+{"tool_name": "search_calendar_events", "user_question": "麻烦帮我查一下这个月15号到20号之间，名字里有‘会议’的日历事件有哪些？", "arguments": {"start_date": "2024-04-15", "end_date": "2024-04-20", "query": "会议"}}
+{"tool_name": "search_calendar_events", "user_question": "我最近有没安排和张伟一起的会议？", "arguments": {"query": "张伟"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我找一下上个月在杭州开的会议", "arguments": {"query": "会议", "start_date": "2023-06-01", "end_date": "2023-06-30"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下张伟在7月15号到7月20号之间有哪些日程安排", "arguments": {"query": "张伟", "start_date": "2024-07-15", "end_date": "2024-07-20"}}
+{"tool_name": "search_calendar_events", "user_question": "我刚开完会，能帮我查一下明天下午三点到四点之间，办公室里有没有安排会议吗？", "arguments": {"start_date": "2024-04-19", "end_date": "2024-04-19", "query": "会议"}}
+{"tool_name": "search_calendar_events", "user_question": "我想查一下这个月从15号到25号之间，我日历里有没有关于‘项目评审’的会议安排，有的话具体时间是什么时候？", "arguments": {"query": "项目评审", "start_date": "2024-04-15", "end_date": "2024-04-25"}}
+{"tool_name": "search_calendar_events", "user_question": "我今天有没有安排会议啊？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "我明天下午三点到五点有什么安排吗，能查一下日历吗？", "arguments": {"start_date": "2024-04-18", "end_date": "2024-04-18"}}
+{"tool_name": "search_calendar_events", "user_question": "查一下上周三到今天有哪些会议", "arguments": {"start_date": "2024-03-20", "end_date": "2024-03-27"}}
+{"tool_name": "search_calendar_events", "user_question": "麻烦帮我查一下这个月15号到20号之间，日历里有哪些会议相关的事件？", "arguments": {"start_date": "2024-05-15", "end_date": "2024-05-20", "query": "会议"}}
+{"tool_name": "search_calendar_events", "user_question": "我这周有哪些会议安排？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上周五到今天之间，名字里有‘会议’的那些日程", "arguments": {"query": "会议", "start_date": "2024-03-29", "end_date": "2024-04-05"}}
+{"tool_name": "search_calendar_events", "user_question": "查一下张伟在本月15号到20号之间有什么日程安排？", "arguments": {"query": "张伟", "start_date": "2024-04-15", "end_date": "2024-04-20"}}
+{"tool_name": "search_calendar_events", "user_question": "我刚开完会，想看看这周的会议安排，帮我查一下从今天到周五的日历事件吧", "arguments": {"start_date": "2024-04-05", "end_date": "2024-04-09"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下这个月从10号到20号之间，名字里有‘会议’两个字的日程有哪些，顺便看看有没有和张伟一起的会议安排。", "arguments": {"query": "会议", "start_date": "2023-10-10", "end_date": "2023-10-20"}}
+{"tool_name": "search_calendar_events", "user_question": "最近一周有什么会议吗？我好像记得有件事要安排。", "arguments": {"start_date": "2024-04-01", "end_date": "2024-04-08"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上个月从10月10号到10月20号之间，名字里有‘会议’的那些日程安排有哪些？", "arguments": {"query": "会议", "start_date": "2023-10-10", "end_date": "2023-10-20"}}
+{"tool_name": "search_calendar_events", "user_question": "查一下这个月所有关于项目会议的事件", "arguments": {"query": "项目会议", "start_date": "2024-04-01", "end_date": "2024-04-30"}}
+{"tool_name": "search_calendar_events", "user_question": "我最近几天有什么重要的日程安排吗？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上周三到今天之间，名字里有‘开会’的会议有哪些？", "arguments": {"query": "开会", "start_date": "2024-03-27", "end_date": "2024-04-05"}}
+{"tool_name": "search_calendar_events", "user_question": "查一下张伟在上上周二到上周三之间有哪些日程安排", "arguments": {"query": "张伟", "start_date": "2023-09-26", "end_date": "2023-10-10"}}
+{"tool_name": "search_calendar_events", "user_question": "我刚开完会，想查一下明天上午十点有没有会议安排，能帮我看看吗？", "arguments": {"start_date": "2024-04-19", "end_date": "2024-04-19", "query": "会议"}}
+{"tool_name": "search_calendar_events", "user_question": "我想查一下这个月从15号到25号之间，名字里有‘会议’两个字的日程安排，具体都有哪些？", "arguments": {"query": "会议", "start_date": "2024-03-15", "end_date": "2024-03-25"}}
+{"tool_name": "search_calendar_events", "user_question": "最近一段时间有没有跟李明约好的会议呀？", "arguments": {"query": "李明", "start_date": "2024-03-01", "end_date": "2024-03-31"}}
+{"tool_name": "search_calendar_events", "user_question": "我昨天晚上想查一下上个月底那会儿有没有安排过和李明在杭州的会议，记得好像是在10号左右，你帮我找找看吧", "arguments": {"query": "会议", "start_date": "2023-10-01", "end_date": "2023-10-31"}}
+{"tool_name": "search_calendar_events", "user_question": "查一下上周三到今天的所有会议", "arguments": {"start_date": "2024-03-20", "end_date": "2024-03-27"}}
+{"tool_name": "search_calendar_events", "user_question": "请问最近一周有哪些日程安排？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "我最近有啥重要的日程安排吗？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上周三到今天这段时间里，名字里带'开会'的日程有哪些？", "arguments": {"query": "开会", "start_date": "2024-03-20", "end_date": "2024-04-03"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上周二到上周末在公司会议室安排的会议有哪些？", "arguments": {"start_date": "2023-10-10", "end_date": "2023-10-15"}}
+{"tool_name": "search_calendar_events", "user_question": "我刚开完会，想看看今天下午三点到五点之间有什么安排？", "arguments": {"start_date": "2024-04-27", "end_date": "2024-04-27", "query": "15:00-17:00"}}
+{"tool_name": "search_calendar_events", "user_question": "我想查一下这个月从15号到25号之间，名字里有‘开会’两个字的日程安排，具体都有哪些？", "arguments": {"query": "开会", "start_date": "2024-05-15", "end_date": "2024-05-25"}}
+{"tool_name": "search_calendar_events", "user_question": "我最近的日历里有啥事儿吗？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "帮我找一下上个月15号到20号之间，名字里有‘会议’的那些日程安排，我忘了具体是哪几天了。", "arguments": {"query": "会议", "start_date": "2023-10-15", "end_date": "2023-10-20"}}
+{"tool_name": "search_calendar_events", "user_question": "查一下上个月张伟安排的会议有哪些", "arguments": {"query": "会议", "start_date": "2023-10-01", "end_date": "2023-10-31"}}
+{"tool_name": "search_calendar_events", "user_question": "请帮我查一下这个月15号到20号之间，名字里有‘会议’的日历事件有哪些？", "arguments": {"start_date": "2024-03-15", "end_date": "2024-03-20", "query": "会议"}}
+{"tool_name": "search_calendar_events", "user_question": "我最近几天有什么会议吗？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "帮我找一下上个月在公司开的会议记录，大概2023年10月的", "arguments": {"query": "会议", "start_date": "2023-10-01", "end_date": "2023-10-31"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上个月张伟在杭州参加的所有会议", "arguments": {"query": "会议", "start_date": "2023-09-01", "end_date": "2023-09-30"}}
+{"tool_name": "search_calendar_events", "user_question": "我刚开完会，想查查明天下午三点到五点之间有什么会议安排", "arguments": {"start_date": "2024-04-27", "end_date": "2024-04-27", "query": "会议"}}
+{"tool_name": "search_calendar_events", "user_question": "我想查一下上个月从10月1号到10月15号之间，名字里有‘会议’两个字的日程事件，具体都有哪些？", "arguments": {"query": "会议", "start_date": "2023-10-01", "end_date": "2023-10-15"}}
+{"tool_name": "search_calendar_events", "user_question": "最近几天有安排会议吗？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上个月从10号到15号之间，名字里有‘会议’的那些日程安排，我得准备材料。", "arguments": {"query": "会议", "start_date": "2023-10-10", "end_date": "2023-10-15"}}
+{"tool_name": "search_calendar_events", "user_question": "查一下上个月15号到20号之间所有叫张伟的会议", "arguments": {"query": "张伟", "start_date": "2023-10-15", "end_date": "2023-10-20"}}
+{"tool_name": "search_calendar_events", "user_question": "请问一下，我最近几天有没有安排会议？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "我想查一下这个月15号到20号之间有哪些会议安排？", "arguments": {"start_date": "2023-10-15", "end_date": "2023-10-20"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上个月在杭州开会的那些事，具体日期和时间是什么？", "arguments": {"query": "开会", "start_date": "2023-06-01", "end_date": "2023-06-30"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上个月20号到30号之间，名字里有‘会议’的日历事件有哪些？", "arguments": {"query": "会议", "start_date": "2023-10-20", "end_date": "2023-10-30"}}
+{"tool_name": "search_calendar_events", "user_question": "我刚开完会，现在想看看这周有没有安排别的会议，能帮我查一下吗？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "我想查一下上个月从10月1号到10月15号之间，名字里有‘开会’这两个字的日程安排，看看都有哪些会议，麻烦帮我找一下。", "arguments": {"query": "开会", "start_date": "2023-10-01", "end_date": "2023-10-15"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下这周三上午有没有安排会议？", "arguments": {"start_date": "2024-04-17", "end_date": "2024-04-17"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上个月15号到20号之间，名字叫张伟的同事安排的会议有哪些，我有点忘了，可能在杭州开的", "arguments": {"query": "会议", "start_date": "2023-10-15", "end_date": "2023-10-20"}}
+{"tool_name": "search_calendar_events", "user_question": "找一下上周五下午三点到五点的会议记录", "arguments": {"start_date": "2024-03-08", "end_date": "2024-03-08", "query": "会议"}}
+{"tool_name": "search_calendar_events", "user_question": "我这周有啥重要的日程吗？", "arguments": {"start_date": "2024-04-08", "end_date": "2024-04-14"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上周三到今天我 calendar 里有哪些会议", "arguments": {"start_date": "2024-03-20", "end_date": "2024-03-27"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下张伟这个月在公司会议室的会议有哪些？", "arguments": {"query": "张伟", "start_date": "2024-04-01", "end_date": "2024-04-30"}}
+{"tool_name": "search_calendar_events", "user_question": "我刚开完会，查一下明天下午三点有没有会议安排？", "arguments": {"start_date": "2024-04-16", "end_date": "2024-04-16", "query": "会议"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下这个月从15号到25号之间，名字里有‘会议’两个字的日程事件有哪些，我想看看具体安排", "arguments": {"query": "会议", "start_date": "2024-04-15", "end_date": "2024-04-25"}}
+{"tool_name": "search_calendar_events", "user_question": "咦，我上周五下午三点在公司开会的记录还在吗？", "arguments": {"query": "开会", "start_date": "2024-04-12", "end_date": "2024-04-12"}}
+{"tool_name": "search_calendar_events", "user_question": "我想看看这周和李明约在星巴克开会的安排，能不能查一下日历里有啥记录？", "arguments": {"query": "李明 星巴克", "start_date": "2024-04-01", "end_date": "2024-04-07"}}
+{"tool_name": "search_calendar_events", "user_question": "查一下下周三下午三点的会议安排", "arguments": {"start_date": "2024-04-10", "end_date": "2024-04-11"}}
+{"tool_name": "search_calendar_events", "user_question": "麻烦帮我查一下下周三到周五这三天里，名字里带‘会议’的日程都有哪些？", "arguments": {"query": "会议", "start_date": "2024-04-17", "end_date": "2024-04-19"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上个月15号到20号之间，名字里有‘会议’的那些日程安排有啥？", "arguments": {"query": "会议", "start_date": "2023-10-15", "end_date": "2023-10-20"}}
+{"tool_name": "search_calendar_events", "user_question": "查一下张伟在中秋节那天的日历安排", "arguments": {"query": "张伟", "start_date": "2023-09-29", "end_date": "2023-09-29"}}
+{"tool_name": "search_calendar_events", "user_question": "我刚开完会，帮忙查一下今天下午三点到五点之间有没有安排会议？", "arguments": {"start_date": "2024-04-05", "end_date": "2024-04-05"}}
+{"tool_name": "search_calendar_events", "user_question": "我想查一下我这个月从15号到25号之间，所有标题里有‘开会’两个字的日历事件，看看都安排了哪些会议。", "arguments": {"query": "开会", "start_date": "2024-04-15", "end_date": "2024-04-25"}}
+{"tool_name": "search_calendar_events", "user_question": "我最近的会议都在日历里吧？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "我明天上午十点有一个和张伟的会议，能帮我查一下日历里这个会议的具体信息吗？", "arguments": {"query": "和张伟的会议", "start_date": "2023-10-17", "end_date": "2023-10-17"}}
+{"tool_name": "search_calendar_events", "user_question": "请问这个月我有哪些会议安排？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "我下周三有什么安排吗？", "arguments": {"start_date": "2024-04-17", "end_date": "2024-04-18"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我看看最近几天有没有叫李明的约的会", "arguments": {"query": "李明"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下张伟上周三到周五的会议安排", "arguments": {"query": "会议", "start_date": "2023-10-18", "end_date": "2023-10-20"}}
+{"tool_name": "search_calendar_events", "user_question": "我刚开完会，想查下这周还有没有别的会议安排，特别是跟李明有关的。", "arguments": {"query": "李明", "start_date": "2024-04-01", "end_date": "2024-04-07"}}
+{"tool_name": "search_calendar_events", "user_question": "我最近几天的日程有点乱，能不能帮我找一下从这个月15号到20号之间，标题里有‘项目会议’或者‘头脑风暴’的那些日程安排？", "arguments": {"query": "项目会议|头脑风暴", "start_date": "2024-05-15", "end_date": "2024-05-20"}}
+{"tool_name": "search_calendar_events", "user_question": "我最近的日历里有叫‘项目汇报’的会议吗？", "arguments": {"query": "项目汇报"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我找一下上个月在公司会议室开的关于项目进度的会议，我记得是10月15号左右的。", "arguments": {"query": "项目进度", "start_date": "2023-10-01", "end_date": "2023-10-31"}}
+{"tool_name": "search_calendar_events", "user_question": "麻烦帮我查一下下周五下午三点到四点之间，日历里有没有安排会议，标题里带着‘项目’两个字的事件？", "arguments": {"query": "项目", "start_date": "2024-04-19", "end_date": "2024-04-19"}}
+{"tool_name": "search_calendar_events", "user_question": "我这个月有哪些重要的会议？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "帮我看看这个月15号到20号之间有什么会议安排？", "arguments": {"start_date": "2024-05-15", "end_date": "2024-05-20"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上周三到本周二之间，名字里有'开会'的日程有哪些？", "arguments": {"query": "开会", "start_date": "2023-10-18", "end_date": "2023-10-24"}}
+{"tool_name": "search_calendar_events", "user_question": "我刚开完会，想看看今天下午三点到五点之间有没有安排别的会议", "arguments": {"start_date": "2024-04-05", "end_date": "2024-04-05"}}
+{"tool_name": "search_calendar_events", "user_question": "我想查一下上个月从10月1号到10月15号之间，名字里有‘会议’两个字的日历事件，看看都有哪些安排。", "arguments": {"query": "会议", "start_date": "2023-10-01", "end_date": "2023-10-15"}}
+{"tool_name": "search_calendar_events", "user_question": "最近几天的日历里有叫‘项目评审会’的安排吗？", "arguments": {"query": "项目评审会"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上个月从10月1号到10月15号之间，名字里有'开会'的那些日程安排，我怕漏掉了重要会议。", "arguments": {"query": "开会", "start_date": "2023-10-01", "end_date": "2023-10-15"}}
+{"tool_name": "search_calendar_events", "user_question": "查一下上周五到今天之间的会议安排", "arguments": {"start_date": "2023-10-12", "end_date": "2023-10-18"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下下周三上午的会议安排", "arguments": {"start_date": "2024-04-17", "end_date": "2024-04-18"}}
+{"tool_name": "search_calendar_events", "user_question": "请问今天和明天我有哪些日程安排呀？", "arguments": {}}
+{"tool_name": "search_calendar_events", "user_question": "我想查一下这个月15号到20号之间有哪些会议？", "arguments": {"start_date": "2024-04-15", "end_date": "2024-04-20"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下上个月15号到20号之间，名字里有‘开会’的那些日程安排", "arguments": {"query": "开会", "start_date": "2023-10-15", "end_date": "2023-10-20"}}
+{"tool_name": "search_calendar_events", "user_question": "帮我查一下张伟下周三上午十点到十二点在公司会议室的会议安排", "arguments": {"query": "会议", "start_date": "2023-10-25", "end_date": "2023-10-27"}}
