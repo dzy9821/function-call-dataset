@@ -38,11 +38,11 @@ TOOLS = [
                 "properties": {
                     "level": {
                         "type": "STRING",
-                        "description": "目标亮度数值，范围 0 到 100。与 direction 二选一。"
+                        "description": "目标亮度数值，范围 0 到 100。"
                     },
                     "direction": {
                         "type": "STRING",
-                        "description": "调节方向，'high' 为调高，'low' 为调低。与 level 二选一。"
+                        "description": "调节方向，'high' 为调高，'low' 为调低。"
                     }
                 },
                 "required": []
@@ -387,11 +387,11 @@ TOOLS = [
                 "properties": {
                     "level": {
                         "type": "STRING",
-                        "description": "目标音量数值，范围 0 到 100。与 direction 二选一。"
+                        "description": "目标音量数值，范围 0 到 100。"
                     },
                     "direction": {
                         "type": "STRING",
-                        "description": "调节方向，'high' 为调高，'low' 为调低。与 level 二选一。"
+                        "description": "调节方向，'high' 为调高，'low' 为调低。"
                     }
                 },
                 "required": []

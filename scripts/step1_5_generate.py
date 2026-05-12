@@ -69,14 +69,12 @@ def load_existing(tool_name):
 
 def validate_args(tool_name, args):
     """校验参数合法性。"""
-    # set_brightness / set_volume: level 和 direction 二选一
     if tool_name in ("set_brightness", "set_volume"):
         has_level = "level" in args
         has_dir = "direction" in args
-        if has_level and has_dir:
-            return False  # 不能同时有
         if not has_level and not has_dir:
-            return False  # 不能都没有
+            return False  # 至少有一个
+        # 两者可同时出现，level 优先
         if has_dir and args["direction"] not in ("high", "low"):
             return False
     return True
