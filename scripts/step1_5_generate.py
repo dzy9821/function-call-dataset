@@ -85,7 +85,6 @@ def validate_args(tool_name, args):
 def generate_batch(tool_name, count):
     """生成一批数据，返回 list[dict]。"""
     tp = TOOL_PROMPTS[tool_name]
-    scenarios = tp["scenarios"]
     param_notes = tp["param_notes"]
     bad = tp.get("bad_examples", "")
 
@@ -93,14 +92,11 @@ def generate_batch(tool_name, count):
     if bad:
         system += f"\n\n禁止事项：\n{bad}"
 
-    # 为每条生成随机选 style + scenario
     items = []
     for i in range(count):
         style = random.choice(STYLES)
-        scenario = random.choice(scenarios)
         user = f"""请生成 1 条中文用户问题。
 
-场景：{scenario}
 表达风格：{style}
 
 输出格式（只输出 JSON）：
