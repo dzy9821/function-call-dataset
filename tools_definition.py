@@ -60,7 +60,7 @@ TOOLS = [
                 "properties": {
                     "contact_name": {
                         "type": "STRING",
-                        "description": "收件人姓名。"
+                        "description": "收件人姓名、邮箱地址或电话号码。"
                     },
                     "subject": {
                         "type": "STRING",
@@ -84,7 +84,7 @@ TOOLS = [
                 "properties": {
                     "contact_name": {
                         "type": "STRING",
-                        "description": "要拨打的联系人姓名。"
+                        "description": "联系人姓名或电话号码。"
                     }
                 },
                 "required": ["contact_name"]
@@ -100,7 +100,7 @@ TOOLS = [
                 "properties": {
                     "contact_name": {
                         "type": "STRING",
-                        "description": "收件人姓名。"
+                        "description": "收件人姓名或电话号码。"
                     },
                     "message": {
                         "type": "STRING",
@@ -343,7 +343,7 @@ TOOLS = [
                 "properties": {
                     "contact_name": {
                         "type": "STRING",
-                        "description": "要搜索的联系人姓名。"
+                        "description": "要搜索的联系人姓名或电话号码。"
                     }
                 },
                 "required": ["contact_name"]

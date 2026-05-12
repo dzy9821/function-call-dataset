@@ -67,6 +67,7 @@
   - 每批 10 条随机模板，满 100 后 LLM 去重再补全
   - 产物：`output/step1/gen/{tool}_gen.jsonl` × 31
   - 环境变量：`DEEPSEEK_API_KEY`、自定义 `BASE_URL`
+  - 用法：`python scripts/step1_5_generate.py` 或 `--tools set_brightness,set_volume` 只生成指定工具
 - [ ] **1.6 输出合并** — 待定
 
 ### Step 2 — 工具关联分析

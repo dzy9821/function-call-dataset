@@ -63,10 +63,10 @@ TOOL_PROMPTS = {
             "转发信息给朋友",
             "发邮件附带简短说明",
         ],
-        "param_notes": """contact_name（STRING，必选）：收件人姓名，用常见中文名如张伟、李娜、王磊。
-subject（STRING，必选）：邮件主题，简短具体。
-message（STRING，可选）：邮件正文，自然语句。""",
-        "bad_examples": "不要用英文名，不要生成发送附件或图片的请求。",
+        "param_notes": """contact_name（STRING，必选）：可以是姓名（如张伟、李娜）、邮箱地址（如 zhangwei@example.com）或电话号码（如 13812345678）。
+subject（STRING，必选）：邮件主题。
+message（STRING，可选）：邮件正文。""",
+        "bad_examples": "不要用英文名。联系方式值要有真实感。",
     },
 
     "phone_call": {
@@ -78,8 +78,8 @@ message（STRING，可选）：邮件正文，自然语句。""",
             "打给快递/外卖小哥",
             "回拨未接来电",
         ],
-        "param_notes": "contact_name（STRING，必选）：联系人姓名，常见中文名。",
-        "bad_examples": "不行生成拨打号码（我们不支持拨号），只能用联系人姓名。",
+        "param_notes": "contact_name（STRING，必选）：可以是姓名（如张伟）或电话号码（如 13812345678）。",
+        "bad_examples": "不要用英文名。",
     },
 
     "phone_sms": {
@@ -91,9 +91,9 @@ message（STRING，可选）：邮件正文，自然语句。""",
             "发短信给朋友分享消息",
             "快速回复短信",
         ],
-        "param_notes": """contact_name（STRING，必选）：收件人姓名。
-message（STRING，可选）：短信内容，简短口语化。""",
-        "bad_examples": "不要生成发彩信、群发等请求。",
+        "param_notes": """contact_name（STRING，必选）：可以是姓名或电话号码。
+message（STRING，可选）：短信内容。""",
+        "bad_examples": "不要生成彩信、群发。",
     },
 
     # ========================================
@@ -306,9 +306,9 @@ phone_number（STRING，可选）：手机号码，如 13812345678。""",
             "记不清联系人全名想搜一下",
             "查某人有没有存",
             "找同事的联系方式",
-            "搜某个姓氏的所有人",
+            "按电话号码反查是谁",
         ],
-        "param_notes": "contact_name（STRING，必选）：要搜索的姓名。可以是全名或部分。",
+        "param_notes": "contact_name（STRING，必选）：要搜索的姓名或电话号码。可以是全名或部分。",
         "bad_examples": "不要生成\"打电话给XX\"（那是phone_call）。",
     },
 

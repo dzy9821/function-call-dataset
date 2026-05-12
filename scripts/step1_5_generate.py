@@ -212,14 +212,17 @@ def process_tool(tool_name):
     return len(existing[:100])
 
 
-def main():
-    tools = load_tool_defs()
+def main(tools_filter=None):
+    """tools_filter: 指定只生成哪些工具，None 表示全部。"""
+    all_tools = load_tool_defs()
+    if tools_filter:
+        all_tools = {k: v for k, v in all_tools.items() if k in tools_filter}
     os.makedirs(GEN_DIR, exist_ok=True)
 
     # 显示当前状态
     total = 0
     plan = []
-    for name in tools:
+    for name in all_tools:
         items, _ = load_existing(name)
         need = max(0, 100 - len(items))
         mark = " ✓" if need == 0 else f" 缺{need}"
@@ -229,7 +232,8 @@ def main():
             plan.append((name, need))
 
     if not plan:
-        print(f"\n全部 31 工具已满 100 ✓ ({total} 条)")
+        tc = len(all_tools)
+        print(f"\n指定 {tc} 工具已满 100 ✓ ({total} 条)")
         return
 
     print(f"\n需生成: {len(plan)} 工具\n")
@@ -241,13 +245,22 @@ def main():
     # 最终统计
     total = 0
     done = 0
-    for name in tools:
+    for name in all_tools:
         items, _ = load_existing(name)
         total += len(items)
         if len(items) >= 100:
             done += 1
-    print(f"完成: {done}/31, 共 {total} 条")
+    print(f"完成: {done}/{len(all_tools)}, 共 {total} 条")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--tools", type=str, default="", help="指定工具名，逗号分隔，如 'set_brightness,set_volume'")
+    args = parser.parse_args()
+
+    if args.tools:
+        tool_list = [t.strip() for t in args.tools.split(",") if t.strip()]
+        main(tools_filter=tool_list)
+    else:
+        main()
