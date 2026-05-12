@@ -410,22 +410,6 @@ TOOLS = [
     # === 浏览与搜索 ===
     {
         "function": {
-            "name": "open_browser",
-            "description": "打开浏览器访问指定网址。",
-            "parameters": {
-                "type": "OBJECT",
-                "properties": {
-                    "url": {
-                        "type": "STRING",
-                        "description": "要打开的网址。"
-                    }
-                },
-                "required": ["url"]
-            }
-        }
-    },
-    {
-        "function": {
             "name": "search_web",
             "description": "使用搜索引擎进行搜索。",
             "parameters": {

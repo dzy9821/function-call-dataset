@@ -30,14 +30,13 @@
 | 22 | set_alarm | 提醒与时间 | 设置一个闹钟。 | datetime | label, repeat |
 | 23 | set_volume | 声音控制 | 设置设备音量。 | level | 无 |
 | 24 | set_mute | 声音控制 | 设置设备静音状态。 | enable | 无 |
-| 25 | open_browser | 浏览与搜索 | 打开浏览器访问指定网址。 | url | 无 |
-| 26 | search_web | 浏览与搜索 | 使用搜索引擎进行搜索。 | query | 无 |
-| 27 | toggle_dnd | 系统模式 | 开启或关闭勿扰模式。 | enable | 无 |
-| 28 | toggle_power_saving_mode | 系统模式 | 开启或关闭省电模式。 | enable | 无 |
-| 29 | get_weather | 天气服务 | 获取天气信息。 | 无 | city,datetime |
-| 30 | create_calendar_event | 日程管理 | 创建一个新的日历事件。 | title, start_date, end_date | 无 |
-| 31 | search_calendar_events | 日程管理 | 查询日历中的事件。 | 无 | query, start_date, end_date |
-| 32 | create_note | 备忘录 | 创建一条备忘录或笔记。 | title, content | 无 |
+| 25 | search_web | 浏览与搜索 | 使用搜索引擎进行搜索。 | query | 无 |
+| 26 | toggle_dnd | 系统模式 | 开启或关闭勿扰模式。 | enable | 无 |
+| 27 | toggle_power_saving_mode | 系统模式 | 开启或关闭省电模式。 | enable | 无 |
+| 28 | get_weather | 天气服务 | 获取天气信息。 | 无 | city,datetime |
+| 29 | create_calendar_event | 日程管理 | 创建一个新的日历事件。 | title, start_date, end_date | 无 |
+| 30 | search_calendar_events | 日程管理 | 查询日历中的事件。 | 无 | query, start_date, end_date |
+| 31 | create_note | 备忘录 | 创建一条备忘录或笔记。 | title, content | 无 |
 
 ## 整体流程
 
@@ -63,10 +62,12 @@
   - 5 个工具 120 条英文问题，并发 5 逐条翻译为中文
   - 产物：`output/step1/zh/{tool}_zh.jsonl` × 5（格式: `{zh, en, arguments}`）
 - [ ] **1.4 参数清洗** — 待规划
-- [x] **1.5 LLM 生成** — `scripts/step1_5_generate.py`（已运行10轮+手动补18条）
-  - 32 工具 × 100 条，共 3200 条
-  - 产物：`output/step1/gen/{tool}_gen.jsonl` × 32
-- [ ] **1.6 输出合并** — 合并 en/zh/gen 为最终训练数据
+- [ ] **1.5 LLM 生成** — `scripts/step1_5_generate.py`（v2 重做）
+  - 使用 deepseek-chat，每工具独立提示词 `scripts/prompts.py`
+  - 每批 10 条随机模板，满 100 后 LLM 去重再补全
+  - 产物：`output/step1/gen/{tool}_gen.jsonl` × 31
+  - 环境变量：`DEEPSEEK_API_KEY`、自定义 `BASE_URL`
+- [ ] **1.6 输出合并** — 待定
 
 ### Step 2 — 工具关联分析
 

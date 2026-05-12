@@ -1,56 +1,57 @@
 """
-Step 1.5 — LLM 数据生成
+Step 1.5 — LLM 数据生成（v2）
 
-每次运行：读取已有 gen 文件 → 计算差额 → 只生成不足部分 → 追加去重。
-可反复运行直到所有工具满 100 条。
+- 每工具独立提示词（prompts.py）
+- API Key 从环境变量 DEEPSEEK_API_KEY 读取
+- 每批 10 条，随机抽取话术模板
+- 满 100 条后 LLM 去重，再补至 100
+- 可反复运行，只补差额
 """
 
 import json
 import os
-import urllib.request
+import random
+import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+from openai import OpenAI
+
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STEP1_DIR = os.path.join(PROJECT_ROOT, "output", "step1")
-GEN_DIR = os.path.join(STEP1_DIR, "gen")
-LLM_URL = "http://182.150.59.81:31845/v1/chat/completions"
-LLM_MODEL = "Qwen3-30B-A3B-Instruct-2507"
+sys.path.insert(0, PROJECT_ROOT)
+
+GEN_DIR = os.path.join(PROJECT_ROOT, "output", "step1", "gen")
+
+# ---- 模型配置（用户自行修改）----
+API_KEY = os.environ.get("DEEPSEEK_API_KEY", "your-api-key-here")
+BASE_URL = "https://api.deepseek.com/v1"
+MODEL = "deepseek-chat"
 CONCURRENCY = 10
 
-TEMPLATES = [
-    "用户用简洁的指令式语句提出请求。",
-    "用户用礼貌的请求句式提出请求。",
-    "用户用疑问句形式提出请求。",
-    "用户用口语化、随意的表达提出请求。",
-    "用户用包含具体数值/名称的表达提出请求。",
-    "用户结合当前场景提出请求（如刚做完一件事紧接着做另一件）。",
-    "用户用较长的自然语言描述需求。",
-    "用户用反问或确认语气提出请求。",
-    "用户用带有额外上下文信息的句子提出请求。",
+client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
+
+# ---- 话术模板（每次随机抽取）----
+STYLES = [
+    "一句简洁的口语指令",
+    "一句礼貌的请求",
+    "一个疑问句",
+    "一句非常口语化、随意的表达",
+    "一句带具体细节的描述",
+    "一句结合了当前生活场景的请求",
+    "一句较长的自然语言描述",
+    "一句带反问或确认语气的请求",
+    "一句带额外上下文的请求",
 ]
+
+# ---- 加载 per-tool prompts ----
+from scripts.prompts import TOOL_PROMPTS
 
 
 def load_tool_defs():
-    import sys
-    sys.path.insert(0, PROJECT_ROOT)
     from tools_definition import TOOLS
-    result = {}
-    for t in TOOLS:
-        fn = t["function"]
-        props = fn["parameters"]["properties"]
-        required = fn["parameters"].get("required", [])
-        result[fn["name"]] = {
-            "description": fn["description"],
-            "params": {
-                k: {"type": v["type"], "desc": v["description"], "required": k in required}
-                for k, v in props.items()
-            },
-        }
-    return result
+    return {t["function"]["name"]: t for t in TOOLS}
 
 
-def load_existing(tool_name: str) -> tuple[list[dict], set]:
-    """加载已有生成数据，返回 (items, seen_questions)。"""
+def load_existing(tool_name):
     items = []
     seen = set()
     path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
@@ -66,155 +67,169 @@ def load_existing(tool_name: str) -> tuple[list[dict], set]:
     return items, seen
 
 
-def build_prompt(tool_name, tool_def, template_desc):
-    desc = tool_def["description"]
-    params = tool_def["params"]
-    param_lines = []
-    for k, v in params.items():
-        req = "必选" if v["required"] else "可选"
-        param_lines.append(f"  {k} ({v['type']}, {req}): {v['desc']}")
-    param_section = "\n".join(param_lines) if param_lines else "  无参数"
-    return f"""你是一个手机助手训练数据生成器。为以下工具生成 1 条中文用户问题。
+def generate_batch(tool_name, count):
+    """生成一批数据，返回 list[dict]。"""
+    tp = TOOL_PROMPTS[tool_name]
+    scenarios = tp["scenarios"]
+    param_notes = tp["param_notes"]
+    bad = tp.get("bad_examples", "")
 
-工具名称: {tool_name}
-功能描述: {desc}
-参数定义:
-{param_section}
+    system = tp["system"] + "\n\n" + f"参数说明：\n{param_notes}"
+    if bad:
+        system += f"\n\n禁止事项：\n{bad}"
 
-要求:
-1. 生成一个用户会用中文口语说出的手机操作请求
-2. 风格: {template_desc}
-3. 参数值必须是真实合理的（如联系人姓名用常见中文名，地名用真实地点，网址用真实域名，数值在合理范围内），禁止使用占位符或编造的值
-4. 输出一个 JSON 对象:
-   {{"user_question": "用户的中文请求",
-     "arguments": {{参数名: 参数值}}}}（无参数时 arguments 为空对象 {{}}）
+    # 为每条生成随机选 style + scenario
+    items = []
+    for i in range(count):
+        style = random.choice(STYLES)
+        scenario = random.choice(scenarios)
+        user = f"""请生成 1 条中文用户问题。
 
-只输出 JSON，不要其他内容。"""
+场景：{scenario}
+表达风格：{style}
 
+输出格式（只输出 JSON）：
+{{"user_question": "...", "arguments": {{...}}}}"""
 
-def parse_response(text):
-    text = text.strip()
-    if text.startswith("```"):
-        lines = text.split("\n")
-        text = "\n".join(lines[1:-1]) if len(lines) > 2 else text.strip("`")
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        return None
-
-
-def validate_args(tool_def, args):
-    valid_params = tool_def["params"]
-    for k in args:
-        if k not in valid_params:
-            return False
-    for k, v in valid_params.items():
-        if v["required"] and k not in args:
-            return False
-    return True
-
-
-def generate_one(tool_name, tool_def, template_idx):
-    template = TEMPLATES[template_idx % len(TEMPLATES)]
-    prompt = build_prompt(tool_name, tool_def, template)
-    payload = {
-        "model": LLM_MODEL,
-        "messages": [
-            {"role": "system", "content": "你是训练数据生成器，只输出 JSON。"},
-            {"role": "user", "content": prompt},
-        ],
-        "temperature": 0.9,
-        "max_tokens": 1024,
-    }
-    for attempt in range(3):
         try:
-            data = json.dumps(payload).encode("utf-8")
-            req = urllib.request.Request(
-                LLM_URL, data=data, headers={"Content-Type": "application/json"}
+            resp = client.chat.completions.create(
+                model=MODEL,
+                messages=[
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
+                ],
+                temperature=0.9,
+                max_tokens=512,
             )
-            with urllib.request.urlopen(req, timeout=60) as resp:
-                body = json.loads(resp.read().decode("utf-8"))
-            text = body["choices"][0]["message"]["content"]
-            result = parse_response(text)
-            if result and "user_question" in result and "arguments" in result:
-                args = result.get("arguments", {})
-                if not isinstance(args, dict):
-                    continue
-                if validate_args(tool_def, args):
-                    return {
-                        "tool_name": tool_name,
-                        "user_question": result["user_question"].strip(),
-                        "arguments": args,
-                    }
-        except Exception:
-            pass
-    return None
+            text = resp.choices[0].message.content.strip()
+            if text.startswith("```"):
+                lines = text.split("\n")
+                text = "\n".join(lines[1:-1]) if len(lines) > 2 else text.strip("`")
+            result = json.loads(text)
+            if "user_question" in result and "arguments" in result:
+                items.append({
+                    "tool_name": tool_name,
+                    "user_question": result["user_question"].strip(),
+                    "arguments": result.get("arguments", {}),
+                })
+        except Exception as e:
+            print(f"    gen error: {e}")
+    return items
+
+
+def dedup_via_llm(items):
+    """让模型去重：输入 N 条，返回应保留的索引列表。"""
+    numbered = "\n".join(f"{i}: {item['user_question']}" for i, item in enumerate(items))
+    prompt = f"""以下是一组用户向手机助手提出的问题，有些可能语义重复。
+
+请找出语义重复的问题组，每组只保留表达最自然的一条。
+
+{numbered}
+
+用 JSON 输出要保留的索引列表：
+{{"keep": [0, 3, 5, ...]}}
+
+只输出 JSON。"""
+
+    try:
+        resp = client.chat.completions.create(
+            model=MODEL,
+            messages=[
+                {"role": "system", "content": "你是数据清洗专家，只输出 JSON。"},
+                {"role": "user", "content": prompt},
+            ],
+            temperature=0.1,
+            max_tokens=4096,
+        )
+        text = resp.choices[0].message.content.strip()
+        if text.startswith("```"):
+            lines = text.split("\n")
+            text = "\n".join(lines[1:-1]) if len(lines) > 2 else text.strip("`")
+        result = json.loads(text)
+        keep = result.get("keep", [])
+        return [items[i] for i in keep if i < len(items)]
+    except Exception as e:
+        print(f"    dedup error: {e}")
+        return items
+
+
+def process_tool(tool_name):
+    """为一个工具生成/去重/补全直到 100 条。"""
+    existing, seen_q = load_existing(tool_name)
+    if len(existing) >= 100:
+        print(f"  {tool_name}: 已有 {len(existing)} 条 ✓")
+        return len(existing)
+
+    need = 100 - len(existing)
+    print(f"  {tool_name}: 已有 {len(existing)}, 需 {need} 条")
+
+    max_rounds = 5
+    for round_num in range(max_rounds):
+        # 生成一批
+        batch = generate_batch(tool_name, min(need, 100))
+        for item in batch:
+            q = item["user_question"]
+            if q not in seen_q:
+                seen_q.add(q)
+                existing.append(item)
+
+        # LLM 去重
+        if len(existing) >= 90:
+            before = len(existing)
+            existing = dedup_via_llm(existing)
+            seen_q = {item["user_question"] for item in existing}
+            print(f"    去重: {before} → {len(existing)}")
+
+        # 截断到 100
+        existing = existing[:100]
+        need = 100 - len(existing)
+        if need == 0:
+            break
+
+    # 保存
+    path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
+    with open(path, "w", encoding="utf-8") as f:
+        for item in existing[:100]:
+            f.write(json.dumps(item, ensure_ascii=False) + "\n")
+    print(f"    → {len(existing[:100])} 条")
+    return len(existing[:100])
 
 
 def main():
     tools = load_tool_defs()
     os.makedirs(GEN_DIR, exist_ok=True)
 
-    # 算每个工具的差额
+    # 显示当前状态
+    total = 0
     plan = []
-    for tool_name in tools:
-        items, _ = load_existing(tool_name)
+    for name in tools:
+        items, _ = load_existing(name)
         need = max(0, 100 - len(items))
-        plan.append((tool_name, need))
+        mark = " ✓" if need == 0 else f" 缺{need}"
+        print(f"  {name:<30s} {len(items):>3d}{mark}")
+        total += len(items)
+        if need > 0:
+            plan.append((name, need))
 
-    # 打印状态
-    for tool_name, need in plan:
-        marker = " ← 需补" if need > 0 else " ✓"
-        print(f"  {tool_name:<30s} 已有 {100-need:>3d}, 差额 {need:>3d}{marker}")
-
-    total = sum(n for _, n in plan)
-    if total == 0:
-        print(f"\n全部 32 工具已满 100 ✓")
+    if not plan:
+        print(f"\n全部 31 工具已满 100 ✓ ({total} 条)")
         return
 
-    print(f"\n需补全: {sum(1 for _, n in plan if n > 0)} 个工具, {total} 条\n")
+    print(f"\n需生成: {len(plan)} 工具\n")
 
-    for tool_idx, (tool_name, need) in enumerate(plan):
-        if need == 0:
-            continue
+    for tool_name, _need in plan:
+        process_tool(tool_name)
+        print()
 
-        tool_def = tools[tool_name]
-        existing, seen_q = load_existing(tool_name)
-        print(f"[{tool_idx+1}/32] {tool_name}: 补 {need} 条")
-
-        results = [None] * need
-
-        def gen_item(i):
-            return i, generate_one(tool_name, tool_def, i)
-
-        with ThreadPoolExecutor(max_workers=CONCURRENCY) as pool:
-            futures = {pool.submit(gen_item, i): i for i in range(need)}
-            done = 0
-            for future in as_completed(futures):
-                i, result = future.result()
-                results[i] = result
-                done += 1
-                ok = sum(1 for r in results[:done] if r is not None)
-                if done % 50 == 0 or done == need:
-                    print(f"  {done}/{need} (成功 {ok})")
-
-        # 去重合并
-        for r in results:
-            if r is None:
-                continue
-            q = r["user_question"]
-            if q not in seen_q:
-                seen_q.add(q)
-                existing.append(r)
-
-        existing = existing[:100]
-        path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
-        with open(path, "w", encoding="utf-8") as f:
-            for item in existing:
-                f.write(json.dumps(item, ensure_ascii=False) + "\n")
-        print(f"  → 总计 {len(existing)} 条\n")
-
-    print("1.5 完成")
+    # 最终统计
+    total = 0
+    done = 0
+    for name in tools:
+        items, _ = load_existing(name)
+        total += len(items)
+        if len(items) >= 100:
+            done += 1
+    print(f"完成: {done}/31, 共 {total} 条")
 
 
 if __name__ == "__main__":
