@@ -49,8 +49,8 @@ def translate_one(en_text: str) -> str:
 
 def process_tool(tool: str):
     """处理单个工具的翻译。"""
-    src_path = os.path.join(STEP1_DIR, f"{tool}_en.jsonl")
-    dst_path = os.path.join(STEP1_DIR, f"{tool}_zh.jsonl")
+    src_path = os.path.join(STEP1_DIR, "en", f"{tool}_en.jsonl")
+    dst_path = os.path.join(STEP1_DIR, "zh", f"{tool}_zh.jsonl")
 
     items = []
     with open(src_path, encoding="utf-8") as f:
@@ -88,8 +88,9 @@ def process_tool(tool: str):
 
 
 def main():
+    en_dir = os.path.join(STEP1_DIR, "en")
     # 收集所有 _en.jsonl 文件
-    files = sorted(f for f in os.listdir(STEP1_DIR) if f.endswith("_en.jsonl"))
+    files = sorted(f for f in os.listdir(en_dir) if f.endswith("_en.jsonl"))
     if not files:
         print("没有 _en.jsonl 文件需要翻译")
         return

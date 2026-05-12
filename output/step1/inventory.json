@@ -1,9 +1,9 @@
 [
   {
     "tool": "battery_status",
-    "source_count": 120,
-    "need_translate": 120,
-    "need_generate": 0,
+    "source_count": 5,
+    "need_translate": 5,
+    "need_generate": 95,
     "source": "dataset"
   },
   {
@@ -22,9 +22,9 @@
   },
   {
     "tool": "list_application",
-    "source_count": 120,
-    "need_translate": 120,
-    "need_generate": 0,
+    "source_count": 10,
+    "need_translate": 10,
+    "need_generate": 90,
     "source": "dataset"
   },
   {
@@ -57,9 +57,9 @@
   },
   {
     "tool": "set_brightness",
-    "source_count": 120,
-    "need_translate": 120,
-    "need_generate": 0,
+    "source_count": 95,
+    "need_translate": 95,
+    "need_generate": 5,
     "source": "dataset"
   },
   {
@@ -71,16 +71,16 @@
   },
   {
     "tool": "take_picture",
-    "source_count": 120,
-    "need_translate": 120,
-    "need_generate": 0,
+    "source_count": 5,
+    "need_translate": 5,
+    "need_generate": 95,
     "source": "dataset"
   },
   {
     "tool": "take_screenshot",
-    "source_count": 120,
-    "need_translate": 120,
-    "need_generate": 0,
+    "source_count": 5,
+    "need_translate": 5,
+    "need_generate": 95,
     "source": "dataset"
   },
   {
@@ -95,7 +95,7 @@
     "source_count": 0,
     "need_translate": 0,
     "need_generate": 100,
-    "source": "dataset"
+    "source": "llm"
   },
   {
     "tool": "get_weather",
@@ -123,7 +123,7 @@
     "source_count": 0,
     "need_translate": 0,
     "need_generate": 100,
-    "source": "dataset"
+    "source": "llm"
   },
   {
     "tool": "play_music",

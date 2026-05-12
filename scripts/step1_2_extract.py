@@ -173,6 +173,7 @@ def main():
 
     # 去重 + 保存
     total = 0
+    dedup_counts = {}  # {tool_name: deduplicated_count}
     for tool in sorted(results.keys()):
         items = results[tool]
         seen = set()
@@ -183,31 +184,32 @@ def main():
                 seen.add(key)
                 unique.append(item)
         items = unique
+        dedup_counts[tool] = len(items)
 
         if len(items) == 0:
             print(f"  {tool:<30s}   0 条 → 跳过")
             continue
 
-        path = os.path.join(OUTPUT_DIR, f"{tool}_en.jsonl")
+        path = os.path.join(OUTPUT_DIR, "en", f"{tool}_en.jsonl")
         with open(path, "w", encoding="utf-8") as f:
             for item in items:
                 f.write(json.dumps(item, ensure_ascii=False) + "\n")
         print(f"  {tool:<30s} {len(items):>3d} 条 → {os.path.basename(path)}")
         total += len(items)
 
-    # 更新 inventory
-    from collections import Counter
+    # 更新 inventory（仅标记实际有数据的工具为 dataset）
     inv_path = os.path.join(OUTPUT_DIR, "inventory.json")
     with open(inv_path, encoding="utf-8") as f:
         inventory = json.load(f)
 
-    extracted_tools = set(results.keys())
     for item in inventory:
-        if item["tool"] in extracted_tools:
+        tool = item["tool"]
+        count = dedup_counts.get(tool, 0)
+        if count > 0:
             item["source"] = "dataset"
-            item["source_count"] = len(results.get(item["tool"], []))
-            item["need_translate"] = item["source_count"]
-            item["need_generate"] = max(0, 100 - item["source_count"])
+            item["source_count"] = count
+            item["need_translate"] = count
+            item["need_generate"] = max(0, 100 - count)
         else:
             item["source"] = "llm"
             item["source_count"] = 0
