@@ -12,10 +12,9 @@ TOOL_PROMPTS = {
         "param_notes": "无参数。arguments 为空对象 {}。" 
     },
 
-    # 应用名可以多元化，英文app名称、系统应用等
     "open_application": {
         "system": "你是 function call 训练数据生成助手。要求打开某个应用。表达多样化、覆盖不同场景和角度。",
-        "param_notes": "application_name（STRING，必选）：应用名称。覆盖系统应用、英文名称应用、社交、购物、出行、工具、娱乐等不同类型。" 
+        "param_notes": "application_name（STRING，必选）：应用名称。覆盖系统应用、英文名称应用、常用中文名应用等不同类型。" 
     },
 
     # ========================================

@@ -52,11 +52,14 @@ def load_tool_defs():
 
 
 def load_existing(tool_name):
+    """加载已有数据，先读 gen/ 再读 zh/（翻译数据），去重合并。"""
     items = []
     seen = set()
-    path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
-    if os.path.exists(path):
-        with open(path, encoding="utf-8") as f:
+
+    # 1. gen/ 数据
+    gen_path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
+    if os.path.exists(gen_path):
+        with open(gen_path, encoding="utf-8") as f:
             for line in f:
                 if line.strip():
                     r = json.loads(line)
@@ -64,6 +67,23 @@ def load_existing(tool_name):
                     if q and q not in seen:
                         seen.add(q)
                         items.append(r)
+
+    # 2. zh/ 翻译数据（格式: {zh, en, arguments} → {tool_name, user_question, arguments}）
+    zh_path = os.path.join(PROJECT_ROOT, "output", "step1", "zh", f"{tool_name}_zh.jsonl")
+    if os.path.exists(zh_path):
+        with open(zh_path, encoding="utf-8") as f:
+            for line in f:
+                if line.strip():
+                    r = json.loads(line)
+                    q = r.get("zh", "")
+                    if q and q not in seen:
+                        seen.add(q)
+                        items.append({
+                            "tool_name": tool_name,
+                            "user_question": q,
+                            "arguments": r.get("arguments", {}),
+                        })
+
     return items, seen
 
 
@@ -147,60 +167,75 @@ def generate_one(tool_name, template_idx):
     return None
 
 
-def dedup_via_llm(items):
-    """让模型精选：从 N 条中选出表达最多样化的子集。"""
+def dedup_via_llm(tool_name, items):
+    """让模型精选：从 N 条中找出语义重复的条目。"""
+    if not items:
+        return items
+    print(f"    dedup 开始 ({tool_name}, {len(items)} 条) ...")
     numbered = "\n".join(f"{i}: {item['user_question']}" for i, item in enumerate(items))
-    prompt = f"""以下是一组用户请求，请按语义多样性精选，保留表达各不相同的条目。
-
-要求：
-- 语义相近的（只是换了几个词、句式略有差异）只保留一条最自然的
-- 确保保留下来的条目覆盖不同的表达角度、场景和语言风格
-- 尽量多保留，但不要留语义重复的
+    prompt = f"""以下是 "{tool_name}" 工具的训练数据，用户对手机说的一句话。因为是为同一个工具生成的数据，语义相近是正常的，只需要去掉几乎完全相同的条目，目的是保留数据的多元性。
 
 {numbered}
 
-用 JSON 输出要保留的索引列表：
-{{"keep": [0, 3, 5, ...]}}
+找出表达几乎完全相同的条目，用 JSON 输出要删除的索引：
+{{"remove": [1, 5, 8]}}
 
 只输出 JSON。"""
 
+    text = ""
     try:
         resp = client.chat.completions.create(
             model=DEDUP_MODEL,
             messages=[
-                {"role": "system", "content": "你是数据清洗专家，只输出 JSON。"},
+                {"role": "system", "content": "你是数据清洗专家，只输出 JSON，不要任何其他内容。"},
                 {"role": "user", "content": prompt},
             ],
             temperature=0.1,
-            max_tokens=4096,
+            max_tokens=327680,
         )
         choice = resp.choices[0]
-        text = (choice.message.content or "").strip()
-        if not text and hasattr(choice.message, 'reasoning_content'):
-            text = (choice.message.reasoning_content or "").strip()
+        msg = choice.message
+        text = (msg.content or "").strip()
+
+        # 处理推理模型可能把结果放在 reasoning_content 的情况
+        if not text and hasattr(msg, 'reasoning_content'):
+            text = (getattr(msg, 'reasoning_content', '') or "").strip()
+
         if not text:
-            print("    dedup: 模型返回空内容，跳过去重")
+            print(f"    dedup: 无输出，跳过去重")
             return items
-        if text.startswith("```"):
-            lines = text.split("\n")
-            text = "\n".join(lines[1:-1]) if len(lines) > 2 else text.strip("`")
+
+        # 尝试从 Markdown 代码块或杂乱文本中提取 JSON
+        if "```json" in text:
+            text = text.split("```json")[1].split("```")[0].strip()
+        elif "```" in text:
+            text = text.split("```")[1].split("```")[0].strip()
+        else:
+            # 寻找第一个 { 和最后一个 }
+            start = text.find('{')
+            end = text.rfind('}')
+            if start != -1 and end != -1:
+                text = text[start:end+1]
+
         result = json.loads(text)
-        keep = result.get("keep", [])
-        print(f"    dedup 发送 {len(items)} 条 → 返回 {len(keep)} 条, 删除 {len(items)-len(keep)} 条")
-        deleted = [items[i]["user_question"][:40] for i in range(len(items)) if i not in keep]
-        if deleted and len(deleted) <= 5:
-            for d in deleted:
-                print(f"      删: {d}")
-        elif deleted:
-            for d in deleted[:3]:
-                print(f"      删: {d}")
-            print(f"      ... 等 {len(deleted)} 条")
-        if keep:
-            return [items[i] for i in keep if i < len(items)]
-        print("    dedup: keep 为空，跳过去重")
-        return items
+        remove = set(result.get("remove", []))
+        
+        if not remove:
+            print("    dedup: 无需删除条目")
+            return items
+
+        kept = [item for i, item in enumerate(items) if i not in remove]
+        print(f"    dedup 删除 {len(remove)} 条, 保留 {len(kept)} 条")
+        
+        # 打印部分删除的例子
+        for idx in sorted(remove)[:3]:
+            if idx < len(items):
+                print(f"      删[{idx}]: {items[idx]['user_question'][:50]}")
+        return kept
+
     except json.JSONDecodeError as e:
         print(f"    dedup JSON 解析失败: {e}")
+        print(f"    原始文本片段: {repr(text[:200])}")
         return items
     except Exception as e:
         print(f"    dedup error: {e}")
@@ -224,13 +259,17 @@ def process_tool(tool_name):
             with open(path, "w", encoding="utf-8") as f:
                 for item in existing[:100]:
                     f.write(json.dumps(item, ensure_ascii=False) + "\n")
-            print(f"    → 已写入 {os.path.basename(path)} ({len(existing[:100])} 条)")
+            print(f"    → 已写入 {os.path.basename(path)} ({min(len(existing), 100)} 条)")
         except Exception as e:
             print(f"    [ERROR] 保存失败: {e}")
 
-    max_rounds = 5
+    # 第一阶段：本地去重凑满 100
+    max_rounds = 10
     for round_num in range(max_rounds):
+        if need == 0:
+            break
         batch_need = min(need, 100)
+        print(f"    第 {round_num+1} 轮: 并发 {CONCURRENCY} 生成 {batch_need} 条 ...")
         results = [None] * batch_need
 
         def gen_item(i):
@@ -257,21 +296,35 @@ def process_tool(tool_name):
                 seen_q.add(q)
                 existing.append(item)
 
-        # 每轮写完，中断可续
-        save()
-        print(f"    累计 {len(existing)} 条 → 已保存")
-
-        if len(existing) >= 90:
-            before = len(existing)
-            existing = dedup_via_llm(existing)
-            seen_q = {item["user_question"] for item in existing}
-            print(f"    去重: {before} → {len(existing)}")
-            save()
-
         existing = existing[:100]
         need = 100 - len(existing)
-        if need == 0:
-            break
+        save()
+
+    # 第二阶段：满 100 后 LLM 去重
+    before = len(existing)
+    existing = dedup_via_llm(tool_name, existing)
+    seen_q = {item["user_question"] for item in existing}
+    print(f"    LLM 去重: {before} → {len(existing)}")
+    save()
+
+    # 第三阶段：去重后若不足，再补
+    need = 100 - len(existing)
+    if need > 0:
+        print(f"    去重后缺 {need} 条，补全 ...")
+        for round_num in range(5):
+            if need == 0:
+                break
+            batch = [generate_one(tool_name, i) for i in range(need)]
+            for item in batch:
+                if item is None:
+                    continue
+                q = item["user_question"]
+                if q not in seen_q:
+                    seen_q.add(q)
+                    existing.append(item)
+            existing = existing[:100]
+            need = 100 - len(existing)
+            save()
 
     print(f"    → {len(existing[:100])} 条")
     return len(existing[:100])
