@@ -186,6 +186,15 @@ def dedup_via_llm(items):
             text = "\n".join(lines[1:-1]) if len(lines) > 2 else text.strip("`")
         result = json.loads(text)
         keep = result.get("keep", [])
+        print(f"    dedup 发送 {len(items)} 条 → 返回 {len(keep)} 条, 删除 {len(items)-len(keep)} 条")
+        deleted = [items[i]["user_question"][:40] for i in range(len(items)) if i not in keep]
+        if deleted and len(deleted) <= 5:
+            for d in deleted:
+                print(f"      删: {d}")
+        elif deleted:
+            for d in deleted[:3]:
+                print(f"      删: {d}")
+            print(f"      ... 等 {len(deleted)} 条")
         if keep:
             return [items[i] for i in keep if i < len(items)]
         print("    dedup: keep 为空，跳过去重")
@@ -211,9 +220,13 @@ def process_tool(tool_name):
     path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
 
     def save():
-        with open(path, "w", encoding="utf-8") as f:
-            for item in existing[:100]:
-                f.write(json.dumps(item, ensure_ascii=False) + "\n")
+        try:
+            with open(path, "w", encoding="utf-8") as f:
+                for item in existing[:100]:
+                    f.write(json.dumps(item, ensure_ascii=False) + "\n")
+            print(f"    → 已写入 {os.path.basename(path)} ({len(existing[:100])} 条)")
+        except Exception as e:
+            print(f"    [ERROR] 保存失败: {e}")
 
     max_rounds = 5
     for round_num in range(max_rounds):
