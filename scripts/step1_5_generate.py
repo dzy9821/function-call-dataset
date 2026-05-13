@@ -174,13 +174,25 @@ def dedup_via_llm(items):
             temperature=0.1,
             max_tokens=4096,
         )
-        text = resp.choices[0].message.content.strip()
+        choice = resp.choices[0]
+        text = (choice.message.content or "").strip()
+        if not text and hasattr(choice.message, 'reasoning_content'):
+            text = (choice.message.reasoning_content or "").strip()
+        if not text:
+            print("    dedup: 模型返回空内容，跳过去重")
+            return items
         if text.startswith("```"):
             lines = text.split("\n")
             text = "\n".join(lines[1:-1]) if len(lines) > 2 else text.strip("`")
         result = json.loads(text)
         keep = result.get("keep", [])
-        return [items[i] for i in keep if i < len(items)]
+        if keep:
+            return [items[i] for i in keep if i < len(items)]
+        print("    dedup: keep 为空，跳过去重")
+        return items
+    except json.JSONDecodeError as e:
+        print(f"    dedup JSON 解析失败: {e}")
+        return items
     except Exception as e:
         print(f"    dedup error: {e}")
         return items
@@ -196,9 +208,15 @@ def process_tool(tool_name):
     need = 100 - len(existing)
     print(f"  {tool_name}: 已有 {len(existing)}, 需 {need} 条")
 
+    path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
+
+    def save():
+        with open(path, "w", encoding="utf-8") as f:
+            for item in existing[:100]:
+                f.write(json.dumps(item, ensure_ascii=False) + "\n")
+
     max_rounds = 5
     for round_num in range(max_rounds):
-        # 并发生成
         batch_need = min(need, 100)
         results = [None] * batch_need
 
@@ -226,26 +244,22 @@ def process_tool(tool_name):
                 seen_q.add(q)
                 existing.append(item)
 
-        print(f"    本轮生成 {batch_need} 条, 去重后累计 {len(existing)} 条")
+        # 每轮写完，中断可续
+        save()
+        print(f"    累计 {len(existing)} 条 → 已保存")
 
-        # LLM 去重
         if len(existing) >= 90:
             before = len(existing)
             existing = dedup_via_llm(existing)
             seen_q = {item["user_question"] for item in existing}
             print(f"    去重: {before} → {len(existing)}")
+            save()
 
-        # 截断到 100
         existing = existing[:100]
         need = 100 - len(existing)
         if need == 0:
             break
 
-    # 保存
-    path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
-    with open(path, "w", encoding="utf-8") as f:
-        for item in existing[:100]:
-            f.write(json.dumps(item, ensure_ascii=False) + "\n")
     print(f"    → {len(existing[:100])} 条")
     return len(existing[:100])
 
