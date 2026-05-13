@@ -84,7 +84,7 @@
 | 同名参数不同 ✗ | 7 | 只提取重叠的参数名 |
 | 不在数据集 | 17 | 无数据，靠 1.5 生成 |
 
-产物：`output/step1/en/{tool}_en.jsonl`（12 文件，560 条，去重后）
+产物：`output/step1/en/{tool}_en.jsonl`（12 文件，560 条，去重后，人工审核后，部分已删除，当前剩下272条）
 
 ### Step 1.3 — 英文→中文翻译
 `python scripts/step1_3_translate.py`
@@ -105,7 +105,14 @@
 ### Step 1.5 — LLM 批量生成（待执行）
 `DEEPSEEK_API_KEY=xxx python scripts/step1_5_generate.py [--tools xxx]`
 
-31 工具各生成 100 条中文数据。每次 API 调用生成 1 条，5 并发，本地精确去重。有必选参数的工具随机混入反例（模糊请求、arguments 为空）。
+31 工具各生成 100 条中文数据。每次 API 调用生成 1 条，5 并发。
+
+三阶段：
+1. 本地精确去重凑满 100 → 自动保存
+2. deepseek-v4-pro 语义去重（去掉几乎完全相同的条目）→ 自动保存
+3. 去重后有缺口自动补全
+
+有必选参数的工具随机混入反例（模糊请求、arguments 为空）。
 
 产物：`output/step1/gen/{tool}_gen.jsonl`（每文件 100 条）
 
