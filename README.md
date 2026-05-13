@@ -57,9 +57,11 @@
   - 产物：`output/step1/en/{tool}_en.jsonl` × 14
 - [x] **1.3 英文→中文翻译** — `scripts/step1_3_translate.py`
   - deepseek-v4-flash，并发 5
-  - 12 工具 560 条已翻译
+  - 12 工具 560 条已翻译（部分数据已手动筛选删除）
   - 产物：`output/step1/zh/{tool}_zh.jsonl`（格式 `{zh, en, arguments}`）
-- [ ] **1.4 参数生成** — 对 ✗ 工具的中文问题调 deepseek-v4-flash 生成匹配我们工具定义的 arguments
+- [ ] **1.4 参数生成** — `scripts/step1_4_args.py`
+  - 对 zh/ 中中文问题 + 工具定义 → deepseek-v4-flash 生成 arguments
+  - 输出：写回 `zh/{tool}_zh.jsonl`
 - [ ] **1.5 LLM 补全** — `scripts/step1_5_generate.py`
   - 合并 zh/ 翻译数据为种子 + gen/ LLM 生成，每工具 100 条
   - 用法：`DEEPSEEK_API_KEY=xxx python scripts/step1_5_generate.py [--tools xxx]`

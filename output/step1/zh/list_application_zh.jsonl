@@ -1,10 +1,7 @@
-{"zh": "把我手机上装的所有应用都列出来。", "en": "List all the apps installed on my phone.", "arguments": {}}
+{"zh": "把我手机里装的所有应用都列出来。", "en": "List all the apps installed on my phone.", "arguments": {}}
 {"zh": "给我看看这个设备上安装了哪些应用。", "en": "Show me the applications installed on this device.", "arguments": {}}
-{"zh": "我没有访问你设备的权限，所以无法查看你安装了哪些应用。不过你可以打开手机的应用列表或设置查看。需要我帮你了解某款特定应用的功能吗？", "en": "What apps do I have installed?", "arguments": {}}
-{"zh": "请列出已安装的App。", "en": "Please list the installed apps.", "arguments": {}}
-{"zh": "你能列出所有安装的应用吗？", "en": "Can you display all installed applications?", "arguments": {}}
-{"zh": "现在把我手机上装的所有应用都列出来。", "en": "List all the apps installed on my phone right now.", "arguments": {}}
-{"zh": "现在给我看看这个设备上安装的应用。", "en": "Show me the applications installed on this device right now.", "arguments": {}}
-{"zh": "我现在装了什么应用？", "en": "What apps do I have installed right now.", "arguments": {}}
-{"zh": "请列出当前已安装的应用。", "en": "Please list the installed apps right now.", "arguments": {}}
-{"zh": "现在能显示所有已安装的应用吗？", "en": "Can you display all installed applications right now.", "arguments": {}}
+{"zh": "请列出已安装的应用。", "en": "Please list the installed apps.", "arguments": {}}
+{"zh": "马上给我看看这个设备上装了哪些应用。", "en": "Show me the applications installed on this device right now.", "arguments": {}}
+{"zh": "你问我当前安装了哪些应用？", "en": "What apps do I have installed right now.", "arguments": {}}
+{"zh": "请列出当前已安装的应用程序。", "en": "Please list the installed apps right now.", "arguments": {}}
+{"zh": "你现在能把所有已安装的应用都显示出来吗？", "en": "Can you display all installed applications right now.", "arguments": {}}
