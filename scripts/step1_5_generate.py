@@ -45,9 +45,13 @@ def load_tool_defs():
     return {t["function"]["name"]: t for t in TOOLS}
 
 
-def validate_args(tool_name, args):
-    if not args:
-        return True
+def validate_args(tool_name, args, required=None):
+    """校验生成的 arguments 是否合法。
+    - set_brightness / set_volume：level 和 direction 必须至少有一个
+    - 其他有必选参数的工具：所有必选参数必须存在且非空
+    """
+    if args is None:
+        return False
     if tool_name in ("set_brightness", "set_volume"):
         has_level = "level" in args
         has_dir = "direction" in args
@@ -55,6 +59,14 @@ def validate_args(tool_name, args):
             return False
         if has_dir and args["direction"] not in ("high", "low"):
             return False
+        return True
+    # 通用必选参数校验（反例的 arguments={} 豁免）
+    if required:
+        if args == {}:  # 反例，豁免
+            return True
+        for r in required:
+            if r not in args or args[r] is None or args[r] == "":
+                return False
     return True
 
 
@@ -113,7 +125,7 @@ def generate_one(tool_name):
         result = json.loads(text)
         if "user_question" in result and "arguments" in result:
             args = result.get("arguments", {})
-            if validate_args(tool_name, args):
+            if validate_args(tool_name, args, required=required):
                 return {
                     "tool_name": tool_name,
                     "user_question": result["user_question"].strip(),
@@ -192,12 +204,25 @@ def dedup_via_llm(tool_name, items):
 
 
 def process_tool(tool_name):
-    """生成 100 条数据。"""
+    """生成 100 条数据。支持续跑：已有文件会被加载继续补全。"""
     path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
-    seen = set()
     results = []
+    seen = set()
 
-    print(f"  {tool_name}: 生成 100 条 ...")
+    # 进度恢复：读取已有数据
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                if line.strip():
+                    item = json.loads(line)
+                    results.append(item)
+                    seen.add(item["user_question"])
+        if len(results) >= 100:
+            print(f"  {tool_name}: 已有 {len(results)} 条，跳过 ✓")
+            return min(len(results), 100)
+        print(f"  {tool_name}: 已有 {len(results)} 条，继续补全至 100 ...")
+    else:
+        print(f"  {tool_name}: 生成 100 条 ...")
 
     def save():
         with open(path, "w", encoding="utf-8") as f:
