@@ -89,7 +89,6 @@ def generate_batch(tool_name, count):
     """
     tp = TOOL_PROMPTS[tool_name]
     param_notes = tp["param_notes"]
-    bad = tp.get("bad_examples", "")
 
     # 从工具定义获取必选参数列表
     all_defs = load_tool_defs()
@@ -97,9 +96,8 @@ def generate_batch(tool_name, count):
     required = tdef["function"]["parameters"].get("required", [])
 
     # 正例 system prompt
-    system_pos = tp["system"] + "\n\n" + f"参数说明：\n{param_notes}"
-    if bad:
-        system_pos += f"\n\n禁止事项：\n{bad}"
+    tool_json = json.dumps(tdef, ensure_ascii=False, indent=2)
+    system_pos = tp["system"] + "\n\n" + f"参数说明：\n{param_notes}" + "\n\n" + f"工具定义：\n{tool_json}"
 
     # 反例 system prompt（仅有必选参数的工具才有）
     has_neg = len(required) > 0
