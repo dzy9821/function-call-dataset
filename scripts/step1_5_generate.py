@@ -25,8 +25,8 @@ GEN_DIR = os.path.join(PROJECT_ROOT, "output", "step1", "gen")
 API_KEY = os.environ.get("DEEPSEEK_API_KEY", "sk-6758987f6c594753b747a6e4c2f94268")
 BASE_URL = "https://api.deepseek.com"
 MODEL = "deepseek-v4-flash"
-DEDUP_MODEL = "deepseek-reasoner"
-CONCURRENCY = 10
+DEDUP_MODEL = "deepseek-v4-pro"
+CONCURRENCY = 5
 
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
 
@@ -159,11 +159,14 @@ def generate_batch(tool_name, count):
 
 
 def dedup_via_llm(items):
-    """让模型去重：输入 N 条，返回应保留的索引列表。"""
+    """让模型精选：从 N 条中选出表达最多样化的子集。"""
     numbered = "\n".join(f"{i}: {item['user_question']}" for i, item in enumerate(items))
-    prompt = f"""以下是一组用户向手机助手提出的问题，有些可能语义重复。
+    prompt = f"""以下是一组用户请求，请按语义多样性精选，保留表达各不相同的条目。
 
-请找出语义重复的问题组，每组只保留表达最自然的一条。
+要求：
+- 语义相近的（只是换了几个词、句式略有差异）只保留一条最自然的
+- 确保保留下来的条目覆盖不同的表达角度、场景和语言风格
+- 尽量多保留，但不要留语义重复的
 
 {numbered}
 
