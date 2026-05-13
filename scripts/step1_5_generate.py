@@ -2,8 +2,7 @@
 Step 1.5 — LLM 数据生成（v2）
 
 - 每工具独立提示词（prompts.py）
-- API Key 从环境变量 DEEPSEEK_API_KEY 读取
-- 每批 10 条，随机抽取话术模板
+- 每次 API 调用生成 1 条，10 并发
 - 满 100 条后 LLM 去重，再补至 100
 - 可反复运行，只补差额
 """
@@ -83,23 +82,18 @@ def validate_args(tool_name, args):
     return True
 
 
-def generate_batch(tool_name, count):
-    """生成一批数据，返回 list[dict]。
-    对于有必选参数的工具，随机混入反例（模糊请求、arguments为空）。
-    """
+def generate_one(tool_name, template_idx):
+    """生成 1 条数据（正例或反例）。"""
     tp = TOOL_PROMPTS[tool_name]
     param_notes = tp["param_notes"]
 
-    # 从工具定义获取必选参数列表
     all_defs = load_tool_defs()
     tdef = all_defs[tool_name]
     required = tdef["function"]["parameters"].get("required", [])
 
-    # 正例 system prompt
     tool_json = json.dumps(tdef, ensure_ascii=False, indent=2)
     system_pos = tp["system"] + "\n\n" + f"参数说明：\n{param_notes}" + "\n\n" + f"工具定义：\n{tool_json}"
 
-    # 反例 system prompt（仅有必选参数的工具才有）
     has_neg = len(required) > 0
     if has_neg:
         req_str = "、".join(required)
@@ -107,53 +101,50 @@ def generate_batch(tool_name, count):
 用户提到了和 "{tool_name}" 相关的需求，但表达模糊、遗漏了必选参数（{req_str}），无法调用工具。
 此时 arguments 必须为空对象 {{}}。"""
 
-    items = []
-    for i in range(count):
-        # 随机选 style，有必选参数时加入反例 style
-        pool = STYLES + (["NEGATIVE"] if has_neg else [])
-        style = random.choice(pool)
+    pool = STYLES + (["NEGATIVE"] if has_neg else [])
+    style = random.choice(pool)
 
-        if style == "NEGATIVE":
-            user = f"""请生成 1 条反例用户问题。
+    if style == "NEGATIVE":
+        user = f"""请生成 1 条反例用户问题。
 用户说了一句模糊的话，提到了工具功能但遗漏了必选参数（{req_str}），无法调用。
 输出格式（只输出 JSON）：
 {{"user_question": "模糊的请求", "arguments": {{}}}}"""
-            system = system_neg
-        else:
-            user = f"""请生成 1 条中文用户问题。
+        system = system_neg
+    else:
+        user = f"""请生成 1 条中文用户问题。
 
 表达风格：{style}
 
 输出格式（只输出 JSON）：
 {{"user_question": "...", "arguments": {{...}}}}"""
-            system = system_pos
+        system = system_pos
 
-        try:
-            resp = client.chat.completions.create(
-                model=MODEL,
-                messages=[
-                    {"role": "system", "content": system},
-                    {"role": "user", "content": user},
-                ],
-                temperature=0.9,
-                max_tokens=512,
-            )
-            text = resp.choices[0].message.content.strip()
-            if text.startswith("```"):
-                lines = text.split("\n")
-                text = "\n".join(lines[1:-1]) if len(lines) > 2 else text.strip("`")
-            result = json.loads(text)
-            if "user_question" in result and "arguments" in result:
-                args = result.get("arguments", {})
-                if validate_args(tool_name, args):
-                    items.append({
-                        "tool_name": tool_name,
-                        "user_question": result["user_question"].strip(),
-                        "arguments": args,
-                    })
-        except Exception as e:
-            print(f"    gen error: {e}")
-    return items
+    try:
+        resp = client.chat.completions.create(
+            model=MODEL,
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+            temperature=0.9,
+            max_tokens=512,
+        )
+        text = resp.choices[0].message.content.strip()
+        if text.startswith("```"):
+            lines = text.split("\n")
+            text = "\n".join(lines[1:-1]) if len(lines) > 2 else text.strip("`")
+        result = json.loads(text)
+        if "user_question" in result and "arguments" in result:
+            args = result.get("arguments", {})
+            if validate_args(tool_name, args):
+                return {
+                    "tool_name": tool_name,
+                    "user_question": result["user_question"].strip(),
+                    "arguments": args,
+                }
+    except Exception as e:
+        print(f"    gen error: {e}")
+    return None
 
 
 def dedup_via_llm(items):
@@ -207,13 +198,35 @@ def process_tool(tool_name):
 
     max_rounds = 5
     for round_num in range(max_rounds):
-        # 生成一批
-        batch = generate_batch(tool_name, min(need, 100))
-        for item in batch:
+        # 并发生成
+        batch_need = min(need, 100)
+        results = [None] * batch_need
+
+        def gen_item(i):
+            return i, generate_one(tool_name, i)
+
+        with ThreadPoolExecutor(max_workers=CONCURRENCY) as pool:
+            futures = {pool.submit(gen_item, i): i for i in range(batch_need)}
+            done = 0
+            ok = 0
+            for future in as_completed(futures):
+                i, result = future.result()
+                results[i] = result
+                done += 1
+                if result is not None:
+                    ok += 1
+                if done % max(1, batch_need // 5) == 0 or done == batch_need:
+                    print(f"    [{done}/{batch_need}] 成功 {ok}")
+
+        for item in results:
+            if item is None:
+                continue
             q = item["user_question"]
             if q not in seen_q:
                 seen_q.add(q)
                 existing.append(item)
+
+        print(f"    本轮生成 {batch_need} 条, 去重后累计 {len(existing)} 条")
 
         # LLM 去重
         if len(existing) >= 90:
