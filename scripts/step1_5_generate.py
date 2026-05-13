@@ -25,6 +25,7 @@ GEN_DIR = os.path.join(PROJECT_ROOT, "output", "step1", "gen")
 API_KEY = os.environ.get("DEEPSEEK_API_KEY", "sk-6758987f6c594753b747a6e4c2f94268")
 BASE_URL = "https://api.deepseek.com"
 MODEL = "deepseek-v4-flash"
+DEDUP_MODEL = "deepseek-reasoner"
 CONCURRENCY = 10
 
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
@@ -173,7 +174,7 @@ def dedup_via_llm(items):
 
     try:
         resp = client.chat.completions.create(
-            model=MODEL,
+            model=DEDUP_MODEL,
             messages=[
                 {"role": "system", "content": "你是数据清洗专家，只输出 JSON。"},
                 {"role": "user", "content": prompt},
