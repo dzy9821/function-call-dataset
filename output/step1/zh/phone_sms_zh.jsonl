@@ -1,8 +1,8 @@
-{"zh": "给+14165550101发条短信，说“我马上到”。", "en": "Send a text to +14165550101 saying \"I'm on my way.\".", "arguments": {}}
-{"zh": "给+14165550102发短信，说“有空给我打电话”。", "en": "Please SMS +14165550102 with \"Please call me when you're free.\".", "arguments": {}}
-{"zh": "给+14165550104发条消息，说“我现在在外头了”。", "en": "Send +14165550104 a message that says \"I'm outside now.\".", "arguments": {}}
-{"zh": "给+14165550105发条短信，内容是“你能把地址发给我吗？”", "en": "Can you send an SMS to +14165550105 saying \"Can you send me the address?\"?", "arguments": {}}
-{"zh": "给+14165550106发短信说“会议改到下午3点了。”", "en": "Send a text to +14165550106 saying \"Meeting moved to 3 PM.\".", "arguments": {}}
-{"zh": "请给+14165550107发短信，内容写“别忘了带文件”。", "en": "Please SMS +14165550107 with \"Don't forget the documents.\".", "arguments": {}}
-{"zh": "给+14165550109发条消息说：“通话结束后我给你发短信。”", "en": "Send +14165550109 a message that says \"I'll text you after the call.\".", "arguments": {}}
-{"zh": "你能给+14165550110发条短信，说“谢谢更新！”吗？", "en": "Can you send an SMS to +14165550110 saying \"Thanks for the update!\"?", "arguments": {}}
+{"zh": "给+14165550101发条短信，说“我马上到”。", "en": "Send a text to +14165550101 saying \"I'm on my way.\".", "arguments": {"contact_name": "+14165550101", "message": "我马上到"}}
+{"zh": "给+14165550102发短信，说“有空给我打电话”。", "en": "Please SMS +14165550102 with \"Please call me when you're free.\".", "arguments": {"contact_name": "+14165550102", "message": "有空给我打电话"}}
+{"zh": "给+14165550104发条消息，说“我现在在外头了”。", "en": "Send +14165550104 a message that says \"I'm outside now.\".", "arguments": {"contact_name": "+14165550104", "message": "我现在在外头了"}}
+{"zh": "给+14165550105发条短信，内容是“你能把地址发给我吗？”", "en": "Can you send an SMS to +14165550105 saying \"Can you send me the address?\"?", "arguments": {"contact_name": "+14165550105", "message": "你能把地址发给我吗？"}}
+{"zh": "给+14165550106发短信说“会议改到下午3点了。”", "en": "Send a text to +14165550106 saying \"Meeting moved to 3 PM.\".", "arguments": {"contact_name": "+14165550106", "message": "会议改到下午3点了。"}}
+{"zh": "请给+14165550107发短信，内容写“别忘了带文件”。", "en": "Please SMS +14165550107 with \"Don't forget the documents.\".", "arguments": {"contact_name": "+14165550107", "message": "别忘了带文件"}}
+{"zh": "给+14165550109发条消息说：“通话结束后我给你发短信。”", "en": "Send +14165550109 a message that says \"I'll text you after the call.\".", "arguments": {"contact_name": "+14165550109", "message": "通话结束后我给你发短信。"}}
+{"zh": "你能给+14165550110发条短信，说“谢谢更新！”吗？", "en": "Can you send an SMS to +14165550110 saying \"Thanks for the update!\"?", "arguments": {"contact_name": "+14165550110", "message": "谢谢更新！"}}

@@ -1,8 +1,8 @@
-{"zh": "直接拨打+14165550101。", "en": "Call +14165550101 directly.", "arguments": {}}
-{"zh": "请给+14165550102打个电话。", "en": "Please place a call to +14165550102.", "arguments": {}}
-{"zh": "拨打+14165550103。", "en": "Dial +14165550103 and call.", "arguments": {}}
-{"zh": "你能打+14165550105这个电话吗？", "en": "Can you call +14165550105?", "arguments": {}}
-{"zh": "直接打+14165550106。", "en": "Call +14165550106 directly.", "arguments": {}}
-{"zh": "请给+14165550107打个电话。", "en": "Please place a call to +14165550107.", "arguments": {}}
-{"zh": "给+14165550109打个电话。", "en": "Make a phone call to +14165550109.", "arguments": {}}
-{"zh": "你能打+14165550110吗？", "en": "Can you call +14165550110?", "arguments": {}}
+{"zh": "直接拨打+14165550101。", "en": "Call +14165550101 directly.", "arguments": {"contact_name": "+14165550101"}}
+{"zh": "请给+14165550102打个电话。", "en": "Please place a call to +14165550102.", "arguments": {"contact_name": "+14165550102"}}
+{"zh": "拨打+14165550103。", "en": "Dial +14165550103 and call.", "arguments": {"contact_name": "+14165550103"}}
+{"zh": "你能打+14165550105这个电话吗？", "en": "Can you call +14165550105?", "arguments": {"contact_name": "+14165550105"}}
+{"zh": "直接打+14165550106。", "en": "Call +14165550106 directly.", "arguments": {"contact_name": "+14165550106"}}
+{"zh": "请给+14165550107打个电话。", "en": "Please place a call to +14165550107.", "arguments": {"contact_name": "+14165550107"}}
+{"zh": "给+14165550109打个电话。", "en": "Make a phone call to +14165550109.", "arguments": {"contact_name": "+14165550109"}}
+{"zh": "你能打+14165550110吗？", "en": "Can you call +14165550110?", "arguments": {"contact_name": "+14165550110"}}

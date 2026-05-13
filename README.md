@@ -62,8 +62,9 @@
 - [ ] **1.4 参数生成** — `scripts/step1_4_args.py`
   - 对 zh/ 中中文问题 + 工具定义 → deepseek-v4-flash 生成 arguments
   - 输出：写回 `zh/{tool}_zh.jsonl`
-- [ ] **1.5 LLM 补全** — `scripts/step1_5_generate.py`
-  - 合并 zh/ 翻译数据为种子 + gen/ LLM 生成，每工具 100 条
+- [ ] **1.5 LLM 补全** — `scripts/step1_5_generate.py`（已简化）
+  - 31 工具各生成 100 条，本地去重，不检查已有数据
+  - 1.4 生成的 zh/ arguments 需手动审查
   - 用法：`DEEPSEEK_API_KEY=xxx python scripts/step1_5_generate.py [--tools xxx]`
 - [ ] **1.6 输出合并** — 待定
 
