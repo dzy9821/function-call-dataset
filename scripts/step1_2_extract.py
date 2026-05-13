@@ -153,20 +153,38 @@ def main():
     our = load_our_params()
     src = get_source_params()
 
-    # 打印参数对比
-    print(f"{'工具':<30s} {'原始参数':<40s} {'我们的参数':<40s} {'匹配':>5s}")
-    print("-" * 120)
+    # 分组
+    matching = []
+    name_match_but_params_differ = []
+    not_in_dataset = []
+
     for name in sorted(our.keys()):
         our_set = set(our[name].keys())
         src_set = src.get(name, set())
-        match = our_set == src_set
-        status = "✓" if match else "✗"
         src_str = ", ".join(sorted(src_set)) if src_set else "(无)"
         our_str = ", ".join(sorted(our_set)) if our_set else "(无)"
-        print(f"{name:<30s} {src_str:<40s} {our_str:<40s} {status:>5s}")
 
-    hit = sum(1 for n in our if set(our[n].keys()) == src.get(n, set()))
-    print(f"\n参数匹配: {hit} 个, 不匹配: {len(our) - hit} 个\n")
+        if our_set == src_set:
+            matching.append((name, src_str, our_str))
+        elif name in src:
+            name_match_but_params_differ.append((name, src_str, our_str))
+        else:
+            not_in_dataset.append((name, src_str, our_str))
+
+    print(f"{'工具':<30s} {'原始参数':<40s} {'我们的参数':<40s} {'匹配':>5s}")
+    print("-" * 120)
+    for name, src_str, our_str in matching:
+        print(f"{name:<30s} {src_str:<40s} {our_str:<40s} {'✓':>5s}")
+    print()
+    for name, src_str, our_str in name_match_but_params_differ:
+        print(f"{name:<30s} {src_str:<40s} {our_str:<40s} {'✗':>5s}")
+    print()
+    for name, src_str, our_str in not_in_dataset:
+        print(f"{name:<30s} {src_str:<40s} {our_str:<40s} {'-':>5s}")
+
+    print(f"\n参数匹配: {len(matching)} 个")
+    print(f"同名参数不同: {len(name_match_but_params_differ)} 个")
+    print(f"不在数据集中: {len(not_in_dataset)} 个\n")
 
     # 提取
     results = extract_matching()

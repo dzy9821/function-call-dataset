@@ -29,10 +29,10 @@
   },
   {
     "tool": "open_application",
-    "source_count": 0,
-    "need_translate": 0,
-    "need_generate": 100,
-    "source": "llm"
+    "source_count": 30,
+    "need_translate": 30,
+    "need_generate": 70,
+    "source": "dataset"
   },
   {
     "tool": "phone_call",
@@ -57,10 +57,10 @@
   },
   {
     "tool": "set_brightness",
-    "source_count": 95,
-    "need_translate": 95,
-    "need_generate": 5,
-    "source": "dataset"
+    "source_count": 0,
+    "need_translate": 0,
+    "need_generate": 100,
+    "source": "llm"
   },
   {
     "tool": "show_map",
@@ -106,13 +106,6 @@
   },
   {
     "tool": "navigate",
-    "source_count": 0,
-    "need_translate": 0,
-    "need_generate": 100,
-    "source": "llm"
-  },
-  {
-    "tool": "open_browser",
     "source_count": 0,
     "need_translate": 0,
     "need_generate": 100,

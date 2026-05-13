@@ -1,5 +1,5 @@
 {"zh": "我的电池状态怎么样？", "en": "What's my battery status?", "arguments": {}}
-{"zh": "看看电池信息。", "en": "Check the battery information.", "arguments": {}}
+{"zh": "检查一下电池信息。", "en": "Check the battery information.", "arguments": {}}
 {"zh": "给我看看电池状态。", "en": "Show me the battery status.", "arguments": {}}
-{"zh": "我还剩多少电量？", "en": "How much battery do I have left?", "arguments": {}}
-{"zh": "请查一下电池的详情。", "en": "Please get the battery details.", "arguments": {}}
+{"zh": "我还有多少电？", "en": "How much battery do I have left?", "arguments": {}}
+{"zh": "帮我查一下电池的具体信息。", "en": "Please get the battery details.", "arguments": {}}
