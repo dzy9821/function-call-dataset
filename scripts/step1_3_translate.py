@@ -2,53 +2,43 @@
 Step 1.3 — 英文→中文翻译（并发单条）
 
 逐条翻译 _en.jsonl 中的英文问题，使用并发加速。
-每次 LLM 调用只翻译一条，确保质量。
 """
 
 import json
 import os
-import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+from openai import OpenAI
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STEP1_DIR = os.path.join(PROJECT_ROOT, "output", "step1")
-LLM_URL = "http://182.150.59.81:31845/v1/chat/completions"
-LLM_MODEL = "Qwen3-30B-A3B-Instruct-2507"
-CONCURRENCY = 5  # 并发数
+
+API_KEY = os.environ.get("DEEPSEEK_API_KEY", "sk-6758987f6c594753b747a6e4c2f94268")
+BASE_URL = "https://api.deepseek.com"
+MODEL = "deepseek-v4-flash"
+CONCURRENCY = 5
+
+client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
 
 
 def translate_one(en_text: str) -> str:
-    """翻译单条英文为中文。"""
-    payload = {
-        "model": LLM_MODEL,
-        "messages": [
-            {
-                "role": "system",
-                "content": "你是翻译助手。将用户输入的英文翻译为自然口语化的中文，只输出翻译结果，不要解释。",
-            },
-            {
-                "role": "user",
-                "content": en_text,
-            },
-        ],
-        "temperature": 0.3,
-        "max_tokens": 512,
-    }
-    data = json.dumps(payload).encode("utf-8")
-    req = urllib.request.Request(
-        LLM_URL, data=data, headers={"Content-Type": "application/json"}
-    )
     try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            body = json.loads(resp.read().decode("utf-8"))
-        return body["choices"][0]["message"]["content"].strip()
+        resp = client.chat.completions.create(
+            model=MODEL,
+            messages=[
+                {"role": "system", "content": "将英文翻译为自然口语化的中文，只输出翻译结果。"},
+                {"role": "user", "content": en_text},
+            ],
+            temperature=0.3,
+            max_tokens=256,
+        )
+        return resp.choices[0].message.content.strip()
     except Exception as e:
         print(f"    [ERROR] {e}")
-        return en_text  # 失败时返回原文
+        return en_text
 
 
 def process_tool(tool: str):
-    """处理单个工具的翻译。"""
     src_path = os.path.join(STEP1_DIR, "en", f"{tool}_en.jsonl")
     dst_path = os.path.join(STEP1_DIR, "zh", f"{tool}_zh.jsonl")
 
@@ -77,7 +67,6 @@ def process_tool(tool: str):
             if done % 10 == 0 or done == total:
                 print(f"    {done}/{total}")
 
-    # 写入
     with open(dst_path, "w", encoding="utf-8") as f:
         for item, zh in zip(items, results):
             record = {"zh": zh, "en": item["en"], "arguments": item["arguments"]}
@@ -89,7 +78,6 @@ def process_tool(tool: str):
 
 def main():
     en_dir = os.path.join(STEP1_DIR, "en")
-    # 收集所有 _en.jsonl 文件
     files = sorted(f for f in os.listdir(en_dir) if f.endswith("_en.jsonl"))
     if not files:
         print("没有 _en.jsonl 文件需要翻译")
