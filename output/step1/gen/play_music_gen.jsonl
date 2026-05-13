@@ -1,0 +1,100 @@
+{"tool_name": "play_music", "user_question": "今天加班到很晚，心情有点低落，能不能放一首陈奕迅的《好久不见》来治愈一下？", "arguments": {"song_name": "好久不见", "artist": "陈奕迅"}}
+{"tool_name": "play_music", "user_question": "给我放首周杰伦的《晴天》", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "放一首周杰伦的《晴天》", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "刚加完班好累，放首陈奕迅的《好久不见》放松一下吧", "arguments": {"song_name": "好久不见", "artist": "陈奕迅"}}
+{"tool_name": "play_music", "user_question": "今天心情不太好，帮我放一首周杰伦的稻香吧", "arguments": {"song_name": "稻香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "麻烦您播放一首《稻香》可以吗？", "arguments": {"song_name": "稻香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "来一首周杰伦的晴天", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "帮我放一首邓紫棋的《光年之外》吧，最近一直在循环。", "arguments": {"song_name": "光年之外", "artist": "邓紫棋"}}
+{"tool_name": "play_music", "user_question": "随便放首歌听听", "arguments": {}}
+{"tool_name": "play_music", "user_question": "今天天气特别好，心情也跟着明朗起来，突然很想重温一下青春的感觉，能帮我放一首周杰伦的《晴天》吗？", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "放一首周杰伦的歌", "arguments": {"artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "可以帮我放一首陈奕迅的《十年》吗？", "arguments": {"song_name": "十年", "artist": "陈奕迅"}}
+{"tool_name": "play_music", "user_question": "能帮我放一首周杰伦的《晴天》吗？", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "嘿，放首歌听听", "arguments": {}}
+{"tool_name": "play_music", "user_question": "刚跑完步，累死了，放一首动感的歌提提神吧，比如潘玮柏的《反转地球》？", "arguments": {"song_name": "反转地球", "artist": "潘玮柏"}}
+{"tool_name": "play_music", "user_question": "你能帮我播放一首周杰伦的老歌吗？", "arguments": {"artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "最近压力有点大，能帮我播放一首周杰伦的《七里香》放松一下心情吗？", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "帮我放一首周杰伦的《晴天》吧。", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "今天加班到很晚，想放首陈奕迅的《稳稳的幸福》给自己打个气。", "arguments": {"song_name": "稳稳的幸福", "artist": "陈奕迅"}}
+{"tool_name": "play_music", "user_question": "能帮我播一首周杰伦的《七里香》吗？", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "我想听周杰伦的《七里香》", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "放一首周杰伦的《七里香》", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "来首陈奕迅的《十年》听听呗", "arguments": {"song_name": "十年", "artist": "陈奕迅"}}
+{"tool_name": "play_music", "user_question": "刚加完班，感觉好累，帮我放一首周杰伦的《七里香》放松一下吧。", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "给我放一首王菲的《红豆》", "arguments": {"song_name": "红豆", "artist": "王菲"}}
+{"tool_name": "play_music", "user_question": "今天心情特别低落，能帮我放一首周杰伦的《晴天》吗？", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "今天心情不错，刚跑完步想放松一下，帮我放首歌吧", "arguments": {}}
+{"tool_name": "play_music", "user_question": "请帮我播放一首音乐，歌名是《晴天》，歌手是周杰伦，谢谢！", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "诶，能不能播首老歌，比如《海阔天空》？", "arguments": {"song_name": "海阔天空", "artist": "Beyond"}}
+{"tool_name": "play_music", "user_question": "在家写作业有点困，帮我放一首周杰伦的《晴天》提提神。", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "午后的咖啡馆里，来点慵懒的爵士乐吧，帮我放一首Norah Jones的《Don't Know Why》。", "arguments": {"song_name": "Don't Know Why", "artist": "Norah Jones"}}
+{"tool_name": "play_music", "user_question": "可以请您帮我播放一首周杰伦的《七里香》吗？", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "今天工作了一天特别累，回到家想瘫在沙发上听一首老歌放松一下，帮我放一首王菲的《红豆》吧。", "arguments": {"song_name": "红豆", "artist": "王菲"}}
+{"tool_name": "play_music", "user_question": "今天心情特别好，突然很想听一首老歌，帮我放一下邓丽君的《甜蜜蜜》吧，那旋律太经典了。", "arguments": {"song_name": "甜蜜蜜", "artist": "邓丽君"}}
+{"tool_name": "play_music", "user_question": "放首林俊杰的《江南》", "arguments": {"song_name": "江南", "artist": "林俊杰"}}
+{"tool_name": "play_music", "user_question": "来首周杰伦的晴天呗", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "今天心情特别好，能不能帮我播放一首周杰伦的《七里香》，我想在午后阳光里慢慢听。", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "给我放一首邓紫棋的《光年之外》吧。", "arguments": {"song_name": "光年之外", "artist": "邓紫棋"}}
+{"tool_name": "play_music", "user_question": "能放一首邓丽君的《月亮代表我的心》吗？", "arguments": {"song_name": "月亮代表我的心", "artist": "邓丽君"}}
+{"tool_name": "play_music", "user_question": "我在厨房做饭，想听点怀旧的老歌，放一首《甜蜜蜜》吧，邓丽君的。", "arguments": {"song_name": "甜蜜蜜", "artist": "邓丽君"}}
+{"tool_name": "play_music", "user_question": "我想听周杰伦的《晴天》，那首钢琴前奏太美了。", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "正在厨房切菜，帮我放首《小美满》吧，周深的。", "arguments": {"song_name": "小美满", "artist": "周深"}}
+{"tool_name": "play_music", "user_question": "给我放一首王菲的《如愿》", "arguments": {"song_name": "如愿", "artist": "王菲"}}
+{"tool_name": "play_music", "user_question": "今天工作特别累，想放松一下，能不能帮我播放一首经典的老歌，比如邓丽君的《月亮代表我的心》，让我舒缓一下情绪？", "arguments": {"song_name": "月亮代表我的心", "artist": "邓丽君"}}
+{"tool_name": "play_music", "user_question": "随便放个周杰伦的歌听听呗", "arguments": {"artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "放首歌听听呗", "arguments": {}}
+{"tool_name": "play_music", "user_question": "我最近工作压力好大，想找一首经典的粤语老歌来舒缓情绪，就选陈慧娴的《千千阙歌》吧，帮我播放一下这首歌。", "arguments": {"song_name": "千千阙歌", "artist": "陈慧娴"}}
+{"tool_name": "play_music", "user_question": "嘿，帮我放首周杰伦的晴天呗", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "可以帮我播放一首王菲的《传奇》吗？", "arguments": {"song_name": "传奇", "artist": "王菲"}}
+{"tool_name": "play_music", "user_question": "刚下班回到家，累得不想动，帮我放首轻快的歌提提神吧。", "arguments": {"song_name": "日不落", "artist": "蔡依林"}}
+{"tool_name": "play_music", "user_question": "今天加班好累，帮我放一首周杰伦的歌放松一下吧。", "arguments": {"artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "麻烦播放一首周杰伦的歌吧。", "arguments": {"artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "最近心情不太好，想听一首经典的老歌来放松一下，能帮我播放周杰伦的《七里香》吗？", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "今天心情不太好，能帮我放一首周杰伦的《晴天》来缓解一下吗？", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "放首周杰伦的歌听听呗", "arguments": {"artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "请帮我播放一首歌好吗？", "arguments": {}}
+{"tool_name": "play_music", "user_question": "随便放首歌听听呗，最近有啥好听的？", "arguments": {}}
+{"tool_name": "play_music", "user_question": "周末在家打扫卫生，想放点轻松的旋律，帮我播一首《小幸运》吧。", "arguments": {"song_name": "小幸运"}}
+{"tool_name": "play_music", "user_question": "最近心情有点低落，能不能帮我放一首周杰伦的《稻香》来回忆一下童年的感觉？", "arguments": {"song_name": "稻香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "能不能放一首陈奕迅的《十年》啊", "arguments": {"song_name": "十年", "artist": "陈奕迅"}}
+{"tool_name": "play_music", "user_question": "给我放一首陈奕迅的《十年》吧", "arguments": {"song_name": "十年", "artist": "陈奕迅"}}
+{"tool_name": "play_music", "user_question": "可以麻烦您帮我播放一首周杰伦的《七里香》吗？", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "请帮我播放一首周杰伦的歌吧，谢谢！", "arguments": {"artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "来首周杰伦的歌呗", "arguments": {"artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "来一首邓紫棋的《光年之外》吧，最近特别喜欢。", "arguments": {"song_name": "光年之外", "artist": "邓紫棋"}}
+{"tool_name": "play_music", "user_question": "今天心情有点低沉，能帮我播一首陈奕迅的《好久不见》来缓解一下情绪吗？", "arguments": {"song_name": "好久不见", "artist": "陈奕迅"}}
+{"tool_name": "play_music", "user_question": "我在准备晚餐，想听邓丽君的《甜蜜蜜》。", "arguments": {"song_name": "甜蜜蜜", "artist": "邓丽君"}}
+{"tool_name": "play_music", "user_question": "今天心情不好，放首周杰伦的《晴天》给我听听吧。", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "昨晚熬夜加班，现在困得不行，放一首提神的摇滚乐吧，比如Gala的《追梦赤子心》", "arguments": {"song_name": "追梦赤子心", "artist": "Gala"}}
+{"tool_name": "play_music", "user_question": "难得周末在家放松，突然很想听一首老歌，记得大学时经常循环播放的那首《夜曲》，周杰伦唱的，能帮我放一下吗？", "arguments": {"song_name": "夜曲", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "请播放一首王菲的《红豆》，我想在雨天听。", "arguments": {"song_name": "红豆", "artist": "王菲"}}
+{"tool_name": "play_music", "user_question": "可以放一首邓紫棋的《光年之外》吗？", "arguments": {"song_name": "光年之外", "artist": "邓紫棋"}}
+{"tool_name": "play_music", "user_question": "我最近心情不太好，想听一首周杰伦的《七里香》来回忆一下青春，你能帮我放一下吗？", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "请帮我播放一首周杰伦的《晴天》，谢谢。", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "你好，可以帮我播放一首周杰伦的《晴天》吗？谢谢！", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "今天加班好累，帮我放首周杰伦的歌提提神吧", "arguments": {"artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "您好，可以帮我播放一首《七里香》吗？", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "正在咖啡馆里写代码，背景音乐太单调了，能帮我播放一首王菲的《人间》吗？那空灵的嗓音最适合这种专注又放松的氛围了。", "arguments": {"song_name": "人间", "artist": "王菲"}}
+{"tool_name": "play_music", "user_question": "今天心情不好，想听一首周杰伦的《晴天》来缓解一下。", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "麻烦您帮我播放周杰伦的《晴天》，谢谢。", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "请帮我播放一首邓丽君的老歌，谢谢。", "arguments": {"artist": "邓丽君"}}
+{"tool_name": "play_music", "user_question": "麻烦您播放一首邓丽君的《月亮代表我的心》好吗？", "arguments": {"song_name": "月亮代表我的心", "artist": "邓丽君"}}
+{"tool_name": "play_music", "user_question": "我在打扫房间，能放首周杰伦的歌吗？", "arguments": {"artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "最近心情不太好，帮我放一首邓丽君的《漫步人生路》来舒缓一下情绪吧，那种温柔的旋律很适合当下的氛围。", "arguments": {"artist": "邓丽君", "song_name": "漫步人生路"}}
+{"tool_name": "play_music", "user_question": "最近心情不太好，能帮我放一首周杰伦的《稻香》来缓解一下吗？", "arguments": {"song_name": "稻香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "今天心情特别好，来一首邓紫棋的《光年之外》助助兴吧！", "arguments": {"song_name": "光年之外", "artist": "邓紫棋"}}
+{"tool_name": "play_music", "user_question": "今天加班到很晚，整个人都有点疲惫，能不能帮我放一首陈奕迅的《富士山下》来放松一下心情？", "arguments": {"song_name": "富士山下", "artist": "陈奕迅"}}
+{"tool_name": "play_music", "user_question": "今天心情特别好，想听一首周杰伦的《晴天》来回忆青春时光。", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "来首周杰伦的稻香", "arguments": {"song_name": "稻香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "来首《十年》，陈奕迅的", "arguments": {"song_name": "十年", "artist": "陈奕迅"}}
+{"tool_name": "play_music", "user_question": "嘿，随便放首歌听听呗，啥都行～", "arguments": {}}
+{"tool_name": "play_music", "user_question": "刚跑完步，来首节奏感强的歌，放个《Uptown Funk》吧，Bruno Mars的。", "arguments": {"song_name": "Uptown Funk", "artist": "Bruno Mars"}}
+{"tool_name": "play_music", "user_question": "您好，麻烦帮我播放一首陈奕迅的《十年》，谢谢。", "arguments": {"song_name": "十年", "artist": "陈奕迅"}}
+{"tool_name": "play_music", "user_question": "今天心情不错，来点轻松的音乐吧，帮我播一首邓紫棋的《光年之外》。", "arguments": {"song_name": "光年之外", "artist": "邓紫棋"}}
+{"tool_name": "play_music", "user_question": "我正在做饭，放一首《稻香》吧，让我心情好一点。", "arguments": {"song_name": "稻香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "你可以帮我播放一首邓丽君的《月亮代表我的心》吗？", "arguments": {"song_name": "月亮代表我的心", "artist": "邓丽君"}}
+{"tool_name": "play_music", "user_question": "正在厨房做晚饭，想听点轻快的歌，帮我放一首《小苹果》吧。", "arguments": {"song_name": "小苹果"}}
+{"tool_name": "play_music", "user_question": "你能播放周杰伦的《七里香》吗？", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "来点音乐呗", "arguments": {}}
+{"tool_name": "play_music", "user_question": "来一首周杰伦的《七里香》", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}

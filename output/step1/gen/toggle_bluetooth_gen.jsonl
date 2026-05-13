@@ -1,0 +1,100 @@
+{"tool_name": "toggle_bluetooth", "user_question": "能帮我切换一下蓝牙吗？", "arguments": {}}
+{"tool_name": "toggle_bluetooth", "user_question": "我刚上车，想连蓝牙听歌，帮我打开蓝牙吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我的蓝牙耳机没电了，我要关闭手机蓝牙来省电。", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "关掉蓝牙", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "我今天想用蓝牙音箱播放音乐，麻烦你帮我打开手机上的蓝牙功能吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我要登机了，飞机上不能用蓝牙，帮我把它关掉吧。", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "请问可以帮我打开蓝牙吗？", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "马上要开车出门，帮我打开蓝牙连接车载音响放歌。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我把蓝牙打开呗", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我要连接车载蓝牙，请帮我打开蓝牙。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我接下来要连接蓝牙耳机听歌，麻烦帮我把蓝牙功能打开一下。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "你能帮我开启蓝牙吗？", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "麻烦您帮我打开蓝牙，可以吗？", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我打开蓝牙呗，谢啦", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "打开蓝牙", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我开下蓝牙呗", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我打开蓝牙呗。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "你能帮我把蓝牙关掉吗？", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "航班马上起飞了，请帮我关闭蓝牙以遵守航空规定。", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "把蓝牙打开。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我刚买了一副蓝牙耳机，帮我打开蓝牙功能吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "由于我准备在飞机上使用电子设备，按照航空规定需要关闭所有无线通信功能，所以请帮我暂时关闭蓝牙连接。", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我把蓝牙打开。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "晚上睡觉了，把蓝牙关掉省电吧。", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "我在开车，帮我打开蓝牙连接车载音响。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "麻烦您帮我打开蓝牙，谢谢。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "可以帮我关闭蓝牙吗？", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我把蓝牙弄一下", "arguments": {}}
+{"tool_name": "toggle_bluetooth", "user_question": "我现在要连接蓝牙耳机听歌，帮我打开蓝牙吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "马上要开会了，请帮我关闭蓝牙以免干扰。", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "你能帮我把蓝牙打开吗？", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我现在需要连接蓝牙耳机听歌，麻烦帮我把蓝牙功能打开一下。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我准备开车出门，帮我打开蓝牙连手机听歌。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "能不能帮我打开蓝牙？", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我切换蓝牙状态", "arguments": {}}
+{"tool_name": "toggle_bluetooth", "user_question": "明天要坐飞机了，帮我把蓝牙关掉吧，省得安检麻烦。", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我关掉蓝牙吧，手机快没电了，我想省点电。", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "我要连蓝牙耳机听歌，帮我打开蓝牙。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我打开蓝牙，我要连接耳机听歌。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我马上要连接家里的蓝牙音箱，麻烦你帮我先把手机上的蓝牙功能打开一下吧，谢谢。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "准备开车去公司，帮我打开蓝牙连接车载系统吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我刚买了一个蓝牙耳机，想连手机听歌，帮我打开蓝牙吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我要连接车载蓝牙听歌，麻烦帮我打开蓝牙", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我关一下蓝牙呗。", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "把蓝牙打开吧", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我要睡觉了，请关闭蓝牙省电吧。", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我打开蓝牙", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我在车里准备听导航，请帮我打开蓝牙连接手机。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我要出去跑步听音乐，帮我打开蓝牙吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我今天刚买了一副新的蓝牙耳机，想要连接到手机上听音乐，麻烦你帮我把手机的蓝牙功能打开一下。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "嘿，帮我开个蓝牙呗", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我刚才不小心把蓝牙关了，现在想连耳机听歌，帮我重新打开吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我明天要出差，今晚想把手机蓝牙关掉省电，能不能帮我操作一下？", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "把蓝牙关了吧，省点电", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "能否麻烦你帮我开启蓝牙功能？我想连接蓝牙音箱播放音乐，这样就不用老是插线了。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我要用蓝牙耳机听歌，请帮我打开蓝牙。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "麻烦您帮我开启一下蓝牙，谢谢。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我要连接智能手表，请帮我打开蓝牙。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我准备连接我的蓝牙耳机，麻烦帮我把手机的蓝牙功能打开一下。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "麻烦您帮我开启蓝牙，可以吗？", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我刚买了个蓝牙耳机，想连接手机，请帮我打开蓝牙。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我刚买了新耳机，想连上听歌，但蓝牙没开，帮我打开蓝牙吧", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我想切换蓝牙状态", "arguments": {}}
+{"tool_name": "toggle_bluetooth", "user_question": "马上要开会了，为了节省手机电量，麻烦你帮我把蓝牙功能关掉吧。", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "马上要连接蓝牙耳机听歌，帮我打开蓝牙功能。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "地铁上太吵了，准备连蓝牙耳机听歌，帮我打开蓝牙吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我把蓝牙开一下呗", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "明天出差要连车载蓝牙，请现在帮我打开蓝牙功能。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "为了传输文件给旁边的同事，请帮我打开蓝牙。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "请帮我打开蓝牙，谢谢。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我正在开车，需要连接车载电话，请帮我打开蓝牙功能。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我看看蓝牙开关", "arguments": {}}
+{"tool_name": "toggle_bluetooth", "user_question": "麻烦您帮我打开蓝牙好吗？", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "嘿，帮我把蓝牙开开呗", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "马上要开会了，我得用蓝牙耳机接听电话，麻烦你先把手机上的蓝牙功能给打开，别让我错过重要通话。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我把蓝牙切换一下", "arguments": {}}
+{"tool_name": "toggle_bluetooth", "user_question": "我要开车了，帮我打开蓝牙连接车载系统。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "上车要连车载蓝牙听歌，帮我把蓝牙打开吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我弄一下蓝牙", "arguments": {}}
+{"tool_name": "toggle_bluetooth", "user_question": "我刚买了一个新蓝牙耳机，准备在跑步时用，帮我把蓝牙打开吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我准备睡觉了，能帮我把蓝牙关了吗？", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "我马上要上飞机了，麻烦帮我关掉蓝牙省电。", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "我准备用蓝牙耳机听歌，请打开蓝牙功能。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "你能帮我打开蓝牙吗？", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我马上要连接我的蓝牙耳机来听音乐，能不能帮我把手机上的蓝牙功能打开？", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我切换一下蓝牙", "arguments": {}}
+{"tool_name": "toggle_bluetooth", "user_question": "把蓝牙关掉", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "我马上要开车了，需要连接车机蓝牙播放导航语音，麻烦你帮我把蓝牙功能打开吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我刚买了新耳机，帮我打开蓝牙吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我要用蓝牙耳机听歌，麻烦帮我打开蓝牙功能。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "把蓝牙打开呗", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "马上要开电话会议了，帮我打开蓝牙连接耳机吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我打开蓝牙，我要连新买的无线耳机。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我切换一下蓝牙状态", "arguments": {}}
+{"tool_name": "toggle_bluetooth", "user_question": "我准备用蓝牙耳机听歌，帮我把蓝牙打开吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "亲爱的助手，我现在准备用蓝牙耳机听歌，麻烦帮我开启一下手机的蓝牙功能，这样我才能顺利连接耳机。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "能不能帮我把蓝牙关掉？", "arguments": {"enable": false}}
+{"tool_name": "toggle_bluetooth", "user_question": "明天早上跑步要连蓝牙耳机，帮我打开蓝牙吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我要连接车上的蓝牙放音乐，请打开蓝牙。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我要连接蓝牙耳机听歌，帮我打开蓝牙吧。", "arguments": {"enable": true}}

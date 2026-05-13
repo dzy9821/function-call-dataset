@@ -1,0 +1,100 @@
+{"tool_name": "set_brightness", "user_question": "把屏幕弄亮一点呗", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "你能帮我把屏幕亮度调高到70吗？", "arguments": {"level": "70", "direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "晚上在宿舍用电脑，室友都睡了，帮我把屏幕亮度调到最低吧，别太刺眼。", "arguments": {"level": "0", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "这个屏幕太暗了，帮我调亮点呗。", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "调亮点", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "能不能把屏幕亮度调到百分之六十？", "arguments": {"level": "60"}}
+{"tool_name": "set_brightness", "user_question": "我现在觉得屏幕太暗了，看东西有点费劲，麻烦帮我调亮一些，大概到百分之七十左右吧。", "arguments": {"level": "70", "direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "躺在床上看小说，眼睛有点酸，帮我把屏幕调暗一些吧。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "把亮度调低到30", "arguments": {"level": "30", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "现在外面阳光很刺眼，我完全看不清屏幕，麻烦把亮度调高一些。", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "这个房间的光线太强了，我的眼睛都开始疼了，你可不可以帮我把屏幕亮度稍微调低一点，调整到60左右就可以了。", "arguments": {"level": "60", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "你能帮我把屏幕调亮一点吗？", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "在睡前看书时屏幕太亮了，帮我调暗点。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "我刚刚从阳光充足的户外走进室内，感觉屏幕特别暗，能不能帮我把亮度调高到80？", "arguments": {"level": "80", "direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "最近晚上看手机眼睛很累，能不能把屏幕亮度调低一点，比如调到30%左右，这样对眼睛好一些。", "arguments": {"level": "30", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "晚上看小说觉得屏幕太亮了，帮我把亮度调到30吧。", "arguments": {"level": "30"}}
+{"tool_name": "set_brightness", "user_question": "把屏幕亮度调低一点", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "晚上关灯看小说，屏幕太刺眼了，帮我调暗点。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "麻烦您帮我把屏幕亮度调亮一点好吗？", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "把屏幕给我调亮点儿！", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "我在被窝里看电子书，眼睛有点酸，能不能把亮度调低一些？", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "晚上的时候屏幕太亮了，我觉得有点刺眼，能不能帮我调低一点？", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "晚上躺在床上看视频，屏幕太亮了，帮我调暗点。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "晚上准备睡觉了，帮我把屏幕亮度调低到20。", "arguments": {"level": "20", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "把屏幕调暗些", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "屏幕太亮了，调暗点", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "我现在在户外，太阳特别大，屏幕反光严重完全看不清，你能不能帮我把屏幕亮度调高到最高的百分之百啊？", "arguments": {"direction": "high", "level": "100"}}
+{"tool_name": "set_brightness", "user_question": "在图书馆里，光线有点暗，能不能帮我把屏幕调亮点？", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "你能不能帮我把屏幕亮度调到70%左右，顺便稍微调暗一点，不要太刺眼。", "arguments": {"level": "70", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "麻烦您把屏幕亮度调到75，谢谢。", "arguments": {"level": "75"}}
+{"tool_name": "set_brightness", "user_question": "请把屏幕亮度调高到80%，这样看着舒服些。", "arguments": {"level": "80", "direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "把屏幕调亮点", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "刚从外面进来屋里太暗了，帮我把屏幕亮度调高到80吧。", "arguments": {"level": "80", "direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "今天阳光太刺眼了，帮我把手机的屏幕亮度调到最高，这样看起来清楚一些。", "arguments": {"level": "100", "direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "请把屏幕亮度调到50", "arguments": {"level": "50"}}
+{"tool_name": "set_brightness", "user_question": "你好，请帮我把屏幕亮度调高到80，这样我在光线强的地方也能看得清楚一些。", "arguments": {"level": "80", "direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "你能帮我把屏幕亮度调高一点吗？", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "麻烦帮我把屏幕调亮一点，谢谢。", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "我在外面看视频，屏幕太暗了，能帮我调亮点吗？", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "麻烦您把屏幕亮度调到最高。", "arguments": {"level": "100", "direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "刚进房间有点暗，帮我调亮屏幕吧。", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "准备睡觉了，屏幕太亮晃眼睛，帮我调暗一点吧。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "我刚刚从阳光很强的室外进到室内，屏幕显得特别亮，眼睛有点刺激，麻烦帮我调暗一些，具体调到百分之三十左右吧。", "arguments": {"level": "30", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "把屏幕亮度调亮点儿呗", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "晚上躺在床上刷手机，眼睛有点酸，能帮我把屏幕调暗一点吗？", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "麻烦您把屏幕亮度调到80。", "arguments": {"level": "80"}}
+{"tool_name": "set_brightness", "user_question": "晚上在宿舍追剧，屏幕太亮了刺眼，帮我调暗点。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "刚开完会，眼睛很累，帮我调低屏幕亮度。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "最近晚上看手机眼睛总是很累，你能不能帮我把屏幕亮度稍微调低一些，大概到30左右就好？", "arguments": {"level": "30", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "麻烦帮我把屏幕亮度再调高一些，最好能直接设置到百分之九十，因为现在这个亮度在阳光下根本看不清。", "arguments": {"level": "90", "direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "能不能帮我把屏幕亮度调高一点？", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "房间里太暗了，帮我调亮一点", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "把屏幕调亮一点", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "晚上看书时屏幕太亮了，帮我调暗一些。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "我正在宿舍熬夜写论文，眼睛酸，帮我把屏幕亮度调低到30吧。", "arguments": {"level": "30", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "现在这个房间光线太暗了，屏幕显得特别刺眼，你帮我把亮度稍微调低一些吧，调到大概百分之三十左右的样子。", "arguments": {"level": "30", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "在黑暗环境中，把屏幕亮度调低到20", "arguments": {"level": "20", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "大晚上躺床上看视频，屏幕亮得刺眼，帮我调低点亮度吧。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "我在被窝里玩手机，眼睛有点酸，能帮我把亮度调低点吗？", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "空调房里刷剧太刺眼了，帮我把屏幕亮度调低到30吧。", "arguments": {"level": "30", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "晚上写代码眼睛有点累，帮我把屏幕亮度调低一点吧。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "今天晚上看电影时觉得屏幕太亮了，麻烦你帮我调低到30的亮度，这样眼睛舒服一些。", "arguments": {"level": "30", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "我在看这个电影呢，屏幕太亮了眼睛不舒服，帮我调暗点。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "晚上看手机太刺眼了，帮我调暗一点", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "能不能把屏幕调亮点啊？", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "晚上躺在床上刷手机，眼睛有点累，帮我调暗点屏幕吧。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "在图书馆写文档，眼睛有点累，把亮度调到60吧。", "arguments": {"level": "60"}}
+{"tool_name": "set_brightness", "user_question": "帮我调暗一点，太亮了眼睛疼", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "晚上看书久了，眼睛有点累，能把屏幕亮度调低一点吗？", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "麻烦帮我调亮一下屏幕，谢谢。", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "最近晚上看手机总觉得屏幕太刺眼了，你能帮我把亮度调低一点吗，最好能降到30左右，这样眼睛会舒服很多。", "arguments": {"level": "30", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "可以帮我把屏幕调亮些吗？", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "在昏暗的环境下我感觉眼睛有点累，能不能帮我把屏幕亮度提高一些？", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "我晚上躺在床上看手机，眼睛有点累，麻烦帮我把屏幕亮度调低一些，调到30左右就好。", "arguments": {"level": "30", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "我在黑暗的房间里，请把屏幕亮度调低一点，保护眼睛。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "麻烦您帮我把屏幕亮度调亮一些，可以吗？", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "能不能把屏幕亮度调到60？", "arguments": {"level": "60"}}
+{"tool_name": "set_brightness", "user_question": "今天工作一整天眼睛有点累，麻烦帮我调节一下屏幕亮度，调低到大概百分之二十左右吧，这样晚上看起来舒服些。", "arguments": {"level": "20", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "在晚上看书时，请帮我调低屏幕亮度。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "我在昏暗的房间里看电影，屏幕太刺眼了，帮我调低点亮度吧。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "睡前躺在床上看手机，眼睛有点累，帮我把屏幕亮度调低一点吧。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "现在太暗了，把屏幕亮度调高点", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "请将屏幕亮度调低到30", "arguments": {"level": "30", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "你能把屏幕亮度调到80吗？", "arguments": {"level": "80"}}
+{"tool_name": "set_brightness", "user_question": "正在编辑视频，需要准确色彩，请把亮度调到60。", "arguments": {"level": "60"}}
+{"tool_name": "set_brightness", "user_question": "请把屏幕亮度调到60。", "arguments": {"level": "60"}}
+{"tool_name": "set_brightness", "user_question": "帮我把屏幕亮度调到45，不要太亮也不要太暗。", "arguments": {"level": "45"}}
+{"tool_name": "set_brightness", "user_question": "帮我把屏幕亮度调到七十五，现在太暗了。", "arguments": {"level": "75"}}
+{"tool_name": "set_brightness", "user_question": "麻烦您把屏幕亮度调高到60，谢谢。", "arguments": {"level": "60", "direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "请把屏幕亮度调到最暗，晚上看书不伤眼。", "arguments": {"level": "0"}}
+{"tool_name": "set_brightness", "user_question": "您好，能麻烦您把屏幕亮度调低一些吗？", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "最近感觉屏幕亮度有点刺眼，能不能帮我把亮度稍微调低一点，大概到40左右就好。", "arguments": {"level": "40", "direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "帮我调亮一点", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "晚上追剧眼睛有点累，把亮度调低些吧。", "arguments": {"direction": "low"}}
+{"tool_name": "set_brightness", "user_question": "麻烦您帮我将屏幕亮度调高一点，谢谢。", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "帮我把屏幕亮度调高一点", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "这屏幕也太暗了吧，能不能调亮点？", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "我晚上用手机看书觉得屏幕太亮了，眼睛不舒服，能不能帮我把亮度调低一些，最好调到40左右？", "arguments": {"direction": "low", "level": "40"}}
+{"tool_name": "set_brightness", "user_question": "你能帮我把屏幕亮度调高一些吗？", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "我刚才在房间里看电影，觉得屏幕有些昏暗，字幕看起来特别费劲，能麻烦你帮我把亮度调到80左右，让画面清楚一点吗？", "arguments": {"level": "80", "direction": "high"}}

@@ -1,0 +1,100 @@
+{"tool_name": "set_alarm", "user_question": "帮我设个闹钟", "arguments": {}}
+{"tool_name": "set_alarm", "user_question": "麻烦您帮我设置一个明天早上7点的闹钟，备注为起床闹钟，每天重复。", "arguments": {"datetime": "2025-03-27T07:00:00", "label": "起床闹钟", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "能不能帮我设置一个下周二早上七点半的闹钟，标注为“晨会提醒”，并且只在工作日重复？", "arguments": {"datetime": "2025-04-01T07:30:00", "label": "晨会提醒", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "由于明天早上七点我要赶飞机去出差，麻烦帮我设置个名为‘赶飞机’的闹钟，就定在2025年4月15日早上6点整响一次，不需要重复。", "arguments": {"datetime": "2025-04-15T06:00:00", "label": "赶飞机", "repeat": null}}
+{"tool_name": "set_alarm", "user_question": "帮我设个明天早上七点半的闹钟，备注起床", "arguments": {"datetime": "2025-04-10T07:30:00", "label": "起床"}}
+{"tool_name": "set_alarm", "user_question": "明天早上有个重要的晨会，帮我设个闹钟提醒我。", "arguments": {"datetime": "2025-04-03T08:00:00", "label": "晨会", "repeat": "none"}}
+{"tool_name": "set_alarm", "user_question": "帮我设个闹钟。", "arguments": {}}
+{"tool_name": "set_alarm", "user_question": "明天下午三点有个会议，能帮我设置一个闹钟提醒我吗？", "arguments": {"datetime": "2025-04-12T15:00:00", "label": "会议"}}
+{"tool_name": "set_alarm", "user_question": "明天早上7点帮我设一个起床闹钟，工作日重复，标签写'晨起'", "arguments": {"datetime": "2025-04-03T07:00:00", "label": "晨起", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "我需要你帮我设置一个明天早上八点钟的闹钟，标注为晨会，并且只在工作日重复响铃。", "arguments": {"datetime": "2025-03-10T08:00:00", "label": "晨会", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "明天下午5点提醒我去接孩子放学，别迟到了。", "arguments": {"datetime": "2025-04-10T17:00:00", "label": "接孩子放学", "repeat": null}}
+{"tool_name": "set_alarm", "user_question": "我明天早上7点有个重要会议，帮我设个闹钟提醒我。", "arguments": {"datetime": "2025-04-08T07:00:00", "label": "重要会议", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "帮我设个明早7点的闹钟起床", "arguments": {"datetime": "2025-04-03T07:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "你能帮我在下周一早上8点半设置一个开会的闹钟吗？", "arguments": {"datetime": "2025-03-24T08:30:00", "label": "开会", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "您好，能麻烦您帮我设置一个明天早上7点的闹钟吗？用来提醒我起床，谢谢！", "arguments": {"datetime": "2025-04-10T07:00:00", "label": "起床"}}
+{"tool_name": "set_alarm", "user_question": "明天早上6点我要赶飞机，帮我设置个闹钟提醒我，别错过航班。", "arguments": {"datetime": "2025-04-10T06:00:00", "label": "赶飞机"}}
+{"tool_name": "set_alarm", "user_question": "每天下午六点提醒我运动", "arguments": {"datetime": "2025-03-22T18:00:00", "label": "运动", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "您好，可以麻烦帮我设置一个明天早上七点起床的闹钟吗？谢谢！", "arguments": {"datetime": "2025-04-10T07:00:00", "label": "起床"}}
+{"tool_name": "set_alarm", "user_question": "明天早上七点叫我起床呗，别忘了啊", "arguments": {"datetime": "2025-04-10T07:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "我明天下午3点有个重要的会议，帮我设个闹钟提醒一下。", "arguments": {"datetime": "2025-03-18T15:00:00", "label": "重要会议", "repeat": null}}
+{"tool_name": "set_alarm", "user_question": "明天早上7点我要赶飞机，帮我设个闹钟", "arguments": {"datetime": "2025-03-30T07:00:00", "label": "赶飞机"}}
+{"tool_name": "set_alarm", "user_question": "我明天下午三点有个重要的会议，帮我设个闹钟提醒我", "arguments": {"datetime": "2024-01-02T15:00:00", "label": "会议提醒"}}
+{"tool_name": "set_alarm", "user_question": "明天早上7点叫我起床", "arguments": {"datetime": "2025-03-21T07:00:00", "label": "起床"}}
+{"tool_name": "set_alarm", "user_question": "每天下午3点提醒我吃药", "arguments": {"datetime": "2025-04-10T15:00:00", "label": "吃药", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "明天早上8点帮我设个闹钟提醒吃药，每天都要。", "arguments": {"datetime": "2025-04-15T08:00:00", "label": "吃药", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "明天早上有个重要会议，帮我定个闹钟提醒一下。", "arguments": {"datetime": "2025-04-10T08:00:00", "label": "重要会议"}}
+{"tool_name": "set_alarm", "user_question": "你能帮我设一个明天早上八点的闹钟吗？", "arguments": {"datetime": "2025-04-08T08:00:00"}}
+{"tool_name": "set_alarm", "user_question": "明天早上八点我要开晨会，帮我设个闹钟提醒我。", "arguments": {"datetime": "2025-03-19T08:00:00", "label": "晨会", "repeat": "none"}}
+{"tool_name": "set_alarm", "user_question": "帮我设个明天早上8点的闹钟，每天重复，备注起床", "arguments": {"datetime": "2025-04-01T08:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "嘿，明天早上8点给我设个闹钟，我要开会。", "arguments": {"datetime": "2025-03-26T08:00:00", "label": "开会"}}
+{"tool_name": "set_alarm", "user_question": "麻烦您帮我设置一个下周一晚上8点的闹钟，提醒我参加会议，好吗？", "arguments": {"datetime": "2025-03-24T20:00:00", "label": "会议", "repeat": "weekly"}}
+{"tool_name": "set_alarm", "user_question": "请帮我设置一个闹钟，从下周一早上七点开始，每个工作日都提醒我起床，标签写'起床奋斗'。", "arguments": {"datetime": "2025-04-14T07:00:00", "label": "起床奋斗", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "嘿，帮我把闹钟设到明天早上七点半，每天重复，备注叫起床", "arguments": {"datetime": "2025-04-10T07:30:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "麻烦帮我设置一个明天早上7点的闹钟，标签写‘起床’，然后每天重复，谢谢。", "arguments": {"datetime": "2025-04-10T07:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "我明天下午3点半有个重要的客户会议，怕自己忘了，帮我设个闹钟提醒一下，备注写‘客户会议’就行。", "arguments": {"datetime": "2023-10-27T15:30:00", "label": "客户会议"}}
+{"tool_name": "set_alarm", "user_question": "帮我定个闹钟，明天早上七点半起床，每天重复。", "arguments": {"datetime": "2025-01-15T07:30:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "帮我设个闹钟吧", "arguments": {}}
+{"tool_name": "set_alarm", "user_question": "明天早上有个重要的项目会议，帮我设个闹钟提醒我别迟到。", "arguments": {"datetime": "2025-03-20T07:00:00", "label": "项目会议"}}
+{"tool_name": "set_alarm", "user_question": "下午三点有个视频会议，帮我设置个闹钟提醒一下。", "arguments": {"datetime": "2025-03-27T15:00:00", "label": "视频会议"}}
+{"tool_name": "set_alarm", "user_question": "嘿，帮我在明天早上七点定个闹钟呗，我要起来跑步。", "arguments": {"datetime": "2025-01-16T07:00:00", "label": "跑步", "repeat": null}}
+{"tool_name": "set_alarm", "user_question": "麻烦帮我在明天早上7点设置一个起床闹钟，谢谢。", "arguments": {"datetime": "2025-04-10T07:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "明早七点叫我起床", "arguments": {"datetime": "2025-03-20T07:00:00", "label": "起床"}}
+{"tool_name": "set_alarm", "user_question": "帮我在明天早上7点半设个闹钟，我要起床", "arguments": {"datetime": "2025-03-19T07:30:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "嘿，帮我定个闹钟，明天晚上八点提醒我跑步。", "arguments": {"datetime": "2025-04-12T20:00:00", "label": "跑步", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "请帮我设置一个闹钟，在明天早上七点钟准时提醒我起床去跑步，并且设置为每天重复，标签写为晨跑。", "arguments": {"datetime": "2025-01-18T07:00:00", "label": "晨跑", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "帮我设个明天下午3点半的闹钟，提醒开会", "arguments": {"datetime": "2025-04-10T15:30:00", "label": "开会"}}
+{"tool_name": "set_alarm", "user_question": "明天下午两点有个重要面试，帮我设个闹钟提前提醒我。", "arguments": {"datetime": "2025-03-29T13:50:00", "label": "重要面试"}}
+{"tool_name": "set_alarm", "user_question": "明天早上六点要赶飞机，帮我设个闹钟别睡过了。", "arguments": {"datetime": "2025-04-02T06:00:00", "label": "赶飞机"}}
+{"tool_name": "set_alarm", "user_question": "明天下午两点有个重要会议，帮我设个闹钟提醒我。", "arguments": {"datetime": "2025-04-10T14:00:00", "label": "重要会议"}}
+{"tool_name": "set_alarm", "user_question": "麻烦帮我定一个闹钟，下周一也就是2025年4月14日早上6点半叫我起床去晨跑，并且在工作日每天都要重复提醒我。", "arguments": {"datetime": "2025-04-14T06:30:00", "label": "晨跑", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "麻烦您帮我设置一个每天早上9点的闹钟，提醒我吃药。", "arguments": {"datetime": "2025-04-01T09:00:00", "label": "吃药", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "我明天早上7点要赶飞机，帮我设个闹钟吧，别让我睡过头了。", "arguments": {"datetime": "2025-04-10T07:00:00", "label": "起床赶飞机"}}
+{"tool_name": "set_alarm", "user_question": "明天下午三点我要去接机，请帮我设置闹钟提醒。", "arguments": {"datetime": "2025-03-20T15:00:00", "label": "接机"}}
+{"tool_name": "set_alarm", "user_question": "帮我定个闹钟", "arguments": {}}
+{"tool_name": "set_alarm", "user_question": "嘿，帮我定个闹钟，明天早上7点叫我起床。", "arguments": {"datetime": "2025-04-01T07:00:00", "label": "起床"}}
+{"tool_name": "set_alarm", "user_question": "您好，麻烦帮我设置一个明天晚上10点的闹钟，标注为睡觉提醒，每天重复，谢谢。", "arguments": {"datetime": "2025-04-10T22:00:00", "label": "睡觉提醒", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "明天早上8点有个晨会，帮我设个闹钟提醒我。", "arguments": {"datetime": "2025-04-11T08:00:00", "label": "晨会", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "你好，请问可以帮我设置一个明天下午三点的会议提醒闹钟吗？", "arguments": {"datetime": "2025-04-02T15:00:00", "label": "会议提醒", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "帮我设置一个闹钟，明天下午两点半提醒我参加项目会议，并且每周一到周五都重复这个闹钟。", "arguments": {"datetime": "2025-03-20T14:30:00", "label": "项目会议", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "帮我设置一个明天早上九点的会议闹钟，只在工作日重复。", "arguments": {"datetime": "2025-03-18T09:00:00", "label": "会议", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "明天下午3点半提醒我开项目进度会", "arguments": {"datetime": "2025-04-11T15:30:00", "label": "项目进度会", "repeat": null}}
+{"tool_name": "set_alarm", "user_question": "明天早上7点有个重要的晨会，帮我设个闹钟提醒我，标签写‘晨会’，只在工作日重复。", "arguments": {"datetime": "2025-04-11T07:00:00", "label": "晨会", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "麻烦帮我设置一个明天早上8点的闹钟，标注为起床，谢谢。", "arguments": {"datetime": "2025-03-21T08:00:00", "label": "起床"}}
+{"tool_name": "set_alarm", "user_question": "麻烦帮我设置一个明天早上八点的闹钟叫醒我，谢谢。", "arguments": {"datetime": "2025-04-01T08:00:00", "label": "起床"}}
+{"tool_name": "set_alarm", "user_question": "请帮我设置一个每天下午3点提醒吃药的闹钟，谢谢你。", "arguments": {"datetime": "2025-04-10T15:00:00", "label": "吃药", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "请问可以帮我设置一个明天早上7点的闹钟吗？", "arguments": {"datetime": "2025-01-02T07:00:00", "label": "起床"}}
+{"tool_name": "set_alarm", "user_question": "能不能帮我设置一个明天早上7点的闹钟，标签写‘起床’，并且每周重复？", "arguments": {"datetime": "2025-04-10T07:00:00", "label": "起床", "repeat": "weekly"}}
+{"tool_name": "set_alarm", "user_question": "帮我设个明天早上8点的闹钟", "arguments": {"datetime": "2025-03-21T08:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "帮我把闹钟设一下", "arguments": {}}
+{"tool_name": "set_alarm", "user_question": "帮我设置个闹钟", "arguments": {}}
+{"tool_name": "set_alarm", "user_question": "嘿，帮我定个闹钟，明天早上七点叫我起床，每天重复就行。", "arguments": {"datetime": "2025-04-15T07:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "喂，帮我设个闹钟，5月10号早上7点喊我起床哈～", "arguments": {"datetime": "2025-05-10T07:00:00", "label": "起床"}}
+{"tool_name": "set_alarm", "user_question": "下周三晚上八点我要去机场接朋友，麻烦帮我设置一个接人闹钟，并且只在工作日重复提醒我。", "arguments": {"datetime": "2025-04-09T20:00:00", "label": "接人", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "今天下午3点有个项目会议，帮我设个闹钟提醒我。", "arguments": {"datetime": "2024-03-15T15:00:00", "label": "项目会议"}}
+{"tool_name": "set_alarm", "user_question": "明早七点叫我起床呗", "arguments": {"datetime": "2025-04-11T07:00:00", "label": "起床"}}
+{"tool_name": "set_alarm", "user_question": "明天早上6点半叫我起床跑步", "arguments": {"datetime": "2025-01-01T06:30:00", "label": "起床跑步"}}
+{"tool_name": "set_alarm", "user_question": "明天早上七点半我想设置一个起床闹钟，并且希望它每天都响，顺便帮我备注一下叫醒我去晨跑的事情。", "arguments": {"datetime": "2025-04-11T07:30:00", "label": "晨跑起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "明天早上8点设置一个开会闹钟，工作日重复", "arguments": {"datetime": "2025-04-16T08:00:00", "label": "开会", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "明天下午三点有个重要的项目会议，帮我定个闹钟提醒一下。", "arguments": {"datetime": "2025-03-28T15:00:00", "label": "会议"}}
+{"tool_name": "set_alarm", "user_question": "我明天下午三点有个重要会议，记得提前十分钟提醒我，帮我设个闹钟吧。", "arguments": {"datetime": "2025-04-11T14:50:00", "label": "重要会议提醒", "repeat": "none"}}
+{"tool_name": "set_alarm", "user_question": "明天早上七点能帮我设个起床闹钟吗，每天重复？", "arguments": {"datetime": "2025-03-21T07:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "嗨，帮我定个闹钟，明天早上七点叫我，备注写早起跑步呗。", "arguments": {"datetime": "2025-04-11T07:00:00", "label": "早起跑步"}}
+{"tool_name": "set_alarm", "user_question": "帮我设置一个每天早上7点的起床闹钟", "arguments": {"datetime": "2025-05-15T07:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "可以帮我定个后天晚上九点的闹钟吗？我要提醒自己吃药。", "arguments": {"datetime": "2025-04-10T21:00:00", "label": "吃药"}}
+{"tool_name": "set_alarm", "user_question": "帮我定个明天下午三点的闹钟呗，我要开会。", "arguments": {"datetime": "2025-04-12T15:00:00", "label": "开会"}}
+{"tool_name": "set_alarm", "user_question": "帮我设置一个闹钟。", "arguments": {}}
+{"tool_name": "set_alarm", "user_question": "明天下午三点能帮我设置一个闹钟提醒我开会吗？", "arguments": {"datetime": "2025-04-10T15:00:00", "label": "开会"}}
+{"tool_name": "set_alarm", "user_question": "帮我设个明早7点的闹钟，每天都要响，标签写起床", "arguments": {"datetime": "2025-04-02T07:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "帮我设个明天早上7点的闹钟呗", "arguments": {"datetime": "2025-04-10T07:00:00", "label": "起床"}}
+{"tool_name": "set_alarm", "user_question": "明天早上八点我要参加一个重要的部门会议，请帮我设置一个闹钟提醒我，并标注为'会议'，同时设置为仅在工作日重复。", "arguments": {"datetime": "2025-03-25T08:00:00", "label": "会议", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "请帮我设置一个明天早上7点的起床闹钟，谢谢。", "arguments": {"datetime": "2025-03-21T07:00:00", "label": "起床"}}
+{"tool_name": "set_alarm", "user_question": "明天早上8点能帮我设个闹钟提醒我开会吗？", "arguments": {"datetime": "2025-04-01T08:00:00", "label": "开会", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "帮我设个明天早上7点的闹钟，每天都要响", "arguments": {"datetime": "2025-04-01T07:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "帮我设个明天早上8点的闹钟，每天都响。", "arguments": {"datetime": "2025-04-01T08:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "麻烦你帮我设置一个闹钟，明天早上7点叫我起床，工作日重复。", "arguments": {"datetime": "2025-03-27T07:00:00", "label": "起床", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "下周一早上7点半叫我起床，工作日重复。", "arguments": {"datetime": "2025-03-24T07:30:00", "label": "起床", "repeat": "weekdays"}}
+{"tool_name": "set_alarm", "user_question": "你能帮我设置一个每天早上8点起床的闹钟吗？", "arguments": {"datetime": "2026-01-15T08:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "明天早上8点有个重要会议，帮我设个闹钟提醒我起床。", "arguments": {"datetime": "2025-04-11T08:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "您好，能麻烦您帮我设置一个明天早上7点的起床闹钟吗？", "arguments": {"datetime": "2025-04-03T07:00:00", "label": "起床", "repeat": "daily"}}
+{"tool_name": "set_alarm", "user_question": "明天早上8点要开早会，帮我设个闹钟叫醒我，并且每天重复。", "arguments": {"datetime": "2025-04-02T08:00:00", "label": "开早会", "repeat": "daily"}}

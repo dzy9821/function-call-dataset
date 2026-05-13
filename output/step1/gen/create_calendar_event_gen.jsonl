@@ -1,0 +1,100 @@
+{"tool_name": "create_calendar_event", "user_question": "麻烦帮我创建一个下周三下午两点到三点关于产品发布会筹备的会议安排，记得把时间设成5月15日，会议标题就叫“产品发布会筹备会议”", "arguments": {"title": "产品发布会筹备会议", "start_date": "2024-05-15T14:00:00", "end_date": "2024-05-15T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我创建一个明天下午三点的理发预约，预计一小时。", "arguments": {"title": "理发", "start_date": "2025-03-15T15:00:00", "end_date": "2025-03-15T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请帮我安排一场2024年12月20日下午3点到5点的产品评审会议。", "arguments": {"title": "产品评审会议", "start_date": "2024-12-20T15:00:00", "end_date": "2024-12-20T17:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请问可以帮我在明天下午3点创建一个时长为2小时的团队回顾会议吗？", "arguments": {"title": "团队回顾会议", "start_date": "2025-04-15T15:00:00", "end_date": "2025-04-15T17:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "嘿，帮我记一下，后天上午十点我要去看牙医，大概一小时。", "arguments": {"title": "看牙医", "start_date": "2025-04-12T10:00:00", "end_date": "2025-04-12T11:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "你能帮我创建一个下周三下午2点到3点的理发预约吗？", "arguments": {"title": "理发", "start_date": "2024-07-10T14:00:00", "end_date": "2024-07-10T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我记个事，4月15号下午3点开个会，大概1小时。", "arguments": {"title": "开会", "start_date": "2025-04-15T15:00:00", "end_date": "2025-04-15T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请帮我安排一个下周一（2025年3月10日）下午2点到3点的产品评审会议。", "arguments": {"title": "产品评审会议", "start_date": "2025-03-10T14:00:00", "end_date": "2025-03-10T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我记个事，明天下午三点去理发。", "arguments": {"title": "理发", "start_date": "2025-04-09T15:00:00", "end_date": "2025-04-09T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "下周三下午能帮我创建一个项目评审会议吗？", "arguments": {"title": "项目评审会", "start_date": "2025-04-16T14:00:00", "end_date": "2025-04-16T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "您好，能帮我安排一个下周一上午的团队周会吗？预计从九点开始，十点结束。", "arguments": {"title": "团队周会", "start_date": "2025-04-14T09:00:00", "end_date": "2025-04-14T10:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请帮我创建一个明天下午3点到4点的团队周会，谢谢。", "arguments": {"title": "团队周会", "start_date": "2025-04-21T15:00:00", "end_date": "2025-04-21T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排一个明天下午两点的会议", "arguments": {"title": "会议", "start_date": "2024-03-15T14:00:00", "end_date": "2024-03-15T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排下周一（3月31日）下午3点到5点的项目进度会议", "arguments": {"title": "项目进度会议", "start_date": "2025-03-31T15:00:00", "end_date": "2025-03-31T17:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我记个事", "arguments": {}}
+{"tool_name": "create_calendar_event", "user_question": "请帮我安排一个下周三下午三点的团队会议，时长大约一小时。", "arguments": {"title": "团队会议", "start_date": "2023-10-18T15:00:00", "end_date": "2023-10-18T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排个会议吧", "arguments": {}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排个时间开会", "arguments": {}}
+{"tool_name": "create_calendar_event", "user_question": "您好，能帮我安排一个下周二下午3点到4点的项目评审会议吗？", "arguments": {"title": "项目评审会议", "start_date": "2025-04-22T15:00:00", "end_date": "2025-04-22T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "嘿，帮我记个事儿，明天下午3点要开个会，大概一个钟头吧。", "arguments": {"title": "开会", "start_date": "2025-04-02T15:00:00", "end_date": "2025-04-02T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我创建一个明天下午的健身事件，从2点开始到3点半结束。", "arguments": {"title": "健身房锻炼", "start_date": "2025-04-09T14:00:00", "end_date": "2025-04-09T15:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排一个下周一上午10点到11点的产品评审会议", "arguments": {"title": "产品评审会议", "start_date": "2025-04-14T10:00:00", "end_date": "2025-04-14T11:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "我刚约了牙医，明天下午三点去，帮我记一下，大概一小时。", "arguments": {"title": "看牙医", "start_date": "2025-04-10T15:00:00", "end_date": "2025-04-10T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "明天下午我要和团队开项目进度同步会，帮我创建一个日历事件，从下午2点开始，预计1小时。", "arguments": {"title": "项目进度同步会", "start_date": "2025-04-01T14:00:00", "end_date": "2025-04-01T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排个活动吧", "arguments": {}}
+{"tool_name": "create_calendar_event", "user_question": "嘿，帮我记个事儿，明天下午两点半有个健身课，大概一个小时，加到日历里呗。", "arguments": {"title": "健身课", "start_date": "2025-03-18T14:30:00", "end_date": "2025-03-18T15:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "我牙疼得厉害，约了牙医明天下午2点半，大概需要一个小时，帮我设置日历提醒。", "arguments": {"title": "牙医复诊", "start_date": "2025-04-09T14:30:00", "end_date": "2025-04-09T15:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我记一下下周一下午三点有个项目评审会，大概两小时。", "arguments": {"title": "项目评审会", "start_date": "2025-04-07T15:00:00", "end_date": "2025-04-07T17:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "你好，我想创建一个日历事件，事件标题是‘牙科复诊’，开始时间是2025年5月10日上午10点整，预计持续45分钟，所以结束时间为当天上午10点45分，请帮我设置好。", "arguments": {"title": "牙科复诊", "start_date": "2025-05-10T10:00:00", "end_date": "2025-05-10T10:45:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我记一下，明天上午十点去牙科诊所，大概两小时。", "arguments": {"title": "牙科诊所", "start_date": "2025-04-05T10:00:00", "end_date": "2025-04-05T12:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "下周三上午10点有个牙医预约，帮我加到日历里，大概一小时后结束。", "arguments": {"title": "牙医预约", "start_date": "2024-03-20T10:00:00", "end_date": "2024-03-20T11:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "我计划在2024年3月20日星期三下午2点进行年度体检，大概需要1个半小时，请帮我创建日历事件。", "arguments": {"title": "年度体检", "start_date": "2024-03-20T14:00:00", "end_date": "2024-03-20T15:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请帮我创建一个明天上午10点到11点的牙科预约。", "arguments": {"title": "牙科预约", "start_date": "2025-04-04T10:00:00", "end_date": "2025-04-04T11:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "您好，能帮我创建一个明天下午3点到4点的团队会议吗？", "arguments": {"title": "团队会议", "start_date": "2025-04-11T15:00:00", "end_date": "2025-04-11T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排一个明天下午两点的团队会议，时长一个小时。", "arguments": {"title": "团队会议", "start_date": "2025-04-10T14:00:00", "end_date": "2025-04-10T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "今晚有朋友来家里吃饭，帮我设置一个从下午5点到6点的晚餐准备事件。", "arguments": {"title": "准备晚餐", "start_date": "2025-04-01T17:00:00", "end_date": "2025-04-01T18:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排个活动", "arguments": {}}
+{"tool_name": "create_calendar_event", "user_question": "嘿，帮我安排个明天下午三点的瑜伽课，大概一小时。", "arguments": {"title": "瑜伽课", "start_date": "2025-04-11T15:00:00", "end_date": "2025-04-11T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "下周一上午10点有个重要的面试，预计持续1个半小时，帮我记在日历上。", "arguments": {"title": "面试", "start_date": "2025-04-14T10:00:00", "end_date": "2025-04-14T11:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "我下周三（5月21日）下午3点有个牙医预约，请帮我创建一个日历事件，预计需要1小时。", "arguments": {"title": "牙医预约", "start_date": "2025-05-21T15:00:00", "end_date": "2025-05-21T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "明天下午三点有个牙医预约，帮我记一下。", "arguments": {"title": "牙医预约", "start_date": "2025-04-02T15:00:00", "end_date": "2025-04-02T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我创建一个后天下午2点的项目评审会，持续2小时。", "arguments": {"title": "项目评审会", "start_date": "2025-03-21T14:00:00", "end_date": "2025-03-21T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请问能帮我创建一个明天下午3点到4点的项目讨论会议事件吗？", "arguments": {"title": "项目讨论会议", "start_date": "2025-03-21T15:00:00", "end_date": "2025-03-21T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "我想预约下周五上午10点去洗牙，大约需要1小时。", "arguments": {"title": "洗牙", "start_date": "2024-11-15T10:00:00", "end_date": "2024-11-15T11:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "我想创建一个日历事件", "arguments": {}}
+{"tool_name": "create_calendar_event", "user_question": "明天下午我要去医院复诊，帮我建个日历事件提醒我，大概需要1小时。", "arguments": {"title": "医院复诊", "start_date": "2025-04-16T14:00:00", "end_date": "2025-04-16T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请问可以帮我安排一个下周三下午2点到3点的团队会议吗？", "arguments": {"title": "团队会议", "start_date": "2025-04-09T14:00:00", "end_date": "2025-04-09T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "我下周一下午两点有个牙医预约，帮我记到日历上吧。", "arguments": {"title": "牙医预约", "start_date": "2025-04-14T14:00:00", "end_date": "2025-04-14T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "您好，麻烦帮我安排一个下周一上午十点到十二点的团队周会，可以吗？", "arguments": {"title": "团队周会", "start_date": "2025-03-17T10:00:00", "end_date": "2025-03-17T12:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "下周三下午两点能帮我安排一个医生预约吗？", "arguments": {"title": "医生预约", "start_date": "2025-04-09T14:00:00", "end_date": "2025-04-09T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排个会议", "arguments": {}}
+{"tool_name": "create_calendar_event", "user_question": "我最近牙疼得厉害，想预约下周二（4月8日）上午10点去看牙医，大概需要1个小时，帮我创建个日历事件吧。", "arguments": {"title": "看牙医", "start_date": "2025-04-08T10:00:00", "end_date": "2025-04-08T11:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "您好，麻烦帮我创建一场下周一上午10点到11点的团队周会。", "arguments": {"title": "团队周会", "start_date": "2025-05-12T10:00:00", "end_date": "2025-05-12T11:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "明天下午两点到四点半，帮我创建一个日历事件，标题是“项目进展讨论会”，记得设置开始时间为明天下午两点，结束时间为下午四点半。", "arguments": {"title": "项目进展讨论会", "start_date": "2026-08-17T14:00:00", "end_date": "2026-08-17T16:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "能帮我预约下周二下午三点到四点的产品评审会议吗？", "arguments": {"title": "产品评审会议", "start_date": "2024-12-10T15:00:00", "end_date": "2024-12-10T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我创建一个明天下午2点到3点半的培训活动", "arguments": {"title": "培训活动", "start_date": "2025-03-21T14:00:00", "end_date": "2025-03-21T15:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排一个下周三下午两点到四点的团队项目冲刺会议，主题是讨论第一季度产品迭代的优先级和资源分配，会议标题就叫‘Q1冲刺规划会议’。", "arguments": {"title": "Q1冲刺规划会议", "start_date": "2025-04-02T14:00:00", "end_date": "2025-04-02T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "嘿，帮我记个事儿，明天下午两点跟客户视频会议，半小时就够啦。", "arguments": {"title": "和客户视频会议", "start_date": "2025-03-19T14:00:00", "end_date": "2025-03-19T14:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "我下周有个重要的项目会议，请帮我创建日历事件，会议时间是2025年4月2日14:00到16:00，标题为'项目进度会议'。", "arguments": {"title": "项目进度会议", "start_date": "2025-04-02T14:00:00", "end_date": "2025-04-02T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请帮我创建一个日历事件：下周五（2025年4月18日）下午3点到4点半，安排一个团队头脑风暴会议，主题是Q2营销创意。", "arguments": {"title": "团队头脑风暴会议 - Q2营销创意", "start_date": "2025-04-18T15:00:00", "end_date": "2025-04-18T16:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请问可以帮我创建一个明天下午3点到4点的项目进度会议吗？", "arguments": {"title": "项目进度会议", "start_date": "2025-04-02T15:00:00", "end_date": "2025-04-02T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我创建个下周三下午2点到4点的牙医预约，别忘了提前提醒我带医保卡。", "arguments": {"title": "牙医预约", "start_date": "2025-04-16T14:00:00", "end_date": "2025-04-16T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "你好，我需要在下周五下午两点到三点之间预约一个牙医检查，麻烦帮我创建一个日历事件提醒我。", "arguments": {"title": "牙医检查", "start_date": "2025-01-24T14:00:00", "end_date": "2025-01-24T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "这周五下午3点我要和团队开个项目复盘会，大概需要两小时，帮我记在日历上。", "arguments": {"title": "项目复盘会", "start_date": "2025-04-10T15:00:00", "end_date": "2025-04-10T17:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请帮我预约明天下午3点到4点的牙医。", "arguments": {"title": "牙医预约", "start_date": "2025-04-15T15:00:00", "end_date": "2025-04-15T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "您好，能否帮我安排一个日历事件，标题是“团队项目会议”，从2025年3月15日14:00开始，到16:00结束？", "arguments": {"title": "团队项目会议", "start_date": "2025-03-15T14:00:00", "end_date": "2025-03-15T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "下周三（2025年3月15日）上午10点到11点半预约牙科检查。", "arguments": {"title": "牙科检查", "start_date": "2025-03-15T10:00:00", "end_date": "2025-03-15T11:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "明天下午3点到4点帮我创建一个项目评审会议的日历事件。", "arguments": {"title": "项目评审会议", "start_date": "2025-03-21T15:00:00", "end_date": "2025-03-21T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请帮我安排2025年4月14日上午9点到10点30分的团队晨会。", "arguments": {"title": "团队晨会", "start_date": "2025-04-14T09:00:00", "end_date": "2025-04-14T10:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请帮我创建一个明天下午2点到3点的牙医预约事件。", "arguments": {"title": "牙医预约", "start_date": "2025-04-16T14:00:00", "end_date": "2025-04-16T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "嘿，帮我记个日程，明天下午两点到三点半，牙医预约。", "arguments": {"title": "牙医预约", "start_date": "2025-04-11T14:00:00", "end_date": "2025-04-11T15:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请帮我创建一个明天下午两点到四点的产品评审会议事件。", "arguments": {"title": "产品评审会议", "start_date": "2025-04-02T14:00:00", "end_date": "2025-04-02T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "明天下午3点我约了牙医，帮我记在日历上吧。", "arguments": {"title": "牙医预约", "start_date": "2025-04-16T15:00:00", "end_date": "2025-04-16T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我记一下，明天下午三点到五点有个小组讨论会。", "arguments": {"title": "小组讨论会", "start_date": "2025-04-04T15:00:00", "end_date": "2025-04-04T17:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排一个会议", "arguments": {}}
+{"tool_name": "create_calendar_event", "user_question": "帮我记一下明天下午三点的牙医预约，大概一小时。", "arguments": {"title": "牙医预约", "start_date": "2025-03-22T15:00:00", "end_date": "2025-03-22T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "下周三下午2点能帮我创建一个牙科预约吗？", "arguments": {"title": "牙科预约", "start_date": "2025-04-09T14:00:00", "end_date": "2025-04-09T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "我能在下周三下午三点创建一个关于项目进度汇报的会议吗？", "arguments": {"title": "项目进度汇报", "start_date": "2024-12-11T15:00:00", "end_date": "2024-12-11T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我把下周二下午三点到五点在北京望京和老张的火锅聚餐加到日历里", "arguments": {"title": "和老张在望京吃火锅", "start_date": "2025-04-08T15:00:00", "end_date": "2025-04-08T17:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排个事情", "arguments": {}}
+{"tool_name": "create_calendar_event", "user_question": "您好，能否帮我安排一个明天下午2点到3点的团队会议？", "arguments": {"title": "团队会议", "start_date": "2025-04-11T14:00:00", "end_date": "2025-04-11T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "我下周五下午有个产品评审会，从2点开始大概一个半小时，帮我创建日历事件。", "arguments": {"title": "产品评审会", "start_date": "2025-04-25T14:00:00", "end_date": "2025-04-25T15:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我建一个下周一上午10点到11点的团队周会事件", "arguments": {"title": "团队周会", "start_date": "2024-10-07T10:00:00", "end_date": "2024-10-07T11:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排个日程", "arguments": {}}
+{"tool_name": "create_calendar_event", "user_question": "您好，能麻烦您帮我创建一个明天的会议日历事件吗？从上午9点到10点，主题是项目进度讨论。", "arguments": {"title": "项目进度讨论", "start_date": "2025-04-07T09:00:00", "end_date": "2025-04-07T10:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "你能帮我安排一个下周三下午两点开始的牙科检查吗？预计需要一小时。", "arguments": {"title": "牙科检查", "start_date": "2025-04-16T14:00:00", "end_date": "2025-04-16T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我创建一个明天下午3点到5点的团队周会", "arguments": {"title": "团队周会", "start_date": "2025-04-02T15:00:00", "end_date": "2025-04-02T17:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "嘿，帮我记个事，下周二下午两点到四点有个产品评审会，标题就叫‘产品评审’。", "arguments": {"title": "产品评审", "start_date": "2025-03-18T14:00:00", "end_date": "2025-03-18T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "麻烦帮我创建一个日历事件，标题是项目进度会议，开始时间是2025-04-01T10:00:00，结束时间是2025-04-01T11:00:00。", "arguments": {"title": "项目进度会议", "start_date": "2025-04-01T10:00:00", "end_date": "2025-04-01T11:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "你能帮我安排一个下周一上午十点的牙科复诊吗？", "arguments": {"title": "牙科复诊", "start_date": "2025-04-14T10:00:00", "end_date": "2025-04-14T11:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我建个日历事件，下周三下午2点到3点的产品评审会。", "arguments": {"title": "产品评审会", "start_date": "2024-07-10T14:00:00", "end_date": "2024-07-10T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我记一下下周有个会议", "arguments": {}}
+{"tool_name": "create_calendar_event", "user_question": "你能帮我创建一个明天下午3点到4点的会议吗？标题是周报总结。", "arguments": {"title": "周报总结", "start_date": "2024-12-02T15:00:00", "end_date": "2024-12-02T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "我后天上午10点要去看牙医，大概需要两个小时", "arguments": {"title": "看牙医", "start_date": "2025-04-03T10:00:00", "end_date": "2025-04-03T12:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请帮我创建一个2025年4月15日下午2点到3点半的团队周会日历事件。", "arguments": {"title": "团队周会", "start_date": "2025-04-15T14:00:00", "end_date": "2025-04-15T15:30:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我创建一个下周三下午两点到四点在家里的会议室进行的项目进度汇报会议，主题是Q2项目复盘，记得设置好时间。", "arguments": {"title": "Q2项目复盘（项目进度汇报会议）", "start_date": "2025-04-16T14:00:00", "end_date": "2025-04-16T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "您好，能否帮我安排一个下周三下午3点到4点的会议，标题为“部门周会”？", "arguments": {"title": "部门周会", "start_date": "2025-04-09T15:00:00", "end_date": "2025-04-09T16:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "你能帮我安排一个下周三下午两点的牙科就诊吗？", "arguments": {"title": "牙科就诊", "start_date": "2025-01-15T14:00:00", "end_date": "2025-01-15T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "帮我安排下周三下午两点的牙齿检查，大概一小时。", "arguments": {"title": "牙齿检查", "start_date": "2026-01-21T14:00:00", "end_date": "2026-01-21T15:00:00"}}
+{"tool_name": "create_calendar_event", "user_question": "请帮我创建下周一（2025年3月10日）上午10点到12点的产品评审会议日历事件。", "arguments": {"title": "产品评审会议", "start_date": "2025-03-10T10:00:00", "end_date": "2025-03-10T12:00:00"}}

@@ -1,0 +1,100 @@
+{"tool_name": "set_flashlight", "user_question": "我晚上回家楼道太黑了，能帮我把手电筒打开吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "晚上回家发现楼道里的灯坏了，一片漆黑什么都看不见，你能不能帮我把手机的手电筒打开照亮一下路？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "帮我打开手电筒。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "帮我把手电筒打开呗", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我家的楼道灯坏了，黑漆漆的，帮我开一下手电筒吧。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "帮我把手电筒调一下", "arguments": {}}
+{"tool_name": "set_flashlight", "user_question": "嘿，帮我开一下手电筒", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我刚刚走进一个没有灯光的房间，周围一片漆黑，什么都看不见，你能帮我打开手机上的手电筒照亮一下吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "嘿，帮我把手电筒打开呗", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "帮我把手电筒打开", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "在漆黑的房间里找不到钥匙，请把手电筒打开。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "要在漆黑的楼道里找钥匙，请帮我打开手电筒。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "麻烦您帮我打开手电筒好吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "帮我调一下手电筒", "arguments": {}}
+{"tool_name": "set_flashlight", "user_question": "楼道灯坏了，帮我打开手电筒照一下钥匙孔。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "晚上回家在楼道里太黑，帮我打开手电筒照一下钥匙孔。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "嘿，把手机手电筒打开呗。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我想调整手电筒", "arguments": {}}
+{"tool_name": "set_flashlight", "user_question": "请帮我打开手电筒好吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "麻烦您帮我打开手电筒，可以吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "天黑了，楼道灯坏了，帮我打开手电筒照个亮。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "外面太黑了，请帮我打开手电筒。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "帮我开一下手电筒呗", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "手电筒需要调整一下", "arguments": {}}
+{"tool_name": "set_flashlight", "user_question": "我刚从电影院出来，外面好黑啊，帮我打开手电筒照路吧。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "房间太暗了，帮我打开手电筒照亮一下。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我刚刚在夜间散步时不小心把手电筒打开了，现在光线太刺眼而且浪费电，麻烦帮我把手电筒关掉。", "arguments": {"enable": false}}
+{"tool_name": "set_flashlight", "user_question": "外面天黑了，我找不到钥匙孔，帮我打开手电筒照亮一下。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "打开手电筒。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "你能帮我设置一下手电筒吗？", "arguments": {}}
+{"tool_name": "set_flashlight", "user_question": "天太黑了，我看不清钥匙孔，麻烦帮我打开手电筒照一下。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我现在在漆黑的房间里找不到开关，你能帮我把手机上的手电筒打开让我先看清周围的环境吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "屋子里太黑了，帮我打开手电筒照一下。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "晚上回家楼道灯坏了，能帮我开一下手电筒吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "刚才在柜子里找东西，里面太暗了，帮我打开手电筒照一下。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "把手电筒打开", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我在黑暗的房间里找钥匙，能帮我打开手电筒吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "你能帮我把手电筒打开吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我刚刚走进了一个没有开灯的走廊，现在完全看不清脚下的路，你能帮我把手机上的手电筒打开吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "今晚小区停电，屋里黑漆漆的，麻烦你帮我把手电筒打开吧。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "帮我把手电筒开一下", "arguments": {}}
+{"tool_name": "set_flashlight", "user_question": "我进楼道了，但感应灯坏了，帮我打开手电筒吧。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "请问你能帮我打开手电筒吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "你能帮我打开手电筒吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "你能不能帮我把手电筒打开？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "能不能帮我把手电筒打开？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我刚回到家，走廊一片漆黑，能找到开关吗？先帮我打开手电筒照一下。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "请帮我打开手电筒，谢谢。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "你能处理一下手电筒吗？", "arguments": {}}
+{"tool_name": "set_flashlight", "user_question": "我下楼扔垃圾，楼道灯坏了，帮我打开手机手电筒照路。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我刚到家，楼道太黑了，能帮我打开手电筒吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我晚上回家楼道太黑，帮我打开手机手电筒照一下路。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "大晚上的黑咕隆咚，帮我开下手电呗", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我刚到家，楼道里太黑了，帮我打开手电筒吧。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "外面好黑，帮我打开手电筒照路。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我刚刚走进一个没有窗户的地下室，周围一片漆黑，连开关都摸不到，你能不能帮我把手机手电筒打开一下？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "你能帮我看看手电筒的事情吗？", "arguments": {}}
+{"tool_name": "set_flashlight", "user_question": "卧室灯坏了，帮我打开手机手电筒找东西。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "晚上回家停电了，能帮我打开手电筒吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "帮我设置一下手电筒。", "arguments": {}}
+{"tool_name": "set_flashlight", "user_question": "我正在卧室找东西，但光线太暗了什么都看不清，麻烦你帮我打开手机上的手电筒照亮一下，等会儿我找到东西后再关掉它。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "你能帮我把手电筒关掉吗？", "arguments": {"enable": false}}
+{"tool_name": "set_flashlight", "user_question": "你可以帮我打开手电筒吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "睡前把走廊的手电筒关掉。", "arguments": {"enable": false}}
+{"tool_name": "set_flashlight", "user_question": "我在漆黑的房间里找东西，周围伸手不见五指，赶紧帮我打开手电筒照亮一下吧。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "麻烦您帮我打开手电筒。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "帮我把手电筒弄一下", "arguments": {}}
+{"tool_name": "set_flashlight", "user_question": "我正在漆黑的房间里找东西，能麻烦你帮我把手机上的手电筒打开一下吗？我需要照明。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "晚上停电了，我找不到蜡烛，帮我打开手机手电筒吧。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "晚上加班回家，楼道灯坏了，帮我照亮一下路。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我马上要进入一段没有路灯的小巷，周围一片漆黑，请你帮我把手机上的手电筒打开，这样我就能看清路况避免摔倒。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我在晚上回家路上，周围很黑，麻烦帮我打开手电筒照亮路。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "楼道灯坏了，回家时黑漆漆的，帮我打开手电筒照个亮吧。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "请帮我打开手电筒，我钥匙掉地上了需要找一下。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "帮我弄下手电筒", "arguments": {}}
+{"tool_name": "set_flashlight", "user_question": "打开手电", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "下班回家楼道太黑了，帮我打开手电筒照照路。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "嘿，帮我把手电打开呗", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我晚上去地下室找东西，里面太黑了什么都看不见，你能不能帮我把手机上的手电筒打开？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "现在天已经完全黑了，我走在没有路灯的小巷里，根本看不清脚下的路，麻烦你帮我把手机的手电筒打开吧。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我下班回家发现楼道灯坏了，一片漆黑，帮我打开手电筒照路。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "帮我把手电筒打开，我要去楼下拿快递。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "把手机的手电筒打开，我找一下掉在床底下的钥匙。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "晚上回家楼道太黑了，你能帮我把手机上的手电筒打开照一下路吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "你能帮我把手机上的手电筒打开吗，我现在在黑暗的房间里找不到开关了。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "晚上回家找钥匙，能帮我打开手机手电筒吗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "房间里太暗了，找不到开关，请帮我打开手电筒。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "请帮我打开手电筒。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "在漆黑的地下车库里帮我打开手电筒，我要找车位号。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我明天一早要出发去爬山，现在外面天还黑着，麻烦你帮我把手机后面的手电筒打开，这样我就可以在收拾背包时看清楚东西了。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "嘿，帮我开下手电筒呗", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "在黑暗的房间里，请打开手电筒。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我刚走进漆黑的楼道，什么都看不见，请帮我打开手电筒。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "晚上回家走那段没有路灯的小路实在太黑了，你能帮我把手机上的手电筒打开吗，这样我就能看清前面的路了。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "把电筒开开呗？", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "我刚到家楼下，楼道太黑了，帮我打开手电筒。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "把灯打开", "arguments": {}}
+{"tool_name": "set_flashlight", "user_question": "帮我设置手电筒", "arguments": {}}
+{"tool_name": "set_flashlight", "user_question": "帮我把手电筒打开，我要在漆黑的卧室里找掉在地上的钥匙。", "arguments": {"enable": true}}
+{"tool_name": "set_flashlight", "user_question": "晚上回家楼道太黑了，帮我打开手机的手电筒照个亮吧。", "arguments": {"enable": true}}

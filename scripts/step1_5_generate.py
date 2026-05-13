@@ -284,42 +284,10 @@ def main(tools_filter=None):
 
     # ---- 第二阶段：LLM 去重，并发 ----
     DEDUP_CONCURRENCY = 5
-    pending = {k: v for k, v in gen_results.items() if v}  # 有数据的才去重
-    
+    pending = {k: v for k, v in gen_results.items() if v}
+
     if pending:
         print(f"\nLLM 去重: {len(pending)} 个工具, 并发 {DEDUP_CONCURRENCY}\n")
-
-        def dedup_and_fill(tool_name, results):
-            path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
-            before = len(results)
-            results = dedup_via_llm(tool_name, results[:100])
-            seen = {item["user_question"] for item in results}
-
-            def save():
-                with open(path, "w", encoding="utf-8") as f:
-                    for item in results[:100]:
-                        f.write(json.dumps(item, ensure_ascii=False) + "\n")
-            save()
-
-            # 补全
-            need = 100 - len(results)
-            if need > 0:
-                print(f"    {tool_name}: 去重后缺 {need} 条，补全 ...")
-                for _ in range(5):
-                    if need == 0:
-                        break
-                    batch = [generate_one(tool_name) for _ in range(need)]
-                    for item in batch:
-                        if item is None:
-                            continue
-                        q = item["user_question"]
-                        if q not in seen:
-                            seen.add(q)
-                            results.append(item)
-                    results = results[:100]
-                    need = 100 - len(results)
-                save()
-            return min(len(results), 100)
 
         with ThreadPoolExecutor(max_workers=DEDUP_CONCURRENCY) as pool:
             futures = {}
@@ -328,8 +296,9 @@ def main(tools_filter=None):
                 futures[f] = tool_name
             for future in as_completed(futures):
                 tool_name = futures[future]
-                count = future.result()
-                print(f"  {tool_name}: LLM 去重完成 → {count} 条")
+                results, removed = future.result()
+                mark = f" (删 {removed})" if removed > 0 else ""
+                print(f"  {tool_name}: {len(results)} 条{mark}")
 
     total = sum(len(v[:100]) for v in gen_results.values())
     print(f"\n完成: {total} 条")
@@ -339,7 +308,12 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--tools", type=str, default="", help="指定工具名，逗号分隔")
+    parser.add_argument("--dedup-only", action="store_true", help="只运行 LLM 去重循环（反复去重直到无重复）")
     args = parser.parse_args()
 
     tool_list = [t.strip() for t in args.tools.split(",") if t.strip()] if args.tools else None
-    main(tools_filter=tool_list)
+
+    if args.dedup_only:
+        run_dedup_loop(tools_filter=tool_list)
+    else:
+        main(tools_filter=tool_list)

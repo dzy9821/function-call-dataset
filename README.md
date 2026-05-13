@@ -103,7 +103,7 @@
 产物：写回 `zh/{tool}_zh.jsonl`
 
 ### Step 1.5 — LLM 批量生成
-`DEEPSEEK_API_KEY=xxx python scripts/step1_5_generate.py [--tools xxx]`
+`DEEPSEEK_API_KEY=xxx python scripts/step1_5_generate.py [--tools xxx] [--dedup-only]`
 
 31 工具各生成 100 条中文数据。每次 API 调用生成 1 条。支持续跑：已有文件 >= 100 跳过，不足补全。
 
@@ -111,7 +111,7 @@
 1. **生成** — 31 工具按序生成（每工具内部 5 并发本地去重），满 100 即写入文件，不等去重
 2. **去重** — 全部生成完后，5 并发 deepseek-v4-pro 语义去重，去重后缺额自动补全
 
-有必选参数的工具随机混入反例（模糊请求、arguments 为空）。
+`--dedup-only` 单独运行：反复 LLM 去重 + 补全直到所有工具 LLM 返回无重复（最多 5 轮）。
 
 产物：`output/step1/gen/{tool}_gen.jsonl`（每文件 100 条）
 
