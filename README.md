@@ -49,25 +49,20 @@
 
 ### Step 1 — 单工具数据采集
 
-- [x] **1.1 数据盘点** — `scripts/step1_1_inventory.py`（已运行）
-  - 扫描 AliRGHZ(9500)+ Google(9654)，与 32 工具做交集
+- [x] **1.1 数据盘点** — `scripts/step1_1_inventory.py`
   - 产物：`output/step1/inventory.json`
-- [x] **1.2 英文提取+参数匹配** — `scripts/step1_2_extract.py`（已运行）
-  - 逐一对比原始参数名与我们的定义，参数不一致的直接判为不匹配
-  - 结果：6 工具参数匹配，其中 `open_application` 因数据为国外应用无中文语境已删除
-  - **最终 5 工具可用**，共提取 120 条唯一英文问题
-  - 产物：`output/step1/en/{tool}_en.jsonl` × 5（battery_status 5, list_application 10, set_brightness 95, take_picture 5, take_screenshot 5）
-  - 其余 27 个工具无可用数据，全部靠 LLM 生成
-- [x] **1.3 英文→中文翻译** — `scripts/step1_3_translate.py`（已运行）
-  - 5 个工具 120 条英文问题，并发 5 逐条翻译为中文
-  - 产物：`output/step1/zh/{tool}_zh.jsonl` × 5（格式: `{zh, en, arguments}`）
-- [ ] **1.4 参数清洗** — 待规划
-- [ ] **1.5 LLM 生成** — `scripts/step1_5_generate.py`（v2 重做）
-  - 使用 deepseek-chat，每工具独立提示词 `scripts/prompts.py`
-  - 每批 10 条随机模板，满 100 后 LLM 去重再补全
-  - 产物：`output/step1/gen/{tool}_gen.jsonl` × 31
-  - 环境变量：`DEEPSEEK_API_KEY`、自定义 `BASE_URL`
-  - 用法：`python scripts/step1_5_generate.py` 或 `--tools set_brightness,set_volume` 只生成指定工具
+- [x] **1.2 英文提取+参数匹配** — `scripts/step1_2_extract.py`
+  - 三类：✓ 参数匹配 (7)、✗ 同名参数不同 (7 含重叠)、- 无数据 (17)
+  - 所有同名工具均提取，参数重叠的保留重叠字段，无重叠的 arguments 为空
+  - 产物：`output/step1/en/{tool}_en.jsonl` × 14
+- [x] **1.3 英文→中文翻译** — `scripts/step1_3_translate.py`
+  - deepseek-v4-flash，并发 5
+  - 12 工具 560 条已翻译
+  - 产物：`output/step1/zh/{tool}_zh.jsonl`（格式 `{zh, en, arguments}`）
+- [ ] **1.4 参数生成** — 对 ✗ 工具的中文问题调 deepseek-v4-flash 生成匹配我们工具定义的 arguments
+- [ ] **1.5 LLM 补全** — `scripts/step1_5_generate.py`
+  - 合并 zh/ 翻译数据为种子 + gen/ LLM 生成，每工具 100 条
+  - 用法：`DEEPSEEK_API_KEY=xxx python scripts/step1_5_generate.py [--tools xxx]`
 - [ ] **1.6 输出合并** — 待定
 
 ### Step 2 — 工具关联分析

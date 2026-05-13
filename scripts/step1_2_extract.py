@@ -80,24 +80,30 @@ def get_source_params():
 
 
 def extract_matching():
-    """提取参数匹配的工具数据，返回 {tool_name: [{en, arguments}]}。"""
+    """提取数据。
+    - 参数匹配的工具：保留完整 arguments
+    - 同名参数不同的工具：只保留参数名相同的字段
+    返回 {tool_name: [{en, arguments}]}。"""
     our = load_our_params()
     src = get_source_params()
 
-    # 找出参数匹配的工具
-    matching = set()
+    matching = set()    # 参数完全一致
+    partial = {}        # {tool_name: set(overlapping_params)}
     for name in our:
         our_set = set(our[name].keys())
         src_set = src.get(name, set())
         if our_set == src_set:
             matching.add(name)
+        elif name in src:
+            overlap = our_set & src_set
+            partial[name] = overlap
 
-    print(f"参数匹配的工具: {len(matching)} 个\n")
+    all_extract = matching | set(partial.keys())
 
-    # 提取这些工具的数据
-    results = {t: [] for t in matching}
+    # 提取
+    results = {t: [] for t in all_extract}
 
-    # 从 AliRGHZ 提取
+    # AliRGHZ
     with open(ALI_PATH, encoding="utf-8") as f:
         for line in f:
             try:
@@ -114,14 +120,17 @@ def extract_matching():
                 if m.get("role") == "assistant" and "tool_calls" in m:
                     tc = m["tool_calls"][0]["function"]
                     raw_name = tc["name"]
-                    mapped = raw_name
-                    if mapped in matching:
-                        tool_name = mapped
+                    if raw_name in all_extract:
+                        tool_name = raw_name
                         tool_args = tc.get("arguments", {})
             if user_q and tool_name and len(results[tool_name]) < MAX_PER_TOOL:
-                results[tool_name].append({"en": user_q, "arguments": tool_args})
+                if tool_name in matching:
+                    args = tool_args
+                else:
+                    args = {k: v for k, v in tool_args.items() if k in partial.get(tool_name, set())}
+                results[tool_name].append({"en": user_q, "arguments": args})
 
-    # 从 Google 提取
+    # Google
     with open(GOOGLE_PATH, encoding="utf-8") as f:
         for line in f:
             try:
@@ -138,13 +147,16 @@ def extract_matching():
                     tc = m.get("tool_calls")
                     if tc and len(tc) > 0:
                         raw_name = tc[0]["function"]["name"]
-                        mapped = raw_name
-                        if mapped in matching:
-                            tool_name = mapped
+                        if raw_name in all_extract:
+                            tool_name = raw_name
                             raw_args = tc[0]["function"].get("arguments", {})
                             tool_args = {k: v for k, v in raw_args.items() if v is not None}
             if user_q and tool_name and len(results[tool_name]) < MAX_PER_TOOL:
-                results[tool_name].append({"en": user_q, "arguments": tool_args})
+                if tool_name in matching:
+                    args = tool_args
+                else:
+                    args = {k: v for k, v in tool_args.items() if k in partial.get(tool_name, set())}
+                results[tool_name].append({"en": user_q, "arguments": args})
 
     return results
 
@@ -153,10 +165,11 @@ def main():
     our = load_our_params()
     src = get_source_params()
 
-    # 分组
+    # 分组并显示重叠参数
     matching = []
     name_match_but_params_differ = []
     not_in_dataset = []
+    partial_info = {}
 
     for name in sorted(our.keys()):
         our_set = set(our[name].keys())
@@ -167,9 +180,15 @@ def main():
         if our_set == src_set:
             matching.append((name, src_str, our_str))
         elif name in src:
-            name_match_but_params_differ.append((name, src_str, our_str))
+            overlap = our_set & src_set
+            partial_info[name] = overlap
+            detail = f"{src_str} (重叠: {', '.join(sorted(overlap)) if overlap else '无'})"
+            name_match_but_params_differ.append((name, detail, our_str))
         else:
             not_in_dataset.append((name, src_str, our_str))
+
+    # 所有同名工具都列入提取
+    extract_tools = {name for name, _, _ in matching} | set(partial_info.keys())
 
     print(f"{'工具':<30s} {'原始参数':<40s} {'我们的参数':<40s} {'匹配':>5s}")
     print("-" * 120)
@@ -237,7 +256,7 @@ def main():
     with open(inv_path, "w", encoding="utf-8") as f:
         json.dump(inventory, f, ensure_ascii=False, indent=2)
 
-    print(f"\n合计提取 {total} 条（参数匹配的 6 个工具）")
+    print(f"\n合计提取 {total} 条（参数匹配 {len(matching)} 个 + 同名参数不同 {len(name_match_but_params_differ)} 个）")
     print(f"inventory.json 已更新")
 
 

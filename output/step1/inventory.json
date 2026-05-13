@@ -8,17 +8,17 @@
   },
   {
     "tool": "create_calendar_event",
-    "source_count": 0,
-    "need_translate": 0,
-    "need_generate": 100,
-    "source": "llm"
+    "source_count": 120,
+    "need_translate": 120,
+    "need_generate": 0,
+    "source": "dataset"
   },
   {
     "tool": "create_contact",
-    "source_count": 0,
-    "need_translate": 0,
-    "need_generate": 100,
-    "source": "llm"
+    "source_count": 120,
+    "need_translate": 120,
+    "need_generate": 0,
+    "source": "dataset"
   },
   {
     "tool": "list_application",
@@ -36,38 +36,38 @@
   },
   {
     "tool": "phone_call",
-    "source_count": 0,
-    "need_translate": 0,
-    "need_generate": 100,
-    "source": "llm"
+    "source_count": 10,
+    "need_translate": 10,
+    "need_generate": 90,
+    "source": "dataset"
   },
   {
     "tool": "phone_sms",
-    "source_count": 0,
-    "need_translate": 0,
-    "need_generate": 100,
-    "source": "llm"
+    "source_count": 10,
+    "need_translate": 10,
+    "need_generate": 90,
+    "source": "dataset"
   },
   {
     "tool": "send_email",
-    "source_count": 0,
-    "need_translate": 0,
-    "need_generate": 100,
-    "source": "llm"
+    "source_count": 30,
+    "need_translate": 30,
+    "need_generate": 70,
+    "source": "dataset"
   },
   {
     "tool": "set_brightness",
-    "source_count": 0,
-    "need_translate": 0,
-    "need_generate": 100,
-    "source": "llm"
+    "source_count": 95,
+    "need_translate": 95,
+    "need_generate": 5,
+    "source": "dataset"
   },
   {
     "tool": "show_map",
-    "source_count": 0,
-    "need_translate": 0,
-    "need_generate": 100,
-    "source": "llm"
+    "source_count": 120,
+    "need_translate": 120,
+    "need_generate": 0,
+    "source": "dataset"
   },
   {
     "tool": "take_picture",

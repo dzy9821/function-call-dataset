@@ -5,26 +5,26 @@
 {"zh": "你能打开YouTube吗？", "en": "Can you open YouTube?", "arguments": {"application_name": "YouTube"}}
 {"zh": "打开日历。", "en": "Open Calendar.", "arguments": {"application_name": "Calendar"}}
 {"zh": "打开WhatsApp应用。", "en": "Launch the WhatsApp app.", "arguments": {"application_name": "WhatsApp"}}
-{"zh": "帮我打开Spotify。", "en": "Please open Spotify for me.", "arguments": {"application_name": "Spotify"}}
-{"zh": "开始设置。", "en": "Start Settings.", "arguments": {"application_name": "Settings"}}
+{"zh": "帮我开一下Spotify。", "en": "Please open Spotify for me.", "arguments": {"application_name": "Spotify"}}
+{"zh": "开始设置", "en": "Start Settings.", "arguments": {"application_name": "Settings"}}
 {"zh": "你能打开计算器吗？", "en": "Can you open Calculator?", "arguments": {"application_name": "Calculator"}}
 {"zh": "打开照片。", "en": "Open Photos.", "arguments": {"application_name": "Photos"}}
 {"zh": "打开Drive应用。", "en": "Launch the Drive app.", "arguments": {"application_name": "Drive"}}
 {"zh": "请帮我打开Slack。", "en": "Please open Slack for me.", "arguments": {"application_name": "Slack"}}
-{"zh": "开始Zoom会议。", "en": "Start Zoom.", "arguments": {"application_name": "Zoom"}}
-{"zh": "可以啊，不过我没办法直接帮你打开，你自己点开Telegram就行。", "en": "Can you open Telegram?", "arguments": {"application_name": "Telegram"}}
+{"zh": "开始Zoom", "en": "Start Zoom.", "arguments": {"application_name": "Zoom"}}
+{"zh": "你可以试试打开 Telegram。", "en": "Can you open Telegram?", "arguments": {"application_name": "Telegram"}}
 {"zh": "打开领英。", "en": "Open LinkedIn.", "arguments": {"application_name": "LinkedIn"}}
-{"zh": "打开文档应用。", "en": "Launch the Docs app.", "arguments": {"application_name": "Docs"}}
-{"zh": "请帮我打开表格。", "en": "Please open Sheets for me.", "arguments": {"application_name": "Sheets"}}
-{"zh": "开始计时", "en": "Start Clock.", "arguments": {"application_name": "Clock"}}
-{"zh": "你能打开通讯录吗？", "en": "Can you open Contacts?", "arguments": {"application_name": "Contacts"}}
+{"zh": "打开Docs应用。", "en": "Launch the Docs app.", "arguments": {"application_name": "Docs"}}
+{"zh": "帮我把表格打开一下。", "en": "Please open Sheets for me.", "arguments": {"application_name": "Sheets"}}
+{"zh": "开始计时。", "en": "Start Clock.", "arguments": {"application_name": "Clock"}}
+{"zh": "能帮我打开通讯录吗？", "en": "Can you open Contacts?", "arguments": {"application_name": "Contacts"}}
 {"zh": "打开消息。", "en": "Open Messages.", "arguments": {"application_name": "Messages"}}
-{"zh": "打开电话应用。", "en": "Launch the Phone app.", "arguments": {"application_name": "Phone"}}
+{"zh": "打开电话。", "en": "Launch the Phone app.", "arguments": {"application_name": "Phone"}}
 {"zh": "请帮我打开文件。", "en": "Please open Files for me.", "arguments": {"application_name": "Files"}}
 {"zh": "开始天气", "en": "Start Weather.", "arguments": {"application_name": "Weather"}}
 {"zh": "你能打开备忘录吗？", "en": "Can you open Notes?", "arguments": {"application_name": "Notes"}}
 {"zh": "打开亚马逊。", "en": "Open Amazon.", "arguments": {"application_name": "Amazon"}}
-{"zh": "打开Uber应用。", "en": "Launch the Uber app.", "arguments": {"application_name": "Uber"}}
-{"zh": "帮我打开Discord。", "en": "Please open Discord for me.", "arguments": {"application_name": "Discord"}}
-{"zh": "打开Facebook。", "en": "Start Facebook.", "arguments": {"application_name": "Facebook"}}
+{"zh": "打开Uber App。", "en": "Launch the Uber app.", "arguments": {"application_name": "Uber"}}
+{"zh": "帮我把 Discord 打开一下。", "en": "Please open Discord for me.", "arguments": {"application_name": "Discord"}}
+{"zh": "上Facebook。", "en": "Start Facebook.", "arguments": {"application_name": "Facebook"}}
 {"zh": "你能打开Instagram吗？", "en": "Can you open Instagram?", "arguments": {"application_name": "Instagram"}}
