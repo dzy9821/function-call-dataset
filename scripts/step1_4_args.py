@@ -77,20 +77,31 @@ def process_tool(tool_name: str, tool_def: dict):
                 items.append(json.loads(line))
 
     total = len(items)
-    # 统计已有完整 arguments 的
-    has_args = sum(1 for i in items if i.get("arguments"))
-    need = total - has_args
+    required = set(tool_def["function"]["parameters"].get("required", []))
+
+    def args_complete(args):
+        """检查必选参数是否全部存在。无参工具 {} 也算完整。"""
+        if not required:
+            return True  # 无参工具，{} 即完整
+        if not args:
+            return False
+        for r in required:
+            if r not in args or args[r] is None or args[r] == "":
+                return False
+        return True
+
+    need = sum(1 for i in items if not args_complete(i.get("arguments", {})))
     if need == 0:
-        print(f"  {tool_name}: {total} 条, arguments 全部已完整 ✓")
+        print(f"  {tool_name}: {total} 条, 参数全部完整 ✓")
         return
 
-    print(f"  {tool_name}: {total} 条, {need} 条需生成 arguments")
+    print(f"  {tool_name}: {total} 条, {need} 条需补全参数")
 
     results = [None] * total
 
     def gen_one(idx):
         item = items[idx]
-        if item.get("arguments"):
+        if args_complete(item.get("arguments", {})):
             return idx, item["arguments"]
         args = generate_args(tool_name, item["zh"], tool_def)
         return idx, args if args else {}
@@ -117,8 +128,8 @@ def process_tool(tool_name: str, tool_def: dict):
         for item in items:
             f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
-    filled = sum(1 for i in items if i.get("arguments"))
-    print(f"    → {os.path.basename(zh_path)} ({filled}/{total} 有参数)")
+    filled = sum(1 for i in items if args_complete(i.get("arguments", {})))
+    print(f"    → {os.path.basename(zh_path)} ({filled}/{total} 参数完整)")
 
 
 def main():

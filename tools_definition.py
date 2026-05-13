@@ -507,7 +507,7 @@ TOOLS = [
                     },
                     "end_date": {
                         "type": "STRING",
-                        "description": "事件结束日期和时间，格式为 YYYY-MM-DDTHH:MM:SS。"
+                        "description": "如果没有提到结束时间，则结束时间为开始时间后一小时，格式为 YYYY-MM-DDTHH:MM:SS。"
                     }
                 },
                 "required": ["title", "start_date", "end_date"]
