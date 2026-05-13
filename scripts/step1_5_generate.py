@@ -22,9 +22,9 @@ sys.path.insert(0, PROJECT_ROOT)
 GEN_DIR = os.path.join(PROJECT_ROOT, "output", "step1", "gen")
 
 # ---- 模型配置（用户自行修改）----
-API_KEY = os.environ.get("DEEPSEEK_API_KEY", "your-api-key-here")
-BASE_URL = "https://api.deepseek.com/v1"
-MODEL = "deepseek-chat"
+API_KEY = os.environ.get("DEEPSEEK_API_KEY", "sk-6758987f6c594753b747a6e4c2f94268")
+BASE_URL = "https://api.deepseek.com"
+MODEL = "deepseek-v4-flash"
 CONCURRENCY = 10
 
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
@@ -68,7 +68,9 @@ def load_existing(tool_name):
 
 
 def validate_args(tool_name, args):
-    """校验参数合法性。"""
+    """校验参数合法性。空 args 视为反例，合法。"""
+    if not args:
+        return True  # 反例
     if tool_name in ("set_brightness", "set_volume"):
         has_level = "level" in args
         has_dir = "direction" in args
@@ -81,24 +83,51 @@ def validate_args(tool_name, args):
 
 
 def generate_batch(tool_name, count):
-    """生成一批数据，返回 list[dict]。"""
+    """生成一批数据，返回 list[dict]。
+    对于有必选参数的工具，随机混入反例（模糊请求、arguments为空）。
+    """
     tp = TOOL_PROMPTS[tool_name]
     param_notes = tp["param_notes"]
     bad = tp.get("bad_examples", "")
 
-    system = tp["system"] + "\n\n" + f"参数说明：\n{param_notes}"
+    # 从工具定义获取必选参数列表
+    all_defs = load_tool_defs()
+    tdef = all_defs[tool_name]
+    required = tdef["function"]["parameters"].get("required", [])
+
+    # 正例 system prompt
+    system_pos = tp["system"] + "\n\n" + f"参数说明：\n{param_notes}"
     if bad:
-        system += f"\n\n禁止事项：\n{bad}"
+        system_pos += f"\n\n禁止事项：\n{bad}"
+
+    # 反例 system prompt（仅有必选参数的工具才有）
+    has_neg = len(required) > 0
+    if has_neg:
+        req_str = "、".join(required)
+        system_neg = f"""你是 function call 训练数据生成助手。生成一条"反例"。
+用户提到了和 "{tool_name}" 相关的需求，但表达模糊、遗漏了必选参数（{req_str}），无法调用工具。
+此时 arguments 必须为空对象 {{}}。"""
 
     items = []
     for i in range(count):
-        style = random.choice(STYLES)
-        user = f"""请生成 1 条中文用户问题。
+        # 随机选 style，有必选参数时加入反例 style
+        pool = STYLES + (["NEGATIVE"] if has_neg else [])
+        style = random.choice(pool)
+
+        if style == "NEGATIVE":
+            user = f"""请生成 1 条反例用户问题。
+用户说了一句模糊的话，提到了工具功能但遗漏了必选参数（{req_str}），无法调用。
+输出格式（只输出 JSON）：
+{{"user_question": "模糊的请求", "arguments": {{}}}}"""
+            system = system_neg
+        else:
+            user = f"""请生成 1 条中文用户问题。
 
 表达风格：{style}
 
 输出格式（只输出 JSON）：
 {{"user_question": "...", "arguments": {{...}}}}"""
+            system = system_pos
 
         try:
             resp = client.chat.completions.create(
@@ -250,11 +279,8 @@ def main(tools_filter=None):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--tools", type=str, default="", help="指定工具名，逗号分隔，如 'set_brightness,set_volume'")
+    parser.add_argument("--tools", type=str, default="", help="指定工具名，逗号分隔")
     args = parser.parse_args()
 
-    if args.tools:
-        tool_list = [t.strip() for t in args.tools.split(",") if t.strip()]
-        main(tools_filter=tool_list)
-    else:
-        main()
+    tool_list = [t.strip() for t in args.tools.split(",") if t.strip()] if args.tools else None
+    main(tools_filter=tool_list)
