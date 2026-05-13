@@ -203,13 +203,12 @@ def dedup_via_llm(tool_name, items):
         return items
 
 
-def process_tool(tool_name):
-    """生成 100 条数据。支持续跑：已有文件会被加载继续补全。"""
+def process_tool_generate(tool_name):
+    """生成 100 条数据，不做 LLM 去重。支持续跑。"""
     path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
     results = []
     seen = set()
 
-    # 进度恢复：读取已有数据
     if os.path.exists(path):
         with open(path, encoding="utf-8") as f:
             for line in f:
@@ -219,7 +218,7 @@ def process_tool(tool_name):
                     seen.add(item["user_question"])
         if len(results) >= 100:
             print(f"  {tool_name}: 已有 {len(results)} 条，跳过 ✓")
-            return min(len(results), 100)
+            return results[:100]
         print(f"  {tool_name}: 已有 {len(results)} 条，继续补全至 100 ...")
     else:
         print(f"  {tool_name}: 生成 100 条 ...")
@@ -229,7 +228,6 @@ def process_tool(tool_name):
             for item in results[:100]:
                 f.write(json.dumps(item, ensure_ascii=False) + "\n")
 
-    # 第一阶段：本地去重凑满 100
     max_rounds = 5
     for round_num in range(max_rounds):
         need = 100 - len(results)
@@ -267,36 +265,8 @@ def process_tool(tool_name):
         save()
         print(f"    累计 {len(results)} 条 → 已保存")
 
-        if len(results) >= 100:
-            break
-
-    # 第二阶段：满 100 后 LLM 去重
-    before = len(results)
-    results = dedup_via_llm(tool_name, results[:100])
-    seen = {item["user_question"] for item in results}
-    save()
-
-    # 第三阶段：去重后不足补全
-    need = 100 - len(results)
-    if need > 0:
-        print(f"    LLM 去重后缺 {need} 条，补全 ...")
-        for round_num in range(5):
-            if need == 0:
-                break
-            batch = [generate_one(tool_name) for _ in range(need)]
-            for item in batch:
-                if item is None:
-                    continue
-                q = item["user_question"]
-                if q not in seen:
-                    seen.add(q)
-                    results.append(item)
-            results = results[:100]
-            need = 100 - len(results)
-            save()
-
     print(f"  → {min(len(results), 100)} 条\n")
-    return min(len(results), 100)
+    return results[:100]
 
 
 def main(tools_filter=None):
@@ -305,13 +275,64 @@ def main(tools_filter=None):
         all_tools = {k: v for k, v in all_tools.items() if k in tools_filter}
 
     os.makedirs(GEN_DIR, exist_ok=True)
-    print(f"生成 {len(all_tools)} 个工具, 各 100 条\n")
+    print(f"工具: {len(all_tools)} 个, 各 100 条\n")
 
-    total = 0
+    # ---- 第一阶段：生成（不 LLM 去重），顺序处理每个工具 ----
+    gen_results = {}  # {tool_name: results_list}
     for tool_name in all_tools:
-        total += process_tool(tool_name)
+        gen_results[tool_name] = process_tool_generate(tool_name)
 
-    print(f"完成: {total} 条")
+    # ---- 第二阶段：LLM 去重，并发 ----
+    DEDUP_CONCURRENCY = 5
+    pending = {k: v for k, v in gen_results.items() if v}  # 有数据的才去重
+    
+    if pending:
+        print(f"\nLLM 去重: {len(pending)} 个工具, 并发 {DEDUP_CONCURRENCY}\n")
+
+        def dedup_and_fill(tool_name, results):
+            path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
+            before = len(results)
+            results = dedup_via_llm(tool_name, results[:100])
+            seen = {item["user_question"] for item in results}
+
+            def save():
+                with open(path, "w", encoding="utf-8") as f:
+                    for item in results[:100]:
+                        f.write(json.dumps(item, ensure_ascii=False) + "\n")
+            save()
+
+            # 补全
+            need = 100 - len(results)
+            if need > 0:
+                print(f"    {tool_name}: 去重后缺 {need} 条，补全 ...")
+                for _ in range(5):
+                    if need == 0:
+                        break
+                    batch = [generate_one(tool_name) for _ in range(need)]
+                    for item in batch:
+                        if item is None:
+                            continue
+                        q = item["user_question"]
+                        if q not in seen:
+                            seen.add(q)
+                            results.append(item)
+                    results = results[:100]
+                    need = 100 - len(results)
+                save()
+            return min(len(results), 100)
+
+        with ThreadPoolExecutor(max_workers=DEDUP_CONCURRENCY) as pool:
+            futures = {}
+            for tool_name, results in pending.items():
+                f = pool.submit(dedup_and_fill, tool_name, results)
+                futures[f] = tool_name
+            for future in as_completed(futures):
+                tool_name = futures[future]
+                count = future.result()
+                print(f"  {tool_name}: LLM 去重完成 → {count} 条")
+
+    total = sum(len(v[:100]) for v in gen_results.values())
+    print(f"\n完成: {total} 条")
 
 
 if __name__ == "__main__":
