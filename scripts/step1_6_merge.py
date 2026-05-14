@@ -114,9 +114,9 @@ def main():
     print_stats(zh_records, "zh/ 数据")
     print_stats(gen_records, "gen/ 数据")
 
-    # 2. 合并 & 打乱
+    # 2. 合并且按工具名排序
     all_records = zh_records + gen_records
-    random.shuffle(all_records)
+    all_records.sort(key=lambda r: r["reward_model"]["ground_truth"][0]["function"]["name"])
 
     # 3. 写入
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)

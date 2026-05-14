@@ -1,100 +1,100 @@
-{"tool_name": "create_note", "user_question": "帮我创建一条笔记", "arguments": {}}
-{"tool_name": "create_note", "user_question": "能帮我记一条关于如何提高工作效率的笔记吗？", "arguments": {"title": "提高工作效率的方法", "content": "1. 制定每日计划，优先处理重要任务。2. 使用番茄工作法，专注25分钟休息5分钟。3. 减少多任务处理，一次只做一件事。4. 定期整理工作环境，保持整洁。5. 学会拒绝不必要的干扰。"}}
-{"tool_name": "create_note", "user_question": "刚看完电影《星际穿越》，有些感悟想记下来，帮我写条笔记，标题就叫‘时间与爱的维度’，内容简单写下：‘爱是唯一能穿越所有维度的力量。’", "arguments": {"title": "时间与爱的维度", "content": "爱是唯一能穿越所有维度的力量。"}}
-{"tool_name": "create_note", "user_question": "帮我记一条学习笔记，标题是‘Python decorator 用法总结’，内容写上‘装饰器本质是函数，用于扩展功能，常见应用包括日志、权限验证等，推荐阅读官方文档 section 9.8。’", "arguments": {"title": "Python decorator 用法总结", "content": "装饰器本质是函数，用于扩展功能，常见应用包括日志、权限验证等，推荐阅读官方文档 section 9.8。"}}
-{"tool_name": "create_note", "user_question": "今天下午在图书馆读了一本关于时间管理的书，感觉收获很大，想把这些核心方法和灵感整理成一条笔记，方便以后回顾和实践。", "arguments": {"title": "时间管理读书笔记", "content": "1. 二八法则：把精力集中在最重要的20%任务上。\n2. 番茄工作法：专注25分钟，休息5分钟，循环进行。\n3. 优先级矩阵：将任务分为紧急重要、重要不紧急、紧急不重要、不重要不紧急。\n4. 每周回顾：调整计划，避免陷入忙乱。\n灵感：明天开始用番茄钟练习，每天早晨先处理最困难的任务。"}}
-{"tool_name": "create_note", "user_question": "你能帮我记一条关于周末去超市采购的备忘录吗？", "arguments": {"title": "周末超市采购清单", "content": "牛奶、面包、鸡蛋、水果、蔬菜、纸巾"}}
-{"tool_name": "create_note", "user_question": "我想创建一条笔记，标题叫《周末购物清单》，内容记录一下需要买的东西：牛奶、鸡蛋、面包、水果和一些蔬菜，另外别忘了买一包咖啡豆。", "arguments": {"title": "周末购物清单", "content": "需要买的东西：牛奶、鸡蛋、面包、水果和一些蔬菜，另外别忘了买一包咖啡豆。"}}
-{"tool_name": "create_note", "user_question": "帮我写个笔记", "arguments": {}}
-{"tool_name": "create_note", "user_question": "我刚在超市买菜回来，帮我记一下晚餐想做的麻婆豆腐的食材清单。", "arguments": {"title": "麻婆豆腐食材清单", "content": "豆腐一块、牛肉末100克、豆瓣酱、花椒粉、辣椒面、姜蒜末、葱花、生抽、水淀粉、盐、糖、鸡精。"}}
-{"tool_name": "create_note", "user_question": "能不能帮我记一条关于学习笔记的内容？", "arguments": {"title": "Python函数学习", "content": "今天学习了函数定义和参数传递，包括位置参数、默认参数和可变参数。"}}
-{"tool_name": "create_note", "user_question": "帮我记个笔记呗，标题是“下午茶推荐”，内容就写“发现公司楼下新开的奶茶店，芋泥波波超好喝”。", "arguments": {"title": "下午茶推荐", "content": "发现公司楼下新开的奶茶店，芋泥波波超好喝。"}}
-{"tool_name": "create_note", "user_question": "帮我记点东西", "arguments": {}}
-{"tool_name": "create_note", "user_question": "可以帮我记一条关于周末去超市购物清单的笔记吗？", "arguments": {"title": "周末购物清单", "content": "牛奶、面包、鸡蛋、苹果、纸巾"}}
-{"tool_name": "create_note", "user_question": "哎，帮我随便记个东西，标题就叫‘今天的小灵感’，内容写‘突然想到可以用橡胶树制作环保拖鞋’", "arguments": {"title": "今天的小灵感", "content": "突然想到可以用橡胶树制作环保拖鞋"}}
-{"tool_name": "create_note", "user_question": "你可以帮我记一条关于周末读书计划的笔记吗？", "arguments": {"title": "周末读书清单", "content": "周六早上读《人类简史》第5章，下午读《思考，快与慢》第3-4章；周日读完剩余部分并做笔记。"}}
-{"tool_name": "create_note", "user_question": "明天下午三点有个团队周会，需要梳理一下上周的进展和本周的计划，麻烦帮我创建一条笔记，标题就叫“团队周会准备”，内容里写清楚：1. 回顾上周完成的三个主要任务，2. 列出本周的优先级事项，3. 要讨论的阻塞问题，最后加上一句提醒自己带笔记本和充电器。", "arguments": {"title": "团队周会准备", "content": "1. 回顾上周完成的三个主要任务：开发登录模块、修复订单页面bug、完成API文档。2. 本周优先级事项：启动支付功能开发、优化首页加载速度、准备演示Demo。3. 阻塞问题：服务器资源不足，需要申请扩容。提醒：记得带笔记本和充电器。"}}
-{"tool_name": "create_note", "user_question": "帮我记录一下明天会议的重点，标题写‘周会纪要’，内容是‘Q2目标调整，新增市场推广预算，下周三前提交方案’。", "arguments": {"title": "周会纪要", "content": "Q2目标调整，新增市场推广预算，下周三前提交方案"}}
-{"tool_name": "create_note", "user_question": "帮我记一条关于明天下午两点和客户开会的会议要点，重点讨论产品需求变更和时间节点。", "arguments": {"title": "客户会议要点", "content": "明天下午两点和客户开会，讨论产品需求变更及时间节点。"}}
-{"tool_name": "create_note", "user_question": "帮我记一下今天在公园拍到的那些花的名字：雏菊、郁金香和樱花", "arguments": {"title": "公园花名记录", "content": "今日在公园拍到的花：雏菊、郁金香、樱花"}}
-{"tool_name": "create_note", "user_question": "麻烦您帮我记录一条关于周末徒步计划的备忘录，谢谢。", "arguments": {"title": "周末徒步计划", "content": "周六早上7点出发，前往西山森林公园，带好登山杖、水和午餐，预计下午3点返回。"}}
-{"tool_name": "create_note", "user_question": "今天下午开会时领导提到下周要交季度总结，赶紧帮我记一下，标题就叫‘季度总结截止’，内容是‘下周五前提交季度总结报告给主管’", "arguments": {"title": "季度总结截止", "content": "下周五前提交季度总结报告给主管"}}
-{"tool_name": "create_note", "user_question": "帮我记个笔记", "arguments": {}}
-{"tool_name": "create_note", "user_question": "请帮我创建一条关于明天早上九点开会的提醒笔记，标题写‘晨会准备’，内容包含需要讨论的三个议题：项目进度、预算调整和团队分工。", "arguments": {"title": "晨会准备", "content": "需要讨论的三个议题：项目进度、预算调整和团队分工。"}}
-{"tool_name": "create_note", "user_question": "嘿，帮我记个笔记呗，就写“周末买菜清单”，内容写上鸡蛋、牛奶、面包、水果。", "arguments": {"title": "周末买菜清单", "content": "鸡蛋、牛奶、面包、水果。"}}
-{"tool_name": "create_note", "user_question": "我最近在学做咖啡拉花，想记录一下今天尝试的心得和失败教训，帮我创建一条笔记吧。", "arguments": {"title": "咖啡拉花练习记录", "content": "今天试了郁金香拉花，牛奶温度有点高导致奶泡太厚，倒的时候图案没成型。下次注意把牛奶加热到65度左右，打奶泡时进气少一点。"}}
-{"tool_name": "create_note", "user_question": "帮我记个笔记，标题是散步灵感，内容是公园里看到小孩放风筝突然想到可以做个风筝主题的APP。", "arguments": {"title": "散步灵感", "content": "公园里看到小孩放风筝突然想到可以做个风筝主题的APP。"}}
-{"tool_name": "create_note", "user_question": "帮我记个事", "arguments": {}}
-{"tool_name": "create_note", "user_question": "我最近在学做菜，帮我记一条笔记，标题是红烧肉的做法，内容是五花肉切块焯水后炒糖色加入生抽老抽炖煮。", "arguments": {"title": "红烧肉的做法", "content": "五花肉切块焯水后炒糖色加入生抽老抽炖煮。"}}
-{"tool_name": "create_note", "user_question": "请问可以帮我创建一条关于如何高效学习Python的笔记吗？", "arguments": {"title": "高效学习Python技巧", "content": "1. 明确学习目标；2. 多动手写代码；3. 阅读开源项目代码；4. 参与社区讨论；5. 定期复习总结。"}}
-{"tool_name": "create_note", "user_question": "帮我记个笔记，标题是《周末计划》，内容是周六去爬山，周日看电影。", "arguments": {"title": "周末计划", "content": "周六去爬山，周日看电影。"}}
-{"tool_name": "create_note", "user_question": "能不能帮我存一条关于健身计划的笔记？", "arguments": {"title": "健身计划", "content": "周一胸肌训练，周三腿部训练，周五背部训练"}}
-{"tool_name": "create_note", "user_question": "帮我记个笔记，提醒我明天下午三点去健身房。", "arguments": {"title": "健身提醒", "content": "明天下午三点去健身房锻炼。"}}
-{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是‘夏日食谱灵感’，内容记录一下藜麦沙拉、芒果奶昔和柠檬烤鸡的做法要点。", "arguments": {"title": "夏日食谱灵感", "content": "藜麦沙拉、芒果奶昔和柠檬烤鸡的做法要点"}}
-{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是‘周末计划’，内容包括周六上午去图书馆，下午和朋友打羽毛球，周日在家休息。", "arguments": {"title": "周末计划", "content": "周六上午去图书馆，下午和朋友打羽毛球，周日在家休息。"}}
-{"tool_name": "create_note", "user_question": "刚才在小组讨论时听到一个关于提升团队协作效率的好点子，赶紧帮我记下来，标题就用‘每日站立会议改进方案’，内容要包含‘每个成员轮流分享三个内容：昨天做了什么、今天计划做什么、遇到了什么阻碍，时长控制在15分钟内。’", "arguments": {"title": "每日站立会议改进方案", "content": "每个成员轮流分享三个内容：昨天做了什么、今天计划做什么、遇到了什么阻碍，时长控制在15分钟内。"}}
-{"tool_name": "create_note", "user_question": "刚看完《肖申克的救赎》，想记录一下那句‘要么忙着活，要么忙着死’的台词，帮我记个笔记。", "arguments": {"title": "《肖申克的救赎》经典台词", "content": "要么忙着活，要么忙着死。"}}
-{"tool_name": "create_note", "user_question": "今天开会时老板提到一个重要的项目截止日期，我想记录一下，标题设为‘项目截止日期提醒’，内容写‘请于12月20日前完成市场调研报告并提交’。", "arguments": {"title": "项目截止日期提醒", "content": "请于12月20日前完成市场调研报告并提交。"}}
-{"tool_name": "create_note", "user_question": "我在开会时突然想到一个很棒的项目创意，麻烦帮我记下来，标题就叫“新产品功能灵感”，内容就写：用户可以通过语音快速生成备忘录，这样他们就能在开车时也能轻松记录想法了。", "arguments": {"title": "新产品功能灵感", "content": "用户可以通过语音快速生成备忘录，这样他们就能在开车时也能轻松记录想法了。"}}
-{"tool_name": "create_note", "user_question": "帮我记条笔记，标题是『今日购物清单』，内容写买牛奶和面包。", "arguments": {"title": "今日购物清单", "content": "买牛奶和面包"}}
-{"tool_name": "create_note", "user_question": "我想记一条关于如何高效利用早晨时间的笔记，你能帮我生成吗？", "arguments": {"title": "早晨时间管理技巧", "content": "1. 早起15分钟，做简单拉伸唤醒身体。2. 喝一杯温水，促进新陈代谢。3. 列出当天最重要的三件事，优先完成。4. 避免刷手机，先投入专注工作。5. 留出10分钟规划午休和下午任务。"}}
-{"tool_name": "create_note", "user_question": "帮我记个笔记呗，就写一下今天学到的一个新东西。", "arguments": {"title": "今日学习新收获", "content": "今天学到了一个有趣的知识点，准备后续整理成笔记。"}}
-{"tool_name": "create_note", "user_question": "帮我记个灵感笔记，关于周末去公园写生的想法，带点水彩画具和折叠椅。", "arguments": {"title": "周末写生准备", "content": "周末去公园写生，带水彩画具和折叠椅，捕捉自然光影。"}}
-{"tool_name": "create_note", "user_question": "麻烦您帮我创建一条关于学习外语的笔记，标题叫“英语听力提升方法”，内容写上每天听播客和看美剧的建议。", "arguments": {"title": "英语听力提升方法", "content": "每天听播客和看美剧的建议。"}}
-{"tool_name": "create_note", "user_question": "您好，能帮我记一条学习笔记吗？标题是「机器学习常见算法总结」，内容写一下线性回归、决策树和SVM的基本原理。", "arguments": {"title": "机器学习常见算法总结", "content": "线性回归：预测连续值，最小化误差平方和。决策树：以信息增益或基尼系数进行特征划分，用于分类/回归。SVM：寻找最大间隔超平面，使用核函数处理非线性问题。"}}
-{"tool_name": "create_note", "user_question": "帮我记一条关于周末计划的笔记", "arguments": {"title": "周末计划", "content": "周六上午去爬山，下午看电影，周日宅家看书。"}}
-{"tool_name": "create_note", "user_question": "嘿，帮我记个笔记，标题就是'今天天气真好'，内容写'阳光明媚，心情棒棒哒'。", "arguments": {"title": "今天天气真好", "content": "阳光明媚，心情棒棒哒。"}}
-{"tool_name": "create_note", "user_question": "帮我记下明天下午3点和客户视频会议，重点讨论新版本的功能需求变更。", "arguments": {"title": "明天下午3点客户视频会议", "content": "讨论新版本功能需求变更"}}
-{"tool_name": "create_note", "user_question": "刚才在咖啡馆听到一首特别熟悉的旋律，但想不起歌名，帮我记下这个感受，回头再查。", "arguments": {"title": "咖啡馆的旋律", "content": "在街角咖啡馆听到一首老歌，旋律很熟悉但记不起名字，像是90年代的流行曲，当时心里有点感动又有点惆怅。"}}
-{"tool_name": "create_note", "user_question": "帮我把今天下午开会时讨论的项目进度安排以及后续每个成员的任务分配记下来，顺便提醒自己下周三之前要完成初稿。", "arguments": {"title": "项目进度与任务分配", "content": "今天下午会议记录：项目当前进度为80%，剩余工作集中在UI优化和测试。后续任务：张三负责前端组件调整，李四负责后端接口联调，王五负责测试用例编写。初稿完成截止日期为下周三。"}}
-{"tool_name": "create_note", "user_question": "帮我记条笔记，标题是《晨间灵感》，内容写“今天在公园看到老人在吹口琴，很安详。”", "arguments": {"title": "晨间灵感", "content": "今天在公园看到老人在吹口琴，很安详。"}}
-{"tool_name": "create_note", "user_question": "记个笔记，标题是今日购物清单，内容是牛奶、鸡蛋、面包", "arguments": {"title": "今日购物清单", "content": "牛奶、鸡蛋、面包"}}
-{"tool_name": "create_note", "user_question": "快帮我记一下，明早开会的重点议程，我得提前准备一下。", "arguments": {"title": "明日开会重点议程", "content": "1. 汇报上周项目进度\n2. 讨论新方案可行性\n3. 分配下周任务"}}
-{"tool_name": "create_note", "user_question": "我在阅读一本关于时间管理的书时深受启发，想快速记下一条关于‘番茄工作法’的实践心得，包括每25分钟专注后休息5分钟的核心要点，并提醒自己每天使用这个技巧来提高工作效率。", "arguments": {"title": "番茄工作法实践心得", "content": "采用25分钟专注工作+5分钟休息的循环，每完成4个番茄钟进行一次15-30分钟的长休息。重点在于专注期间不被干扰，休息时彻底放松。从明天开始每天至少完成6个番茄钟，提升工作效率。"}}
-{"tool_name": "create_note", "user_question": "记个笔记：标题是‘Python小技巧’，内容写‘用enumerate替代range(len())更优雅’", "arguments": {"title": "Python小技巧", "content": "用enumerate替代range(len())更优雅"}}
-{"tool_name": "create_note", "user_question": "正在图书馆复习，突然想到一个很好的学习方法，帮我记下来。", "arguments": {"title": "高效复习技巧", "content": "使用费曼学习法：用自己的话向别人解释知识点，找出卡壳处再重新学习。"}}
-{"tool_name": "create_note", "user_question": "可以帮我记一条关于周末爬山计划的笔记吗？", "arguments": {"title": "周末爬山计划", "content": "周六早上8点集合，带好水和干粮，穿登山鞋，预计下午5点返回。"}}
-{"tool_name": "create_note", "user_question": "你能帮我记一条关于今天学习到的Python列表推导式的笔记吗？", "arguments": {"title": "Python列表推导式学习笔记", "content": "列表推导式是一种简洁创建列表的方法，例如 [x**2 for x in range(10)] 生成0到9的平方列表。注意：可加条件过滤，如 [x for x in range(10) if x%2==0]。"}}
-{"tool_name": "create_note", "user_question": "麻烦帮我记一条笔记，标题是“今日灵感”，内容是“雨后清新的空气让人心情舒畅，适合创作”。", "arguments": {"title": "今日灵感", "content": "雨后清新的空气让人心情舒畅，适合创作。"}}
-{"tool_name": "create_note", "user_question": "帮我记个笔记，关于下周工作计划：周一开例会，周二整理文档。", "arguments": {"title": "下周工作计划", "content": "周一开例会，周二整理文档。"}}
-{"tool_name": "create_note", "user_question": "你能帮我记一条笔记吗？标题是‘会议纪要’，内容总结一下今天下午的项目进度讨论。", "arguments": {"title": "会议纪要", "content": "今天下午项目进度讨论：前端开发完成80%，后端API预计周五前交付，测试计划下周一启动。"}}
-{"tool_name": "create_note", "user_question": "请帮我记一条关于明天买菜的笔记。", "arguments": {"title": "明天买菜清单", "content": "明天记得买鸡蛋、牛奶、西红柿和面包，早上8点去超市。"}}
-{"tool_name": "create_note", "user_question": "帮我记个笔记，主题是‘周末购物清单’，内容写上‘买牛奶、面包、鸡蛋和洗衣液’", "arguments": {"title": "周末购物清单", "content": "买牛奶、面包、鸡蛋和洗衣液"}}
-{"tool_name": "create_note", "user_question": "我刚在咖啡馆看到一个非常有趣的路人，他拿着吉他在街边即兴弹唱自创的歌曲，让我想起来我也想写一首歌，帮我记下这个灵感，标题就叫‘街头音乐灵感’，内容写我想写一首关于城市夜晚和陌生人相遇的民谣。", "arguments": {"title": "街头音乐灵感", "content": "写一首关于城市夜晚和陌生人相遇的民谣。"}}
-{"tool_name": "create_note", "user_question": "我刚刚在咖啡馆里构思了一份新项目的初步框架，需要赶紧记下来以防忘记，麻烦帮我创建一条笔记，标题定为‘新项目初步构想’，内容就写‘以模块化设计为核心，第一阶段先完成用户认证与权限管理，第二阶段加入数据分析看板，采用微服务架构实现。'", "arguments": {"title": "新项目初步构想", "content": "以模块化设计为核心，第一阶段先完成用户认证与权限管理，第二阶段加入数据分析看板，采用微服务架构实现。"}}
-{"tool_name": "create_note", "user_question": "我刚刚在超市买了好多东西，帮我记一下购物清单：牛奶、鸡蛋、面包、苹果、洗手液。", "arguments": {"title": "购物清单", "content": "牛奶、鸡蛋、面包、苹果、洗手液"}}
-{"tool_name": "create_note", "user_question": "您好，能麻烦您帮我记一条笔记吗？标题是《Python学习要点》，内容为“今天复习了列表和字典的基本操作，学会了推导式的用法。”", "arguments": {"title": "Python学习要点", "content": "今天复习了列表和字典的基本操作，学会了推导式的用法。"}}
-{"tool_name": "create_note", "user_question": "帮我记一条关于机器学习基础概念的笔记，标题是“机器学习基础概念”，内容包含监督学习和无监督学习的主要区别，监督学习使用标记数据，无监督学习使用未标记数据。", "arguments": {"title": "机器学习基础概念", "content": "监督学习使用标记数据，无监督学习使用未标记数据，它们的主要区别在于数据是否有标签以及任务目标不同。"}}
-{"tool_name": "create_note", "user_question": "帮我记个笔记，标题是‘购物清单’，内容是‘牛奶、面包、鸡蛋’", "arguments": {"title": "购物清单", "content": "牛奶、面包、鸡蛋"}}
-{"tool_name": "create_note", "user_question": "我今天在开会时突然想到一个很棒的产品改进点子，帮我把这个灵感和具体思路记下来，标题就叫“产品功能优化想法”，内容要详细描述如何通过增加一个快捷筛选按钮来提升用户操作效率，包括实现步骤和预期效果。", "arguments": {"title": "产品功能优化想法", "content": "在列表页增加一个快捷筛选按钮，允许用户按状态、优先级、标签等维度快速过滤。实现步骤：1. 在列表顶部添加筛选图标；2. 点击展开下拉选项；3. 选择后立即更新列表。预期效果：减少用户操作时间约30%，提升浏览效率。"}}
-{"tool_name": "create_note", "user_question": "哎，帮我记个笔记，标题就叫‘超市采购清单’，内容是明天记得买牛奶、面包和鸡蛋。", "arguments": {"title": "超市采购清单", "content": "明天记得买牛奶、面包和鸡蛋。"}}
-{"tool_name": "create_note", "user_question": "刚在超市看到打折的牛排，想到一个煎牛排的秘诀，帮我记一下笔记", "arguments": {"title": "煎牛排秘诀", "content": "牛排室温回温30分钟，两面各煎2分钟，然后加黄油和迷迭香再煎1分钟"}}
-{"tool_name": "create_note", "user_question": "你好，能帮我记一条关于明天会议要点的笔记吗？谢谢！", "arguments": {"title": "明日会议要点", "content": "1. 讨论Q2项目进度；2. 分配新任务；3. 确定下次会议时间。"}}
-{"tool_name": "create_note", "user_question": "麻烦帮我记一条笔记，标题是“周末购物清单”，内容是“买牛奶、面包、鸡蛋”。", "arguments": {"title": "周末购物清单", "content": "买牛奶、面包、鸡蛋"}}
-{"tool_name": "create_note", "user_question": "麻烦帮我记一条关于高效工作方法的笔记，谢谢。", "arguments": {"title": "高效工作方法", "content": "使用番茄工作法，每25分钟专注工作后休息5分钟，每天完成4个番茄钟后休息15-30分钟。同时，优先处理最重要的三件事，避免多任务并行。"}}
-{"tool_name": "create_note", "user_question": "我最近在读一本关于时间管理的书，其中有个番茄工作法让我印象深刻，你帮我创建一个笔记标题叫‘番茄工作法核心要点’，内容就写‘25分钟专注工作，5分钟休息，每4个番茄后休息15-30分钟，可以有效提高效率。’", "arguments": {"title": "番茄工作法核心要点", "content": "25分钟专注工作，5分钟休息，每4个番茄后休息15-30分钟，可以有效提高效率。"}}
-{"tool_name": "create_note", "user_question": "您好，麻烦帮我记一条笔记，标题是“今日小确幸”，内容记录今天在公园散步时看到一只可爱的小松鼠。", "arguments": {"title": "今日小确幸", "content": "今天在公园散步时看到一只可爱的小松鼠。"}}
-{"tool_name": "create_note", "user_question": "请帮我记一条笔记，记录一下我刚刚在咖啡馆里想到的下季度产品迭代的核心方向，标题就叫‘产品迭代思路’，内容就写‘围绕用户体验简化流程、增加智能推荐模块、优化移动端加载速度’，然后把这条笔记保存下来。", "arguments": {"title": "产品迭代思路", "content": "围绕用户体验简化流程、增加智能推荐模块、优化移动端加载速度"}}
-{"tool_name": "create_note", "user_question": "帮我记个笔记，标题是开会准备，内容是要带电脑和笔记本", "arguments": {"title": "开会准备", "content": "要带电脑和笔记本"}}
-{"tool_name": "create_note", "user_question": "帮我记个笔记，标题是“健身计划”，内容是“每周三次有氧，两次力量训练”。", "arguments": {"title": "健身计划", "content": "每周三次有氧，两次力量训练"}}
-{"tool_name": "create_note", "user_question": "昨天开会提到的项目进度调整方案，帮我记下来方便明天回顾。", "arguments": {"title": "项目进度调整方案", "content": "项目进度调整方案：将原定于周五的里程碑延后至下周一，新增两项评审环节，需本周四前完成文档更新。"}}
-{"tool_name": "create_note", "user_question": "刚在咖啡馆和同事聊了下半年的产品规划，有点灵感怕忘了，帮我记个笔记，标题叫《下半年功能优先级》，内容就写‘首页改版优先、支付流程优化次之、用户反馈系统最后，10月底前完成前两项’。", "arguments": {"title": "下半年功能优先级", "content": "首页改版优先、支付流程优化次之、用户反馈系统最后，10月底前完成前两项。"}}
-{"tool_name": "create_note", "user_question": "记个笔记，标题是今日待办，内容是开会、写报告、健身。", "arguments": {"title": "今日待办", "content": "开会、写报告、健身"}}
-{"tool_name": "create_note", "user_question": "刚在咖啡馆读了一本关于微习惯的书，觉得很有启发，帮我记个笔记吧，标题是《微习惯的精髓》，内容写：每天只做一件极简小事，比如一个俯卧撑，但关键是坚持，降低意志力消耗，形成惯性。", "arguments": {"title": "微习惯的精髓", "content": "每天只做一件极简小事，比如一个俯卧撑，但关键是坚持，降低意志力消耗，形成惯性。"}}
-{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“梯度下降学习率技巧”，内容记录今天学到学习率太大容易震荡、太小收敛慢，可以采用余弦退火策略", "arguments": {"title": "梯度下降学习率技巧", "content": "今天学到梯度下降算法中的学习率设置技巧，学习率太大容易震荡，太小收敛慢，可以采用余弦退火策略。"}}
-{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是今晚的灵感，内容是突然想到可以用二维码做植物养护提醒。", "arguments": {"title": "今晚的灵感", "content": "突然想到可以用二维码做植物养护提醒"}}
-{"tool_name": "create_note", "user_question": "今天在咖啡馆看到一段关于自律的句子很触动我，帮我记下来作为笔记吧。", "arguments": {"title": "自律的感悟", "content": "自律不是压抑欲望，而是通过延迟满足来获得更大的自由。"}}
-{"tool_name": "create_note", "user_question": "你能帮我记一条关于提高工作效率的技巧笔记吗？", "arguments": {"title": "提高工作效率的技巧", "content": "1. 使用番茄工作法，每25分钟专注工作，休息5分钟。2. 每天列出最重要的三件事优先完成。3. 关闭不必要的通知，减少干扰。"}}
-{"tool_name": "create_note", "user_question": "麻烦您帮我记一条笔记，标题是“晨间思考”，内容记录一下“早起一杯温水，然后冥想十分钟，感觉一天都充满能量。”", "arguments": {"title": "晨间思考", "content": "早起一杯温水，然后冥想十分钟，感觉一天都充满能量。"}}
-{"tool_name": "create_note", "user_question": "我刚买完菜回家，帮我记一下今晚要做的菜谱和需要的调料。", "arguments": {"title": "今晚菜谱与调料清单", "content": "红烧肉：五花肉、冰糖、生抽、老抽、姜、八角。蒜蓉西兰花：西兰花、蒜、盐、橄榄油。"}}
-{"tool_name": "create_note", "user_question": "可以帮我记一个提醒事项吗？内容是关于明天下午三点开会记得带上笔记本和项目报告。", "arguments": {"title": "开会提醒", "content": "明天下午三点开会，记得带上笔记本和项目报告。"}}
-{"tool_name": "create_note", "user_question": "帮我记一下今天在超市买的物品清单", "arguments": {"title": "超市购物清单", "content": "牛奶、面包、鸡蛋、苹果、纸巾、洗衣液"}}
-{"tool_name": "create_note", "user_question": "您好，请帮我记一条购物清单笔记，标题为“周末采购”，内容是“牛奶、面包、鸡蛋、水果”。", "arguments": {"title": "周末采购", "content": "牛奶、面包、鸡蛋、水果"}}
-{"tool_name": "create_note", "user_question": "哎，帮我记个事儿，标题就叫‘周末买菜清单’，内容写：鸡蛋、牛奶、面包、苹果。", "arguments": {"title": "周末买菜清单", "content": "鸡蛋、牛奶、面包、苹果"}}
+{"tool_name": "create_note", "user_question": "您好，请帮我记一条笔记，标题是“今日购物清单”，内容写“牛奶、面包、鸡蛋、苹果”。", "arguments": {"title": "今日购物清单", "content": "牛奶、面包、鸡蛋、苹果"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“每日阅读清单”，内容写“《人类简史》第3章，阅读时间30分钟；《原子习惯》第5章，阅读时间20分钟”。", "arguments": {"title": "每日阅读清单", "content": "《人类简史》第3章，阅读时间30分钟；《原子习惯》第5章，阅读时间20分钟"}}
+{"tool_name": "create_note", "user_question": "你好，我最近在看一本关于时间管理的书，有一些心得体会想写下来作为备忘录，麻烦帮我记一条笔记，标题是“时间管理心得”，内容就写“每天早晨先规划最重要的三件事，使用番茄工作法专注25分钟休息5分钟，避免多任务并行，每周回顾调整计划”，谢谢。", "arguments": {"title": "时间管理心得", "content": "每天早晨先规划最重要的三件事，使用番茄工作法专注25分钟休息5分钟，避免多任务并行，每周回顾调整计划"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“今日食谱”，内容写“早餐牛奶面包，午餐米饭炒菜，晚餐沙拉。”", "arguments": {"title": "今日食谱", "content": "早餐牛奶面包，午餐米饭炒菜，晚餐沙拉。"}}
+{"tool_name": "create_note", "user_question": "你能帮我记一条笔记吗？标题是“会议纪要”，内容是“下午3点项目进度会，各负责人汇报本周工作”", "arguments": {"title": "会议纪要", "content": "下午3点项目进度会，各负责人汇报本周工作"}}
+{"tool_name": "create_note", "user_question": "麻烦帮我记一条笔记，标题是“今日食谱”，内容写“早餐牛奶面包，午餐蔬菜沙拉，晚餐清蒸鱼。”", "arguments": {"title": "今日食谱", "content": "早餐牛奶面包，午餐蔬菜沙拉，晚餐清蒸鱼。"}}
+{"tool_name": "create_note", "user_question": "嘿，帮我记个笔记，标题是“今晚吃什么”，内容写“想试试新开的火锅店”", "arguments": {"title": "今晚吃什么", "content": "想试试新开的火锅店"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“项目会议要点”，内容写“讨论了下季度目标，确定三个关键指标：用户留存率提升10%、新功能上线时间4月底、团队扩招5人”。", "arguments": {"title": "项目会议要点", "content": "讨论了下季度目标，确定三个关键指标：用户留存率提升10%、新功能上线时间4月底、团队扩招5人。"}}
 {"tool_name": "create_note", "user_question": "帮我记个东西", "arguments": {}}
-{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是关于最近在学的新菜谱，内容简单写一下番茄炒蛋的做法步骤和几点小技巧，比如怎么让鸡蛋更嫩、番茄出汁更多这些。", "arguments": {"title": "新学菜谱：番茄炒蛋要点", "content": "1. 鸡蛋打散加少许水搅匀，热油炒至定型即盛出；2. 番茄切小块，下锅炒出汁后倒入鸡蛋翻炒；3. 加盐、糖调味，最后撒葱花。关键：鸡蛋里加水更嫩，番茄先炒出汁更浓郁。"}}
-{"tool_name": "create_note", "user_question": "今天在书店翻到一本关于时间管理的书，其中一个方法叫‘时间块’很实用，帮我记个笔记吧。", "arguments": {"title": "时间管理：时间块方法", "content": "将一天分成若干个固定的时间块，每块专注完成一类任务，避免多任务切换。例如上午写报告，下午处理邮件，晚上学习。每块结束后休息5分钟。"}}
+{"tool_name": "create_note", "user_question": "我想让你帮我记一条笔记，标题是“阅读清单”，内容就写“《百年孤独》《活着》《三体》”，谢谢。", "arguments": {"title": "阅读清单", "content": "《百年孤独》《活着》《三体》"}}
+{"tool_name": "create_note", "user_question": "你能帮我记一条笔记吗？标题是“读书心得”，内容是“《人类简史》让我重新思考文明的发展。”", "arguments": {"title": "读书心得", "content": "《人类简史》让我重新思考文明的发展。"}}
+{"tool_name": "create_note", "user_question": "帮我记条笔记，标题是“读书清单”，内容写“《活着》《百年孤独》”", "arguments": {"title": "读书清单", "content": "《活着》《百年孤独》"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“菜谱灵感”，内容写“宫保鸡丁需要鸡胸肉、花生、干辣椒和生抽”", "arguments": {"title": "菜谱灵感", "content": "宫保鸡丁需要鸡胸肉、花生、干辣椒和生抽"}}
+{"tool_name": "create_note", "user_question": "帮我创建一条笔记", "arguments": {}}
+{"tool_name": "create_note", "user_question": "可以帮我记一条笔记吗？标题是“会议要点”，内容是“下周一的项目进度会改为周二下午三点”。", "arguments": {"title": "会议要点", "content": "下周一的项目进度会改为周二下午三点"}}
+{"tool_name": "create_note", "user_question": "麻烦您帮我记一条笔记，标题是“今日读书心得”，内容写“《人类简史》中关于认知革命的论述让人印象深刻，人类通过虚构故事实现大规模协作。”", "arguments": {"title": "今日读书心得", "content": "《人类简史》中关于认知革命的论述让人印象深刻，人类通过虚构故事实现大规模协作。"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“今日购物清单”，内容写“买牛奶、面包、鸡蛋和水果”。", "arguments": {"title": "今日购物清单", "content": "买牛奶、面包、鸡蛋和水果"}}
+{"tool_name": "create_note", "user_question": "我最近需要记一些东西，麻烦你帮我创建一条笔记，标题就用“明天的工作安排”，内容写“上午九点开项目会议，下午两点写报告，记得提前准备好材料”。", "arguments": {"title": "明天的工作安排", "content": "上午九点开项目会议，下午两点写报告，记得提前准备好材料。"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“学习计划”，内容写“每天背50个单词，周末复习本周内容”", "arguments": {"title": "学习计划", "content": "每天背50个单词，周末复习本周内容"}}
+{"tool_name": "create_note", "user_question": "你能帮我记一条笔记吗？标题是“学习计划”，内容写“每天背20个单词，晚上复习语法”", "arguments": {"title": "学习计划", "content": "每天背20个单词，晚上复习语法"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“会议要点”，内容写“下午3点讨论项目进度，注意预算问题”", "arguments": {"title": "会议要点", "content": "下午3点讨论项目进度，注意预算问题"}}
+{"tool_name": "create_note", "user_question": "我刚参加完一个产品研讨会，收获很多，麻烦帮我记一条笔记，标题是“产品研讨会要点”，内容写“讨论了新功能的优先级排序，用户反馈集中在易用性改进，决定在下个版本中优先优化导航栏交互。”", "arguments": {"title": "产品研讨会要点", "content": "讨论了新功能的优先级排序，用户反馈集中在易用性改进，决定在下个版本中优先优化导航栏交互。"}}
+{"tool_name": "create_note", "user_question": "请帮我记一条笔记，标题是“学习计划”，内容写“每天背50个单词”。", "arguments": {"title": "学习计划", "content": "每天背50个单词"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“Python学习笔记”，内容写“今天学了列表推导式和生成器表达式，注意区分用法”。", "arguments": {"title": "Python学习笔记", "content": "今天学了列表推导式和生成器表达式，注意区分用法。"}}
+{"tool_name": "create_note", "user_question": "麻烦您帮我记一条笔记，标题是“今日感悟”，内容写“保持好奇心，每天进步一点点。”", "arguments": {"title": "今日感悟", "content": "保持好奇心，每天进步一点点。"}}
+{"tool_name": "create_note", "user_question": "刚开完周会，帮我记一条笔记，标题是“本周TO-DO”，内容是“完成项目方案，周五前提交报告”。", "arguments": {"title": "本周TO-DO", "content": "完成项目方案，周五前提交报告"}}
+{"tool_name": "create_note", "user_question": "诶帮我记个笔记呗，标题写“今天的小确幸”，内容就写“喝到超好喝的拿铁，还遇到了可爱的小猫”", "arguments": {"title": "今天的小确幸", "content": "喝到超好喝的拿铁，还遇到了可爱的小猫"}}
 {"tool_name": "create_note", "user_question": "帮我记录一下", "arguments": {}}
-{"tool_name": "create_note", "user_question": "刚在咖啡馆想到一个公众号文章的选题，帮我记下来，标题叫《都市人的孤独与连接》，内容就写：快节奏生活中看似热闹却内心疏离，如何通过微小互动重建人与人的真实联系。", "arguments": {"title": "《都市人的孤独与连接》", "content": "快节奏生活中看似热闹却内心疏离，如何通过微小互动重建人与人的真实联系。"}}
-{"tool_name": "create_note", "user_question": "我在通勤路上忽然想到一个关于新功能的想法，帮我把这个灵感记下来吧：标题是‘快捷黑白模式’，内容是‘设计一个一键切换黑白显示的功能，帮助用户阅读时缓解眼睛疲劳，并增加护眼模式的入口。’", "arguments": {"title": "快捷黑白模式", "content": "设计一个一键切换黑白显示的功能，帮助用户阅读时缓解眼睛疲劳，并增加护眼模式的入口。"}}
-{"tool_name": "create_note", "user_question": "我今天在咖啡馆突然冒出一个灵感，想把它记下来，标题就叫‘咖啡店的会员裂变玩法’，内容大致是顾客推荐新会员可获免费饮品兑换券，同时推荐人还能累计积分兑换周边产品，这样能快速扩大客户群，帮我创建一条笔记吧。", "arguments": {"title": "咖啡店的会员裂变玩法", "content": "顾客推荐新会员可获免费饮品兑换券，同时推荐人还能累计积分兑换周边产品，这样能快速扩大客户群。"}}
+{"tool_name": "create_note", "user_question": "刚在读书会上听到一本好书，帮我记条笔记，标题是“《思考快与慢》摘录”，内容写“系统1和系统2的区别”", "arguments": {"title": "《思考快与慢》摘录", "content": "系统1和系统2的区别"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“读书感悟”，内容写“今日读到《人类群星闪耀时》中拜占庭陷落一节，感慨历史偶然性的巨大力量。”", "arguments": {"title": "读书感悟", "content": "今日读到《人类群星闪耀时》中拜占庭陷落一节，感慨历史偶然性的巨大力量。"}}
+{"tool_name": "create_note", "user_question": "可以帮我记一条笔记吗？标题是“学习方法”，内容写“采用番茄工作法，每次专注25分钟，休息5分钟。”", "arguments": {"title": "学习方法", "content": "采用番茄工作法，每次专注25分钟，休息5分钟。"}}
+{"tool_name": "create_note", "user_question": "能帮我记一条笔记吗？标题是“会议要点”，内容是“下周项目评审会议安排在周三下午两点”。", "arguments": {"title": "会议要点", "content": "下周项目评审会议安排在周三下午两点"}}
+{"tool_name": "create_note", "user_question": "刚听完播客有个感悟，帮我记一条笔记，标题是“播客金句”，内容写“真正的成长始于接纳自己的不完美，而不是拼命补齐短板。”", "arguments": {"title": "播客金句", "content": "真正的成长始于接纳自己的不完美，而不是拼命补齐短板。"}}
+{"tool_name": "create_note", "user_question": "能否帮我记一条笔记？标题是“健身计划”，内容是“周一练胸，周三练腿，周五练背”。", "arguments": {"title": "健身计划", "content": "周一练胸，周三练腿，周五练背"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“Python学习笔记”，内容写“今天学了列表推导式和装饰器”", "arguments": {"title": "Python学习笔记", "content": "今天学了列表推导式和装饰器"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“学习Python计划”，内容写“每天看两小时视频教程，晚上练习代码”。", "arguments": {"title": "学习Python计划", "content": "每天看两小时视频教程，晚上练习代码"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“下季度目标”，内容写“提升销售额20%，开发3个新客户”", "arguments": {"title": "下季度目标", "content": "提升销售额20%，开发3个新客户"}}
+{"tool_name": "create_note", "user_question": "您好，麻烦帮我记一条笔记，标题是“今日购物清单”，内容写“买牛奶、鸡蛋和面包”。", "arguments": {"title": "今日购物清单", "content": "买牛奶、鸡蛋和面包"}}
+{"tool_name": "create_note", "user_question": "请问能帮我记一条笔记吗？标题是“今日感悟”，内容写“努力不一定成功，但放弃一定失败。”", "arguments": {"title": "今日感悟", "content": "努力不一定成功，但放弃一定失败。"}}
+{"tool_name": "create_note", "user_question": "能帮我记一条笔记吗？标题是“阅读书目”，内容是“本周读完《人类简史》前三章”", "arguments": {"title": "阅读书目", "content": "本周读完《人类简史》前三章"}}
+{"tool_name": "create_note", "user_question": "帮我记个笔记，标题是“读书笔记”，内容是“《活着》是一本值得反复阅读的书。”", "arguments": {"title": "读书笔记", "content": "《活着》是一本值得反复阅读的书。"}}
+{"tool_name": "create_note", "user_question": "请帮我记一条笔记，标题是“学习心得”，内容是“今天复习了数据结构，理解了栈和队列的区别。”", "arguments": {"title": "学习心得", "content": "今天复习了数据结构，理解了栈和队列的区别。"}}
+{"tool_name": "create_note", "user_question": "麻烦您帮我记一条笔记，标题是“会议要点”，内容写“项目进度汇报、预算调整方案、下一阶段分工”。", "arguments": {"title": "会议要点", "content": "项目进度汇报、预算调整方案、下一阶段分工"}}
+{"tool_name": "create_note", "user_question": "请帮我记一条笔记，标题是“学习计划”，内容是“每天背20个单词”。", "arguments": {"title": "学习计划", "content": "每天背20个单词"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“下午茶清单”，内容是“红茶、司康饼、草莓酱”。", "arguments": {"title": "下午茶清单", "content": "红茶、司康饼、草莓酱"}}
+{"tool_name": "create_note", "user_question": "请问可以帮我记一条笔记吗？标题是“新建的读书清单”，内容写“本月读完《人类简史》和《小王子》。”", "arguments": {"title": "新建的读书清单", "content": "本月读完《人类简史》和《小王子》。"}}
+{"tool_name": "create_note", "user_question": "你能帮我记一条笔记吗？标题是“会议纪要”，内容写“项目进度汇报：已完成80%，剩余任务本周五前交付”。", "arguments": {"title": "会议纪要", "content": "项目进度汇报：已完成80%，剩余任务本周五前交付"}}
+{"tool_name": "create_note", "user_question": "您好，请帮我记一条笔记，标题是“观影清单”，内容写“本周五看《盗梦空间》，周日看《星际穿越》”。", "arguments": {"title": "观影清单", "content": "本周五看《盗梦空间》，周日看《星际穿越》"}}
+{"tool_name": "create_note", "user_question": "帮我记个笔记，标题是“今天的开心事”，内容写“下午散步时看到一只超可爱的小狗，心情瞬间变好”", "arguments": {"title": "今天的开心事", "content": "下午散步时看到一只超可爱的小狗，心情瞬间变好"}}
+{"tool_name": "create_note", "user_question": "请帮我记一条笔记，标题写“读书感悟”，内容写“今天读完《活着》，深感人生无常，要珍惜当下。”", "arguments": {"title": "读书感悟", "content": "今天读完《活着》，深感人生无常，要珍惜当下。"}}
+{"tool_name": "create_note", "user_question": "你能帮我记一条笔记吗？标题是“读书心得”，内容写“《活着》让我感受到生命的坚韧与苦难”。", "arguments": {"title": "读书心得", "content": "《活着》让我感受到生命的坚韧与苦难"}}
+{"tool_name": "create_note", "user_question": "由于最近在筹备个人摄影展，我需要把展览的各个阶段记录下来，请帮我记一条笔记，标题是“摄影展筹备计划”，内容写“9月10日前确定场地，9月20日完成作品筛选，9月25日开始布展，10月1日开展并邀请媒体。”", "arguments": {"title": "摄影展筹备计划", "content": "9月10日前确定场地，9月20日完成作品筛选，9月25日开始布展，10月1日开展并邀请媒体。"}}
+{"tool_name": "create_note", "user_question": "今天开会时老板强调了复盘的重要性，帮我记一条笔记，标题是“周会复盘要点”，内容写“1. 项目进度延迟原因分析；2. 下周目标拆解到人。”", "arguments": {"title": "周会复盘要点", "content": "1. 项目进度延迟原因分析；2. 下周目标拆解到人。"}}
+{"tool_name": "create_note", "user_question": "麻烦您帮我记一条笔记，标题是“读书心得”，内容是“《百年孤独》里家族命运的轮回让人深思。”", "arguments": {"title": "读书心得", "content": "《百年孤独》里家族命运的轮回让人深思。"}}
+{"tool_name": "create_note", "user_question": "记个笔记，标题是‘读书感悟’，内容写‘《百年孤独》让我对命运有了新理解’", "arguments": {"title": "读书感悟", "content": "《百年孤独》让我对命运有了新理解"}}
+{"tool_name": "create_note", "user_question": "麻烦帮我记一条笔记，标题是“待办事项”，内容是“完成项目报告，发送给团队。”", "arguments": {"title": "待办事项", "content": "完成项目报告，发送给团队。"}}
+{"tool_name": "create_note", "user_question": "你好，我最近在整理一些学习的思路，麻烦帮我记一条笔记，标题是“数据结构复习提纲”，内容就写“重点复习二叉树遍历、图的最短路径算法，以及动态规划经典题目，每天花1小时练习”。", "arguments": {"title": "数据结构复习提纲", "content": "重点复习二叉树遍历、图的最短路径算法，以及动态规划经典题目，每天花1小时练习"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“Python学习计划”，内容写“今天看Pandas教程，明天练习数据分析”。", "arguments": {"title": "Python学习计划", "content": "今天看Pandas教程，明天练习数据分析"}}
+{"tool_name": "create_note", "user_question": "刚开完会，思绪有点乱，帮我记一条笔记，标题是“会议待办事项”，内容是“1. 整理会议纪要；2. 催财务报销；3. 下周汇报PPT。”", "arguments": {"title": "会议待办事项", "content": "1. 整理会议纪要；2. 催财务报销；3. 下周汇报PPT。"}}
+{"tool_name": "create_note", "user_question": "你好，我在读一本关于时间管理的书，有些感悟想先记下来，麻烦帮我创建一条笔记，标题是“时间管理心得”，内容写“不要把时间花在不重要的事情上，每天列出三项要事优先完成”。", "arguments": {"title": "时间管理心得", "content": "不要把时间花在不重要的事情上，每天列出三项要事优先完成。"}}
+{"tool_name": "create_note", "user_question": "请帮我记一条笔记，标题是“今日待办事项”，内容写“上午完成项目报告，下午参加团队会议，晚上复习英语单词”", "arguments": {"title": "今日待办事项", "content": "上午完成项目报告，下午参加团队会议，晚上复习英语单词"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“新公司入职要点”，内容写“带身份证、毕业证复印件，穿正装，9点前到前台报到”。", "arguments": {"title": "新公司入职要点", "content": "带身份证、毕业证复印件，穿正装，9点前到前台报到"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“会议纪要”，内容写“讨论Q2目标，确认分工，下周五前提交报告”", "arguments": {"title": "会议纪要", "content": "讨论Q2目标，确认分工，下周五前提交报告"}}
+{"tool_name": "create_note", "user_question": "能帮我记一条笔记吗？标题是“今日购物清单”，内容写“牛奶、面包、鸡蛋、水果”", "arguments": {"title": "今日购物清单", "content": "牛奶、面包、鸡蛋、水果"}}
+{"tool_name": "create_note", "user_question": "你好，能不能帮我记一条笔记，标题是“周末电影清单”，内容就写“周六看《泰坦尼克号》，周日看《盗梦空间》”，谢谢啦！", "arguments": {"title": "周末电影清单", "content": "周六看《泰坦尼克号》，周日看《盗梦空间》"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“项目进度会议”，内容写“今天下午2点与团队讨论Q2里程碑，重点是前端开发进度和测试计划”", "arguments": {"title": "项目进度会议", "content": "今天下午2点与团队讨论Q2里程碑，重点是前端开发进度和测试计划"}}
+{"tool_name": "create_note", "user_question": "嘿，帮我记条笔记，标题是“周末安排”，内容写“周六去图书馆，周日约朋友吃饭”。", "arguments": {"title": "周末安排", "content": "周六去图书馆，周日约朋友吃饭"}}
+{"tool_name": "create_note", "user_question": "明天要去超市采购，担心忘记要买的东西，请帮我记一条笔记，标题是“超市购物清单”，内容写“牛奶、鸡蛋、全麦面包、苹果、鸡胸肉、洗发水、牙膏。”", "arguments": {"title": "超市购物清单", "content": "牛奶、鸡蛋、全麦面包、苹果、鸡胸肉、洗发水、牙膏。"}}
+{"tool_name": "create_note", "user_question": "帮我记个笔记", "arguments": {}}
+{"tool_name": "create_note", "user_question": "最近在学做菜，帮我记一条笔记，标题是“红烧肉秘诀”，内容写“五花肉先焯水，炒糖色用冰糖，小火慢炖1小时”。", "arguments": {"title": "红烧肉秘诀", "content": "五花肉先焯水，炒糖色用冰糖，小火慢炖1小时"}}
+{"tool_name": "create_note", "user_question": "能帮我记一条笔记吗？标题是“灵感记录”，内容是“看到路边的小花，想起春天即将到来。”", "arguments": {"title": "灵感记录", "content": "看到路边的小花，想起春天即将到来。"}}
+{"tool_name": "create_note", "user_question": "能帮我记一条笔记吗？标题是“会议记录”，内容是“上午讨论项目进度，下午确定预算方案”。", "arguments": {"title": "会议记录", "content": "上午讨论项目进度，下午确定预算方案"}}
+{"tool_name": "create_note", "user_question": "今天在阅读时有了一个新感悟，请帮我记一条笔记，标题是“读书心得”，内容写“真正的自由不是为所欲为，而是能够掌控自己的时间和注意力，专注于真正重要的事情。”", "arguments": {"title": "读书心得", "content": "真正的自由不是为所欲为，而是能够掌控自己的时间和注意力，专注于真正重要的事情。"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“读书清单”，内容写“本月读完《百年孤独》和《人类简史》”。", "arguments": {"title": "读书清单", "content": "本月读完《百年孤独》和《人类简史》"}}
+{"tool_name": "create_note", "user_question": "嘿，帮我记个笔记呗，标题是“购物清单”，内容写“牛奶、鸡蛋、面包”", "arguments": {"title": "购物清单", "content": "牛奶、鸡蛋、面包"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“周末旅行清单”，内容写“护照、充电宝、换洗衣物、雨伞、相机、常用药品”。", "arguments": {"title": "周末旅行清单", "content": "护照、充电宝、换洗衣物、雨伞、相机、常用药品"}}
+{"tool_name": "create_note", "user_question": "请帮我记一条笔记，标题是“读书笔记-《思考，快与慢》”，内容是“系统1和系统2的定义以及它们如何影响决策，重点记录认知偏误的案例。”", "arguments": {"title": "读书笔记-《思考，快与慢》", "content": "系统1和系统2的定义以及它们如何影响决策，重点记录认知偏误的案例。"}}
+{"tool_name": "create_note", "user_question": "记一条笔记，标题是“Python学习进度”，内容写“已完成基础语法，开始练习列表推导式和字典”。", "arguments": {"title": "Python学习进度", "content": "已完成基础语法，开始练习列表推导式和字典"}}
+{"tool_name": "create_note", "user_question": "帮我记录点东西", "arguments": {}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“学习Python计划”，内容写“每天练习一小时，先完成基础语法，再做项目实战”。", "arguments": {"title": "学习Python计划", "content": "每天练习一小时，先完成基础语法，再做项目实战"}}
+{"tool_name": "create_note", "user_question": "我刚看完一本很棒的小说，想记录一下感受。帮我记一条笔记，标题是“《三体》读后感”，内容写“宏大的宇宙观和人类命运，引人深思。”", "arguments": {"title": "《三体》读后感", "content": "宏大的宇宙观和人类命运，引人深思。"}}
+{"tool_name": "create_note", "user_question": "嘿，帮我记个笔记呗，标题是‘超搞笑的事’，内容写‘今天看到狗追着自己尾巴转圈，笑死我了’。", "arguments": {"title": "超搞笑的事", "content": "今天看到狗追着自己尾巴转圈，笑死我了。"}}
+{"tool_name": "create_note", "user_question": "请问可以帮我记一条笔记吗？标题是“会议纪要”，内容是“讨论Q3目标，确定产品优先级”。", "arguments": {"title": "会议纪要", "content": "讨论Q3目标，确定产品优先级"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“《人类简史》阅读感悟”，内容写“这本书颠覆了我对历史发展的认知，尤其是认知革命部分非常震撼。”", "arguments": {"title": "《人类简史》阅读感悟", "content": "这本书颠覆了我对历史发展的认知，尤其是认知革命部分非常震撼。"}}
+{"tool_name": "create_note", "user_question": "能帮我记一条笔记，标题是“会议纪要”，内容是“上午十点讨论项目进度，下午两点汇报结果”吗？", "arguments": {"title": "会议纪要", "content": "上午十点讨论项目进度，下午两点汇报结果"}}
+{"tool_name": "create_note", "user_question": "请帮我记一条笔记，标题是“学习笔记”，内容是“今天学习了函数调用，掌握了参数解析。”", "arguments": {"title": "学习笔记", "content": "今天学习了函数调用，掌握了参数解析。"}}
+{"tool_name": "create_note", "user_question": "我刚刚在咖啡厅突然想到一个很好的读书计划，麻烦你帮我记一条笔记，标题写“2025年读书清单”，内容写“每月至少读两本经典小说和一本专业书籍，并写读书笔记分享到博客”。", "arguments": {"title": "2025年读书清单", "content": "每月至少读两本经典小说和一本专业书籍，并写读书笔记分享到博客"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“购买清单”，内容是“牛奶、面包、鸡蛋”", "arguments": {"title": "购买清单", "content": "牛奶、面包、鸡蛋"}}
+{"tool_name": "create_note", "user_question": "我今天在咖啡馆读到一篇很棒的文章，帮我记一条笔记，标题是“咖啡与创意”，内容写“早晨一杯黑咖啡激发灵感，下午拿铁放松思维。”", "arguments": {"title": "咖啡与创意", "content": "早晨一杯黑咖啡激发灵感，下午拿铁放松思维。"}}
+{"tool_name": "create_note", "user_question": "请帮我记一条笔记，标题是“今日灵感”，内容是“记录产品改进想法”。", "arguments": {"title": "今日灵感", "content": "记录产品改进想法"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“会议纪要”，内容是“项目进度会议，下周截止”。", "arguments": {"title": "会议纪要", "content": "项目进度会议，下周截止"}}
+{"tool_name": "create_note", "user_question": "你好，请帮我记一条关于今天下午在公司开会的笔记，标题就用“项目进度会议”，内容里要包含讨论的重点是Q2季度目标调整，以及需要在下周二之前提交更新的时间表，还有李经理强调的客户反馈需要优先处理。", "arguments": {"title": "项目进度会议", "content": "讨论重点是Q2季度目标调整，需要在下周二之前提交更新的时间表，李经理强调客户反馈需要优先处理。"}}
+{"tool_name": "create_note", "user_question": "刚逛完超市，帮我记一条笔记，标题是“今日采购”，内容写“牛奶两盒，全麦面包一袋，鸡蛋一打，苹果五个。”", "arguments": {"title": "今日采购", "content": "牛奶两盒，全麦面包一袋，鸡蛋一打，苹果五个。"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“会议待办”，内容写“整理周报，确认项目进度，预约会议室”。", "arguments": {"title": "会议待办", "content": "整理周报，确认项目进度，预约会议室"}}
+{"tool_name": "create_note", "user_question": "刚开完周会，帮我记一条笔记，标题是“本周待办”，内容写“完成项目报告、约客户吃饭、回复邮件”。", "arguments": {"title": "本周待办", "content": "完成项目报告、约客户吃饭、回复邮件"}}
+{"tool_name": "create_note", "user_question": "帮我记条笔记，标题是“读书清单”，内容写“《百年孤独》《三体》”", "arguments": {"title": "读书清单", "content": "《百年孤独》《三体》"}}
+{"tool_name": "create_note", "user_question": "今天在书店看到一本关于时间管理的书，很有启发，麻烦帮我记一条笔记，标题是“时间管理技巧”，内容写“番茄工作法结合四象限法则，每天先做最重要且紧急的事，每25分钟休息5分钟。”", "arguments": {"title": "时间管理技巧", "content": "番茄工作法结合四象限法则，每天先做最重要且紧急的事，每25分钟休息5分钟。"}}
+{"tool_name": "create_note", "user_question": "请帮我记一条笔记，标题是“学习计划”，内容是“每天背50个单词，做两篇阅读”。", "arguments": {"title": "学习计划", "content": "每天背50个单词，做两篇阅读"}}
+{"tool_name": "create_note", "user_question": "可以帮我记一条笔记吗？标题是“下周任务”，内容是“完成项目报告，准备会议材料”。", "arguments": {"title": "下周任务", "content": "完成项目报告，准备会议材料"}}
+{"tool_name": "create_note", "user_question": "帮我记一条笔记，标题是“读书清单”，内容写“《百年孤独》、《活着》”。", "arguments": {"title": "读书清单", "content": "《百年孤独》、《活着》"}}
