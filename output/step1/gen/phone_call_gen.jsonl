@@ -6,7 +6,6 @@
 {"tool_name": "phone_call", "user_question": "麻烦你帮我给李芳打个电话，她今天下午没来开会，我想问问是不是身体不舒服。", "arguments": {"contact_name": "李芳"}}
 {"tool_name": "phone_call", "user_question": "我正在做饭，发现酱油没了，帮我打电话给楼下便利店问一下有没有货。", "arguments": {"contact_name": "王芳"}}
 {"tool_name": "phone_call", "user_question": "能不能帮我给张伟打个电话？", "arguments": {"contact_name": "张伟"}}
-{"tool_name": "phone_call", "user_question": "麻烦您帮我给张伟打个电话，谢谢。", "arguments": {"contact_name": "张伟"}}
 {"tool_name": "phone_call", "user_question": "我手机快没电了，麻烦你帮我给王建国打个电话，告诉他我十分钟后到", "arguments": {"contact_name": "王建国"}}
 {"tool_name": "phone_call", "user_question": "喂，帮我打个电话给王磊呗", "arguments": {"contact_name": "王磊"}}
 {"tool_name": "phone_call", "user_question": "我今晚加班回不了家，麻烦帮我给李阿姨打个电话说一声，她可能等急了。", "arguments": {"contact_name": "李阿姨"}}
@@ -20,7 +19,6 @@
 {"tool_name": "phone_call", "user_question": "今天下午要开项目会议，麻烦你帮我给张经理打个电话，提醒他带上最新版的需求文档。", "arguments": {"contact_name": "张经理"}}
 {"tool_name": "phone_call", "user_question": "帮我给大学室友王磊打个电话，他号码是13699887766", "arguments": {"contact_name": "王磊"}}
 {"tool_name": "phone_call", "user_question": "我手机快没电了，帮我打个电话给王建国，他的号码是13800138000，急事找他。", "arguments": {"contact_name": "王建国"}}
-{"tool_name": "phone_call", "user_question": "麻烦你帮我给张伟打个电话好吗？", "arguments": {"contact_name": "张伟"}}
 {"tool_name": "phone_call", "user_question": "帮我给老李打个电话呗，我这边没空。", "arguments": {"contact_name": "老李"}}
 {"tool_name": "phone_call", "user_question": "帮我给王小明打个电话", "arguments": {"contact_name": "王小明"}}
 {"tool_name": "phone_call", "user_question": "帮我给赵老师打个电话，问问明天家长会的具体时间", "arguments": {"contact_name": "赵老师"}}
@@ -28,7 +26,6 @@
 {"tool_name": "phone_call", "user_question": "帮我给李建国打个电话呗，急事。", "arguments": {"contact_name": "李建国"}}
 {"tool_name": "phone_call", "user_question": "麻烦您帮我给陈晓明打个电话。", "arguments": {"contact_name": "陈晓明"}}
 {"tool_name": "phone_call", "user_question": "明天晚上我想约几个朋友一起吃饭，麻烦你帮我打个电话给李明，问问他明天晚上有没有空，顺便商量一下去哪里吃。", "arguments": {"contact_name": "李明"}}
-{"tool_name": "phone_call", "user_question": "嘿，帮我给王小明打个电话呗。", "arguments": {"contact_name": "王小明"}}
 {"tool_name": "phone_call", "user_question": "帮我给王晓明打电话，用13612345678这个号码联系他。", "arguments": {"contact_name": "王晓明"}}
 {"tool_name": "phone_call", "user_question": "帮我给李芳打个电话，通知她下午三点的会议改到四点半了。", "arguments": {"contact_name": "李芳"}}
 {"tool_name": "phone_call", "user_question": "麻烦帮我给张伟拨打一下电话，他的手机是15923456789，有急事找他。", "arguments": {"contact_name": "张伟"}}
@@ -43,13 +40,11 @@
 {"tool_name": "phone_call", "user_question": "帮我给李薇打个电话，问她快递放在哪个驿站了。", "arguments": {"contact_name": "李薇"}}
 {"tool_name": "phone_call", "user_question": "帮我打个电话给老王呗。", "arguments": {"contact_name": "老王"}}
 {"tool_name": "phone_call", "user_question": "帮我拨一下李明的电话", "arguments": {"contact_name": "李明"}}
-{"tool_name": "phone_call", "user_question": "请帮我给王小明打个电话，谢谢。", "arguments": {"contact_name": "王小明"}}
 {"tool_name": "phone_call", "user_question": "下雨了，我担心窗户没关，帮我打个电话给邻居张阿姨让她帮忙看一下。", "arguments": {"contact_name": "张阿姨"}}
 {"tool_name": "phone_call", "user_question": "请问能帮我给赵六打个电话吗？", "arguments": {"contact_name": "赵六"}}
 {"tool_name": "phone_call", "user_question": "我约了王师傅明天上午修水管，但现在不确定他记不记得，你帮我打个电话给王师傅提醒一下时间吧。", "arguments": {"contact_name": "王师傅"}}
 {"tool_name": "phone_call", "user_question": "喂，帮我给老张打个电话呗。", "arguments": {"contact_name": "老张"}}
 {"tool_name": "phone_call", "user_question": "给小王打个电话", "arguments": {"contact_name": "小王"}}
-{"tool_name": "phone_call", "user_question": "嘿，帮我打个电话给老王。", "arguments": {"contact_name": "老王"}}
 {"tool_name": "phone_call", "user_question": "哎，帮我call一下李大爷呗。", "arguments": {"contact_name": "李大爷"}}
 {"tool_name": "phone_call", "user_question": "尽快帮我联系陈经理，他的手机号是13688889999。", "arguments": {"contact_name": "13688889999"}}
 {"tool_name": "phone_call", "user_question": "帮我打个电话给我朋友李娜，她的手机号是138****5678，有急事找她。", "arguments": {"contact_name": "李娜"}}
@@ -58,7 +53,6 @@
 {"tool_name": "phone_call", "user_question": "能不能帮我拨一下赵强的电话？", "arguments": {"contact_name": "赵强"}}
 {"tool_name": "phone_call", "user_question": "明天下午三点要和客户开会，麻烦你帮我打个电话给项目经理李明，提醒他准备好会议资料，他的手机号是13812345678。", "arguments": {"contact_name": "李明"}}
 {"tool_name": "phone_call", "user_question": "帮我拨通张明远的新手机号，157****8923，有急事找他。", "arguments": {"contact_name": "张明远"}}
-{"tool_name": "phone_call", "user_question": "帮我打个电话给赵六", "arguments": {"contact_name": "赵六"}}
 {"tool_name": "phone_call", "user_question": "外面太阳这么大，帮我打个电话给张伟，叫他一起出来喝凉茶。", "arguments": {"contact_name": "张伟"}}
 {"tool_name": "phone_call", "user_question": "我现在在超市，想确认一下家里还需要买什么，帮我打个电话给李阿姨问问。", "arguments": {"contact_name": "李阿姨"}}
 {"tool_name": "phone_call", "user_question": "麻烦帮我给王小明打个电话，问问他的电脑修好了没有。", "arguments": {"contact_name": "王小明"}}
@@ -76,7 +70,6 @@
 {"tool_name": "phone_call", "user_question": "麻烦帮我给我朋友李建国打个电话，他号码是13856789012，我有急事找他商量。", "arguments": {"contact_name": "李建国"}}
 {"tool_name": "phone_call", "user_question": "帮我给李医生打个电话，他的号码是13912345678。", "arguments": {"contact_name": "13912345678"}}
 {"tool_name": "phone_call", "user_question": "请帮我拨打135****8821，通知王磊明天下午三点的会议改期。", "arguments": {"contact_name": "135****8821"}}
-{"tool_name": "phone_call", "user_question": "嘿，帮我打个电话给老张行不？", "arguments": {"contact_name": "老张"}}
 {"tool_name": "phone_call", "user_question": "快递员说包裹放在保安室了，但我没找到，你帮我打快递员的电话17602138899问问他在哪。", "arguments": {"contact_name": "17602138899"}}
 {"tool_name": "phone_call", "user_question": "我手机没电了，麻烦你帮我打个电话给李师傅，问他明天几点来修空调。", "arguments": {"contact_name": "李师傅"}}
 {"tool_name": "phone_call", "user_question": "帮我打电话给张伟，他的手机号是13987654321。", "arguments": {"contact_name": "13987654321"}}
@@ -84,13 +77,10 @@
 {"tool_name": "phone_call", "user_question": "突然想起今天是我妈的生日，麻烦你帮我给她打个电话，她叫王桂英，号码是15987654321。", "arguments": {"contact_name": "王桂英"}}
 {"tool_name": "phone_call", "user_question": "帮我给赵明打个电话，问问他明天下午能不能一起吃饭。", "arguments": {"contact_name": "赵明"}}
 {"tool_name": "phone_call", "user_question": "给李四打个电话", "arguments": {"contact_name": "李四"}}
-{"tool_name": "phone_call", "user_question": "麻烦您帮我给王小明打个电话，谢谢。", "arguments": {"contact_name": "王小明"}}
 {"tool_name": "phone_call", "user_question": "你能帮我给李强打个电话吗？", "arguments": {"contact_name": "李强"}}
 {"tool_name": "phone_call", "user_question": "麻烦您帮我给李四打个电话，他的号码是13800138000。", "arguments": {"contact_name": "李四"}}
 {"tool_name": "phone_call", "user_question": "快下班了，帮我打个电话给李建国问他要不要一起吃饭。", "arguments": {"contact_name": "李建国"}}
-{"tool_name": "phone_call", "user_question": "帮我给王磊打个电话。", "arguments": {"contact_name": "王磊"}}
 {"tool_name": "phone_call", "user_question": "我手机没电了，麻烦帮我给王芳打个电话，告诉她我晚到半小时。", "arguments": {"contact_name": "王芳"}}
-{"tool_name": "phone_call", "user_question": "麻烦您帮我给李四打个电话，谢谢。", "arguments": {"contact_name": "李四"}}
 {"tool_name": "phone_call", "user_question": "你能不能帮我打个电话给张伟，他的手机号是13812345678？", "arguments": {"contact_name": "张伟"}}
 {"tool_name": "phone_call", "user_question": "帮我拨个电话给李思思，问她下午的面试准备好了没。", "arguments": {"contact_name": "李思思"}}
 {"tool_name": "phone_call", "user_question": "明天下午三点有一场重要的商务会议，我需要提前打电话给我的合作伙伴李雪确认一下会议细节，麻烦你用我的手机拨通她的电话吧。", "arguments": {"contact_name": "李雪"}}
@@ -98,3 +88,13 @@
 {"tool_name": "phone_call", "user_question": "你能帮我给李伟打个电话吗？", "arguments": {"contact_name": "李伟"}}
 {"tool_name": "phone_call", "user_question": "小李昨天借了我的书还没还，我急着要用，帮我打个电话给李伟问一下情况吧。", "arguments": {"contact_name": "李伟"}}
 {"tool_name": "phone_call", "user_question": "我明天要去北京出差，麻烦帮我给王芳打个电话，问她有没有需要带的东西。", "arguments": {"contact_name": "王芳"}}
+{"tool_name": "phone_call", "user_question": "麻烦你帮我打个电话给我表哥李明，他的手机号是15912345678，我想问问他明天下午有没有空跟我一起去打球，顺便看看他最近工作怎么样。", "arguments": {"contact_name": "15912345678"}}
+{"tool_name": "phone_call", "user_question": "帮我给老张打个电话，问问他明天晚上聚会的具体地址。", "arguments": {"contact_name": "老张"}}
+{"tool_name": "phone_call", "user_question": "帮我给李阿姨打个电话，问问她今晚的聚餐是否改时间了。", "arguments": {"contact_name": "李阿姨"}}
+{"tool_name": "phone_call", "user_question": "请问能帮我给赵叔叔打个电话吗？", "arguments": {"contact_name": "赵叔叔"}}
+{"tool_name": "phone_call", "user_question": "下周要去北京出差，麻烦帮我给陈总打个电话问问那边的接待安排。", "arguments": {"contact_name": "陈总"}}
+{"tool_name": "phone_call", "user_question": "帮我拨个电话给赵师傅 13612345678", "arguments": {"contact_name": "赵师傅 13612345678"}}
+{"tool_name": "phone_call", "user_question": "你能帮我给陈晓华打个电话吗？", "arguments": {"contact_name": "陈晓华"}}
+{"tool_name": "phone_call", "user_question": "我在超市买菜，忘了带购物清单，快帮我打电话问一下妈妈需要买哪些东西。", "arguments": {"contact_name": "李芳"}}
+{"tool_name": "phone_call", "user_question": "请帮我拨打159****1234，通知李芳明天的会议改到下午三点。", "arguments": {"contact_name": "159****1234"}}
+{"tool_name": "phone_call", "user_question": "嘿，帮我打个电话给李婶儿，13800138000", "arguments": {"contact_name": "李婶儿"}}

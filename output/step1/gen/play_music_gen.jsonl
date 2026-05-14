@@ -59,7 +59,6 @@
 {"tool_name": "play_music", "user_question": "最近心情有点低落，能不能帮我放一首周杰伦的《稻香》来回忆一下童年的感觉？", "arguments": {"song_name": "稻香", "artist": "周杰伦"}}
 {"tool_name": "play_music", "user_question": "能不能放一首陈奕迅的《十年》啊", "arguments": {"song_name": "十年", "artist": "陈奕迅"}}
 {"tool_name": "play_music", "user_question": "给我放一首陈奕迅的《十年》吧", "arguments": {"song_name": "十年", "artist": "陈奕迅"}}
-{"tool_name": "play_music", "user_question": "可以麻烦您帮我播放一首周杰伦的《七里香》吗？", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
 {"tool_name": "play_music", "user_question": "请帮我播放一首周杰伦的歌吧，谢谢！", "arguments": {"artist": "周杰伦"}}
 {"tool_name": "play_music", "user_question": "来首周杰伦的歌呗", "arguments": {"artist": "周杰伦"}}
 {"tool_name": "play_music", "user_question": "来一首邓紫棋的《光年之外》吧，最近特别喜欢。", "arguments": {"song_name": "光年之外", "artist": "邓紫棋"}}
@@ -98,3 +97,4 @@
 {"tool_name": "play_music", "user_question": "你能播放周杰伦的《七里香》吗？", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
 {"tool_name": "play_music", "user_question": "来点音乐呗", "arguments": {}}
 {"tool_name": "play_music", "user_question": "来一首周杰伦的《七里香》", "arguments": {"song_name": "七里香", "artist": "周杰伦"}}
+{"tool_name": "play_music", "user_question": "今天心情不错，想听一首周杰伦的《晴天》。", "arguments": {"song_name": "晴天", "artist": "周杰伦"}}

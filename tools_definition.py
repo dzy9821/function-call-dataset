@@ -527,11 +527,11 @@ TOOLS = [
                     },
                     "start_date": {
                         "type": "STRING",
-                        "description": "查询起始日期，格式为 YYYY-MM-DD。"
+                        "description": "查询起始日期，格式为 YYYY-MM-DDTHH:MM:SS。"
                     },
                     "end_date": {
                         "type": "STRING",
-                        "description": "查询结束日期，格式为 YYYY-MM-DD。"
+                        "description": "查询结束日期，格式为 YYYY-MM-DDTHH:MM:SS。"
                     }
                 },
                 "required": []

@@ -74,13 +74,11 @@
 {"tool_name": "set_brightness", "user_question": "我晚上躺在床上看手机，眼睛有点累，麻烦帮我把屏幕亮度调低一些，调到30左右就好。", "arguments": {"level": "30", "direction": "low"}}
 {"tool_name": "set_brightness", "user_question": "我在黑暗的房间里，请把屏幕亮度调低一点，保护眼睛。", "arguments": {"direction": "low"}}
 {"tool_name": "set_brightness", "user_question": "麻烦您帮我把屏幕亮度调亮一些，可以吗？", "arguments": {"direction": "high"}}
-{"tool_name": "set_brightness", "user_question": "能不能把屏幕亮度调到60？", "arguments": {"level": "60"}}
 {"tool_name": "set_brightness", "user_question": "今天工作一整天眼睛有点累，麻烦帮我调节一下屏幕亮度，调低到大概百分之二十左右吧，这样晚上看起来舒服些。", "arguments": {"level": "20", "direction": "low"}}
 {"tool_name": "set_brightness", "user_question": "在晚上看书时，请帮我调低屏幕亮度。", "arguments": {"direction": "low"}}
 {"tool_name": "set_brightness", "user_question": "我在昏暗的房间里看电影，屏幕太刺眼了，帮我调低点亮度吧。", "arguments": {"direction": "low"}}
 {"tool_name": "set_brightness", "user_question": "睡前躺在床上看手机，眼睛有点累，帮我把屏幕亮度调低一点吧。", "arguments": {"direction": "low"}}
 {"tool_name": "set_brightness", "user_question": "现在太暗了，把屏幕亮度调高点", "arguments": {"direction": "high"}}
-{"tool_name": "set_brightness", "user_question": "请将屏幕亮度调低到30", "arguments": {"level": "30", "direction": "low"}}
 {"tool_name": "set_brightness", "user_question": "你能把屏幕亮度调到80吗？", "arguments": {"level": "80"}}
 {"tool_name": "set_brightness", "user_question": "正在编辑视频，需要准确色彩，请把亮度调到60。", "arguments": {"level": "60"}}
 {"tool_name": "set_brightness", "user_question": "请把屏幕亮度调到60。", "arguments": {"level": "60"}}
@@ -98,3 +96,5 @@
 {"tool_name": "set_brightness", "user_question": "我晚上用手机看书觉得屏幕太亮了，眼睛不舒服，能不能帮我把亮度调低一些，最好调到40左右？", "arguments": {"direction": "low", "level": "40"}}
 {"tool_name": "set_brightness", "user_question": "你能帮我把屏幕亮度调高一些吗？", "arguments": {"direction": "high"}}
 {"tool_name": "set_brightness", "user_question": "我刚才在房间里看电影，觉得屏幕有些昏暗，字幕看起来特别费劲，能麻烦你帮我把亮度调到80左右，让画面清楚一点吗？", "arguments": {"level": "80", "direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "能不能帮我把屏幕调亮点？", "arguments": {"direction": "high"}}
+{"tool_name": "set_brightness", "user_question": "我刚把电脑拿到阳台边的沙发上，结果阳光太刺眼，屏幕上的字都快看不清了，你能不能帮我直接把屏幕亮度调高到最大，这样我才能继续看文档？", "arguments": {"direction": "high"}}

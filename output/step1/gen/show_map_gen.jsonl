@@ -14,7 +14,6 @@
 {"tool_name": "show_map", "user_question": "帮我在地图上看看北京故宫博物院的具体位置", "arguments": {"destination": "北京故宫博物院"}}
 {"tool_name": "show_map", "user_question": "你能在地图上帮我找一下成都大熊猫繁育研究基地吗？", "arguments": {"destination": "成都大熊猫繁育研究基地"}}
 {"tool_name": "show_map", "user_question": "周末想带家人去广州塔玩，帮我在地图上查一下具体位置吧。", "arguments": {"destination": "广州塔"}}
-{"tool_name": "show_map", "user_question": "嘿，帮我看看外滩在哪儿呗？", "arguments": {"destination": "上海外滩"}}
 {"tool_name": "show_map", "user_question": "帮我瞅瞅三里屯在哪儿呗", "arguments": {"destination": "三里屯"}}
 {"tool_name": "show_map", "user_question": "请问能在地图上帮我看看上海外滩的位置吗？", "arguments": {"destination": "上海外滩"}}
 {"tool_name": "show_map", "user_question": "计划带孩子去上海迪士尼乐园玩，能在地图上帮我看看具体位置吗？", "arguments": {"destination": "上海迪士尼乐园"}}
@@ -48,7 +47,6 @@
 {"tool_name": "show_map", "user_question": "最近计划去成都旅行，听说春熙路是当地最繁华的商圈之一，你能帮我在手机地图上查一下春熙路的具体位置和周边环境吗？", "arguments": {"destination": "春熙路"}}
 {"tool_name": "show_map", "user_question": "麻烦您帮我在地图上查一下杭州西湖的位置，谢谢。", "arguments": {"destination": "杭州西湖"}}
 {"tool_name": "show_map", "user_question": "你能在地图上显示一下上海迪士尼乐园的位置吗？", "arguments": {"destination": "上海迪士尼乐园"}}
-{"tool_name": "show_map", "user_question": "请帮我在地图上查看一下西湖的位置，谢谢。", "arguments": {"destination": "西湖"}}
 {"tool_name": "show_map", "user_question": "您好，能否麻烦您在地图上显示一下上海东方明珠电视塔的位置？", "arguments": {"destination": "上海东方明珠电视塔"}}
 {"tool_name": "show_map", "user_question": "嘿，帮我瞅瞅南京夫子庙在哪儿呗？", "arguments": {"destination": "南京夫子庙"}}
 {"tool_name": "show_map", "user_question": "能帮我在地图上看看广州塔在哪里吗？", "arguments": {"destination": "广州塔"}}
@@ -61,7 +59,6 @@
 {"tool_name": "show_map", "user_question": "麻烦帮我在地图上查看一下北京故宫的位置。", "arguments": {"destination": "北京故宫"}}
 {"tool_name": "show_map", "user_question": "帮我打开地图看看", "arguments": {}}
 {"tool_name": "show_map", "user_question": "你能帮我在地图上找一下南京夫子庙的位置吗？", "arguments": {"destination": "南京夫子庙"}}
-{"tool_name": "show_map", "user_question": "能帮我在地图上查一下广州塔的具体位置吗？", "arguments": {"destination": "广州塔"}}
 {"tool_name": "show_map", "user_question": "能不能打开地图让我看看成都春熙路的商圈分布？", "arguments": {"destination": "成都春熙路"}}
 {"tool_name": "show_map", "user_question": "你能帮我在地图上显示天安门广场的位置吗？", "arguments": {"destination": "天安门广场"}}
 {"tool_name": "show_map", "user_question": "周末想去滑雪，帮我在地图上看看北京南山滑雪场在哪？", "arguments": {"destination": "北京南山滑雪场"}}
@@ -81,20 +78,23 @@
 {"tool_name": "show_map", "user_question": "下周去成都出差，想先看看春熙路的具体位置，方便订附近的酒店。", "arguments": {"destination": "春熙路"}}
 {"tool_name": "show_map", "user_question": "你能帮我在地图上看看成都太古里在哪个位置吗？", "arguments": {"destination": "成都太古里"}}
 {"tool_name": "show_map", "user_question": "请问故宫在哪里？", "arguments": {"destination": "故宫"}}
-{"tool_name": "show_map", "user_question": "你能帮我在地图上看看上海迪士尼乐园在哪里吗？", "arguments": {"destination": "上海迪士尼乐园"}}
 {"tool_name": "show_map", "user_question": "我打算周末去上海玩，能帮我在地图上打开外滩的位置看看周围的环境吗？", "arguments": {"destination": "上海外滩"}}
 {"tool_name": "show_map", "user_question": "我下周末打算去杭州玩，听说西湖的美景特别出名，你能帮我在手机地图上搜一下西湖的具体位置，看看它在杭州的哪个区域吗？", "arguments": {"destination": "杭州西湖"}}
 {"tool_name": "show_map", "user_question": "嘿，帮我在地图上瞅瞅西安钟楼在哪儿呗？", "arguments": {"destination": "西安钟楼"}}
 {"tool_name": "show_map", "user_question": "你好，我想请你帮我在地图上找一下成都大熊猫繁育研究基地的具体位置，方便我规划明天的游览路线。", "arguments": {"destination": "成都大熊猫繁育研究基地"}}
 {"tool_name": "show_map", "user_question": "你能帮我在地图上看看上海东方明珠塔的位置吗？", "arguments": {"destination": "上海东方明珠塔"}}
-{"tool_name": "show_map", "user_question": "帮我看看广州塔在哪里", "arguments": {"destination": "广州塔"}}
 {"tool_name": "show_map", "user_question": "我下周要去上海旅游，听说外滩的夜景特别美，你能帮我在电子地图上把外滩的位置标记出来吗？", "arguments": {"destination": "上海外滩"}}
 {"tool_name": "show_map", "user_question": "嘿，帮我在地图上瞅瞅三里屯呗。", "arguments": {"destination": "三里屯"}}
 {"tool_name": "show_map", "user_question": "你好，我下周打算去上海旅行，想提前了解一下外滩的具体位置在哪里，能麻烦你帮我在电子地图上标注出来吗？", "arguments": {"destination": "上海外滩"}}
-{"tool_name": "show_map", "user_question": "麻烦您帮我在地图上查看一下故宫的位置，谢谢。", "arguments": {"destination": "故宫"}}
 {"tool_name": "show_map", "user_question": "能帮我在地图上查看一下北京动物园的位置吗？", "arguments": {"destination": "北京动物园"}}
-{"tool_name": "show_map", "user_question": "麻烦您帮我在地图上查看一下南京夫子庙的位置，谢谢。", "arguments": {"destination": "南京夫子庙"}}
 {"tool_name": "show_map", "user_question": "下周要出差去成都，能帮我在地图上看看春熙路附近有什么酒店吗？", "arguments": {"destination": "春熙路"}}
-{"tool_name": "show_map", "user_question": "帮我在地图上看看天安门。", "arguments": {"destination": "天安门"}}
 {"tool_name": "show_map", "user_question": "帮我在地图上找一下北京动物园", "arguments": {"destination": "北京动物园"}}
 {"tool_name": "show_map", "user_question": "帮我看一下成都太古里现在的位置在地图上。", "arguments": {"destination": "成都太古里"}}
+{"tool_name": "show_map", "user_question": "能帮我看看地图吗？", "arguments": {}}
+{"tool_name": "show_map", "user_question": "下周自驾去成都玩，想先在地图上看看春熙路周边的停车场分布，能帮我定位到春熙路吗？", "arguments": {"destination": "春熙路"}}
+{"tool_name": "show_map", "user_question": "下周要去上海出差，想看看陆家嘴金融贸易区在浦东的具体方位，能帮我在地图上标注出来吗？", "arguments": {"destination": "陆家嘴"}}
+{"tool_name": "show_map", "user_question": "诶，帮我看看那个太古里在哪儿呗？", "arguments": {"destination": "太古里"}}
+{"tool_name": "show_map", "user_question": "我今天下午要去北京西站接人，能帮我在地图上查一下北京西站的位置吗？", "arguments": {"destination": "北京西站"}}
+{"tool_name": "show_map", "user_question": "麻烦您帮我在地图上看看上海外滩的位置可以吗？", "arguments": {"destination": "上海外滩"}}
+{"tool_name": "show_map", "user_question": "下周要去成都旅游，先帮我在地图上看看春熙路附近有哪些商圈和景点？", "arguments": {"destination": "春熙路"}}
+{"tool_name": "show_map", "user_question": "请问，能帮我把北京故宫显示在地图上吗？", "arguments": {"destination": "北京故宫"}}

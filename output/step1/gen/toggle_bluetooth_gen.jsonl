@@ -29,7 +29,6 @@
 {"tool_name": "toggle_bluetooth", "user_question": "我现在要连接蓝牙耳机听歌，帮我打开蓝牙吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_bluetooth", "user_question": "马上要开会了，请帮我关闭蓝牙以免干扰。", "arguments": {"enable": false}}
 {"tool_name": "toggle_bluetooth", "user_question": "你能帮我把蓝牙打开吗？", "arguments": {"enable": true}}
-{"tool_name": "toggle_bluetooth", "user_question": "我现在需要连接蓝牙耳机听歌，麻烦帮我把蓝牙功能打开一下。", "arguments": {"enable": true}}
 {"tool_name": "toggle_bluetooth", "user_question": "我准备开车出门，帮我打开蓝牙连手机听歌。", "arguments": {"enable": true}}
 {"tool_name": "toggle_bluetooth", "user_question": "能不能帮我打开蓝牙？", "arguments": {"enable": true}}
 {"tool_name": "toggle_bluetooth", "user_question": "帮我切换蓝牙状态", "arguments": {}}
@@ -91,10 +90,11 @@
 {"tool_name": "toggle_bluetooth", "user_question": "把蓝牙打开呗", "arguments": {"enable": true}}
 {"tool_name": "toggle_bluetooth", "user_question": "马上要开电话会议了，帮我打开蓝牙连接耳机吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_bluetooth", "user_question": "帮我打开蓝牙，我要连新买的无线耳机。", "arguments": {"enable": true}}
-{"tool_name": "toggle_bluetooth", "user_question": "帮我切换一下蓝牙状态", "arguments": {}}
 {"tool_name": "toggle_bluetooth", "user_question": "我准备用蓝牙耳机听歌，帮我把蓝牙打开吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_bluetooth", "user_question": "亲爱的助手，我现在准备用蓝牙耳机听歌，麻烦帮我开启一下手机的蓝牙功能，这样我才能顺利连接耳机。", "arguments": {"enable": true}}
 {"tool_name": "toggle_bluetooth", "user_question": "能不能帮我把蓝牙关掉？", "arguments": {"enable": false}}
 {"tool_name": "toggle_bluetooth", "user_question": "明天早上跑步要连蓝牙耳机，帮我打开蓝牙吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_bluetooth", "user_question": "我要连接车上的蓝牙放音乐，请打开蓝牙。", "arguments": {"enable": true}}
-{"tool_name": "toggle_bluetooth", "user_question": "我要连接蓝牙耳机听歌，帮我打开蓝牙吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "我现在需要连接我的蓝牙耳机来听音乐，麻烦你帮我把手机的蓝牙功能打开一下吧，谢谢啦。", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "帮我打开蓝牙呗", "arguments": {"enable": true}}
+{"tool_name": "toggle_bluetooth", "user_question": "马上要出门跑步了，想连蓝牙耳机听音乐，帮我打开蓝牙吧。", "arguments": {"enable": true}}

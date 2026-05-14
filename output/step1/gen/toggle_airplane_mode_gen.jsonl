@@ -14,7 +14,6 @@
 {"tool_name": "toggle_airplane_mode", "user_question": "麻烦您帮我开启飞行模式可以吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "我马上要登机了，请帮我开启飞行模式。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "打开飞行模式", "arguments": {"enable": true}}
-{"tool_name": "toggle_airplane_mode", "user_question": "你能帮我打开飞行模式吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "马上要起飞了，帮我打开飞行模式吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "帮我打开飞行模式，等下要坐飞机了。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "帮我打开飞行模式", "arguments": {"enable": true}}
@@ -34,14 +33,12 @@
 {"tool_name": "toggle_airplane_mode", "user_question": "请问你可以帮我开启飞行模式吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "我马上就要登机了，飞机起飞前需要关闭所有无线通信，麻烦帮我把飞行模式打开，这样就不会干扰飞机上的电子设备了。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "马上要登机了，能帮我把手机调成飞行模式吗？", "arguments": {"enable": true}}
-{"tool_name": "toggle_airplane_mode", "user_question": "请问可以帮我打开飞行模式吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "飞机即将起飞，为了遵守航空规定，请帮我开启飞行模式。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "马上要登机了，帮我打开飞行模式吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "把我的手机切换到飞行模式", "arguments": {}}
 {"tool_name": "toggle_airplane_mode", "user_question": "我现在在飞机上，为了遵守航空规定，请你帮我把手机切换到飞行模式，让所有无线通信都暂时关闭。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "我想切换飞行模式", "arguments": {}}
 {"tool_name": "toggle_airplane_mode", "user_question": "帮我搞一下飞行模式", "arguments": {}}
-{"tool_name": "toggle_airplane_mode", "user_question": "我马上要坐飞机起飞了，能帮我开启飞行模式吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "把手机的飞行模式打开，我要在飞机上使用。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "明天要坐飞机了，帮我把手机飞行模式打开吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "帮我打开飞行模式呗", "arguments": {"enable": true}}
@@ -49,17 +46,14 @@
 {"tool_name": "toggle_airplane_mode", "user_question": "我要坐飞机了，请帮我开启飞行模式。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "帮我开个飞行模式呗", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "我想调整一下飞行模式", "arguments": {}}
-{"tool_name": "toggle_airplane_mode", "user_question": "麻烦您帮我打开飞行模式，谢谢。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "我马上要登机了，麻烦帮我把手机切换到飞行模式。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "麻烦您能帮我打开飞行模式吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "把飞行模式打开", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "马上要起飞了，空姐提醒关闭所有无线通信，帮我把飞行模式打开吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "请您帮我打开飞行模式，谢谢。", "arguments": {"enable": true}}
-{"tool_name": "toggle_airplane_mode", "user_question": "你能帮我关掉飞行模式吗？", "arguments": {"enable": false}}
 {"tool_name": "toggle_airplane_mode", "user_question": "由于我即将乘坐飞机，在起飞前需要确保手机不会干扰航空通信，麻烦你现在就帮我把飞行模式开启吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "刚下飞机，可以帮我关闭飞行模式吗？", "arguments": {"enable": false}}
 {"tool_name": "toggle_airplane_mode", "user_question": "我马上要坐飞机了，麻烦你帮我把飞行模式打开，这样在飞机上就不会干扰到飞行信号了，谢谢。", "arguments": {"enable": true}}
-{"tool_name": "toggle_airplane_mode", "user_question": "麻烦您帮我打开飞行模式可以吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "马上要坐飞机起飞了，麻烦帮我把手机的飞行模式打开一下，避免干扰飞机通讯。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "请帮我开启飞行模式。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "马上要起飞了，能帮我开启飞行模式吗？", "arguments": {"enable": true}}
@@ -73,7 +67,6 @@
 {"tool_name": "toggle_airplane_mode", "user_question": "明天要坐飞机了，先帮我打开飞行模式，省点电。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "马上要登机了，麻烦帮我把飞行模式打开吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "我马上要上飞机了，帮我把飞行模式打开吧。", "arguments": {"enable": true}}
-{"tool_name": "toggle_airplane_mode", "user_question": "飞机就要起飞了，帮我打开飞行模式吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "麻烦您帮我打开飞行模式好吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "帮我把飞行模式开了呗", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "我马上要登机了，为了防止手机信号干扰飞行系统，请帮我开启飞行模式，等落地后再关闭。", "arguments": {"enable": true}}
@@ -81,10 +74,6 @@
 {"tool_name": "toggle_airplane_mode", "user_question": "我马上要登机了，为了避免干扰飞行信号，请帮我开启飞行模式。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "请问可以开启飞行模式吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "麻烦您帮我把飞行模式打开，谢谢。", "arguments": {"enable": true}}
-{"tool_name": "toggle_airplane_mode", "user_question": "你能帮我把飞行模式打开吗？", "arguments": {"enable": true}}
-{"tool_name": "toggle_airplane_mode", "user_question": "马上要登机了，为了避免手机信号干扰飞机上的设备，请帮我把飞行模式开启，等降落之后再关闭。", "arguments": {"enable": true}}
-{"tool_name": "toggle_airplane_mode", "user_question": "飞机快要起飞了，乘务员要求关闭所有无线通信，请帮我打开飞行模式。", "arguments": {"enable": true}}
-{"tool_name": "toggle_airplane_mode", "user_question": "麻烦您帮我开启飞行模式，好吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "马上要登机了，请帮我打开飞行模式。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "把飞行模式关了", "arguments": {"enable": false}}
 {"tool_name": "toggle_airplane_mode", "user_question": "能帮我开个飞行模式不？", "arguments": {"enable": true}}
@@ -93,8 +82,19 @@
 {"tool_name": "toggle_airplane_mode", "user_question": "帮我开一下飞行模式呗", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "我要坐飞机了，帮我打开飞行模式。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "飞机马上起飞了，帮我打开飞行模式吧。", "arguments": {"enable": true}}
-{"tool_name": "toggle_airplane_mode", "user_question": "马上要起飞了，帮我把飞行模式打开吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "帮我设置一下飞行模式", "arguments": {}}
 {"tool_name": "toggle_airplane_mode", "user_question": "我马上要登机了，请帮我打开飞行模式。", "arguments": {"enable": true}}
 {"tool_name": "toggle_airplane_mode", "user_question": "马上要登机了，请帮我把手机切换到飞行模式，这样就能避免干扰飞机的电子设备了。", "arguments": {"enable": true}}
-{"tool_name": "toggle_airplane_mode", "user_question": "可以帮我关掉飞行模式吗？", "arguments": {"enable": false}}
+{"tool_name": "toggle_airplane_mode", "user_question": "马上要降落香港机场了，请帮我关闭飞行模式以恢复网络连接。", "arguments": {"enable": false}}
+{"tool_name": "toggle_airplane_mode", "user_question": "马上要起飞了，帮我把手机设为飞行模式吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_airplane_mode", "user_question": "你能帮我把飞行模式打开吗？", "arguments": {"enable": true}}
+{"tool_name": "toggle_airplane_mode", "user_question": "我正准备乘坐航班起飞，为了遵守航空公司的安全要求，请帮我开启飞行模式，这样手机就不会干扰飞机的通信系统了。", "arguments": {"enable": true}}
+{"tool_name": "toggle_airplane_mode", "user_question": "你能帮我把飞行模式关闭吗？", "arguments": {"enable": false}}
+{"tool_name": "toggle_airplane_mode", "user_question": "我要上飞机了，请帮我开启飞行模式，避免干扰信号。", "arguments": {"enable": true}}
+{"tool_name": "toggle_airplane_mode", "user_question": "马上要登机了，帮我开启飞行模式吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_airplane_mode", "user_question": "我想调整飞行模式", "arguments": {}}
+{"tool_name": "toggle_airplane_mode", "user_question": "明天要坐飞机出差，为了遵守航空规定，我需要提前把手机切换到飞行模式，请帮我开启飞行模式吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_airplane_mode", "user_question": "你能帮我打开飞行模式吗？", "arguments": {"enable": true}}
+{"tool_name": "toggle_airplane_mode", "user_question": "帮我关掉飞行模式", "arguments": {"enable": false}}
+{"tool_name": "toggle_airplane_mode", "user_question": "马上要登机了，请帮我开启飞行模式，这样就不会干扰飞机通信了。", "arguments": {"enable": true}}
+{"tool_name": "toggle_airplane_mode", "user_question": "我马上要登机了，为了避免手机信号干扰飞行安全，请你帮我把手机的飞行模式打开吧。", "arguments": {"enable": true}}

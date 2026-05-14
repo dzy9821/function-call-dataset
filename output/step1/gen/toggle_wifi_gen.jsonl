@@ -18,29 +18,23 @@
 {"tool_name": "toggle_wifi", "user_question": "我在咖啡厅想上网，帮我打开WiFi吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "我刚到家，想要连接家里的无线网络，麻烦你帮我把手机的WiFi功能打开吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "请问可以帮我把WiFi打开吗？", "arguments": {"enable": true}}
-{"tool_name": "toggle_wifi", "user_question": "你能帮我把WiFi打开吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "请问可以帮我关闭无线网络吗？", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "我待会儿要在咖啡馆用手机上网查资料，但是目前手机网络信号不太好，你能帮我把Wi-Fi功能打开吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "帮我打开WiFi，我要下载一个APP。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "帮我打开WiFi", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "我正在下载一部高清电影，请帮我打开WiFi以提高下载速度。", "arguments": {"enable": true}}
-{"tool_name": "toggle_wifi", "user_question": "能帮我把WiFi打开吗？", "arguments": {"enable": true}}
-{"tool_name": "toggle_wifi", "user_question": "你可以帮我把WiFi关掉吗？", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "帮我调一下WiFi设置", "arguments": {}}
 {"tool_name": "toggle_wifi", "user_question": "请帮我打开WiFi。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "你能帮我把Wi-Fi关掉吗？", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "麻烦您帮我打开WiFi好吗？", "arguments": {"enable": true}}
-{"tool_name": "toggle_wifi", "user_question": "把WiFi打开。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "晚上睡觉时怕辐射，帮我把WiFi关掉", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "晚上十点后为了省电，请帮我关掉卧室的Wi-Fi。", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "晚上睡觉了，帮我关掉WiFi吧。", "arguments": {"enable": false}}
-{"tool_name": "toggle_wifi", "user_question": "请帮我打开WiFi，谢谢。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "我要下载一个很大的安装包，先帮我打开Wi-Fi吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "信号太差了，帮我关掉Wi-Fi用流量吧。", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "手机快没电了，我要省点电，请帮我关闭WiFi。", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "我现在需要上网，能不能帮我把手机的Wi-Fi功能打开一下？", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "麻烦你帮我打开一下WiFi可以吗？", "arguments": {"enable": true}}
-{"tool_name": "toggle_wifi", "user_question": "我准备睡觉了，帮我把WiFi关掉吧。", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "我在会议室，信号不好，请帮我打开WiFi以便连接网络。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "我刚到公司，网络不太稳定，帮我关掉WiFi吧，我打算用手机流量。", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "我要下载一个很大的文件，为了省流量，先帮我打开WiFi吧。", "arguments": {"enable": true}}
@@ -52,17 +46,14 @@
 {"tool_name": "toggle_wifi", "user_question": "家里网络不稳定，帮我打开WiFi连上路由器。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "您好，能帮我打开WiFi吗？谢谢。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "我现在要下载一个很大的文件，为了节省手机流量，请帮我把WiFi打开吧。", "arguments": {"enable": true}}
-{"tool_name": "toggle_wifi", "user_question": "把WiFi关了", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "麻烦您帮我把Wi-Fi关掉可以吗？", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "帮我打开手机上的无线网络功能，我要连上家里的WiFi。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "手机快没电了，帮我关掉WiFi省电吧。", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "今天流量快用完了，帮我打开WiFi吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "我手机现在连不上家里的网络，可能是WiFi开关没打开，你能帮我把它开启吗？", "arguments": {"enable": true}}
-{"tool_name": "toggle_wifi", "user_question": "帮我处理一下WiFi", "arguments": {}}
 {"tool_name": "toggle_wifi", "user_question": "帮我连上WiFi", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "我明天要出差，在机场候机时需要用手机上网，请帮我把Wi-Fi打开。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "我在客厅看电影，网络有点卡，帮我打开WiFi吧。", "arguments": {"enable": true}}
-{"tool_name": "toggle_wifi", "user_question": "帮我弄一下WiFi", "arguments": {}}
 {"tool_name": "toggle_wifi", "user_question": "因为我的手机快没电了，而且我正在外面办事，不需要用到无线网络，所以麻烦你帮我把Wi-Fi功能关掉，这样能节省一些电量。", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "手机快没流量了，帮我打开WiFi。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "麻烦您帮我打开WiFi可以吗？", "arguments": {"enable": true}}
@@ -72,7 +63,6 @@
 {"tool_name": "toggle_wifi", "user_question": "飞机马上就要起飞了，请帮我关闭Wi-Fi。", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "可以帮我打开Wi-Fi吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "我在咖啡厅想连网，帮我打开WiFi吧", "arguments": {"enable": true}}
-{"tool_name": "toggle_wifi", "user_question": "可以帮我把Wi-Fi打开吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "帮我切换一下WiFi", "arguments": {}}
 {"tool_name": "toggle_wifi", "user_question": "劳驾，能帮我开启一下Wi-Fi吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "我马上要坐飞机了，为了遵守航空规定，请帮我关闭Wi-Fi。", "arguments": {"enable": false}}
@@ -85,8 +75,6 @@
 {"tool_name": "toggle_wifi", "user_question": "帮我把WiFi打开呗，我想上网。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "我现在要下载一个很大的文件，流量不够用了，你能帮我把手机的Wi-Fi打开，这样我就能连上家里的路由器下载了。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "帮我调一下WiFi开关", "arguments": {}}
-{"tool_name": "toggle_wifi", "user_question": "把Wi-Fi打开吧", "arguments": {"enable": true}}
-{"tool_name": "toggle_wifi", "user_question": "能不能帮我打开Wi-Fi？", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "打开Wi-Fi，我需要连接公司网络收个紧急邮件。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "晚上睡觉前手机总是自动下载更新，太费流量了，帮我关掉WiFi吧。", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "你能帮我关掉Wi-Fi吗？", "arguments": {"enable": false}}
@@ -94,7 +82,19 @@
 {"tool_name": "toggle_wifi", "user_question": "明天要出差，怕路上手机耗电太快，能帮我把WiFi关掉省点电吗？", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "准备睡觉了，帮我关掉WiFi吧，省得辐射影响睡眠。", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "帮我打开WiFi，我要连接家里的智能音箱。", "arguments": {"enable": true}}
-{"tool_name": "toggle_wifi", "user_question": "麻烦您帮我打开Wi-Fi好吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "最近家里的网络不太稳定，你帮我先关闭Wi-Fi然后重新打开看看能不能修复信号问题，先关闭吧。", "arguments": {"enable": false}}
 {"tool_name": "toggle_wifi", "user_question": "刚换的新手机，帮我打开WiFi吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_wifi", "user_question": "我在飞机上，请把WiFi关掉，省得它一直搜索信号耗电。", "arguments": {"enable": false}}
+{"tool_name": "toggle_wifi", "user_question": "把WiFi关掉", "arguments": {"enable": false}}
+{"tool_name": "toggle_wifi", "user_question": "帮我把WiFi调整一下", "arguments": {}}
+{"tool_name": "toggle_wifi", "user_question": "帮我把WiFi关掉。", "arguments": {"enable": false}}
+{"tool_name": "toggle_wifi", "user_question": "我在下载一个2GB的游戏更新包，移动网络太慢了，帮我打开WiFi。", "arguments": {"enable": true}}
+{"tool_name": "toggle_wifi", "user_question": "能帮我关掉Wi-Fi吗？", "arguments": {"enable": false}}
+{"tool_name": "toggle_wifi", "user_question": "在咖啡厅想连Wi-Fi看视频，帮我打开Wi-Fi吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_wifi", "user_question": "我要下载一个大文件，快帮我把WiFi打开吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_wifi", "user_question": "我要睡觉了，把WiFi关掉省电吧。", "arguments": {"enable": false}}
+{"tool_name": "toggle_wifi", "user_question": "晚上睡觉前请帮我关闭WiFi，这样能省电。", "arguments": {"enable": false}}
+{"tool_name": "toggle_wifi", "user_question": "我要下载一个很大的游戏更新包，但为了省电我刚刚把Wi-Fi关了，麻烦帮我重新打开Wi-Fi吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_wifi", "user_question": "麻烦您帮我打开Wi-Fi可以吗？", "arguments": {"enable": true}}
+{"tool_name": "toggle_wifi", "user_question": "帮我处理一下WiFi设置", "arguments": {}}
+{"tool_name": "toggle_wifi", "user_question": "帮我连个网呗", "arguments": {"enable": true}}

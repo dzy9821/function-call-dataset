@@ -10,6 +10,7 @@ import os
 import random
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timedelta
 
 from openai import OpenAI
 
@@ -25,6 +26,18 @@ DEDUP_MODEL = "deepseek-v4-pro"
 CONCURRENCY = 5
 
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
+
+from scripts.prompts import TIME_TOOLS
+
+
+def random_datetime_str():
+    start = datetime(2026, 1, 1)
+    end = datetime(2026, 6, 30)
+    days = (end - start).days
+    dt = start + timedelta(days=random.randint(0, days))
+    dt = dt.replace(hour=random.randint(0, 23), minute=random.randint(0, 59), second=random.randint(0, 59))
+    weekdays = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
+    return dt.strftime("%Y-%m-%dT%H:%M:%S"), weekdays[dt.weekday()]
 
 STYLES = [
     "一句简洁的口语指令",
@@ -79,6 +92,13 @@ def generate_one(tool_name):
 
     system_pos = tp["system"] + "\n\n" + f"参数说明：\n{param_notes}" + "\n\n" + f"工具定义：\n{tool_json}"
 
+    # 对时间相关工具，生成随机日期时间上下文
+    system_prompt_field = None
+    if tool_name in TIME_TOOLS:
+        date_str, weekday_str = random_datetime_str()
+        system_prompt_field = f"当前日期和时间（格式为 YYYY-MM-DDTHH:MM:SS）：{date_str}  \n星期为: {weekday_str}"
+        system_pos += f"\n\n当前日期上下文：{system_prompt_field}\n用户问题中的时间应使用相对表述（如“明天”“下周一”“后天下午”），而 arguments 中的时间则是基于当前日期计算后的绝对时间。"
+
     has_neg = len(required) > 0
     if has_neg:
         req_str = "、".join(required)
@@ -126,11 +146,14 @@ def generate_one(tool_name):
         if "user_question" in result and "arguments" in result:
             args = result.get("arguments", {})
             if validate_args(tool_name, args, required=required):
-                return {
+                record = {
                     "tool_name": tool_name,
                     "user_question": result["user_question"].strip(),
                     "arguments": args,
                 }
+                if system_prompt_field:
+                    record["system"] = system_prompt_field
+                return record
     except Exception as e:
         print(f"  gen error: {e}")
     return None
@@ -201,6 +224,40 @@ def dedup_via_llm(tool_name, items):
     except Exception as e:
         print(f"    LLM 去重 error: {e}")
         return items
+
+
+def dedup_and_fill(tool_name, results):
+    """一次去重 + 补全。返回 (results, removed_count)。"""
+    path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
+    before = len(results)
+    results = dedup_via_llm(tool_name, results[:100])
+    seen = {item["user_question"] for item in results}
+    removed = before - len(results)
+
+    def save():
+        with open(path, "w", encoding="utf-8") as f:
+            for item in results[:100]:
+                f.write(json.dumps(item, ensure_ascii=False) + "\n")
+    save()
+
+    need = 100 - len(results)
+    if need > 0:
+        for _ in range(5):
+            if need == 0:
+                break
+            batch = [generate_one(tool_name) for _ in range(need)]
+            for item in batch:
+                if item is None:
+                    continue
+                q = item["user_question"]
+                if q not in seen:
+                    seen.add(q)
+                    results.append(item)
+            results = results[:100]
+            need = 100 - len(results)
+        save()
+
+    return results[:100], removed
 
 
 def process_tool_generate(tool_name):
@@ -302,6 +359,66 @@ def main(tools_filter=None):
 
     total = sum(len(v[:100]) for v in gen_results.values())
     print(f"\n完成: {total} 条")
+
+
+def run_dedup_loop(tools_filter=None):
+    """反复 LLM 去重 + 补全，直到所有工具无重复或达到最大轮次。"""
+    all_tools = load_tool_defs()
+    if tools_filter:
+        all_tools = {k: v for k, v in all_tools.items() if k in tools_filter}
+
+    DEDUP_CONCURRENCY = 5
+    MAX_ROUNDS = 5
+
+    def load_results(tool_name):
+        path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
+        results = []
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as f:
+                for line in f:
+                    if line.strip():
+                        results.append(json.loads(line))
+        return results[:100]
+
+    tool_data = {}
+    for name in all_tools:
+        data = load_results(name)
+        if data:
+            tool_data[name] = data
+
+    if not tool_data:
+        print("没有 gen 文件，请先运行生成")
+        return
+
+    print(f"LLM 去重循环: {len(tool_data)} 个工具, 并发 {DEDUP_CONCURRENCY}, 最多 {MAX_ROUNDS} 轮\n")
+
+    for round_num in range(MAX_ROUNDS):
+        pending = list(tool_data.keys())
+        if not pending:
+            break
+
+        print(f"--- 第 {round_num + 1} 轮 ---")
+        total_removed = 0
+
+        with ThreadPoolExecutor(max_workers=DEDUP_CONCURRENCY) as pool:
+            futures = {}
+            for name in pending:
+                f = pool.submit(dedup_and_fill, name, tool_data[name])
+                futures[f] = name
+            for future in as_completed(futures):
+                name = futures[future]
+                results, removed = future.result()
+                tool_data[name] = results
+                total_removed += removed
+                mark = " ✓ 无重复" if removed == 0 else f" (删 {removed})"
+                print(f"  {name}: {len(results)} 条{mark}")
+
+        if total_removed == 0:
+            print(f"\n全部工具无重复，退出")
+            break
+        print()
+
+    print(f"完成")
 
 
 if __name__ == "__main__":

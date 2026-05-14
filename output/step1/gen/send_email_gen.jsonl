@@ -29,13 +29,11 @@
 {"tool_name": "send_email", "user_question": "帮我发封邮件给李娜(lina@163.com)，主题是‘周末聚餐邀请’，正文说‘周六晚上六点，我在望湘园订了包间，等你回复。’", "arguments": {"contact_name": "李娜(lina@163.com)", "subject": "周末聚餐邀请", "message": "周六晚上六点，我在望湘园订了包间，等你回复。"}}
 {"tool_name": "send_email", "user_question": "我正在安排下周的部门聚餐，帮我给李叔（li_shu@163.com）发个邮件，主题写‘聚餐地点投票’，正文说请他在三个选项中选一个。", "arguments": {"contact_name": "李叔 (li_shu@163.com)", "subject": "聚餐地点投票", "message": "请他在三个选项中选一个。"}}
 {"tool_name": "send_email", "user_question": "帮我发个邮件给王小明，主题是‘周末聚会通知’，内容就写周六下午三点在老地方见，别忘了带零食。", "arguments": {"contact_name": "王小明", "subject": "周末聚会通知", "message": "周六下午三点在老地方见，别忘了带零食。"}}
-{"tool_name": "send_email", "user_question": "给张伟的QQ邮箱发封邮件，主题是项目进度汇报，正文写上‘已完成第一阶段开发’", "arguments": {"contact_name": "张伟@qq.com", "subject": "项目进度汇报", "message": "已完成第一阶段开发"}}
 {"tool_name": "send_email", "user_question": "今天下雨了，帮我发封邮件给李华（lihua@163.com），主题是‘雨天路滑注意安全’，提醒他开车小心。", "arguments": {"contact_name": "李华 (lihua@163.com)", "subject": "雨天路滑注意安全", "message": "雨天路滑，开车注意安全。"}}
 {"tool_name": "send_email", "user_question": "麻烦您帮我发送一封邮件给李华，主题是“会议纪要分享”，正文中说明这是上周五会议的重点内容。", "arguments": {"contact_name": "李华", "subject": "会议纪要分享", "message": "这是上周五会议的重点内容。"}}
 {"tool_name": "send_email", "user_question": "请帮我给合作伙伴王芳（wangfang@163.com）发一封邮件，主题为“会议改期通知”，并告知她原定周五的会议改为下周一上午十点。", "arguments": {"contact_name": "王芳（wangfang@163.com）", "subject": "会议改期通知", "message": "王芳您好，原定于本周五的项目会议因故改期，调整为下周一上午十点，地点不变。请准时参加，谢谢。"}}
 {"tool_name": "send_email", "user_question": "帮我给王芳（wangfang@163.com）发一封主题为“项目进度更新”的邮件，正文就说“本周已完成前端页面开发，明天开始对接后端接口。”", "arguments": {"contact_name": "王芳（wangfang@163.com）", "subject": "项目进度更新", "message": "本周已完成前端页面开发，明天开始对接后端接口。"}}
 {"tool_name": "send_email", "user_question": "请给王芳（wfang@163.com）发一封邮件，主题为“活动报名确认”，正文告知她报名已成功。", "arguments": {"contact_name": "王芳（wfang@163.com）", "subject": "活动报名确认", "message": "告知她报名已成功。"}}
-{"tool_name": "send_email", "user_question": "帮我发个邮件", "arguments": {}}
 {"tool_name": "send_email", "user_question": "喂，帮我发个邮件给李姐，就说项目截止日期推迟到月底了，具体内容你看着写一下呗", "arguments": {"contact_name": "李姐", "subject": "项目截止日期推迟", "message": "李姐你好，项目截止日期已推迟到月底，请知悉并调整计划。"}}
 {"tool_name": "send_email", "user_question": "请帮我给刘芳老师（邮箱 liufang@163.com）发一封主题为“会议安排调整”的邮件，正文写明原定周三的会议改到周五下午三点。", "arguments": {"contact_name": "liufang@163.com", "subject": "会议安排调整", "message": "原定周三的会议改到周五下午三点。"}}
 {"tool_name": "send_email", "user_question": "刚才的会议我们讨论了新项目的进度，请帮我给客户李华发封邮件，主题写‘关于会议纪要的确认’，内容就简单说请查收附件。", "arguments": {"contact_name": "李华", "subject": "关于会议纪要的确认", "message": "请查收附件。"}}
@@ -84,12 +82,10 @@
 {"tool_name": "send_email", "user_question": "帮我给李华（lihua@163.com）发一封邮件，主题是“下周项目进度会议”，正文写“请准时参加，谢谢。”", "arguments": {"contact_name": "lihua@163.com", "subject": "下周项目进度会议", "message": "请准时参加，谢谢。"}}
 {"tool_name": "send_email", "user_question": "请帮我发送一封邮件给张伟，邮箱是zhangwei@gmail.com，主题是‘关于下周项目进度会议的确认’，正文中告诉他会议时间定在周三下午两点，请他提前准备材料。", "arguments": {"contact_name": "张伟 (zhangwei@gmail.com)", "subject": "关于下周项目进度会议的确认", "message": "会议时间定在周三下午两点，请你提前准备材料。"}}
 {"tool_name": "send_email", "user_question": "帮我给李明的邮箱 lixiaoming@gmail.com 发一封邮件，主题是关于下周三的项目进度汇报，正文里简单写一下请他在周五前把最新的进展发给我汇总。", "arguments": {"contact_name": "lixiaoming@gmail.com", "subject": "关于下周三的项目进度汇报", "message": "请你在周五前把最新的项目进展发给我汇总，谢谢。"}}
-{"tool_name": "send_email", "user_question": "帮我发封邮件", "arguments": {}}
 {"tool_name": "send_email", "user_question": "帮我给李华@163.com发个邮件，主题是“会议纪要”，正文就说“请查收周会纪要。”", "arguments": {"contact_name": "李华@163.com", "subject": "会议纪要", "message": "请查收周会纪要。"}}
 {"tool_name": "send_email", "user_question": "您好，麻烦您帮我发送一封邮件给赵四，主题是“关于下周一的项目进度会议”，正文中请注明会议时间为上午10点，地点在会议室3。", "arguments": {"contact_name": "赵四", "subject": "关于下周一的项目进度会议", "message": "会议时间为上午10点，地点在会议室3。"}}
 {"tool_name": "send_email", "user_question": "麻烦帮我给王芳的邮箱 wangfang@163.com 发送一封主题为“下周一产品评审会议通知”的邮件，正文内容请写明会议时间是下周一上午十点，地点在三楼大会议室，请各部门负责人准时参加并准备好演示资料。", "arguments": {"contact_name": "王芳 (wangfang@163.com)", "subject": "下周一产品评审会议通知", "message": "会议时间是下周一上午十点，地点在三楼大会议室，请各部门负责人准时参加并准备好演示资料。"}}
 {"tool_name": "send_email", "user_question": "嘿，帮我发个邮件给王五，主题写“明天会议改期”，内容就说“改成下午两点”就行。", "arguments": {"contact_name": "王五", "subject": "明天会议改期", "message": "改成下午两点"}}
-{"tool_name": "send_email", "user_question": "刚开完会，帮我给李芳（lifang@qq.com）发封邮件，主题是“会议纪要分享”，正文写一下讨论重点和待办事项。", "arguments": {"contact_name": "李芳 <lifang@qq.com>", "subject": "会议纪要分享", "message": "会议讨论重点：1. 项目进度更新；2. 资源分配调整。待办事项：请在下周一前反馈各自负责的部分。"}}
 {"tool_name": "send_email", "user_question": "帮我发个邮件给李伟，告诉他明天下午的会议改到三点，顺便问问项目报告什么时候能交。", "arguments": {"contact_name": "李伟", "subject": "会议时间变更及项目报告询问", "message": "李伟你好，明天下午的会议改到三点进行，请知悉。另外，想问一下项目报告大概什么时候能交？谢谢。"}}
 {"tool_name": "send_email", "user_question": "帮我给王小明（wangxiaoming@163.com）发一封邮件，主题是‘关于周五团建活动的安排’，正文写‘请确认是否参加，并回复是否需要大巴接送。’", "arguments": {"contact_name": "王小明（wangxiaoming@163.com）", "subject": "关于周五团建活动的安排", "message": "请确认是否参加，并回复是否需要大巴接送。"}}
 {"tool_name": "send_email", "user_question": "请给王磊的QQ邮箱发一封邮件，主题为“项目进度更新”，正文里简单说下本周完成了需求评审。", "arguments": {"contact_name": "王磊@qq.com", "subject": "项目进度更新", "message": "本周完成了需求评审。"}}
@@ -97,4 +93,8 @@
 {"tool_name": "send_email", "user_question": "我要给张伟（zhangwei@qq.com）发一封邮件，提醒他下周出差的安排。", "arguments": {"contact_name": "张伟 (zhangwei@qq.com)", "subject": "下周出差安排提醒", "message": "张伟你好，下周一你要出差去上海，请提前准备好相关资料和行李，记得带上笔记本电脑和充电器。祝旅途顺利！"}}
 {"tool_name": "send_email", "user_question": "项目经理刚通知我，张明的项目进度报告还没提交，你帮我给他发封邮件催一下，主题写‘项目进度确认’，内容就写‘请在本周五前提交项目进度报告，谢谢。’", "arguments": {"contact_name": "张明", "subject": "项目进度确认", "message": "请在本周五前提交项目进度报告，谢谢。"}}
 {"tool_name": "send_email", "user_question": "帮我发一封邮件，内容是关于项目的。", "arguments": {}}
-{"tool_name": "send_email", "user_question": "嘿，帮我给李四发个邮件，主题是晚上一起吃饭，正文就说晚上七点老地方见哈", "arguments": {"contact_name": "李四", "subject": "晚上一起吃饭", "message": "晚上七点老地方见哈"}}
+{"tool_name": "send_email", "user_question": "帮我给李华（lihua@163.com）发一封主题为“下周一项目进度汇报会议通知”的邮件，正文写明会议时间是上午10点，请提前准备PPT。", "arguments": {"contact_name": "李华（lihua@163.com）", "subject": "下周一项目进度汇报会议通知", "message": "会议时间是上午10点，请提前准备PPT。"}}
+{"tool_name": "send_email", "user_question": "帮我给王芳发一封邮件，主题是明天下午的会议改期，正文写原定时间我有冲突，需要调整到周四上午。", "arguments": {"contact_name": "王芳", "subject": "明天下午会议改期通知", "message": "原定时间我有冲突，需要调整到周四上午。"}}
+{"tool_name": "send_email", "user_question": "可以帮我给李娜发一封主题为会议安排的邮件吗？", "arguments": {"contact_name": "李娜", "subject": "会议安排", "message": "李老师，您好！关于下周的项目会议，时间定在周三下午两点，地点在302会议室，请您准时参加。"}}
+{"tool_name": "send_email", "user_question": "帮我给张三发封邮件，主题是周末聚会确认，问他周六下午两点是否方便。", "arguments": {"contact_name": "张三", "subject": "周末聚会确认", "message": "请问周六下午两点方便吗？"}}
+{"tool_name": "send_email", "user_question": "帮我给王芳的QQ邮箱发一封邮件，主题是周末聚餐邀请，正文写上周六晚上六点在老地方见。", "arguments": {"contact_name": "王芳@qq.com", "subject": "周末聚餐邀请", "message": "上周六晚上六点在老地方见。"}}

@@ -229,3 +229,5 @@ content（STRING，必选）：笔记正文，内容和标题匹配。"""
 
 }
 
+# 含时间参数的工具，需要 system prompt 中包含日期时间
+TIME_TOOLS = {"set_alarm", "get_weather", "create_calendar_event", "search_calendar_events"}

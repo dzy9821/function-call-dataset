@@ -9,7 +9,6 @@
 {"tool_name": "open_application", "user_question": "帮我打开那个应用", "arguments": {}}
 {"tool_name": "open_application", "user_question": "我刚刚下班回家，想刷会儿短视频放松一下，能帮我把抖音打开吗？", "arguments": {"application_name": "抖音"}}
 {"tool_name": "open_application", "user_question": "请帮我打开计算器，我要算一下这个月的开销总和。", "arguments": {"application_name": "计算器"}}
-{"tool_name": "open_application", "user_question": "打开那个应用", "arguments": {}}
 {"tool_name": "open_application", "user_question": "帮我打开钉钉，我要查看今天下午的会议安排。", "arguments": {"application_name": "钉钉"}}
 {"tool_name": "open_application", "user_question": "请帮我打开相机应用，准备拍照。", "arguments": {"application_name": "相机"}}
 {"tool_name": "open_application", "user_question": "你能帮我把日历应用打开吗？", "arguments": {"application_name": "日历"}}
@@ -21,7 +20,6 @@
 {"tool_name": "open_application", "user_question": "帮我打开抖音呗", "arguments": {"application_name": "抖音"}}
 {"tool_name": "open_application", "user_question": "下班后想放松一下，帮我打开网易云音乐听听歌。", "arguments": {"application_name": "网易云音乐"}}
 {"tool_name": "open_application", "user_question": "请帮我打开网易云音乐，我想听周杰伦的新歌。", "arguments": {"application_name": "网易云音乐"}}
-{"tool_name": "open_application", "user_question": "帮我打开抖音看看", "arguments": {"application_name": "抖音"}}
 {"tool_name": "open_application", "user_question": "我刚下载了一款笔记软件，想试试看，帮我打开Notion吧。", "arguments": {"application_name": "Notion"}}
 {"tool_name": "open_application", "user_question": "下班后帮我打开网易云音乐，我想听会儿歌放松一下。", "arguments": {"application_name": "网易云音乐"}}
 {"tool_name": "open_application", "user_question": "麻烦您帮我打开微信，谢谢。", "arguments": {"application_name": "微信"}}
@@ -34,7 +32,6 @@
 {"tool_name": "open_application", "user_question": "帮我打开一个应用", "arguments": {}}
 {"tool_name": "open_application", "user_question": "嘿，帮我打开微信呗", "arguments": {"application_name": "微信"}}
 {"tool_name": "open_application", "user_question": "刚到家，累死了，帮我打开网易云音乐放点轻音乐吧", "arguments": {"application_name": "网易云音乐"}}
-{"tool_name": "open_application", "user_question": "打开设置", "arguments": {"application_name": "设置"}}
 {"tool_name": "open_application", "user_question": "请打开网易云音乐，我要听昨天没听完的那首歌。", "arguments": {"application_name": "网易云音乐"}}
 {"tool_name": "open_application", "user_question": "我刚到家，帮我打开音乐播放器放松一下。", "arguments": {"application_name": "音乐播放器"}}
 {"tool_name": "open_application", "user_question": "帮我把应用打开一下", "arguments": {}}
@@ -46,7 +43,6 @@
 {"tool_name": "open_application", "user_question": "我刚刚收到了一个重要文件，需要立刻打开WPS办公软件来查看和编辑里面的内容，麻烦你帮我启动一下WPS应用吧。", "arguments": {"application_name": "WPS"}}
 {"tool_name": "open_application", "user_question": "今天工作太累了，想放松一下，能不能帮我打开那个平时用来听歌的网易云音乐应用？", "arguments": {"application_name": "网易云音乐"}}
 {"tool_name": "open_application", "user_question": "刚下班到家，想放松一下，帮我打开音乐播放器听听歌吧。", "arguments": {"application_name": "音乐播放器"}}
-{"tool_name": "open_application", "user_question": "打开微信", "arguments": {"application_name": "微信"}}
 {"tool_name": "open_application", "user_question": "刚到家，想点个外卖，帮我打开美团吧。", "arguments": {"application_name": "美团"}}
 {"tool_name": "open_application", "user_question": "帮我打开设置", "arguments": {"application_name": "设置"}}
 {"tool_name": "open_application", "user_question": "麻烦您帮我打开微信，好吗？", "arguments": {"application_name": "微信"}}
@@ -90,7 +86,6 @@
 {"tool_name": "open_application", "user_question": "今天天气不错，帮我把手机里的天气应用打开看看明天的预报", "arguments": {"application_name": "天气"}}
 {"tool_name": "open_application", "user_question": "帮我打开支付宝", "arguments": {"application_name": "支付宝"}}
 {"tool_name": "open_application", "user_question": "帮我打开一个应用吧，随便哪个都行。", "arguments": {}}
-{"tool_name": "open_application", "user_question": "帮我打开应用", "arguments": {}}
 {"tool_name": "open_application", "user_question": "我刚忙完工作，想放松一下，请帮我打开网易云音乐放点轻音乐吧。", "arguments": {"application_name": "网易云音乐"}}
 {"tool_name": "open_application", "user_question": "今天想清理一下手机里的缓存文件，麻烦帮我打开系统自带的设置应用吧。", "arguments": {"application_name": "设置"}}
 {"tool_name": "open_application", "user_question": "帮我打开手机上的微信，我要看看有没有新消息。", "arguments": {"application_name": "微信"}}
@@ -98,3 +93,8 @@
 {"tool_name": "open_application", "user_question": "早上起来想听听今天的新闻，帮我打开网易云音乐里的播客吧。", "arguments": {"application_name": "网易云音乐"}}
 {"tool_name": "open_application", "user_question": "我的邮件太多了，快帮我打开邮箱应用，我要清理一下收件箱。", "arguments": {"application_name": "邮箱"}}
 {"tool_name": "open_application", "user_question": "麻烦你帮我打开我手机上的计算器应用，我一会需要用它来算一下这个月的开销总和。", "arguments": {"application_name": "计算器"}}
+{"tool_name": "open_application", "user_question": "我刚处理完工作，想放松一下，帮我打开网易云音乐听会儿歌吧。", "arguments": {"application_name": "网易云音乐"}}
+{"tool_name": "open_application", "user_question": "麻烦请帮我打开微信。", "arguments": {"application_name": "微信"}}
+{"tool_name": "open_application", "user_question": "我刚下班回到家，想看看有没有人给我发消息，麻烦帮我打开微信吧。", "arguments": {"application_name": "微信"}}
+{"tool_name": "open_application", "user_question": "刚忙完家务，想听会儿音乐放松一下，帮我打开网易云音乐吧。", "arguments": {"application_name": "网易云音乐"}}
+{"tool_name": "open_application", "user_question": "帮我打开微信，我想给朋友发一条语音消息，顺便看看朋友圈有没有更新。", "arguments": {"application_name": "微信"}}

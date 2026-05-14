@@ -9,13 +9,18 @@ Step 1.2 — 英文数据提取（含参数匹配检查）
 import json
 import ast
 import os
+import sys
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, PROJECT_ROOT)
 ALI_PATH = os.path.join(PROJECT_ROOT, "ori-datasets", "AliRGHZ-Mobile-Actions.jsonl")
 GOOGLE_PATH = os.path.join(PROJECT_ROOT, "ori-datasets", "google-mobile-actions.jsonl")
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "output", "step1")
 
 MAX_PER_TOOL = 120
+
+# 含时间参数的工具，需要提取 system prompt 中的日期时间
+from scripts.prompts import TIME_TOOLS
 
 
 def load_our_params():
@@ -129,6 +134,7 @@ def extract_matching():
                 else:
                     args = {k: v for k, v in tool_args.items() if k in partial.get(tool_name, set())}
                 results[tool_name].append({"en": user_q, "arguments": args})
+                # AliRGHZ 数据集目前没有时间相关工具，无需提取 system_en
 
     # Google
     with open(GOOGLE_PATH, encoding="utf-8") as f:
@@ -140,7 +146,13 @@ def extract_matching():
             user_q = None
             tool_name = None
             tool_args = {}
+            system_en = None
             for m in obj.get("messages", []):
+                if m.get("role") in ("developer", "system"):
+                    content = m.get("content", "")
+                    # 提取日期时间和星期信息
+                    if "YYYY-MM-DD" in content or "Day of week" in content:
+                        system_en = content.strip()
                 if m.get("role") == "user":
                     user_q = m.get("content", "").strip()
                 if m.get("role") == "assistant":
@@ -156,7 +168,11 @@ def extract_matching():
                     args = tool_args
                 else:
                     args = {k: v for k, v in tool_args.items() if k in partial.get(tool_name, set())}
-                results[tool_name].append({"en": user_q, "arguments": args})
+                record = {"en": user_q, "arguments": args}
+                # 对时间相关工具，保留 system prompt
+                if tool_name in TIME_TOOLS and system_en:
+                    record["system_en"] = system_en
+                results[tool_name].append(record)
 
     return results
 

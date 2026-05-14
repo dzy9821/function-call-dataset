@@ -26,7 +26,6 @@
 {"tool_name": "phone_sms", "user_question": "给李四发条短信，说我今晚不回家吃饭了", "arguments": {"contact_name": "李四", "message": "我今晚不回家吃饭了"}}
 {"tool_name": "phone_sms", "user_question": "给李四发个短信，告诉他明天记得带文件", "arguments": {"contact_name": "李四", "message": "明天记得带文件"}}
 {"tool_name": "phone_sms", "user_question": "帮我给李小明发个短信，提醒他明天下午三点在会议室开项目进度会，别忘了带上最新的报表和数据。", "arguments": {"contact_name": "李小明", "message": "提醒你明天下午三点在会议室开项目进度会，别忘了带上最新的报表和数据。"}}
-{"tool_name": "phone_sms", "user_question": "帮我给小李发个短信，就说我晚点到。", "arguments": {"contact_name": "小李", "message": "我晚点到"}}
 {"tool_name": "phone_sms", "user_question": "麻烦你帮我给我姑姑王丽华发条短信，告诉她我今晚公司临时要加班，可能赶不上她家晚上的聚餐了，让她别等我，改天我一定登门道歉并补上这顿饭。", "arguments": {"contact_name": "王丽华", "message": "姑姑，今晚公司突然加班，赶不上聚餐了。您别等我，改天我登门道歉补上这顿饭。"}}
 {"tool_name": "phone_sms", "user_question": "给我爸（13800138000）发个短信，提醒他下周二下午两点去医院复查，别忘了带病历和医保卡。", "arguments": {"contact_name": "13800138000", "message": "爸，下周二下午两点记得去医院复查，带上病历和医保卡。"}}
 {"tool_name": "phone_sms", "user_question": "明天我要去面试了，有点紧张，帮我给朋友张伟发条短信，让他祝我好运", "arguments": {"contact_name": "张伟", "message": "明天我要去面试了，祝我好运吧！"}}
@@ -42,7 +41,6 @@
 {"tool_name": "phone_sms", "user_question": "帮我给老王发个短信，说今晚饭局取消，改天再约。", "arguments": {"contact_name": "老王", "message": "今晚饭局取消，改天再约。"}}
 {"tool_name": "phone_sms", "user_question": "帮我给我老婆发条短信，告诉她我今天晚上要加班，大概九点才能到家，让她不用等我吃饭了，自己先吃吧。", "arguments": {"contact_name": "老婆", "message": "我今天晚上要加班，大概九点才能到家，你先吃饭别等我。"}}
 {"tool_name": "phone_sms", "user_question": "麻烦您给李华发一条短信，就说“最近还好吗？想你了。”", "arguments": {"contact_name": "李华", "message": "最近还好吗？想你了。"}}
-{"tool_name": "phone_sms", "user_question": "嘿，帮我给老王发个短信，就说今晚老地方见！", "arguments": {"contact_name": "老王", "message": "今晚老地方见！"}}
 {"tool_name": "phone_sms", "user_question": "发短信给张大妈，说我晚点到", "arguments": {"contact_name": "张大妈", "message": "我晚点到"}}
 {"tool_name": "phone_sms", "user_question": "帮我发条短信给李经理，说原定今天下午三点的会议推迟到明天上午十点", "arguments": {"contact_name": "李经理", "message": "原定今天下午三点的会议推迟到明天上午十点"}}
 {"tool_name": "phone_sms", "user_question": "我明天要出差，得赶紧发短信告诉老王航班取消了，改签后到达时间也变了。", "arguments": {"contact_name": "老王", "message": "老王，我明天航班取消了，已改签到后天下午三点到，你接机时间也调整一下。"}}
@@ -87,7 +85,6 @@
 {"tool_name": "phone_sms", "user_question": "给李明发短信说我明天到", "arguments": {"contact_name": "李明", "message": "我明天到"}}
 {"tool_name": "phone_sms", "user_question": "麻烦你帮我给李华发一条短信，跟他说我后天下午两点到北京，让他别忘了去机场接我，谢谢。", "arguments": {"contact_name": "李华", "message": "我后天下午两点到北京，别忘了去机场接我。"}}
 {"tool_name": "phone_sms", "user_question": "帮我给张伟发条短信，告诉他明天下午三点的会议改到后天上午十点了，并且祝他生日快乐。", "arguments": {"contact_name": "张伟", "message": "张伟你好，明天下午三点的会议改到后天上午十点了，请准时参加。另外，祝你生日快乐！"}}
-{"tool_name": "phone_sms", "user_question": "你能帮我给王五发条短信，告诉他明天下午三点的会议改到四点半了吗？", "arguments": {"contact_name": "王五", "message": "明天下午三点的会议改到四点半了"}}
 {"tool_name": "phone_sms", "user_question": "帮我给妈妈发条短信，说我今晚加班，不回家吃饭了，让她别等我。", "arguments": {"contact_name": "妈妈", "message": "今晚加班，不回家吃饭了，别等我。"}}
 {"tool_name": "phone_sms", "user_question": "给李四发短信，告诉他快递放门口了", "arguments": {"contact_name": "李四", "message": "快递放门口了"}}
 {"tool_name": "phone_sms", "user_question": "帮我发个短信给李四，说我今晚加班不回去吃饭了", "arguments": {"contact_name": "李四", "message": "我今晚加班不回去吃饭了"}}
@@ -98,3 +95,6 @@
 {"tool_name": "phone_sms", "user_question": "给李老师发个短信说会议改到明天下午了", "arguments": {"contact_name": "李老师", "message": "会议改到明天下午了"}}
 {"tool_name": "phone_sms", "user_question": "帮我发个短信给老张，说我今晚不回家吃饭了。", "arguments": {"contact_name": "老张", "message": "我今晚不回家吃饭了。"}}
 {"tool_name": "phone_sms", "user_question": "我刚开完会，帮我发个短信给李经理，说我稍后到。", "arguments": {"contact_name": "李经理", "message": "我刚开完会，稍后到。"}}
+{"tool_name": "phone_sms", "user_question": "帮我发短信给张老师，内容是明天的会议改到下午三点。", "arguments": {"contact_name": "张老师", "message": "明天的会议改到下午三点"}}
+{"tool_name": "phone_sms", "user_question": "明天下午有个紧急会议，我临时没法打电话，麻烦帮我给李经理发条短信通知他改期到后天上午10点。", "arguments": {"contact_name": "李经理", "message": "李经理，原定明天的紧急会议改期到后天上午10点，请准时参加。"}}
+{"tool_name": "phone_sms", "user_question": "帮我发条短信", "arguments": {}}

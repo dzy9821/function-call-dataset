@@ -38,7 +38,6 @@
 {"tool_name": "create_contact", "user_question": "帮我新建联系人李娜，邮箱lina@163.com，手机13912345678", "arguments": {"contact_name": "李娜", "email": "lina@163.com", "phone_number": "13912345678"}}
 {"tool_name": "create_contact", "user_question": "今天在书店认识了一位书友叫陈子轩，他说他的邮箱是chenzixuan@bookmail.com，手机号是15912345678，帮我存一下联系人。", "arguments": {"contact_name": "陈子轩", "email": "chenzixuan@bookmail.com", "phone_number": "15912345678"}}
 {"tool_name": "create_contact", "user_question": "刚搬新家，邻居大姐好心帮忙搬行李，帮我记下她的联系方式吧，她叫王秀兰，手机号是13812345678。", "arguments": {"contact_name": "王秀兰", "phone_number": "13812345678"}}
-{"tool_name": "create_contact", "user_question": "麻烦您帮我新建一个联系人，姓名是李华，邮箱lihua@outlook.com，手机号15912345678。", "arguments": {"contact_name": "李华", "email": "lihua@outlook.com", "phone_number": "15912345678"}}
 {"tool_name": "create_contact", "user_question": "帮我新加个朋友，王小明，电话13800138000", "arguments": {"contact_name": "王小明", "phone_number": "13800138000"}}
 {"tool_name": "create_contact", "user_question": "帮我把李明辉的电话号码13912345678添加到通讯录里。", "arguments": {"contact_name": "李明辉", "phone_number": "13912345678"}}
 {"tool_name": "create_contact", "user_question": "能否帮我添加一个新联系人，名字叫李雪梅，她的邮箱是 lixuemei@example.com，手机号是13800138000？", "arguments": {"contact_name": "李雪梅", "email": "lixuemei@example.com", "phone_number": "13800138000"}}
@@ -57,7 +56,6 @@
 {"tool_name": "create_contact", "user_question": "请问可以帮我新建一个联系人吗？名字叫王芳，邮箱是wangfang@163.com，电话是13700137000。", "arguments": {"contact_name": "王芳", "email": "wangfang@163.com", "phone_number": "13700137000"}}
 {"tool_name": "create_contact", "user_question": "帮我存个新联系人呗，叫李潇，电话是13912345678。", "arguments": {"contact_name": "李潇", "phone_number": "13912345678"}}
 {"tool_name": "create_contact", "user_question": "请把王芳的手机号15912345678和邮箱wangfang@163.com添加到联系人里。", "arguments": {"contact_name": "王芳", "phone_number": "15912345678", "email": "wangfang@163.com"}}
-{"tool_name": "create_contact", "user_question": "帮我存个联系人，名字叫李华，邮箱lihua@qq.com，电话13912345678", "arguments": {"contact_name": "李华", "email": "lihua@qq.com", "phone_number": "13912345678"}}
 {"tool_name": "create_contact", "user_question": "请问你能帮我创建一个联系人吗？名字叫王浩然，手机号是13812345678。", "arguments": {"contact_name": "王浩然", "phone_number": "13812345678"}}
 {"tool_name": "create_contact", "user_question": "今天在健身房认识了一个教练，叫张伟，把他的电话13912345678存一下，邮箱发到他zhangwei@fitmail.com。", "arguments": {"contact_name": "张伟", "email": "zhangwei@fitmail.com", "phone_number": "13912345678"}}
 {"tool_name": "create_contact", "user_question": "嘿，帮我把张三的电话存一下呗，他的号码是13800138000", "arguments": {"contact_name": "张三", "phone_number": "13800138000"}}
@@ -88,7 +86,6 @@
 {"tool_name": "create_contact", "user_question": "帮我添加一个新联系人，叫赵丽颖，她的手机号码是13812345678，邮箱是zhaoliying@example.com。", "arguments": {"contact_name": "赵丽颖", "phone_number": "13812345678", "email": "zhaoliying@example.com"}}
 {"tool_name": "create_contact", "user_question": "刚认识了一个朋友叫陈思远，他是做设计的，之前聊过说可以邮件联系，他的邮箱是siyuan.chen@gmail.com，麻烦帮我存到通讯录里。", "arguments": {"contact_name": "陈思远", "email": "siyuan.chen@gmail.com"}}
 {"tool_name": "create_contact", "user_question": "刚才在超市买水果时认识了一位热心的阿姨，能帮我把她的联系方式存一下吗？", "arguments": {"contact_name": "王淑芬", "phone_number": "13845678901"}}
-{"tool_name": "create_contact", "user_question": "帮我存一下今天新认识的客户王磊的电话，号码是13800138000，还有他的邮箱是wanglei@example.com。", "arguments": {"contact_name": "王磊", "phone_number": "13800138000", "email": "wanglei@example.com"}}
 {"tool_name": "create_contact", "user_question": "帮我存个新朋友，叫李四，手机号是13800138000。", "arguments": {"contact_name": "李四", "phone_number": "13800138000"}}
 {"tool_name": "create_contact", "user_question": "刚才在聚会上认识了一个新朋友李思远，帮我把他的联系方式存一下，邮箱是siyuan.li@qq.com，手机号13812345678。", "arguments": {"contact_name": "李思远", "email": "siyuan.li@qq.com", "phone_number": "13812345678"}}
 {"tool_name": "create_contact", "user_question": "帮我新建一个联系人，名字是张伟，邮箱zhangwei@example.com，电话13800138000。", "arguments": {"contact_name": "张伟", "email": "zhangwei@example.com", "phone_number": "13800138000"}}
@@ -96,5 +93,8 @@
 {"tool_name": "create_contact", "user_question": "帮我把这个人加到通讯录里", "arguments": {}}
 {"tool_name": "create_contact", "user_question": "请问可以帮我创建一个新联系人吗？名字是赵敏，邮箱是zhaomin@qq.com。", "arguments": {"contact_name": "赵敏", "email": "zhaomin@qq.com"}}
 {"tool_name": "create_contact", "user_question": "帮我新建一个联系人，名字叫李华，邮箱是lihua@outlook.com，手机号15987654321。", "arguments": {"contact_name": "李华", "email": "lihua@outlook.com", "phone_number": "15987654321"}}
-{"tool_name": "create_contact", "user_question": "帮我创建一个联系人，名字是王芳，她的手机号是13912345678，邮箱是wangfang@outlook.com。", "arguments": {"contact_name": "王芳", "phone_number": "13912345678", "email": "wangfang@outlook.com"}}
 {"tool_name": "create_contact", "user_question": "嗨，帮我加个新联系人呗，王小明，邮箱 wangxm@gmail.com，电话 13912345678", "arguments": {"contact_name": "王小明", "email": "wangxm@gmail.com", "phone_number": "13912345678"}}
+{"tool_name": "create_contact", "user_question": "刚才在行业交流会上认识了一位新的合作伙伴，叫陈晓峰，他给了我他的手机号13912345678，麻烦帮我创建联系人。", "arguments": {"contact_name": "陈晓峰", "phone_number": "13912345678"}}
+{"tool_name": "create_contact", "user_question": "我今天在会议上认识了一位新客户，名叫李铭轩，他给了我他的手机号码是13812345678，还有他的邮箱地址是limingxuan@outlook.com，麻烦你帮我把他的联系方式添加到我的通讯录里。", "arguments": {"contact_name": "李铭轩", "email": "limingxuan@outlook.com", "phone_number": "13812345678"}}
+{"tool_name": "create_contact", "user_question": "帮我新建一个联系人，李四，邮箱lisi@qq.com，手机13912345678。", "arguments": {"contact_name": "李四", "email": "lisi@qq.com", "phone_number": "13912345678"}}
+{"tool_name": "create_contact", "user_question": "帮我记个电话", "arguments": {}}

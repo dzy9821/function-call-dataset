@@ -84,7 +84,7 @@
 | 同名参数不同 ✗ | 7 | 只提取重叠的参数名 |
 | 不在数据集 | 17 | 无数据，靠 1.5 生成 |
 
-产物：`output/step1/en/{tool}_en.jsonl`（12 文件，560 条，去重后，人工审核后，部分已删除，当前剩下272条）
+产物：`output/step1/en/{tool}_en.jsonl`（12 文件，560 条，去重后，人工审核后，部分已删除，当前剩下293条）
 
 ### Step 1.3 — 英文→中文翻译
 `python scripts/step1_3_translate.py`
@@ -115,7 +115,27 @@
 
 产物：`output/step1/gen/{tool}_gen.jsonl`（每文件 100 条）
 
-### Step 1.6 — 输出合并（待规划）
+### Step 1.6 — 输出合并
+`python scripts/step1_6_merge.py`
+
+将 `zh/`（提取翻译）和 `gen/`（LLM 生成）数据合并为最终训练格式，打乱后写入单个文件。
+
+输出格式：
+```json
+{
+  "data_source": "td-mobile-action",
+  "messages": [
+    {"role": "system", "content": "（时间工具有日期上下文，其他为空）", "tool_calls": null},
+    {"role": "user", "content": "用户问题", "tool_calls": null}
+  ],
+  "reward_model": {
+    "ground_truth": [{"function": {"name": "tool_name", "arguments": "{...}"}}],
+    "style": "rule"
+  }
+}
+```
+
+产物：`output/step1/merged.jsonl`（zh/ 293 + gen/ 3100 = 3393 条）
 
 ### Step 2-4 — 待规划（工具关联分析、双工具组合、最终格式）
 
@@ -123,10 +143,10 @@
 
 - [x] **1.1 数据盘点**
 - [x] **1.2 英文提取 + 参数匹配**
-- [x] **1.3 英文→中文翻译**（12 工具 272 条，部分已手动筛选）
+- [x] **1.3 英文→中文翻译**（12 工具 293 条，部分已手动筛选）
 - [x] **1.4 参数补全**
-- [ ] **1.5 LLM 批量生成**（进行中：1/31 工具已完成）
-- [ ] **1.6 输出合并**
+- [x] **1.5 LLM 批量生成**（31 工具，每工具 100 条）
+- [x] **1.6 输出合并**（3393 条 → merged.jsonl）
 - [ ] **Step 2 — 工具关联分析**
 - [ ] **Step 3 — 双工具组合**
 - [ ] **Step 4 — 最终格式**

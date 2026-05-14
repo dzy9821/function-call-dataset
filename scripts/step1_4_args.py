@@ -23,6 +23,11 @@ CONCURRENCY = 5
 
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
 
+import sys
+sys.path.insert(0, PROJECT_ROOT)
+
+from scripts.prompts import TIME_TOOLS
+
 
 def load_tool_defs():
     import sys
@@ -31,9 +36,12 @@ def load_tool_defs():
     return {t["function"]["name"]: t for t in TOOLS}
 
 
-def generate_args(tool_name: str, user_question: str, tool_def: dict) -> dict | None:
+def generate_args(tool_name: str, user_question: str, tool_def: dict, system_ctx: str = None) -> dict | None:
     """让模型生成 arguments。"""
     tool_json = json.dumps(tool_def, ensure_ascii=False, indent=2)
+    date_hint = ""
+    if tool_name in TIME_TOOLS and system_ctx:
+        date_hint = f"\n\n当前日期上下文：\n{system_ctx}\n请根据此日期上下文来解析用户问题中的相对时间表述。"
     system = f"""你是 function call 参数提取助手。根据用户的中文问题和工具定义，提取正确的参数值。
 
 工具定义：
@@ -42,7 +50,7 @@ def generate_args(tool_name: str, user_question: str, tool_def: dict) -> dict | 
 规则：
 - 参数值必须真实合理（联系人用常见中文名，地名用真实地点，数值在合理范围）
 - 严格遵守参数类型和必选/可选要求
-- 只输出 JSON 对象，不要其他内容"""
+- 只输出 JSON 对象，不要其他内容{date_hint}"""
 
     try:
         resp = client.chat.completions.create(
@@ -103,7 +111,8 @@ def process_tool(tool_name: str, tool_def: dict):
         item = items[idx]
         if args_complete(item.get("arguments", {})):
             return idx, item["arguments"]
-        args = generate_args(tool_name, item["zh"], tool_def)
+        system_ctx = item.get("system")
+        args = generate_args(tool_name, item["zh"], tool_def, system_ctx=system_ctx)
         return idx, args if args else {}
 
     with ThreadPoolExecutor(max_workers=CONCURRENCY) as pool:
@@ -119,7 +128,7 @@ def process_tool(tool_name: str, tool_def: dict):
             if done % max(1, total // 5) == 0 or done == total:
                 print(f"    [{done}/{total}]")
 
-    # 写回 zh/
+    # 写回 zh/（保留 system 字段）
     for item, args in zip(items, results):
         if args:
             item["arguments"] = args

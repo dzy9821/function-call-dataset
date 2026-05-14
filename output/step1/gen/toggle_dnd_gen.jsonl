@@ -6,7 +6,6 @@
 {"tool_name": "toggle_dnd", "user_question": "今晚我要专注写代码，帮我开启勿扰模式", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "您好，可以帮我把手机设置为勿扰模式吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "帮我开个勿扰模式呗", "arguments": {"enable": true}}
-{"tool_name": "toggle_dnd", "user_question": "帮我开个勿扰模式吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "能不能把那个勿扰模式关了啊？", "arguments": {"enable": false}}
 {"tool_name": "toggle_dnd", "user_question": "明天早上有个重要会议，帮我开启勿扰模式免得被打扰。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "今晚我要专心赶一份报告，不想被任何消息提醒打断，麻烦帮我把勿扰模式打开吧。", "arguments": {"enable": true}}
@@ -20,7 +19,6 @@
 {"tool_name": "toggle_dnd", "user_question": "帮我开一下勿扰模式呗", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "我正在参加一个重要的视频会议，请帮我开启勿扰模式，避免被通知打断。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "可以帮我暂时关闭勿扰模式吗？", "arguments": {"enable": false}}
-{"tool_name": "toggle_dnd", "user_question": "嘿，帮我开一下勿扰模式呗～", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "我现在要开车上路了，别让通知打扰到我。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "帮我关掉勿扰模式", "arguments": {"enable": false}}
 {"tool_name": "toggle_dnd", "user_question": "能否帮我暂时屏蔽所有通知，开启勿扰模式？", "arguments": {"enable": true}}
@@ -35,7 +33,6 @@
 {"tool_name": "toggle_dnd", "user_question": "今晚要早点休息，帮我开启勿扰模式吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "麻烦您帮我关闭勿扰模式好吗？", "arguments": {"enable": false}}
 {"tool_name": "toggle_dnd", "user_question": "我正在开会，请帮我开启勿扰模式。", "arguments": {"enable": true}}
-{"tool_name": "toggle_dnd", "user_question": "帮我开下勿扰模式呗", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "我马上要进电影院了，帮我开启勿扰模式吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "今晚我要早点休息，不希望被手机消息声吵醒，能帮我把勿扰模式打开吗？", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "明天早上有重要面试，从现在开始把手机调成勿扰模式，别让任何消息打扰我休息", "arguments": {"enable": true}}
@@ -59,7 +56,6 @@
 {"tool_name": "toggle_dnd", "user_question": "请问可以帮我关闭勿扰模式吗？", "arguments": {"enable": false}}
 {"tool_name": "toggle_dnd", "user_question": "我想切换勿扰模式", "arguments": {}}
 {"tool_name": "toggle_dnd", "user_question": "帮我开一下勿扰模式，谢谢", "arguments": {"enable": true}}
-{"tool_name": "toggle_dnd", "user_question": "帮我开下勿扰模式，谢啦", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "今天下午有重要会议，别让任何通知打扰到我，请开启勿扰模式。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "明天有重要会议，现在需要专注准备材料，帮我开启勿扰模式避免干扰。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "明天上午有个重要会议，帮我开启勿扰模式，避免被打扰。", "arguments": {"enable": true}}
@@ -71,25 +67,19 @@
 {"tool_name": "toggle_dnd", "user_question": "今晚要好好休息，明天有个面试，所以请把勿扰模式关闭吧，我已经睡醒了。", "arguments": {"enable": false}}
 {"tool_name": "toggle_dnd", "user_question": "我正在参加一个重要的线上会议，麻烦帮我开启勿扰模式，别让消息提示打断我。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "帮我开一下勿扰模式，不想被吵到。", "arguments": {"enable": true}}
-{"tool_name": "toggle_dnd", "user_question": "帮我切换一下免打扰模式", "arguments": {}}
 {"tool_name": "toggle_dnd", "user_question": "我正在开会，不希望被打扰，请帮我开启勿扰模式。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "我想改变我的免打扰状态", "arguments": {}}
-{"tool_name": "toggle_dnd", "user_question": "帮我开启勿扰模式", "arguments": {"enable": true}}
-{"tool_name": "toggle_dnd", "user_question": "帮我关掉勿扰模式呗", "arguments": {"enable": false}}
 {"tool_name": "toggle_dnd", "user_question": "明天早上有个重要的考试，从现在开始我把手机调成勿扰模式，别再推送任何通知了。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "我现在正在开会，麻烦开启勿扰模式，谢谢。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "明天上午我要参加一个非常重要的面试，期间不希望有任何通知打扰我，请帮我开启手机的勿扰模式。", "arguments": {"enable": true}}
-{"tool_name": "toggle_dnd", "user_question": "麻烦您帮我暂时关闭勿扰模式好吗？", "arguments": {"enable": false}}
 {"tool_name": "toggle_dnd", "user_question": "我今天下午有个重要会议，请帮我开启勿扰模式避免被消息打扰", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "把勿扰模式关掉", "arguments": {"enable": false}}
 {"tool_name": "toggle_dnd", "user_question": "明天早上有个重要会议，请帮我开启勿扰模式。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "今晚我要通宵赶项目报告，不希望被任何消息打扰，请帮我把手机的勿扰模式打开吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "请开启勿扰模式，我下午两点要参加一个重要的视频会议。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "我下午三点要参加一个重要的视频会议，不想被消息打扰，请帮我开启勿扰模式。", "arguments": {"enable": true}}
-{"tool_name": "toggle_dnd", "user_question": "帮我切换一下勿扰模式", "arguments": {}}
 {"tool_name": "toggle_dnd", "user_question": "帮我把勿扰模式关了吧，太吵了现在。", "arguments": {"enable": false}}
 {"tool_name": "toggle_dnd", "user_question": "我准备睡觉了，能帮我把手机调成勿扰模式吗？", "arguments": {"enable": true}}
-{"tool_name": "toggle_dnd", "user_question": "开启勿扰模式", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "能不能帮我切换一下勿扰模式？", "arguments": {}}
 {"tool_name": "toggle_dnd", "user_question": "今晚有个重要会议，我不想被打扰，帮我开启勿扰模式吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "麻烦您帮我把勿扰模式打开一下好吗？", "arguments": {"enable": true}}
@@ -98,3 +88,13 @@
 {"tool_name": "toggle_dnd", "user_question": "我今天下午有一个非常重要的会议，需要完全不受打扰，请帮我把手机设为勿扰模式，这样就不会被任何通知或来电干扰了。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "今晚我要专心赶一个重要报告，不希望被任何消息或电话打扰，请你帮我把设备的勿扰模式打开吧。", "arguments": {"enable": true}}
 {"tool_name": "toggle_dnd", "user_question": "我正准备进行一个非常重要的线上会议，不想被任何消息通知打扰，麻烦你帮我开启手机的勿扰模式，这样就能专心开会了。", "arguments": {"enable": true}}
+{"tool_name": "toggle_dnd", "user_question": "帮我切换一下免打扰模式", "arguments": {}}
+{"tool_name": "toggle_dnd", "user_question": "把勿扰模式切换一下", "arguments": {}}
+{"tool_name": "toggle_dnd", "user_question": "帮我开启勿扰模式", "arguments": {"enable": true}}
+{"tool_name": "toggle_dnd", "user_question": "我明天有个重要的面试，今晚需要好好休息，请帮我开启勿扰模式，别让任何通知打扰我。", "arguments": {"enable": true}}
+{"tool_name": "toggle_dnd", "user_question": "我正在参加线上考试，请帮我开启勿扰模式。", "arguments": {"enable": true}}
+{"tool_name": "toggle_dnd", "user_question": "帮我切换一下勿扰模式", "arguments": {}}
+{"tool_name": "toggle_dnd", "user_question": "我正在准备明天的重要汇报，不想被通知打扰，帮我开启勿扰模式吧。", "arguments": {"enable": true}}
+{"tool_name": "toggle_dnd", "user_question": "你可以帮我打开勿扰模式吗？", "arguments": {"enable": true}}
+{"tool_name": "toggle_dnd", "user_question": "请切换我的勿扰模式", "arguments": {}}
+{"tool_name": "toggle_dnd", "user_question": "帮我开启勿扰模式。", "arguments": {"enable": true}}
