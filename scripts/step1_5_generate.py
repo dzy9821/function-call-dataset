@@ -1,14 +1,17 @@
 """
-Step 1.5 — LLM 数据生成
+Step 1.5 — LLM 数据生成 + 多样性增强
 
 31 工具各生成 100 条中文训练数据。
-每次 API 调用 1 条，并发运行，本地去重 + LLM 去重。
+每次 API 调用 1 条，并发运行。
+第二阶段由 LLM 审查全量数据，改写表达雷同或实体重复的条目，
+提升表达方式、应用名、人名、地名、事件等的多样性。
 """
 
 import json
 import os
 import random
 import sys
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
 
@@ -23,7 +26,7 @@ API_KEY = os.environ.get("DEEPSEEK_API_KEY", "sk-6758987f6c594753b747a6e4c2f9426
 BASE_URL = "https://api.deepseek.com"
 MODEL = "deepseek-v4-flash"
 DEDUP_MODEL = "deepseek-v4-pro"
-CONCURRENCY = 5
+CONCURRENCY = 10
 
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
 
@@ -44,11 +47,136 @@ STYLES = [
     "一句礼貌的请求",
     "一个疑问句",
     "一句非常口语化、随意的表达",
-    "一句带具体细节的描述",
-    "一句结合了当前生活场景的请求",
-    "一句较长的自然语言描述",
-    "一句带额外上下文的请求",
+    "一句带具体细节的描述"
 ]
+
+# 工具特定的多样性要求（用于 LLM 多样性增强）
+DIVERSITY_NOTES = {
+    "open_application": (
+        "2. **应用名多样化**：同一个应用名不应反复出现，同一应用最多出现 2-3 次。\n"
+        "   覆盖不同类型——社交（微信、QQ、微博、小红书）、购物（淘宝、京东、拼多多、得物）、\n"
+        "   视频（抖音、B站、爱奇艺、腾讯视频）、工具（计算器、日历、备忘录、录音机、指南针）、\n"
+        "   办公（钉钉、飞书、WPS、企业微信、腾讯会议）、\n"
+        "   生活服务（美团、大众点评、高德地图、滴滴出行、携程、饿了么）等。\n"
+    ),
+    "send_email": (
+        "2. **联系人姓名多样化**：同一姓名不应反复出现，同一姓名最多出现 2-3 次。\n"
+        "   使用不同姓氏（张王李赵刘陈杨周吴孙徐朱马胡郑郭何梁宋唐韩冯于），\n"
+        "   不同形式——全名（张伟、李娜、王建国）、单名（小明、阿芳）、\n"
+        "   头衔+姓（王经理、李医生、赵老师、陈总、刘工）。\n"
+        "3. **邮箱域名多样化**：@qq.com @163.com @gmail.com @outlook.com @126.com @sina.com @foxmail.com 等交替使用。\n"
+        "4. **邮件主题**：覆盖工作、生活、学习等不同场景，避免同一主题反复出现。\n"
+    ),
+    "phone_call": (
+        "2. **联系人姓名多样化**：同一姓名不应反复出现，同一姓名最多出现 2-3 次。\n"
+        "   覆盖不同姓氏、不同称呼方式（全名、单名、昵称、头衔+姓）。\n"
+        "   电话号码号段多样化（13x 15x 18x 17x 19x 等不同前缀）。\n"
+    ),
+    "phone_sms": (
+        "2. **联系人姓名多样化**：同一姓名不应反复出现，同一姓名最多出现 2-3 次。\n"
+        "   覆盖不同姓氏、不同称呼方式。\n"
+        "3. **短信内容多样化**：覆盖通知、问候、确认、提醒、闲聊等不同场景。\n"
+    ),
+    "show_map": (
+        "2. **地名多样化**：同一地点不应反复出现，同一地点最多出现 2-3 次。\n"
+        "   覆盖不同城市、不同类型——景点（故宫、西湖、黄山、兵马俑、九寨沟、张家界）、\n"
+        "   商圈（陆家嘴、春熙路、三里屯、解放碑、南京路、天河城）、\n"
+        "   交通枢纽（虹桥机场、北京南站、白云机场、杭州东站）、\n"
+        "   学校医院（清华大学、协和医院、华西医院）、\n"
+        "   公园地标（颐和园、洪崖洞、东方明珠、广州塔）等。\n"
+    ),
+    "navigate": (
+        "2. **目的地多样化**：同一目的地不应反复出现，同一目的地最多出现 2-3 次。\n"
+        "   覆盖不同城市、不同类型——机场、火车站、商场、餐厅、景点、医院、学校、住宅区、写字楼等。\n"
+    ),
+    "get_weather": (
+        "2. **城市多样化**：同一城市不应反复出现。\n"
+        "   覆盖全国不同区域——华北（北京、天津、石家庄）、华东（上海、杭州、南京、苏州、青岛）、\n"
+        "   华南（广州、深圳、三亚、厦门、南宁）、西南（成都、重庆、昆明、贵阳、拉萨）、\n"
+        "   西北（西安、兰州、乌鲁木齐、银川、西宁）、\n"
+        "   东北（哈尔滨、沈阳、大连、长春）、华中（武汉、长沙、郑州、合肥）等。\n"
+    ),
+    "create_calendar_event": (
+        "2. **事件标题多样化**：同一标题不应反复出现。\n"
+        "   覆盖工作（项目会议、周报提交、客户拜访、季度评审）、\n"
+        "   学习（英语课、考试复习、论文答辩、驾校练车）、\n"
+        "   医疗（体检、牙科复查、疫苗接种、中医调理）、\n"
+        "   生活（超市采购、交房租、汽车保养、家电维修）、\n"
+        "   社交（同学聚会、朋友生日、家庭聚餐、婚礼）、\n"
+        "   运动（健身房、晨跑、瑜伽课、游泳）等不同场景。\n"
+    ),
+    "set_alarm": (
+        "2. **闹钟标签多样化**：同一标签不应反复出现。\n"
+        "   覆盖起床、午休、会议提醒、运动、吃药、接人、赶航班、直播开始、抢票等不同场景。\n"
+        "3. **时间多样化**：早中晚不同时段、工作日和周末均匀分布。\n"
+    ),
+    "search_calendar_events": (
+        "2. **查询关键词多样化**：覆盖工作、生活、医疗、学习、社交等不同主题。\n"
+    ),
+    "create_note": (
+        "2. **笔记标题和内容多样化**：覆盖购物清单、读书笔记、灵感记录、\n"
+        "   待办事项、旅行计划、会议纪要、菜谱、日记、账号备忘等不同场景。\n"
+    ),
+    "play_music": (
+        "2. **歌曲和歌手多样化**：同一首歌或同一位歌手不应反复出现。\n"
+        "   覆盖不同年代（经典老歌、当下流行）、不同风格（流行、摇滚、民谣、说唱、电子、R&B）、\n"
+        "   不同语种（中文、英文、粤语）。\n"
+    ),
+    "search_web": (
+        "2. **搜索关键词多样化**：覆盖新闻、科技、娱乐、健康、教育、财经、体育、旅游、美食等不同领域。\n"
+    ),
+    "create_contact": (
+        "2. **联系人姓名多样化**：同一姓名不应反复出现。\n"
+        "   覆盖不同姓氏、不同名字长度（两字名、三字名）。\n"
+        "   邮箱域名和电话号码号段多样化。\n"
+    ),
+    "search_contacts": (
+        "2. **搜索姓名多样化**：同一姓名不应反复出现。\n"
+        "   可以是全名搜索、部分匹配搜索等不同情况。\n"
+    ),
+}
+
+# 每个工具需要检查多样性的关键实体字段
+ENTITY_KEY = {
+    "open_application": "application_name",
+    "send_email": "contact_name",
+    "phone_call": "contact_name",
+    "phone_sms": "contact_name",
+    "show_map": "destination",
+    "navigate": "destination",
+    "get_weather": "city",
+    "create_calendar_event": "title",
+    "set_alarm": "label",
+    "search_calendar_events": "query",
+    "create_note": "title",
+    "play_music": "song_name",
+    "search_web": "query",
+    "create_contact": "contact_name",
+    "search_contacts": "contact_name",
+}
+
+
+def compute_freq_note(tool_name, items):
+    """分析实体频率，生成高频实体提示。"""
+    if tool_name not in ENTITY_KEY:
+        return ""
+    key = ENTITY_KEY[tool_name]
+    entities = []
+    for item in items:
+        val = item.get("arguments", {}).get(key)
+        if val:
+            entities.append(val)
+    if not entities:
+        return ""
+    freq = Counter(entities)
+    overrepr = [(v, c) for v, c in freq.most_common(15) if c >= 3]
+    if not overrepr:
+        return ""
+    lines = ["\n### 当前高频实体（出现 ≥3 次，需要分散）："]
+    for v, c in overrepr:
+        lines.append(f"- \"{v}\" 出现了 {c} 次，请保留 2-3 条，其余改写为其他内容")
+    return "\n".join(lines) + "\n"
+
 
 from scripts.prompts import TOOL_PROMPTS
 
@@ -159,18 +287,54 @@ def generate_one(tool_name):
     return None
 
 
-def dedup_via_llm(tool_name, items):
-    """LLM 语义去重。"""
-    if not items:
+def diversify_via_llm(tool_name, items):
+    """LLM 多样性增强：改写表达雷同或实体重复的条目。"""
+    if len(items) < 2:
         return items
-    print(f"    LLM 去重开始 ({tool_name}, {len(items)} 条) ...")
-    numbered = "\n".join(f"{i}: {item['user_question']}" for i, item in enumerate(items))
+
+    print(f"    LLM 多样性增强 ({tool_name}, {len(items)} 条) ...")
+
+    # 构建带 index 的条目列表
+    lines = []
+    for i, item in enumerate(items):
+        obj = {"user_question": item["user_question"], "arguments": item["arguments"]}
+        lines.append(f"{i}: {json.dumps(obj, ensure_ascii=False)}")
+    numbered = "\n".join(lines)
+
+    # 工具特定的多样性说明
+    diversity_note = DIVERSITY_NOTES.get(tool_name, "")
+
+    # 高频实体统计
+    freq_note = compute_freq_note(tool_name, items)
+
+    tdef = load_tool_defs()[tool_name]
+    required = tdef["function"]["parameters"].get("required", [])
+    req_note = f"必选参数：{', '.join(required)}" if required else "无必选参数"
+
     prompt = (
-        f"以下是 \"{tool_name}\" 工具的训练数据。因为是同一个工具，语义相近是正常的，"
-        f"只需要去掉表达几乎完全相同的条目。\n\n"
+        f"你是 function call 训练数据多样化专家。以下是 \"{tool_name}\" 工具的 {len(items)} 条训练数据"
+        f"（每行 JSON 包含 user_question 和 arguments）。\n\n"
         f"{numbered}\n\n"
-        f"找出表达几乎完全相同的条目，用 JSON 输出要删除的索引：\n"
-        f'{{"remove": [1, 5, 8]}}\n\n'
+        f"请检查并提升数据多样性，重点关注：\n\n"
+        f"### 1. 表达方式多样化\n"
+        f"同一功能的条目应使用不同的句式、语气、用词，例如：\n"
+        f"- 简短口语指令（\"开下微信\"）\n"
+        f"- 礼貌请求（\"请帮我打开微信\"）\n"
+        f"- 疑问句（\"能帮我把微信打开吗\"）\n"
+        f"- 带场景描述（\"我想回个消息，帮我打开微信\"）\n"
+        f"如果多条条目使用了高度相似的表达方式，请改写其中一部分，保留 1-2 条即可。\n\n"
+        f"{diversity_note}"
+        f"{freq_note}\n"
+        f"### 要求\n"
+        f"- 只改写确实需要多样化的条目，已经足够多样化的条目不要改动\n"
+        f"- **arguments 的值必须从 user_question 中原样提取，不能自行推断或构造**。\n"
+        f"  例如 user_question 中写的是\"小李\"，arguments 就不能写\"李磊\"，只能写\"小李\"。\n"
+        f"  改名时两边同步改：user_question 写\"李磊\"，arguments 才能写\"李磊\"。\n"
+        f"- arguments 中字段的键和类型必须正确（{req_note}）\n"
+        f"- 改写后的条目之间也要保持多样性，不要引入新的雷同\n\n"
+        f"### 输出格式\n"
+        f"用 JSON 列出要修改的条目：\n"
+        f'{{"modify": [{{"index": 0, "user_question": "改写后", "arguments": {{...}}}}, ...]}}\n\n'
         f"只输出 JSON，不要任何其他内容。"
     )
 
@@ -179,10 +343,10 @@ def dedup_via_llm(tool_name, items):
         resp = client.chat.completions.create(
             model=DEDUP_MODEL,
             messages=[
-                {"role": "system", "content": "你是数据清洗专家，只输出 JSON。"},
+                {"role": "system", "content": "你是训练数据多样化专家。只输出 JSON。"},
                 {"role": "user", "content": prompt},
             ],
-            temperature=0.1,
+            temperature=0.3,
             max_tokens=32768,
         )
         choice = resp.choices[0]
@@ -191,7 +355,7 @@ def dedup_via_llm(tool_name, items):
         if not text and hasattr(msg, "reasoning_content"):
             text = (msg.reasoning_content or "").strip()
         if not text:
-            print("    LLM 去重: 无输出，跳过")
+            print("    LLM 多样性增强: 无输出，跳过")
             return items
 
         if "```json" in text:
@@ -205,34 +369,55 @@ def dedup_via_llm(tool_name, items):
                 text = text[start : end + 1]
 
         result = json.loads(text)
-        remove = set(result.get("remove", []))
-        if not remove:
-            print("    LLM 去重: 无需删除")
+        modifications = result.get("modify", [])
+        if not modifications:
+            print("    LLM 多样性增强: 无需修改")
             return items
 
-        kept = [item for i, item in enumerate(items) if i not in remove]
-        print(f"    LLM 去重: {len(items)} → {len(kept)} (删除 {len(remove)})")
-        for idx in sorted(remove)[:3]:
-            if idx < len(items):
-                print(f"      删[{idx}]: {items[idx]['user_question'][:50]}")
-        return kept
+        # 应用修改
+        modified = 0
+        for mod in modifications:
+            idx = mod.get("index")
+            new_q = mod.get("user_question")
+            new_args = mod.get("arguments")
+            if idx is None or not new_q or new_args is None:
+                continue
+            if idx < 0 or idx >= len(items) or not isinstance(idx, int):
+                continue
+            if not validate_args(tool_name, new_args, required=required):
+                continue
+            items[idx]["user_question"] = new_q.strip()
+            items[idx]["arguments"] = new_args
+            modified += 1
+
+        if modified > 0:
+            print(f"    LLM 多样性增强: 修改了 {modified} 条")
+            for mod in modifications[:3]:
+                if mod.get("index") is not None:
+                    i = mod["index"]
+                    print(f"      改[{i}]: {items[i]['user_question'][:60]}")
+        else:
+            print("    LLM 多样性增强: 所有修改未通过校验，跳过")
+        return items
 
     except json.JSONDecodeError as e:
-        print(f"    LLM 去重 JSON 解析失败: {e}")
+        print(f"    LLM 多样性增强 JSON 解析失败: {e}")
         print(f"    原始文本: {repr(text[:200])}")
         return items
     except Exception as e:
-        print(f"    LLM 去重 error: {e}")
+        print(f"    LLM 多样性增强 error: {e}")
         return items
 
 
-def dedup_and_fill(tool_name, results):
-    """一次去重 + 补全。返回 (results, removed_count)。"""
+def diversify_and_fill(tool_name, results):
+    """一次多样性增强 + 补全。返回 (results, modified_count)。"""
     path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
-    before = len(results)
-    results = dedup_via_llm(tool_name, results[:100])
+    before_snapshot = {i: (item["user_question"], json.dumps(item["arguments"], sort_keys=True, ensure_ascii=False))
+                       for i, item in enumerate(results)}
+    results = diversify_via_llm(tool_name, results[:100])
     seen = {item["user_question"] for item in results}
-    removed = before - len(results)
+    modified = sum(1 for i, item in enumerate(results)
+                   if i in before_snapshot and before_snapshot[i] != (item["user_question"], json.dumps(item["arguments"], sort_keys=True, ensure_ascii=False)))
 
     def save():
         with open(path, "w", encoding="utf-8") as f:
@@ -257,11 +442,13 @@ def dedup_and_fill(tool_name, results):
             need = 100 - len(results)
         save()
 
-    return results[:100], removed
+    return results[:100], modified
 
 
 def process_tool_generate(tool_name):
-    """生成 100 条数据，不做 LLM 去重。支持续跑。"""
+    """生成 100 条数据，不做 LLM 去重。支持续跑。
+    返回 (results, generated): generated 表示本轮是否有新数据生成。
+    """
     path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
     results = []
     seen = set()
@@ -275,10 +462,12 @@ def process_tool_generate(tool_name):
                     seen.add(item["user_question"])
         if len(results) >= 100:
             print(f"  {tool_name}: 已有 {len(results)} 条，跳过 ✓")
-            return results[:100]
+            return results[:100], False
         print(f"  {tool_name}: 已有 {len(results)} 条，继续补全至 100 ...")
     else:
         print(f"  {tool_name}: 生成 100 条 ...")
+
+    before_count = len(results)
 
     def save():
         with open(path, "w", encoding="utf-8") as f:
@@ -322,8 +511,9 @@ def process_tool_generate(tool_name):
         save()
         print(f"    累计 {len(results)} 条 → 已保存")
 
+    generated = len(results) > before_count
     print(f"  → {min(len(results), 100)} 条\n")
-    return results[:100]
+    return results[:100], generated
 
 
 def main(tools_filter=None):
@@ -336,25 +526,28 @@ def main(tools_filter=None):
 
     # ---- 第一阶段：生成（不 LLM 去重），顺序处理每个工具 ----
     gen_results = {}  # {tool_name: results_list}
+    gen_flags = {}    # {tool_name: bool}  本轮是否有新数据生成
     for tool_name in all_tools:
-        gen_results[tool_name] = process_tool_generate(tool_name)
+        results, generated = process_tool_generate(tool_name)
+        gen_results[tool_name] = results
+        gen_flags[tool_name] = generated
 
-    # ---- 第二阶段：LLM 去重，并发 ----
-    DEDUP_CONCURRENCY = 5
-    pending = {k: v for k, v in gen_results.items() if v}
+    # ---- 第二阶段：LLM 多样性增强，只处理本轮有新数据的工具 ----
+    DEDUP_CONCURRENCY = 10
+    pending = {k: v for k, v in gen_results.items() if v and gen_flags.get(k)}
 
     if pending:
-        print(f"\nLLM 去重: {len(pending)} 个工具, 并发 {DEDUP_CONCURRENCY}\n")
+        print(f"\nLLM 多样性增强: {len(pending)} 个工具, 并发 {DEDUP_CONCURRENCY}\n")
 
         with ThreadPoolExecutor(max_workers=DEDUP_CONCURRENCY) as pool:
             futures = {}
             for tool_name, results in pending.items():
-                f = pool.submit(dedup_and_fill, tool_name, results)
+                f = pool.submit(diversify_and_fill, tool_name, results)
                 futures[f] = tool_name
             for future in as_completed(futures):
                 tool_name = futures[future]
-                results, removed = future.result()
-                mark = f" (删 {removed})" if removed > 0 else ""
+                results, modified = future.result()
+                mark = f" (改 {modified})" if modified > 0 else ""
                 print(f"  {tool_name}: {len(results)} 条{mark}")
 
     total = sum(len(v[:100]) for v in gen_results.values())
@@ -362,13 +555,13 @@ def main(tools_filter=None):
 
 
 def run_dedup_loop(tools_filter=None):
-    """反复 LLM 去重 + 补全，直到所有工具无重复或达到最大轮次。"""
+    """反复 LLM 多样性增强，直到所有工具无改动或达到最大轮次。"""
     all_tools = load_tool_defs()
     if tools_filter:
         all_tools = {k: v for k, v in all_tools.items() if k in tools_filter}
 
     DEDUP_CONCURRENCY = 5
-    MAX_ROUNDS = 5
+    MAX_ROUNDS = 1
 
     def load_results(tool_name):
         path = os.path.join(GEN_DIR, f"{tool_name}_gen.jsonl")
@@ -390,7 +583,7 @@ def run_dedup_loop(tools_filter=None):
         print("没有 gen 文件，请先运行生成")
         return
 
-    print(f"LLM 去重循环: {len(tool_data)} 个工具, 并发 {DEDUP_CONCURRENCY}, 最多 {MAX_ROUNDS} 轮\n")
+    print(f"LLM 多样性增强循环: {len(tool_data)} 个工具, 并发 {DEDUP_CONCURRENCY}, 最多 {MAX_ROUNDS} 轮\n")
 
     for round_num in range(MAX_ROUNDS):
         pending = list(tool_data.keys())
@@ -398,23 +591,23 @@ def run_dedup_loop(tools_filter=None):
             break
 
         print(f"--- 第 {round_num + 1} 轮 ---")
-        total_removed = 0
+        total_modified = 0
 
         with ThreadPoolExecutor(max_workers=DEDUP_CONCURRENCY) as pool:
             futures = {}
             for name in pending:
-                f = pool.submit(dedup_and_fill, name, tool_data[name])
+                f = pool.submit(diversify_and_fill, name, tool_data[name])
                 futures[f] = name
             for future in as_completed(futures):
                 name = futures[future]
-                results, removed = future.result()
+                results, modified = future.result()
                 tool_data[name] = results
-                total_removed += removed
-                mark = " ✓ 无重复" if removed == 0 else f" (删 {removed})"
+                total_modified += modified
+                mark = " ✓ 无需修改" if modified == 0 else f" (改 {modified})"
                 print(f"  {name}: {len(results)} 条{mark}")
 
-        if total_removed == 0:
-            print(f"\n全部工具无重复，退出")
+        if total_modified == 0:
+            print(f"\n全部工具无需修改，退出")
             break
         print()
 
@@ -425,7 +618,7 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--tools", type=str, default="", help="指定工具名，逗号分隔")
-    parser.add_argument("--dedup-only", action="store_true", help="只运行 LLM 去重循环（反复去重直到无重复）")
+    parser.add_argument("--dedup-only", action="store_true", help="只运行 LLM 多样性增强（反复增强直到无改动）")
     args = parser.parse_args()
 
     tool_list = [t.strip() for t in args.tools.split(",") if t.strip()] if args.tools else None

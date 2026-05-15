@@ -12,7 +12,8 @@
 │   ├── step1_2_extract.py       # 英文提取 + 参数匹配
 │   ├── step1_3_translate.py     # 英文→中文翻译
 │   ├── step1_4_args.py          # 参数补全（模型生成 arguments）
-│   └── step1_5_generate.py      # LLM 批量生成
+│   ├── step1_5_generate.py      # LLM 批量生成
+│   └── step1_6_merge.py         # 输出合并
 ├── ori-datasets/                # 原始参考数据集（英文, 各约 9500 条）
 │   ├── AliRGHZ-Mobile-Actions.jsonl
 │   └── google-mobile-actions.jsonl
@@ -20,8 +21,9 @@
     └── step1/
         ├── inventory.json       # 盘点结果（31 工具）
         ├── en/                  # 提取的英文数据（12 工具, 560 条）
-        ├── zh/                  # 翻译+参数补全（12 工具, 272 条，部分已筛选）
-        └── gen/                 # LLM 生成（待产出）
+        ├── zh/                  # 翻译+参数补全（12 工具, 293 条）
+        ├── gen/                 # LLM 生成（31 工具, 3100 条）
+        └── merged.jsonl         # 合并输出（3393 条）
 ```
 
 ## 工具清单（31 个）
@@ -102,16 +104,16 @@
 
 产物：写回 `zh/{tool}_zh.jsonl`
 
-### Step 1.5 — LLM 批量生成
+### Step 1.5 — LLM 批量生成 + 多样性增强
 `DEEPSEEK_API_KEY=xxx python scripts/step1_5_generate.py [--tools xxx] [--dedup-only]`
 
 31 工具各生成 100 条中文数据。每次 API 调用生成 1 条。支持续跑：已有文件 >= 100 跳过，不足补全。
 
 两阶段流水线：
-1. **生成** — 31 工具按序生成（每工具内部 5 并发本地去重），满 100 即写入文件，不等去重
-2. **去重** — 全部生成完后，5 并发 deepseek-v4-pro 语义去重，去重后缺额自动补全
+1. **生成** — 31 工具按序生成（每工具内部 10 并发），满 100 即写入文件
+2. **多样性增强** — 只对本轮有新数据的工具，LLM 审查全量条目并改写表达雷同或实体重复的条目，提升表达方式、应用名、人名、地名、事件等的多样性。改写时要求 arguments 必须从 user_question 中原样提取，不能自行推断。
 
-`--dedup-only` 单独运行：反复 LLM 去重 + 补全直到所有工具 LLM 返回无重复（最多 5 轮）。
+`--dedup-only` 单独运行：对指定（或全部）工具的已有数据做一轮多样性增强。支持 `--tools` 过滤。
 
 产物：`output/step1/gen/{tool}_gen.jsonl`（每文件 100 条）
 

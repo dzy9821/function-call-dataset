@@ -1,100 +1,100 @@
-{"tool_name": "send_email", "user_question": "您好，麻烦您帮我给李华发一封邮件，主题写“会议安排”，内容写“请确认明天的会议时间。”谢谢！", "arguments": {"contact_name": "李华", "subject": "会议安排", "message": "请确认明天的会议时间。"}}
-{"tool_name": "send_email", "user_question": "明天要出差，麻烦你帮我给李经理发封邮件，主题写“本周工作总结”，内容是“请确认本周的工作进展，并附上最新的项目文档。”", "arguments": {"contact_name": "李经理", "subject": "本周工作总结", "message": "请确认本周的工作进展，并附上最新的项目文档。"}}
-{"tool_name": "send_email", "user_question": "你好，请帮我给赵六发一封邮件，主题是“新产品发布邀请函”，正文内容要写“尊敬的赵总，我们诚挚邀请您参加下周五下午三点在公司会议室举行的新产品发布会，请您务必拨冗出席，谢谢！”，收件人就用他的邮箱 zhaoliu@163.com 吧。", "arguments": {"contact_name": "zhaoliu@163.com", "subject": "新产品发布邀请函", "message": "尊敬的赵总，我们诚挚邀请您参加下周五下午三点在公司会议室举行的新产品发布会，请您务必拨冗出席，谢谢！"}}
-{"tool_name": "send_email", "user_question": "帮我给李磊发个邮件呗，主题写“下周计划”，内容说“会议改到周三了记得提前准备”", "arguments": {"contact_name": "李磊", "subject": "下周计划", "message": "会议改到周三了记得提前准备"}}
-{"tool_name": "send_email", "user_question": "我刚跟王芳通完电话，她让我把会议纪要发给她，麻烦帮我给她发封邮件，主题写“会议纪要”，内容是“这是今天下午的会议纪要，请查收。”", "arguments": {"contact_name": "王芳", "subject": "会议纪要", "message": "这是今天下午的会议纪要，请查收。"}}
-{"tool_name": "send_email", "user_question": "帮我发一封邮件", "arguments": {}}
-{"tool_name": "send_email", "user_question": "请帮我给王芳发一封邮件，主题是“项目进度汇报”，正文写“请在下周一前提交你的部分，谢谢。”", "arguments": {"contact_name": "王芳", "subject": "项目进度汇报", "message": "请在下周一前提交你的部分，谢谢。"}}
-{"tool_name": "send_email", "user_question": "帮给王芳发封邮件，主题“项目更新”，内容“新版本已发布，请查收附件。”", "arguments": {"contact_name": "王芳", "subject": "项目更新", "message": "新版本已发布，请查收附件。"}}
-{"tool_name": "send_email", "user_question": "刚刚和客户王芳沟通完，请把方案发给她，主题写“合作提案V3”，内容写“感谢您的宝贵意见，已按反馈更新方案。”", "arguments": {"contact_name": "王芳", "subject": "合作提案V3", "message": "感谢您的宝贵意见，已按反馈更新方案。"}}
-{"tool_name": "send_email", "user_question": "帮我给王芳发一封邮件，主题写“季度工作总结”，正文内容是“附件中是本季度的销售数据，请查收并给出反馈意见。”", "arguments": {"contact_name": "王芳", "subject": "季度工作总结", "message": "附件中是本季度的销售数据，请查收并给出反馈意见。"}}
-{"tool_name": "send_email", "user_question": "帮我给李四发封邮件，主题写“会议纪要”，内容是“请各位查收附件中的会议记录，如有疑问请回复。”", "arguments": {"contact_name": "李四", "subject": "会议纪要", "message": "请各位查收附件中的会议记录，如有疑问请回复。"}}
-{"tool_name": "send_email", "user_question": "麻烦帮我给李娜发一封邮件，主题是“下周会议安排”，告诉她“请在本周五前回复是否参会，谢谢”，她的邮箱是lina@163.com。", "arguments": {"contact_name": "lina@163.com", "subject": "下周会议安排", "message": "请在本周五前回复是否参会，谢谢"}}
-{"tool_name": "send_email", "user_question": "你能帮我给王芳发一封邮件吗？主题写“季度总结”，正文内容是“请在本周五前提交你的季度报告，谢谢配合。”", "arguments": {"contact_name": "王芳", "subject": "季度总结", "message": "请在本周五前提交你的季度报告，谢谢配合。"}}
-{"tool_name": "send_email", "user_question": "帮我给王五发个邮件，主题写“周末活动安排”，内容写“周六下午三点在公园集合，记得带球拍。”", "arguments": {"contact_name": "王五", "subject": "周末活动安排", "message": "周六下午三点在公园集合，记得带球拍。"}}
-{"tool_name": "send_email", "user_question": "帮我给李娜（lina@163.com）发封邮件，主题是“会议纪要”，内容写“请查收上周五的会议纪要，有疑问随时联系”。", "arguments": {"contact_name": "李娜（lina@163.com）", "subject": "会议纪要", "message": "请查收上周五的会议纪要，有疑问随时联系。"}}
-{"tool_name": "send_email", "user_question": "帮我把邮件发给李四，主题写“会议安排”，内容是“请确认明天下午两点开会”。", "arguments": {"contact_name": "李四", "subject": "会议安排", "message": "请确认明天下午两点开会。"}}
-{"tool_name": "send_email", "user_question": "帮给王五发个邮件，主题写“请假申请”，就说“因身体不适需请假一天”", "arguments": {"contact_name": "王五", "subject": "请假申请", "message": "因身体不适需请假一天"}}
-{"tool_name": "send_email", "user_question": "给李四发个邮件，主题“会议邀请”，内容“明天下午三点在会议室开会”", "arguments": {"contact_name": "李四", "subject": "会议邀请", "message": "明天下午三点在会议室开会"}}
-{"tool_name": "send_email", "user_question": "帮我给客户发个邮件吧", "arguments": {}}
-{"tool_name": "send_email", "user_question": "刚才收到老师通知，麻烦帮我给李华发封邮件，主题写“课程表调整”，内容就写“请查看附件中的新课程表。”", "arguments": {"contact_name": "李华<lihua@gmail.com>", "subject": "课程表调整", "message": "请查看附件中的新课程表。"}}
-{"tool_name": "send_email", "user_question": "刚整理完会议纪要，帮我给王芳发封邮件，主题写“会议纪要”，内容是“请查收本周项目讨论的纪要，如有遗漏请补充。”", "arguments": {"contact_name": "王芳", "subject": "会议纪要", "message": "请查收本周项目讨论的纪要，如有遗漏请补充。"}}
-{"tool_name": "send_email", "user_question": "下周有个项目评审会，帮我给王工发封邮件，主题写“评审材料准备”，内容是“请把最新版的设计文档和测试报告发我邮箱，周三前需要汇总。”", "arguments": {"contact_name": "王工", "subject": "评审材料准备", "message": "请把最新版的设计文档和测试报告发我邮箱，周三前需要汇总。"}}
-{"tool_name": "send_email", "user_question": "帮我把这封邮件发给李华，主题是“会议通知”，内容是“明天下午3点开会”。", "arguments": {"contact_name": "李华", "subject": "会议通知", "message": "明天下午3点开会"}}
-{"tool_name": "send_email", "user_question": "请问可以帮我给王小明发封邮件吗？主题写“会议纪要”，内容写“请查收附件中的会议纪要。”", "arguments": {"contact_name": "王小明", "subject": "会议纪要", "message": "请查收附件中的会议纪要。"}}
-{"tool_name": "send_email", "user_question": "你能帮我给李四发封邮件吗？主题写“会议邀请”，内容是“请确认本周三下午两点参会。”", "arguments": {"contact_name": "李四", "subject": "会议邀请", "message": "请确认本周三下午两点参会。"}}
-{"tool_name": "send_email", "user_question": "刚跟王总开完项目复盘会，你帮我给他发封邮件吧，主题写“会议纪要整理”，内容写“王总您好，本次会议纪要已整理完毕，请您查收附件。”", "arguments": {"contact_name": "王总（wangzong@163.com）", "subject": "会议纪要整理", "message": "王总您好，本次会议纪要已整理完毕，请您查收附件。"}}
-{"tool_name": "send_email", "user_question": "嘿，帮我给赵六发封邮件呗，主题写“周末聚餐”，内容就说“周六晚上七点老地方见”就行了。", "arguments": {"contact_name": "赵六", "subject": "周末聚餐", "message": "周六晚上七点老地方见"}}
-{"tool_name": "send_email", "user_question": "帮我给周芳雯的163邮箱发一封邮件，主题是“年度总结会议安排”，内容写“请于本周五下午两点在会议室A参加年度总结会议，并准备好上季度的工作汇报材料。”", "arguments": {"contact_name": "周芳雯@163.com", "subject": "年度总结会议安排", "message": "请于本周五下午两点在会议室A参加年度总结会议，并准备好上季度的工作汇报材料。"}}
-{"tool_name": "send_email", "user_question": "嘿，帮我给李四发个邮件呗，主题写“周末烧烤”，内容写“这周六下午三点我家楼下集合”", "arguments": {"contact_name": "李四", "subject": "周末烧烤", "message": "这周六下午三点我家楼下集合"}}
-{"tool_name": "send_email", "user_question": "麻烦你帮我给李华发一封邮件，主题是“下周团队建设活动安排”，邮件正文里写一下具体时间定在周五下午两点到五点，地点在公司的会议室，请大家准时参加并带上自己的笔记本，收到请回复确认。", "arguments": {"contact_name": "李华", "subject": "下周团队建设活动安排", "message": "具体时间定在周五下午两点到五点，地点在公司的会议室，请大家准时参加并带上自己的笔记本，收到请回复确认。"}}
-{"tool_name": "send_email", "user_question": "嘿，帮我给王五发个邮件，主题写“周末聚餐”，内容就写“周五晚上六点，海底捞见哈”", "arguments": {"contact_name": "王五", "subject": "周末聚餐", "message": "周五晚上六点，海底捞见哈"}}
-{"tool_name": "send_email", "user_question": "给李四发封邮件，主题写“会议邀请”，内容是“明天下午三点在301会议室，请准时参加”", "arguments": {"contact_name": "lisi@163.com", "subject": "会议邀请", "message": "明天下午三点在301会议室，请准时参加"}}
-{"tool_name": "send_email", "user_question": "嘿，帮我给lisi@163.com发封邮件，主题写“周末活动”，内容写“别忘了带零食”", "arguments": {"contact_name": "lisi@163.com", "subject": "周末活动", "message": "别忘了带零食"}}
-{"tool_name": "send_email", "user_question": "帮我给王芳的邮箱 wangfang@163.com 发封邮件，主题写“周末聚餐邀请”，正文用“周六晚7点老地方见”", "arguments": {"contact_name": "wangfang@163.com", "subject": "周末聚餐邀请", "message": "周六晚7点老地方见"}}
-{"tool_name": "send_email", "user_question": "给李四发个邮件，主题写“会议提醒”，内容写“下午三点在会议室A开会”", "arguments": {"contact_name": "李四", "subject": "会议提醒", "message": "下午三点在会议室A开会"}}
-{"tool_name": "send_email", "user_question": "帮我给李华（lihua@163.com）发封邮件，主题写“会议通知”，内容写“明天下午3点在大会议室开会”。", "arguments": {"contact_name": "lihua@163.com", "subject": "会议通知", "message": "明天下午3点在大会议室开会"}}
-{"tool_name": "send_email", "user_question": "麻烦你帮我给李四发一封邮件，主题写“项目进度汇报”，内容写“请查收附件中的本月工作进展，如有疑问请随时联系我。”", "arguments": {"contact_name": "李四", "subject": "项目进度汇报", "message": "请查收附件中的本月工作进展，如有疑问请随时联系我。"}}
-{"tool_name": "send_email", "user_question": "嘿，帮我给李四发个邮件，主题写“聚会通知”，内容是“今晚八点老地方见”", "arguments": {"contact_name": "李四", "subject": "聚会通知", "message": "今晚八点老地方见"}}
-{"tool_name": "send_email", "user_question": "请帮我给李伟（liweili@163.com）发一封邮件，主题是“会议通知”，正文写“明天下午三点在会议室A开会，请准时参加。”", "arguments": {"contact_name": "李伟（liweili@163.com）", "subject": "会议通知", "message": "明天下午三点在会议室A开会，请准时参加。"}}
-{"tool_name": "send_email", "user_question": "我正在外地出差，帮我给李四（lisi@163.com）发封邮件，主题是“会议纪要”，内容是“请查收昨天会议的纪要。”", "arguments": {"contact_name": "李四（lisi@163.com）", "subject": "会议纪要", "message": "请查收昨天会议的纪要。"}}
-{"tool_name": "send_email", "user_question": "能不能帮我给王芳发封邮件，主题写“会议时间变更”，内容写“原定下午3点的会议改到4点，请准时参加”？", "arguments": {"contact_name": "王芳", "subject": "会议时间变更", "message": "原定下午3点的会议改到4点，请准时参加"}}
-{"tool_name": "send_email", "user_question": "麻烦您帮我给王小明（wmx@163.com）发一封邮件，主题是“春季团建活动通知”，内容写“大家好，公司定于下周六举行春季团建，请准时参加，谢谢。”", "arguments": {"contact_name": "王小明（wmx@163.com）", "subject": "春季团建活动通知", "message": "大家好，公司定于下周六举行春季团建，请准时参加，谢谢。"}}
-{"tool_name": "send_email", "user_question": "刚才和李总开会时提到需要向客户王芳确认合同细节，麻烦你帮我给 18812345678 发封邮件，主题写“合同确认”，内容是“请查收附件中的合同草案，如有疑问请随时联系我。”", "arguments": {"contact_name": "18812345678", "subject": "合同确认", "message": "请查收附件中的合同草案，如有疑问请随时联系我。"}}
-{"tool_name": "send_email", "user_question": "最近在筹备同学聚会，麻烦帮我给老同学李华发封邮件，主题写“聚会邀请”，内容是“下周六晚上六点在老地方见”。", "arguments": {"contact_name": "李华", "subject": "聚会邀请", "message": "下周六晚上六点在老地方见"}}
-{"tool_name": "send_email", "user_question": "能不能帮我给李华（hua.li@163.com）发一封邮件，主题写“会议提醒”，内容写“请明天下午3点准时参加项目评审会”？", "arguments": {"contact_name": "李华（hua.li@163.com）", "subject": "会议提醒", "message": "请明天下午3点准时参加项目评审会"}}
-{"tool_name": "send_email", "user_question": "给李四发封邮件，主题“开会提醒”，内容是“明天下午3点会议室见”", "arguments": {"contact_name": "李四", "subject": "开会提醒", "message": "明天下午3点会议室见"}}
-{"tool_name": "send_email", "user_question": "帮我给王芳发封邮件，主题是“季度报告”，内容写“请查收附件中的Q3报告”", "arguments": {"contact_name": "王芳", "subject": "季度报告", "message": "请查收附件中的Q3报告"}}
-{"tool_name": "send_email", "user_question": "今天太忙了，你帮我给张强发封邮件，主题写“项目延期通知”，内容写“由于服务器故障，项目将延期三天”。", "arguments": {"contact_name": "张强", "subject": "项目延期通知", "message": "由于服务器故障，项目将延期三天"}}
-{"tool_name": "send_email", "user_question": "李总您好，麻烦您帮我给王芳（wangfang@163.com）发一封邮件，主题写“下周会议安排”，内容写“会议定在周三下午3点，请提前准备材料。”", "arguments": {"contact_name": "王芳（wangfang@163.com）", "subject": "下周会议安排", "message": "会议定在周三下午3点，请提前准备材料。"}}
-{"tool_name": "send_email", "user_question": "哎，帮我给李四发个邮件呗，主题写“聚餐通知”，内容就写“今晚六点老地方见，别忘了带上酒哈”", "arguments": {"contact_name": "李四", "subject": "聚餐通知", "message": "今晚六点老地方见，别忘了带上酒哈"}}
-{"tool_name": "send_email", "user_question": "能帮我给王芳发封邮件吗？主题写“活动邀请”，内容说“本周六下午两点在公园集合”", "arguments": {"contact_name": "王芳", "subject": "活动邀请", "message": "本周六下午两点在公园集合"}}
-{"tool_name": "send_email", "user_question": "我刚和客户确认完需求，麻烦帮我给王芳发封邮件，主题写“项目变更通知”，内容是“计划于下周一进行版本更新，请提前做好备份。”", "arguments": {"contact_name": "王芳", "subject": "项目变更通知", "message": "计划于下周一进行版本更新，请提前做好备份。"}}
-{"tool_name": "send_email", "user_question": "给李四（lisi@163.com）发封邮件，主题写“会议邀请”，正文内容写“请查收会议议程，明天下午3点开会”。", "arguments": {"contact_name": "lisi@163.com", "subject": "会议邀请", "message": "请查收会议议程，明天下午3点开会。"}}
-{"tool_name": "send_email", "user_question": "我现在在机场候机，帮我给同事李华发封邮件，主题写“会议纪要”，内容是“请确认下周二的会议时间。”", "arguments": {"contact_name": "李华@163.com", "subject": "会议纪要", "message": "请确认下周二的会议时间。"}}
-{"tool_name": "send_email", "user_question": "你能帮我给王小明（wxiaoming@163.com）发一封邮件吗？主题写“会议提醒”，内容是“下周一上午十点，请准时参加项目评审会。”", "arguments": {"contact_name": "王小明（wxiaoming@163.com）", "subject": "会议提醒", "message": "下周一上午十点，请准时参加项目评审会。"}}
-{"tool_name": "send_email", "user_question": "给王芳发个邮件，主题写“生日邀请”，内容说“周六晚上6点在我家聚餐”", "arguments": {"contact_name": "王芳", "subject": "生日邀请", "message": "周六晚上6点在我家聚餐"}}
-{"tool_name": "send_email", "user_question": "给李四发个邮件，主题写“会议提醒”，内容写“明天下午三点在会议室A开会。”", "arguments": {"contact_name": "李四", "subject": "会议提醒", "message": "明天下午三点在会议室A开会。"}}
-{"tool_name": "send_email", "user_question": "嘿，帮我给李浩发封邮件，主题写“周末吃饭”，内容就说“周六晚上有空吗？”", "arguments": {"contact_name": "李浩", "subject": "周末吃饭", "message": "周六晚上有空吗？"}}
-{"tool_name": "send_email", "user_question": "帮我把明天下午的会议安排发给李华，主题是“项目进度同步”，内容写“周二下午3点在2号会议室开会，请准备好PPT。”", "arguments": {"contact_name": "李华@163.com", "subject": "项目进度同步", "message": "周二下午3点在2号会议室开会，请准备好PPT。"}}
-{"tool_name": "send_email", "user_question": "我正在准备下周的部门会议材料，需要提前通知大家，帮我给李主任发封邮件，主题写“会议议程确认”，内容写“请各位在周三前反馈意见，附件是议程草案。”", "arguments": {"contact_name": "李主任", "subject": "会议议程确认", "message": "请各位在周三前反馈意见，附件是议程草案。"}}
-{"tool_name": "send_email", "user_question": "领导让我赶紧给合作伙伴李明发一封邮件，主题是“季度项目汇报”，主要把上个月的数据总结发过去，内容就写“请查收附件中的季度汇报数据，如有问题请随时联系。”", "arguments": {"contact_name": "李明", "subject": "季度项目汇报", "message": "请查收附件中的季度汇报数据，如有问题请随时联系。"}}
-{"tool_name": "send_email", "user_question": "给刘芳发封邮件，主题是“会议纪要”，内容是“请查收今天会议的讨论记录。”", "arguments": {"contact_name": "刘芳", "subject": "会议纪要", "message": "请查收今天会议的讨论记录。"}}
-{"tool_name": "send_email", "user_question": "请发送一封邮件", "arguments": {}}
-{"tool_name": "send_email", "user_question": "你好，麻烦帮我给张丽（zhangli@gmail.com）发送一封邮件，主题用双引号括起来写“关于下周团建的安排”，正文内容也加上双引号写“请大家确认时间，周三前回复。”，谢谢。", "arguments": {"contact_name": "张丽（zhangli@gmail.com）", "subject": "关于下周团建的安排", "message": "请大家确认时间，周三前回复。"}}
-{"tool_name": "send_email", "user_question": "给李华发个邮件，主题写“会议邀请”，内容就说“明天下午三点在会议室A讨论方案”。", "arguments": {"contact_name": "李华", "subject": "会议邀请", "message": "明天下午三点在会议室A讨论方案"}}
-{"tool_name": "send_email", "user_question": "你能帮我给李建国发一封邮件吗？主题写“年会邀请”，内容写“请于12月30日参加公司年会。”", "arguments": {"contact_name": "李建国", "subject": "年会邀请", "message": "请于12月30日参加公司年会。"}}
-{"tool_name": "send_email", "user_question": "刚刚开会提到了项目延期，帮我给李华发封邮件，主题写“项目进度更新”，内容是“请确认新的截止日期”。", "arguments": {"contact_name": "李华", "subject": "项目进度更新", "message": "请确认新的截止日期"}}
-{"tool_name": "send_email", "user_question": "我下周要出差，帮我给王芳发封邮件，她的邮箱是wangfang@163.com，主题写“请假申请”，内容写“我因出差无法参加周二会议，望批准。”", "arguments": {"contact_name": "wangfang@163.com", "subject": "请假申请", "message": "我因出差无法参加周二会议，望批准。"}}
-{"tool_name": "send_email", "user_question": "嘿，帮我给李四发封邮件呗，主题写“周末聚会”，内容写“这周六晚上有空吗？一起吃饭！”。", "arguments": {"contact_name": "李四", "subject": "周末聚会", "message": "这周六晚上有空吗？一起吃饭！"}}
-{"tool_name": "send_email", "user_question": "请问你能帮我给张伟发一封邮件吗？主题写“会议纪要”，内容是“请查收本次会议的记录”", "arguments": {"contact_name": "张伟", "subject": "会议纪要", "message": "请查收本次会议的记录"}}
-{"tool_name": "send_email", "user_question": "能帮我给李华发封邮件吗？主题写“会议纪要”，内容写“请查收本次会议纪要”。", "arguments": {"contact_name": "李华", "subject": "会议纪要", "message": "请查收本次会议纪要"}}
-{"tool_name": "send_email", "user_question": "嘿，帮我给李四发个邮件呗，主题是“聚会邀请”，内容就写“这周六晚上老地方见”。", "arguments": {"contact_name": "李四", "subject": "聚会邀请", "message": "这周六晚上老地方见"}}
-{"tool_name": "send_email", "user_question": "请问能帮我给王芳发一封邮件吗？主题写“季度总结”，内容为“请将本季度的销售数据整理成报告，下周一前提交。”", "arguments": {"contact_name": "王芳", "subject": "季度总结", "message": "请将本季度的销售数据整理成报告，下周一前提交。"}}
-{"tool_name": "send_email", "user_question": "麻烦你帮我给李四发一封邮件，主题写“关于下周的团队会议”，内容就写“请准备会议材料，时间定在周三下午三点，地点在三楼会议室。”", "arguments": {"contact_name": "李四", "subject": "关于下周的团队会议", "message": "请准备会议材料，时间定在周三下午三点，地点在三楼会议室。"}}
-{"tool_name": "send_email", "user_question": "你好，请帮我给我的同事张晓婷发一封邮件，她的邮箱是zhangxiaoting@163.com，邮件主题写“下周项目会议通知”，正文内容是“会议定于下周三下午两点在会议室A举行，请提前准备材料并准时参加。”", "arguments": {"contact_name": "张晓婷 (zhangxiaoting@163.com)", "subject": "下周项目会议通知", "message": "会议定于下周三下午两点在会议室A举行，请提前准备材料并准时参加。"}}
-{"tool_name": "send_email", "user_question": "给赵六发封邮件，主题写“周末聚餐”，内容写“周六晚上六点在老地方见”", "arguments": {"contact_name": "赵六", "subject": "周末聚餐", "message": "周六晚上六点在老地方见"}}
-{"tool_name": "send_email", "user_question": "能帮我给王芳发一封邮件吗？主题是“生日邀请”，内容是“周六晚上七点在我家聚餐”。", "arguments": {"contact_name": "王芳", "subject": "生日邀请", "message": "周六晚上七点在我家聚餐"}}
-{"tool_name": "send_email", "user_question": "麻烦你帮我给李四发一封邮件，主题是“下周一项目会议通知”，邮件正文内容写上“会议时间：2025年4月7日上午10点，地点：公司3楼会议室，请准时参加。”", "arguments": {"contact_name": "李四", "subject": "下周一项目会议通知", "message": "会议时间：2025年4月7日上午10点，地点：公司3楼会议室，请准时参加。"}}
-{"tool_name": "send_email", "user_question": "刚搬完家，帮我给赵六发封邮件，主题写“新住址更新”，内容是“我搬家了，新地址是上海市浦东新区张杨路888号”。", "arguments": {"contact_name": "赵六", "subject": "新住址更新", "message": "我搬家了，新地址是上海市浦东新区张杨路888号。"}}
-{"tool_name": "send_email", "user_question": "你好，请帮我给张伟发一封邮件，他的邮箱是zhangwei@163.com，主题写“下周工作计划调整”，正文内容为“由于项目延期，原定下周的培训改期，请做好时间安排。具体时间另行通知。”", "arguments": {"contact_name": "zhangwei@163.com", "subject": "下周工作计划调整", "message": "由于项目延期，原定下周的培训改期，请做好时间安排。具体时间另行通知。"}}
-{"tool_name": "send_email", "user_question": "诶，帮我给李四发个邮件呗，主题写“周末聚会”，内容就说“时间地点定好了发我”", "arguments": {"contact_name": "李四", "subject": "周末聚会", "message": "时间地点定好了发我"}}
-{"tool_name": "send_email", "user_question": "你能帮我给王五发封邮件吗？主题写“季度总结”，内容是“请在本周五前提交季度报告”。", "arguments": {"contact_name": "王五", "subject": "季度总结", "message": "请在本周五前提交季度报告"}}
-{"tool_name": "send_email", "user_question": "下周要出差了，帮我给李总发封邮件，主题写“出差行程确认”，内容是“我已订好周一上午的航班，预计下午三点到酒店。”", "arguments": {"contact_name": "李总", "subject": "出差行程确认", "message": "我已订好周一上午的航班，预计下午三点到酒店。"}}
-{"tool_name": "send_email", "user_question": "帮给赵六发邮件，主题写“会议纪要更新”，内容写“请查看附件中的最新会议纪要。”", "arguments": {"contact_name": "赵六", "subject": "会议纪要更新", "message": "请查看附件中的最新会议纪要。"}}
-{"tool_name": "send_email", "user_question": "嘿，帮我给王五发个邮件呗，主题写“生日邀请”，内容就写“周六晚七点在我家，记得带酒啊”", "arguments": {"contact_name": "王五", "subject": "生日邀请", "message": "周六晚七点在我家，记得带酒啊"}}
-{"tool_name": "send_email", "user_question": "给王五 123456@qq.com 发封邮件，主题“季度报告”，内容“请查看附件中的报表。”", "arguments": {"contact_name": "王五 123456@qq.com", "subject": "季度报告", "message": "请查看附件中的报表。"}}
-{"tool_name": "send_email", "user_question": "嘿，帮我给李四发个邮件，主题写“周末聚会”，内容写“周六晚上七点老地方见”。", "arguments": {"contact_name": "李四", "subject": "周末聚会", "message": "周六晚上七点老地方见"}}
-{"tool_name": "send_email", "user_question": "你能帮我给张伟发一封邮件吗？主题写“下周会议时间”，内容是“请确认周二下午三点是否方便”？", "arguments": {"contact_name": "张伟", "subject": "下周会议时间", "message": "请确认周二下午三点是否方便"}}
-{"tool_name": "send_email", "user_question": "给李娜发封邮件，主题写“会议邀请”，内容是“明天下午三点在302会议室开会，请准时参加。”", "arguments": {"contact_name": "李娜", "subject": "会议邀请", "message": "明天下午三点在302会议室开会，请准时参加。"}}
-{"tool_name": "send_email", "user_question": "我正在做饭，突然想起来要给李四发封邮件，主题是“周末聚餐”，内容是“周六晚上六点在我家集合”。", "arguments": {"contact_name": "李四", "subject": "周末聚餐", "message": "周六晚上六点在我家集合"}}
-{"tool_name": "send_email", "user_question": "刚搬完家，帮我给房东陈伟发封邮件，主题写“水龙头漏水”，内容是“厨房水龙头一直滴水，能否派人来修一下？”", "arguments": {"contact_name": "陈伟", "subject": "水龙头漏水", "message": "厨房水龙头一直滴水，能否派人来修一下？"}}
-{"tool_name": "send_email", "user_question": "帮我给李芳发封邮件，主题写“周末聚餐邀请”，内容是“这周六晚上有空一起吃饭吗？地点在老地方。”", "arguments": {"contact_name": "李芳", "subject": "周末聚餐邀请", "message": "这周六晚上有空一起吃饭吗？地点在老地方。"}}
-{"tool_name": "send_email", "user_question": "刚跟朋友聚完餐，请帮我写封感谢信发给王芳，主题是“感谢款待”，内容是“昨天的菜品很棒，下次我请。”", "arguments": {"contact_name": "王芳", "subject": "感谢款待", "message": "昨天的菜品很棒，下次我请。"}}
-{"tool_name": "send_email", "user_question": "给王芳发封邮件，主题是“周末聚餐”，内容写“周六晚上7点老地方见”", "arguments": {"contact_name": "王芳", "subject": "周末聚餐", "message": "周六晚上7点老地方见"}}
-{"tool_name": "send_email", "user_question": "明天下午有个紧急会议，麻烦你帮我给李总发个邮件，主题写“会议通知”，内容是“请于明天下午2点到达会议室参加项目紧急会议。”", "arguments": {"contact_name": "李总", "subject": "会议通知", "message": "请于明天下午2点到达会议室参加项目紧急会议。"}}
-{"tool_name": "send_email", "user_question": "你能帮我给李四发封邮件吗？主题是“项目更新”，正文写“请查看附件中的最新进度报告”？", "arguments": {"contact_name": "李四", "subject": "项目更新", "message": "请查看附件中的最新进度报告"}}
-{"tool_name": "send_email", "user_question": "请问可以帮我给王芳发封邮件吗？主题写“生日派对邀请”，正文内容是“周六晚上七点在我家聚会，请准时到场”。", "arguments": {"contact_name": "王芳", "subject": "生日派对邀请", "message": "周六晚上七点在我家聚会，请准时到场"}}
-{"tool_name": "send_email", "user_question": "麻烦您帮我给王雷发一封邮件，主题写“会议邀请”，内容为“请您于本周五下午3点参加项目讨论会，谢谢。”", "arguments": {"contact_name": "王雷", "subject": "会议邀请", "message": "请您于本周五下午3点参加项目讨论会，谢谢。"}}
-{"tool_name": "send_email", "user_question": "你能帮我给王五发一封邮件吗？主题是“团建安排”，内容是“本周六上午9点在公司门口集合，请准时参加。”", "arguments": {"contact_name": "王五", "subject": "团建安排", "message": "本周六上午9点在公司门口集合，请准时参加。"}}
-{"tool_name": "send_email", "user_question": "帮我把邮件发给小明", "arguments": {}}
+{"tool_name": "send_email", "user_question": "麻烦给李娜的邮箱 lina@outlook.com 发封邮件，主题“客户反馈”，内容就说“附件是客户反馈表，请查收”", "arguments": {"contact_name": "李娜的邮箱 lina@outlook.com", "subject": "客户反馈", "message": "附件是客户反馈表，请查收"}}
+{"tool_name": "send_email", "user_question": "能帮我给陈七发封邮件吗？主题是“产品演示安排”，内容是“请准备下周三的产品演示”", "arguments": {"contact_name": "陈七", "subject": "产品演示安排", "message": "请准备下周三的产品演示"}}
+{"tool_name": "send_email", "user_question": "哎，帮我给老张发封邮件，主题写“周末打球”，内容就说“周六下午三点老球场见，别迟到啊！”", "arguments": {"contact_name": "老张", "subject": "周末打球", "message": "周六下午三点老球场见，别迟到啊！"}}
+{"tool_name": "send_email", "user_question": "麻烦把项目启动会通知发给李四，主题写“项目启动会”，正文“周二上午十点会议室B”", "arguments": {"contact_name": "李四", "subject": "项目启动会", "message": "周二上午十点会议室B"}}
+{"tool_name": "send_email", "user_question": "能麻烦你给王工发封邮件不？主题就写“请假”，内容说“身体不舒服，想请一天假”。", "arguments": {"contact_name": "王工", "subject": "请假", "message": "身体不舒服，想请一天假"}}
+{"tool_name": "send_email", "user_question": "请帮我把项目里程碑通知发给王芳，主题“里程碑更新”，内容“核心模块已开发完成，请确认下一阶段”", "arguments": {"contact_name": "王芳", "subject": "里程碑更新", "message": "核心模块已开发完成，请确认下一阶段"}}
+{"tool_name": "send_email", "user_question": "麻烦您帮我给胡老师发一封邮件，主题写“论文修改意见”，正文写“胡老师您好，附件是我的修改稿，请审阅。”", "arguments": {"contact_name": "胡老师", "subject": "论文修改意见", "message": "胡老师您好，附件是我的修改稿，请审阅。"}}
+{"tool_name": "send_email", "user_question": "帮我发个邮件", "arguments": {}}
+{"tool_name": "send_email", "user_question": "李华，马上给他发个紧急会议通知，主题“紧急会议”，就说“立刻到会议室A”", "arguments": {"contact_name": "李华", "subject": "紧急会议", "message": "立刻到会议室A"}}
+{"tool_name": "send_email", "user_question": "王小明，发个邮件提醒他明天下午三点的会，主题“会议提醒”，内容“大会议室，准时参加”", "arguments": {"contact_name": "王小明", "subject": "会议提醒", "message": "大会议室，准时参加"}}
+{"tool_name": "send_email", "user_question": "钱丽的邮箱 qianli@163.com 发个邮件，主题“上周会议纪要”，内容“请查收附件中的会议纪要”", "arguments": {"contact_name": "钱丽的邮箱 qianli@163.com", "subject": "上周会议纪要", "message": "请查收附件中的会议纪要"}}
+{"tool_name": "send_email", "user_question": "请帮我给何总监发封邮件，主题写“薪资明细”，内容是“附件是薪资明细，请查收”", "arguments": {"contact_name": "何总监", "subject": "薪资明细", "message": "附件是薪资明细，请查收"}}
+{"tool_name": "send_email", "user_question": "帮我把项目风险通知给赵六，主题“风险预警”，内容“附件是风险清单，请关注”", "arguments": {"contact_name": "赵六", "subject": "风险预警", "message": "附件是风险清单，请关注"}}
+{"tool_name": "send_email", "user_question": "陈静，替我把任务清单发过去，主题“本周任务”，内容“附件是任务分配表”", "arguments": {"contact_name": "陈静", "subject": "本周任务", "message": "附件是任务分配表"}}
+{"tool_name": "send_email", "user_question": "您好，能帮我给陈小明发一封邮件吗？主题写“申请调休”，正文内容是“我想申请下周一调休一天，望批准。”", "arguments": {"contact_name": "陈小明", "subject": "申请调休", "message": "我想申请下周一调休一天，望批准。"}}
+{"tool_name": "send_email", "user_question": "给 zhangwei@qq.com 去个邮件，主题“线上会议改期”，就说“明天下午三点线上会议改到四点”", "arguments": {"contact_name": "zhangwei@qq.com", "subject": "线上会议改期", "message": "明天下午三点线上会议改到四点"}}
+{"tool_name": "send_email", "user_question": "赵静的邮箱 zhaojing@gmail.com 帮我发封邮件，主题“会议室预定”，内容“明天下午三点A会议室，请确认”", "arguments": {"contact_name": "赵静的邮箱 zhaojing@gmail.com", "subject": "会议室预定", "message": "明天下午三点A会议室，请确认"}}
+{"tool_name": "send_email", "user_question": "嘿，帮个忙，给赵丽发封邮件呗，主题写“周末聚餐”，就说“周六晚上6点老地方见哈”", "arguments": {"contact_name": "赵丽", "subject": "周末聚餐", "message": "周六晚上6点老地方见哈"}}
+{"tool_name": "send_email", "user_question": "周敏，替我发个邮件，主题“季度数据核对”，内容“Q3数据表需要核对，附件已发”", "arguments": {"contact_name": "周敏", "subject": "季度数据核对", "message": "Q3数据表需要核对，附件已发"}}
+{"tool_name": "send_email", "user_question": "吴经理的周报邮件，主题“本周工作周报”，正文“请查收，有问题请反馈”", "arguments": {"contact_name": "吴经理", "subject": "本周工作周报", "message": "请查收，有问题请反馈"}}
+{"tool_name": "send_email", "user_question": "你可以帮我给刘芳发一封邮件吗？主题写“生日祝福”，内容为“祝你生日快乐，心想事成！”", "arguments": {"contact_name": "刘芳", "subject": "生日祝福", "message": "祝你生日快乐，心想事成！"}}
+{"tool_name": "send_email", "user_question": "郭采购，帮我把采购清单确认邮件发了，主题“清单确认”，内容“请核对附件清单并回复”", "arguments": {"contact_name": "郭采购", "subject": "清单确认", "message": "请核对附件清单并回复"}}
+{"tool_name": "send_email", "user_question": "嘿，给徐雷去个邮件，主题“聚餐邀请”，内容“周六晚七点老地方聚”。", "arguments": {"contact_name": "徐雷", "subject": "聚餐邀请", "message": "周六晚七点老地方聚。"}}
+{"tool_name": "send_email", "user_question": "刘刚，发个碰头会的邮件，主题“简短会议”，内容“下午三点会议室见”", "arguments": {"contact_name": "刘刚", "subject": "简短会议", "message": "下午三点会议室见"}}
+{"tool_name": "send_email", "user_question": "嘿，帮我给王五发个邮件，主题写“团建安排”，内容就说“下周五下午两点在办公室集合，去郊外烧烤，收到请回复哈”", "arguments": {"contact_name": "王五", "subject": "团建安排", "message": "下周五下午两点在办公室集合，去郊外烧烤，收到请回复哈"}}
+{"tool_name": "send_email", "user_question": "楚琳，帮我把会议记录发给她，主题“会议记录确认”，正文“请查阅并确认附件”", "arguments": {"contact_name": "楚琳", "subject": "会议记录确认", "message": "请查阅并确认附件"}}
+{"tool_name": "send_email", "user_question": "帮我给杨哥发封邮件，主题“聚餐”，内容“周六晚六点海底捞”。", "arguments": {"contact_name": "杨哥", "subject": "聚餐", "message": "周六晚六点海底捞。"}}
+{"tool_name": "send_email", "user_question": "小王，给他发个学习小组的通知，主题“学习小组”，内容“周六下午一起刷题，有空吗？”", "arguments": {"contact_name": "小王", "subject": "学习小组", "message": "周六下午一起刷题，有空吗？"}}
+{"tool_name": "send_email", "user_question": "李丽的季度总结邮件帮我发一下，主题“Q3工作总结”，内容“请审阅附件中的报告”", "arguments": {"contact_name": "李丽", "subject": "Q3工作总结", "message": "请审阅附件中的报告"}}
+{"tool_name": "send_email", "user_question": "孙悦，帮她发个请假邮件，主题“病假”，就说“身体不适，请假两天”", "arguments": {"contact_name": "孙悦", "subject": "病假", "message": "身体不适，请假两天"}}
+{"tool_name": "send_email", "user_question": "朱丽，把项目进展发给她，主题“进展周报”，内容“项目进展顺利，详情见附件”", "arguments": {"contact_name": "朱丽", "subject": "进展周报", "message": "项目进展顺利，详情见附件"}}
+{"tool_name": "send_email", "user_question": "你能给我马超发个邮件，主题“下周排期”，内容“请确认附件排期”吗？", "arguments": {"contact_name": "马超", "subject": "下周排期", "message": "请确认附件排期。"}}
+{"tool_name": "send_email", "user_question": "帮我把一封主题为“季度总结会议提醒”的邮件发到王丽丽的邮箱wll@163.com，正文写“请于下周一上午10点准时参加，并准备PPT。”，谢谢。", "arguments": {"contact_name": "wll@163.com", "subject": "季度总结会议提醒", "message": "请于下周一上午10点准时参加，并准备PPT。"}}
+{"tool_name": "send_email", "user_question": "胡涛，季度总结会的邮件发一下，主题“季度总结会”，内容“周四下午2点，3楼会议室”", "arguments": {"contact_name": "胡涛", "subject": "季度总结会", "message": "周四下午2点，3楼会议室"}}
+{"tool_name": "send_email", "user_question": "郑经理，帮我把季度总结会的通知发出去，主题“季度会议”，正文“本周五下午两点，会议室A，请负责人参加”", "arguments": {"contact_name": "郑经理", "subject": "季度会议", "message": "本周五下午两点，会议室A，请负责人参加"}}
+{"tool_name": "send_email", "user_question": "嘿，帮我给李小花发封邮件，主题写“周末郊游”，内容是“一起去看风景吧”。", "arguments": {"contact_name": "李小花", "subject": "周末郊游", "message": "一起去看风景吧"}}
+{"tool_name": "send_email", "user_question": "王丽的邮箱 wangli@foxmail.com 发个会议邀请，主题“产品评审会”，内容“请确认参加下午3点会议”", "arguments": {"contact_name": "王丽的邮箱 wangli@foxmail.com", "subject": "产品评审会", "message": "请确认参加下午3点会议"}}
+{"tool_name": "send_email", "user_question": "梁总，麻烦发个提交总结的提醒，主题“提交Q3总结”，内容“请周五前交”", "arguments": {"contact_name": "梁总", "subject": "提交Q3总结", "message": "请周五前交"}}
+{"tool_name": "send_email", "user_question": "麻烦您帮给宋老师发一封邮件，主题是“项目讨论会”，内容是“下周三下午两点项目讨论会，请出席”。", "arguments": {"contact_name": "宋老师", "subject": "项目讨论会", "message": "下周三下午两点项目讨论会，请出席。"}}
+{"tool_name": "send_email", "user_question": "给李磊发个邮件，主题写“请假申请”", "arguments": {"contact_name": "李磊", "subject": "请假申请"}}
+{"tool_name": "send_email", "user_question": "冯经理，替我给项目组发个会议邀请，主题“项目组会议”，内容“明天下午3点，请参加”", "arguments": {"contact_name": "冯经理", "subject": "项目组会议", "message": "明天下午3点，请参加"}}
+{"tool_name": "send_email", "user_question": "唐工，会议记录邮件发他，主题“上周会议记录”，就说“附件是记录，请查收”", "arguments": {"contact_name": "唐工", "subject": "上周会议记录", "message": "附件是记录，请查收"}}
+{"tool_name": "send_email", "user_question": "韩主任，提醒他周五前提交报告，主题“报告提交提醒”，内容“周五前请提交报告”", "arguments": {"contact_name": "韩主任", "subject": "报告提交提醒", "message": "周五前请提交报告"}}
+{"tool_name": "send_email", "user_question": "给郑爽发个邮件，主题写“报销单”，内容说“附件是填好的报销单”。", "arguments": {"contact_name": "郑爽", "subject": "报销单", "message": "附件是填好的报销单。"}}
+{"tool_name": "send_email", "user_question": "周小花的邮箱 zhouxh@outlook.com 发个会议安排，主题“明天开会”，内容“下午两点，会议室”", "arguments": {"contact_name": "周小花的邮箱 zhouxh@outlook.com", "subject": "明天开会", "message": "下午两点，会议室"}}
+{"tool_name": "send_email", "user_question": "郭瑞，进度报告邮件，主题“项目进度”，内容“请查收最新进展”", "arguments": {"contact_name": "郭瑞", "subject": "项目进度", "message": "请查收最新进展"}}
+{"tool_name": "send_email", "user_question": "孙六，让他交个人总结，主题“Q1个人总结”，内容“请在下周三前提交”", "arguments": {"contact_name": "孙六", "subject": "Q1个人总结", "message": "请在下周三前提交"}}
+{"tool_name": "send_email", "user_question": "嘿，帮我给何晴发个邮件，主题“季度报告”，内容“附件是季度总结，请查阅”。", "arguments": {"contact_name": "何晴", "subject": "季度报告", "message": "附件是季度总结，请查阅。"}}
+{"tool_name": "send_email", "user_question": "嘿，帮我给周芳发个邮件，主题是“聚会时间”，内容就说“周六晚上六点老地方见”。", "arguments": {"contact_name": "周芳", "subject": "聚会时间", "message": "周六晚上六点老地方见"}}
+{"tool_name": "send_email", "user_question": "陈总，帮我把评审会通知发了，主题“项目评审会”，内容“明天下午三点进行评审”", "arguments": {"contact_name": "陈总", "subject": "项目评审会", "message": "明天下午三点进行评审"}}
+{"tool_name": "send_email", "user_question": "李芳，发个会议提醒，主题“线上会议”，就说“明早十点，准时参加”", "arguments": {"contact_name": "李芳", "subject": "线上会议", "message": "明早十点，准时参加"}}
+{"tool_name": "send_email", "user_question": "老王，帮我给黄姐发个邮件，主题写“聚会”，内容写“周六晚六点老地方”。", "arguments": {"contact_name": "黄姐", "subject": "聚会", "message": "周六晚六点老地方。"}}
+{"tool_name": "send_email", "user_question": "喂，帮我给张敏发个邮件，主题“周末聚”，内容“周六晚上七点，老地方，不见不散”。", "arguments": {"contact_name": "张敏", "subject": "周末聚", "message": "周六晚上七点，老地方，不见不散"}}
+{"tool_name": "send_email", "user_question": "周华，会议提醒邮件，主题“明日会议”，内容“下午3点会议室A，请准时”", "arguments": {"contact_name": "周华", "subject": "明日会议", "message": "下午3点会议室A，请准时"}}
+{"tool_name": "send_email", "user_question": "给李总的邮箱 lizong@126.com 发封邮件，主题写“季度汇报”，正文写“附件中是Q3季度的业绩汇总，请查收。”", "arguments": {"contact_name": "lizong@126.com", "subject": "季度汇报", "message": "附件中是Q3季度的业绩汇总，请查收。"}}
+{"tool_name": "send_email", "user_question": "梁宇，数据汇总的邮件，主题“Q3数据提交”，内容“请周五前提交数据”", "arguments": {"contact_name": "梁宇", "subject": "Q3数据提交", "message": "请周五前提交数据"}}
+{"tool_name": "send_email", "user_question": "嘿，帮我给王磊发个邮件呗，主题“吃饭”，内容“今晚七点老地方”。", "arguments": {"contact_name": "王磊", "subject": "吃饭", "message": "今晚七点老地方。"}}
+{"tool_name": "send_email", "user_question": "喂，给阿珍去个邮件，主题“爬山”，就说“周六早上八点山脚下集合，记得带水”", "arguments": {"contact_name": "阿珍", "subject": "爬山", "message": "周六早上八点山脚下集合，记得带水"}}
+{"tool_name": "send_email", "user_question": "张小明的周报提醒，主题“本周周报”，就说“今天下班前请提交”", "arguments": {"contact_name": "张小明", "subject": "本周周报", "message": "今天下班前请提交"}}
+{"tool_name": "send_email", "user_question": "周丽，发个决议确认邮件，主题“会议决议”，内容“请确认上次会议决议”", "arguments": {"contact_name": "周丽", "subject": "会议决议", "message": "请确认上次会议决议"}}
+{"tool_name": "send_email", "user_question": "喂，帮我给刘婷发个邮件呗，主题写“周末电影”，内容就说“周六下午三点万达影城见。”", "arguments": {"contact_name": "刘婷", "subject": "周末电影", "message": "周六下午三点万达影城见。"}}
+{"tool_name": "send_email", "user_question": "帮我给张三发邮件", "arguments": {}}
+{"tool_name": "send_email", "user_question": "陈晓，帮我把今天的会议纪要发过去，主题“今日会议纪要”，内容“请查收”", "arguments": {"contact_name": "陈晓", "subject": "今日会议纪要", "message": "请查收"}}
+{"tool_name": "send_email", "user_question": "能不能帮我给赵老师发封邮件，主题写“会议延期通知”，内容是“原定周四的会议改到下周一，请大家查收新议程”？", "arguments": {"contact_name": "赵老师", "subject": "会议延期通知", "message": "原定周四的会议改到下周一，请大家查收新议程"}}
+{"tool_name": "send_email", "user_question": "李小明，季度总结邮件，主题“季度报告提交”，内容“请在下周二前提交工作报告”", "arguments": {"contact_name": "李小明", "subject": "季度报告提交", "message": "请在下周二前提交工作报告"}}
+{"tool_name": "send_email", "user_question": "帮我把年会邀请发给宋飞，主题“年会邀请”，内容“本周五晚六点海景大酒店，恭候”。", "arguments": {"contact_name": "宋飞", "subject": "年会邀请", "message": "本周五晚六点海景大酒店，恭候。"}}
+{"tool_name": "send_email", "user_question": "沈明，发个会议确认，主题“确认会议”，就说“明天下午三点会，请确认”", "arguments": {"contact_name": "沈明", "subject": "确认会议", "message": "明天下午三点会，请确认"}}
+{"tool_name": "send_email", "user_question": "给唐雅发个邮件，主题“客户约谈”，内容“周五下午三点有空吗？”", "arguments": {"contact_name": "唐雅", "subject": "客户约谈", "message": "周五下午三点有空吗？"}}
+{"tool_name": "send_email", "user_question": "嘿，帮我给孙哥发个邮件呗，主题“周末聚”，内容“周六晚6点老地方”。", "arguments": {"contact_name": "孙哥", "subject": "周末聚", "message": "周六晚6点老地方。"}}
+{"tool_name": "send_email", "user_question": "哎，给大刘发个邮件，主题“周日爬山”，就说“周日早上八点山脚见，别忘了带水”", "arguments": {"contact_name": "大刘", "subject": "周日爬山", "message": "周日早上八点山脚见，别忘了带水"}}
+{"tool_name": "send_email", "user_question": "韩梅，周会提醒邮件，主题“周会”，内容“明天下午三点周会”", "arguments": {"contact_name": "韩梅", "subject": "周会", "message": "明天下午三点周会"}}
+{"tool_name": "send_email", "user_question": "麻烦帮我给吴楠发一封邮件，主题是“提案评审”，内容是“附件客户需求文档，请反馈”。", "arguments": {"contact_name": "吴楠", "subject": "提案评审", "message": "附件客户需求文档，请反馈。"}}
+{"tool_name": "send_email", "user_question": "冯刚的季度报表邮件，主题“季度报表”，内容“附件为Q3报表，请查收”", "arguments": {"contact_name": "冯刚", "subject": "季度报表", "message": "附件为Q3报表，请查收"}}
+{"tool_name": "send_email", "user_question": "您好，麻烦帮我给冯工发一封邮件，主题是“进度更新”，内容是“请周五前更新进度表”。谢谢。", "arguments": {"contact_name": "冯工", "subject": "进度更新", "message": "请周五前更新进度表。"}}
+{"tool_name": "send_email", "user_question": "于经理，帮我确认一下会议室，主题“会议室询问”，内容“周二下午三点可用吗？”", "arguments": {"contact_name": "于经理", "subject": "会议室询问", "message": "周二下午三点可用吗？"}}
+{"tool_name": "send_email", "user_question": "田静，进度报告发她，主题“报告完成”，就说“报告已完成，请查收”", "arguments": {"contact_name": "田静", "subject": "报告完成", "message": "报告已完成，请查收"}}
+{"tool_name": "send_email", "user_question": "崔工，会议记录邮件，主题“会议纪要”，内容“请查收并反馈”", "arguments": {"contact_name": "崔工", "subject": "会议纪要", "message": "请查收并反馈"}}
+{"tool_name": "send_email", "user_question": "请问能帮我给陈四发一封邮件吗？主题是“项目进度汇报”，内容是“请查看附件”，谢谢。", "arguments": {"contact_name": "陈四", "subject": "项目进度汇报", "message": "请查看附件"}}
+{"tool_name": "send_email", "user_question": "周伟，帮我把最新项目进度发给他，主题“最新进度”，内容“请查看附件中的报告”", "arguments": {"contact_name": "周伟", "subject": "最新进度", "message": "请查看附件中的报告"}}
+{"tool_name": "send_email", "user_question": "你能帮我把产品更新通知发给于洋吗？主题“产品更新”，内容“新版本说明见附件”。", "arguments": {"contact_name": "于洋", "subject": "产品更新", "message": "新版本说明见附件。"}}
+{"tool_name": "send_email", "user_question": "帮我把邮件发出去", "arguments": {}}
+{"tool_name": "send_email", "user_question": "麻烦给卢婷的邮箱 luting@sina.com 发封邮件，主题“下周会议安排”，内容为“会议定在周三下午3点，请提前准备材料。”", "arguments": {"contact_name": "卢婷的邮箱 luting@sina.com", "subject": "下周会议安排", "message": "会议定在周三下午3点，请提前准备材料。"}}
+{"tool_name": "send_email", "user_question": "刘明，月度总结邮件催一下，主题“月总结”，内容“本周五前提交”", "arguments": {"contact_name": "刘明", "subject": "月总结", "message": "本周五前提交"}}
+{"tool_name": "send_email", "user_question": "嘿，帮我给刘洋发个邮件呗，主题写“周末活动”，内容就说“周六下午去爬山，一起不？”", "arguments": {"contact_name": "刘洋", "subject": "周末活动", "message": "周六下午去爬山，一起不？"}}
+{"tool_name": "send_email", "user_question": "沈悦，发个会议提醒，主题“下周三会议提醒”，就说“请提前准备演示材料”", "arguments": {"contact_name": "沈悦", "subject": "下周三会议提醒", "message": "请提前准备演示材料"}}
+{"tool_name": "send_email", "user_question": "给林丹发个聚餐邀请的邮件，主题“周末聚餐”，就说“周六晚六点老地方见，请回复”", "arguments": {"contact_name": "林丹", "subject": "周末聚餐", "message": "周六晚六点老地方见，请回复"}}
+{"tool_name": "send_email", "user_question": "嘿，帮我给石磊发个邮件呗，主题“爬山”，内容“周六早八点山脚集合”。", "arguments": {"contact_name": "石磊", "subject": "爬山", "message": "周六早八点山脚集合。"}}
+{"tool_name": "send_email", "user_question": "你能帮我给罗亮发一封邮件吗？主题写“考核结果”，正文写“请查收考核排名，有疑问本周内反馈”。", "arguments": {"contact_name": "罗亮", "subject": "考核结果", "message": "请查收考核排名，有疑问本周内反馈。"}}
+{"tool_name": "send_email", "user_question": "丁倩的邮箱 dingqian@gmail.com 发个会议通知，主题“会议”，内容“明天下午三点会议室A”", "arguments": {"contact_name": "丁倩的邮箱 dingqian@gmail.com", "subject": "会议", "message": "明天下午三点会议室A"}}
+{"tool_name": "send_email", "user_question": "方怡，例会纪要我发了，主题“会议记录”，内容“已整理，请核对回复”", "arguments": {"contact_name": "方怡", "subject": "会议记录", "message": "已整理，请核对回复"}}
+{"tool_name": "send_email", "user_question": "孙磊，给他发个开会提醒，主题“开会”，就说“明早十点三楼会议室”", "arguments": {"contact_name": "孙磊", "subject": "开会", "message": "明早十点三楼会议室"}}
+{"tool_name": "send_email", "user_question": "请帮我把会议时间确认邮件发给朱婷，主题“时间确认”，内容“周三下午两点会议，请确认”。", "arguments": {"contact_name": "朱婷", "subject": "时间确认", "message": "周三下午两点会议，请确认。"}}
+{"tool_name": "send_email", "user_question": "李经理，会议纪要的邮件发一下，主题“会议纪要”，就说“下午三点会议室见”", "arguments": {"contact_name": "李经理", "subject": "会议纪要", "message": "下午三点会议室见"}}
+{"tool_name": "send_email", "user_question": "帮我给刘老师发封邮件，主题是“期中考试成绩查询”，内容是“麻烦发一下班级成绩单”。", "arguments": {"contact_name": "刘老师", "subject": "期中考试成绩查询", "message": "麻烦发一下班级成绩单"}}
+{"tool_name": "send_email", "user_question": "杨帆，工作进度邮件，主题“进度更新”，内容“请更新本周进度”", "arguments": {"contact_name": "杨帆", "subject": "进度更新", "message": "请更新本周进度"}}
+{"tool_name": "send_email", "user_question": "陈芳，帮我发个季度报告，主题“Q3销售数据”，内容“附件是数据，请查收”", "arguments": {"contact_name": "陈芳", "subject": "Q3销售数据", "message": "附件是数据，请查收"}}
+{"tool_name": "send_email", "user_question": "给马明发个邮件，主题写“碰头会”，内容说“明下午三点会议室碰头”。", "arguments": {"contact_name": "马明", "subject": "碰头会", "message": "明下午三点会议室碰头。"}}
+{"tool_name": "send_email", "user_question": "贾经理，季度回顾邮件，主题“Q3回顾”，内容“请准备销售数据和下季计划”", "arguments": {"contact_name": "贾经理", "subject": "Q3回顾", "message": "请准备销售数据和下季计划"}}
+{"tool_name": "send_email", "user_question": "哎，帮我给胡彬发个邮件，主题“聚餐”，内容“周六晚六点川味轩”。", "arguments": {"contact_name": "胡彬", "subject": "聚餐", "message": "周六晚六点川味轩。"}}
+{"tool_name": "send_email", "user_question": "黄丽，给她发个进度更新，主题“Q2进度”，就说“Q2目标完成80%”", "arguments": {"contact_name": "黄丽", "subject": "Q2进度", "message": "Q2目标完成80%"}}

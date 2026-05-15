@@ -60,7 +60,7 @@ TOOLS = [
                 "properties": {
                     "contact_name": {
                         "type": "STRING",
-                        "description": "收件人姓名、邮箱地址或电话号码。"
+                        "description": "收件人姓名或邮箱地址。"
                     },
                     "subject": {
                         "type": "STRING",
@@ -138,7 +138,7 @@ TOOLS = [
                         "description": "true 为开启 Wi-Fi，false 为关闭 Wi-Fi。"
                     }
                 },
-                "required": ["enable"]
+                "required": []
             }
         }
     },
@@ -154,7 +154,7 @@ TOOLS = [
                         "description": "true 为开启蓝牙，false 为关闭蓝牙。"
                     }
                 },
-                "required": ["enable"]
+                "required": []
             }
         }
     },
@@ -170,7 +170,7 @@ TOOLS = [
                         "description": "true 为开启移动数据，false 为关闭移动数据。"
                     }
                 },
-                "required": ["enable"]
+                "required": []
             }
         }
     },
@@ -186,7 +186,7 @@ TOOLS = [
                         "description": "true 为开启飞行模式，false 为关闭飞行模式。"
                     }
                 },
-                "required": ["enable"]
+                "required": []
             }
         }
     },
@@ -259,7 +259,7 @@ TOOLS = [
                         "description": "true 为打开手电筒，false 为关闭手电筒。"
                     }
                 },
-                "required": ["enable"]
+                "required": []
             }
         }
     },
@@ -410,7 +410,7 @@ TOOLS = [
                         "description": "true 为静音，false 为取消静音。"
                     }
                 },
-                "required": ["enable"]
+                "required": []
             }
         }
     },
@@ -446,7 +446,7 @@ TOOLS = [
                         "description": "true 为开启勿扰模式，false 为关闭勿扰模式。"
                     }
                 },
-                "required": ["enable"]
+                "required": []
             }
         }
     },
@@ -462,7 +462,7 @@ TOOLS = [
                         "description": "true 为开启省电模式，false 为关闭省电模式。"
                     }
                 },
-                "required": ["enable"]
+                "required": []
             }
         }
     },
@@ -523,7 +523,7 @@ TOOLS = [
                 "properties": {
                     "query": {
                         "type": "STRING",
-                        "description": "搜索关键词，按事件标题匹配。不提供则返回最近的事件列表。"
+                        "description": "搜索关键词，按事件标题匹配。"
                     },
                     "start_date": {
                         "type": "STRING",

@@ -1,100 +1,100 @@
-{"tool_name": "search_contacts", "user_question": "我最近认识了一个新朋友，他告诉我他的名字叫李华，但我记不太清具体是哪个字了，你能不能帮我搜索一下通讯录里叫李华的联系人，看看有没有匹配的？", "arguments": {"contact_name": "李华"}}
-{"tool_name": "search_contacts", "user_question": "请问能帮我查找一下李四的电话号码吗？谢谢。", "arguments": {"contact_name": "李四"}}
-{"tool_name": "search_contacts", "user_question": "帮我找一下张三的电话", "arguments": {"contact_name": "张三"}}
-{"tool_name": "search_contacts", "user_question": "我要联系李经理，但忘了存他的号码，我记得他名字叫李强，帮我搜一下通讯录里有没有这个人。", "arguments": {"contact_name": "李强"}}
-{"tool_name": "search_contacts", "user_question": "下午要面试，先帮我查一下面试官王磊的电话。", "arguments": {"contact_name": "王磊"}}
-{"tool_name": "search_contacts", "user_question": "我下周要和张三开会，你能帮我查一下他的手机号吗？", "arguments": {"contact_name": "张三"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下李明的手机号，我待会儿要给他打个电话，现在正在开车不方便翻通讯录。", "arguments": {"contact_name": "李明"}}
-{"tool_name": "search_contacts", "user_question": "你能帮我从通讯录里查找一下张伟的联系方式吗？我忘记他的手机号了，只记得名字大概是这样写的。", "arguments": {"contact_name": "张伟"}}
-{"tool_name": "search_contacts", "user_question": "我马上要开会了，帮我搜一下李经理的手机号。", "arguments": {"contact_name": "李经理"}}
-{"tool_name": "search_contacts", "user_question": "请问可以帮我查找一下王先生的电话号码吗？", "arguments": {"contact_name": "王先生"}}
-{"tool_name": "search_contacts", "user_question": "我刚刚突然想起一个老朋友，但只记得他叫李明，帮我查一下通讯录里有没有叫李明的人，把他的联系方式找出来。", "arguments": {"contact_name": "李明"}}
-{"tool_name": "search_contacts", "user_question": "我最近想联系一位老同事，我记得他叫王伟，但不确定是不是存成了王伟或者王伟（天津）这样的名字，你能帮我搜一下通讯录里所有包含‘王伟’的联系人吗？", "arguments": {"contact_name": "王伟"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下李四的电话号码", "arguments": {"contact_name": "李四"}}
-{"tool_name": "search_contacts", "user_question": "帮我找一下上次聚会遇到的那个王经理的电话，我记得他叫王伟。", "arguments": {"contact_name": "王伟"}}
-{"tool_name": "search_contacts", "user_question": "搜一下李四在不在通讯录里", "arguments": {"contact_name": "李四"}}
-{"tool_name": "search_contacts", "user_question": "我刚才在路边遇到一个老朋友，叫李明，但我没存他的电话，你能帮我搜一下通讯录里有没有叫李明的人吗？", "arguments": {"contact_name": "李明"}}
-{"tool_name": "search_contacts", "user_question": "你好，能帮我查一下张三的联系方式吗？", "arguments": {"contact_name": "张三"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里的联系人", "arguments": {}}
-{"tool_name": "search_contacts", "user_question": "能帮我搜一下张三的电话号码吗？", "arguments": {"contact_name": "张三"}}
-{"tool_name": "search_contacts", "user_question": "我正在整理周末活动的通讯录，你能帮我查一下有没有叫张伟的联系人？", "arguments": {"contact_name": "张伟"}}
-{"tool_name": "search_contacts", "user_question": "刚才有个未接来电，号码是13800138000，帮我查查通讯录里有没有这个号码。", "arguments": {"contact_name": "13800138000"}}
-{"tool_name": "search_contacts", "user_question": "我在外面，手机快没电了，赶紧帮我搜一下小李的手机号。", "arguments": {"contact_name": "小李"}}
-{"tool_name": "search_contacts", "user_question": "我记得上周开会时提到过李经理，但现在找不到他的联系方式了，帮我搜一下李经理的手机号吧。", "arguments": {"contact_name": "李经理"}}
-{"tool_name": "search_contacts", "user_question": "麻烦您帮我查一下通讯录里是否有姓王的联系人？", "arguments": {"contact_name": "王"}}
-{"tool_name": "search_contacts", "user_question": "帮我在通讯录里搜一下王五", "arguments": {"contact_name": "王五"}}
-{"tool_name": "search_contacts", "user_question": "请问你能帮我查一下小王在通讯录里的联系方式吗？", "arguments": {"contact_name": "小王"}}
-{"tool_name": "search_contacts", "user_question": "我上周聚会认识了一个叫王磊的朋友，但只记得他手机尾号是1234，帮我搜一下联系方式。", "arguments": {"contact_name": "王磊"}}
-{"tool_name": "search_contacts", "user_question": "诶，帮我查一下老王的名字在不在通讯录里？", "arguments": {"contact_name": "老王"}}
-{"tool_name": "search_contacts", "user_question": "您好，请问可以帮我搜索一下李明的联系方式吗？谢谢。", "arguments": {"contact_name": "李明"}}
-{"tool_name": "search_contacts", "user_question": "嘿，帮我查一下老王头的电话呗？", "arguments": {"contact_name": "老王头"}}
-{"tool_name": "search_contacts", "user_question": "我正在开车，不方便翻通讯录，帮我查一下老张的电话号码。", "arguments": {"contact_name": "老张"}}
-{"tool_name": "search_contacts", "user_question": "我正在做饭，手上沾了油，帮我查一下外卖小哥小王的电话，我看看他能不能顺便带瓶酱油上来。", "arguments": {"contact_name": "小王"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里刘伟的手机号。", "arguments": {"contact_name": "刘伟"}}
-{"tool_name": "search_contacts", "user_question": "查一下李四的联系方式", "arguments": {"contact_name": "李四"}}
-{"tool_name": "search_contacts", "user_question": "明天要参加同学聚会，帮我查一下老同学张三的手机号", "arguments": {"contact_name": "张三"}}
-{"tool_name": "search_contacts", "user_question": "你能帮我查一下王五的电话号码吗？", "arguments": {"contact_name": "王五"}}
-{"tool_name": "search_contacts", "user_question": "你能帮我查一下王明的手机号吗？", "arguments": {"contact_name": "王明"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录", "arguments": {}}
-{"tool_name": "search_contacts", "user_question": "快帮我查一下我表哥的电话，我刚把手机摔了，通讯录打不开，急着联系他。", "arguments": {"contact_name": "表哥"}}
-{"tool_name": "search_contacts", "user_question": "我最近想联系一下之前在会议上认识的那个叫王明的客户，但记不清他的完整电话号码了，只记得他名字的一部分，你能帮我搜索一下通讯录里有没有叫王明的联系人吗？", "arguments": {"contact_name": "王明"}}
-{"tool_name": "search_contacts", "user_question": "下周要出差去北京，想联系一下那边的老客户，帮我查一下李明或者尾号3388的号码。", "arguments": {"contact_name": "李明"}}
-{"tool_name": "search_contacts", "user_question": "麻烦帮我查一下李四的联系方式好吗？", "arguments": {"contact_name": "李四"}}
-{"tool_name": "search_contacts", "user_question": "帮我搜一下联系人", "arguments": {}}
-{"tool_name": "search_contacts", "user_question": "麻烦您帮我查一下通讯录里叫李明的联系人。", "arguments": {"contact_name": "李明"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下高中同学李明的最新手机号是多少？", "arguments": {"contact_name": "李明"}}
-{"tool_name": "search_contacts", "user_question": "我昨天在聚会上认识了一位朋友，但只记得他的微信昵称，帮我查查通讯录里有没有叫“小张”的联系人，看看具体是哪个电话号码登记的。", "arguments": {"contact_name": "小张"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里有没有叫李明的联系人？", "arguments": {"contact_name": "李明"}}
-{"tool_name": "search_contacts", "user_question": "帮我找一下王五的电话号码呗", "arguments": {"contact_name": "王五"}}
-{"tool_name": "search_contacts", "user_question": "麻烦帮我查一下王伟的电话号码，谢谢。", "arguments": {"contact_name": "王伟"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下李明的手机号，他的全名是李明吗？", "arguments": {"contact_name": "李明"}}
-{"tool_name": "search_contacts", "user_question": "帮我查查我的通讯录", "arguments": {}}
-{"tool_name": "search_contacts", "user_question": "能不能帮我搜一下名叫王晓明的联系人？", "arguments": {"contact_name": "王晓明"}}
-{"tool_name": "search_contacts", "user_question": "帮我查查通讯录里那个叫王磊的，快！", "arguments": {"contact_name": "王磊"}}
-{"tool_name": "search_contacts", "user_question": "你能不能帮我在通讯录里找一下王小明这个人的联系方式，我忘了把他存成什么名字了，可能不是全名，只要包含“小明”两个字就行。", "arguments": {"contact_name": "小明"}}
-{"tool_name": "search_contacts", "user_question": "帮我查查小李的联系方式呗", "arguments": {"contact_name": "小李"}}
-{"tool_name": "search_contacts", "user_question": "你好，我最近想联系一个老朋友，但只记得他的名字好像叫张建国，不确定通讯录里存的是全名还是其他备注，你能帮我用‘张建国’这个名字在通讯录里搜一下吗？如果找不到，再试试只搜‘建国’或者他的手机号13912345678看看。", "arguments": {"contact_name": "张建国"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里有没有叫李明明的联系人，上次开会认识的那个", "arguments": {"contact_name": "李明明"}}
-{"tool_name": "search_contacts", "user_question": "打扫卫生时想联系保洁阿姨，帮我查一下张阿姨的电话号码。", "arguments": {"contact_name": "张阿姨"}}
-{"tool_name": "search_contacts", "user_question": "我刚搬完家，想给搬家公司的小王打个电话确认时间，帮我查一下他的号码。", "arguments": {"contact_name": "小王"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里有没有同学的联系方式？", "arguments": {}}
-{"tool_name": "search_contacts", "user_question": "帮我在通讯录里找一下昨天刚加的那个叫李明的联系人，我记不太清他的完整名字了，但应该是李明这两个字，你帮我查查看吧。", "arguments": {"contact_name": "李明"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下手机通讯录里叫李伟的号码，他应该是去年在北京展会加的好友。", "arguments": {"contact_name": "李伟"}}
-{"tool_name": "search_contacts", "user_question": "您好，麻烦您帮我查找一下李明的电话号码，谢谢。", "arguments": {"contact_name": "李明"}}
-{"tool_name": "search_contacts", "user_question": "我记得李四的号码好像存的是他公司的座机，帮我搜一下李四这个名字，看看通讯录里有没有。", "arguments": {"contact_name": "李四"}}
-{"tool_name": "search_contacts", "user_question": "麻烦您帮我查找一下联系人李四的电话号码，谢谢。", "arguments": {"contact_name": "李四"}}
-{"tool_name": "search_contacts", "user_question": "你能帮我从通讯录里查一下我大学同学张三的电话号码吗？我好像把他的号码弄丢了，麻烦你搜一下。", "arguments": {"contact_name": "张三"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里王小明的最新电话号码是多少？", "arguments": {"contact_name": "王小明"}}
-{"tool_name": "search_contacts", "user_question": "刚才有个叫张伟的人给我打电话，我一时想不起来是谁，帮我搜一下通讯录里有没有这个名字？", "arguments": {"contact_name": "张伟"}}
-{"tool_name": "search_contacts", "user_question": "你能帮我查一下张伟的联系方式吗？", "arguments": {"contact_name": "张伟"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下李四的手机号，看看之前存过没有。", "arguments": {"contact_name": "李四"}}
-{"tool_name": "search_contacts", "user_question": "我马上要去老张家吃饭，你帮我查查老张的电话号码是多少？", "arguments": {"contact_name": "老张"}}
-{"tool_name": "search_contacts", "user_question": "我正在开会，需要立刻找到张经理的电话号码，快帮我查一下。", "arguments": {"contact_name": "张经理"}}
-{"tool_name": "search_contacts", "user_question": "我朋友明天过生日，想打电话祝贺，但我忘了存他的号码了，帮我搜一下他叫张伟，看看通讯录里有没有。", "arguments": {"contact_name": "张伟"}}
+{"tool_name": "search_contacts", "user_question": "帮我搜一下王小明这个人的联系方式，看看通讯录里有没有他的号码。", "arguments": {"contact_name": "王小明"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里的人", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "能帮我找找刘洋的电话吗？", "arguments": {"contact_name": "刘洋"}}
+{"tool_name": "search_contacts", "user_question": "麻烦搜一下陈静这个联系人。", "arguments": {"contact_name": "陈静"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里有没有一个联系人", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "王芳的号码是多少，帮我找找看", "arguments": {"contact_name": "王芳"}}
+{"tool_name": "search_contacts", "user_question": "帮我找一下周杰的电话。", "arguments": {"contact_name": "周杰"}}
+{"tool_name": "search_contacts", "user_question": "孙七的联系方式有吗？查一下", "arguments": {"contact_name": "孙七"}}
+{"tool_name": "search_contacts", "user_question": "搜一下吴敏的号码", "arguments": {"contact_name": "吴敏"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里姓“王”的联系人有哪些。", "arguments": {"contact_name": "王"}}
+{"tool_name": "search_contacts", "user_question": "帮我找下王五的电话呗", "arguments": {"contact_name": "王五"}}
+{"tool_name": "search_contacts", "user_question": "麻烦您帮我查找一下通讯录里郑丽的联系方式，谢谢。", "arguments": {"contact_name": "郑丽"}}
+{"tool_name": "search_contacts", "user_question": "喂，帮我查一下老李的号码呗", "arguments": {"contact_name": "老李"}}
+{"tool_name": "search_contacts", "user_question": "帮我查查通讯录", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "帮我搜一下陈亮的号码", "arguments": {"contact_name": "陈亮"}}
+{"tool_name": "search_contacts", "user_question": "我想找李娜的电话，你帮我搜一下通讯录", "arguments": {"contact_name": "李娜"}}
+{"tool_name": "search_contacts", "user_question": "帮我找一下通讯录里的人", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "请帮我查查张磊的号码", "arguments": {"contact_name": "张磊"}}
+{"tool_name": "search_contacts", "user_question": "帮我查查小李的电话呗", "arguments": {"contact_name": "小李"}}
+{"tool_name": "search_contacts", "user_question": "搜一下王五的电话", "arguments": {"contact_name": "王五"}}
+{"tool_name": "search_contacts", "user_question": "帮我看看通讯录里有没有王强", "arguments": {"contact_name": "王强"}}
+{"tool_name": "search_contacts", "user_question": "帮我搜一下赵丽的号码", "arguments": {"contact_name": "赵丽"}}
+{"tool_name": "search_contacts", "user_question": "帮我找一下刘刚的电话号码呗", "arguments": {"contact_name": "刘刚"}}
+{"tool_name": "search_contacts", "user_question": "帮我查查陈明的电话呗", "arguments": {"contact_name": "陈明"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下李明的联系方式，他的手机号是13800138000吗？", "arguments": {"contact_name": "李明"}}
+{"tool_name": "search_contacts", "user_question": "帮我找找看有没有徐涛的联系方式", "arguments": {"contact_name": "徐涛"}}
+{"tool_name": "search_contacts", "user_question": "帮我看看那个谁的电话号码，就上次说的那个小李", "arguments": {"contact_name": "小李"}}
+{"tool_name": "search_contacts", "user_question": "查一下周华的电话", "arguments": {"contact_name": "周华"}}
+{"tool_name": "search_contacts", "user_question": "麻烦您帮我查一下黄丽的电话号码，谢谢。", "arguments": {"contact_name": "黄丽"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下联系人列表里有没有叫李明的，他的全名是李建国吗？", "arguments": {"contact_name": "李明"}}
+{"tool_name": "search_contacts", "user_question": "嘿，帮我查一下张三的电话号码。", "arguments": {"contact_name": "张三"}}
+{"tool_name": "search_contacts", "user_question": "麻烦您帮我查一下杨刚在通讯录里的信息。", "arguments": {"contact_name": "杨刚"}}
+{"tool_name": "search_contacts", "user_question": "帮我查查通讯录里的联系人吧。", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "帮我查个联系人", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "帮我查查通讯录里的联系人", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下老王的名字是啥来着？", "arguments": {"contact_name": "老王"}}
+{"tool_name": "search_contacts", "user_question": "你能帮我查一下张伟的电话号码吗？", "arguments": {"contact_name": "张伟"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下联系人的资料", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "请帮我查一下高伟的联系方式。", "arguments": {"contact_name": "高伟"}}
+{"tool_name": "search_contacts", "user_question": "查一下马超的手机号", "arguments": {"contact_name": "马超"}}
+{"tool_name": "search_contacts", "user_question": "你好，能麻烦你帮我搜索一下联系人王伟吗？", "arguments": {"contact_name": "王伟"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下宋雨的号码", "arguments": {"contact_name": "宋雨"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下我的通讯录里有没有人？", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下联系人", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里叫林峰的联系人", "arguments": {"contact_name": "林峰"}}
+{"tool_name": "search_contacts", "user_question": "帮我查查联系人", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下联系人王伟的手机号码，我记得他好像叫王伟还是王伟强？", "arguments": {"contact_name": "王伟"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下那个联系人的信息", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "请帮我查一下韩梅的电话号码，谢谢。", "arguments": {"contact_name": "韩梅"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下联系人列表里有没有叫邓超的", "arguments": {"contact_name": "邓超"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下老张的手机号呗", "arguments": {"contact_name": "老张"}}
+{"tool_name": "search_contacts", "user_question": "麻烦您帮我查一下何雪的电话号码，可以吗？", "arguments": {"contact_name": "何雪"}}
+{"tool_name": "search_contacts", "user_question": "你能帮我查一下罗冰的电话号码吗？", "arguments": {"contact_name": "罗冰"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里叫李华的联系人，有他的手机号吗？", "arguments": {"contact_name": "李华"}}
+{"tool_name": "search_contacts", "user_question": "谢静这人的电话帮我查查", "arguments": {"contact_name": "谢静"}}
+{"tool_name": "search_contacts", "user_question": "我想查一下李四的号码，你能帮我搜一下通讯录吗？", "arguments": {"contact_name": "李四"}}
+{"tool_name": "search_contacts", "user_question": "你能帮我查一下秦岚的手机号吗？", "arguments": {"contact_name": "秦岚"}}
+{"tool_name": "search_contacts", "user_question": "帮我瞅瞅李四的号码在不在通讯录里", "arguments": {"contact_name": "李四"}}
+{"tool_name": "search_contacts", "user_question": "查一下汪峰的号码", "arguments": {"contact_name": "汪峰"}}
+{"tool_name": "search_contacts", "user_question": "诶，帮我找找叶宁的号码呗", "arguments": {"contact_name": "叶宁"}}
+{"tool_name": "search_contacts", "user_question": "帮我把彭磊的号码调出来", "arguments": {"contact_name": "彭磊"}}
+{"tool_name": "search_contacts", "user_question": "那个，你帮我搜一下薛敏的电话呗？", "arguments": {"contact_name": "薛敏"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下张伟的电话号码，我记不清他全名了。", "arguments": {"contact_name": "张伟"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下丁浩的电话呗", "arguments": {"contact_name": "丁浩"}}
+{"tool_name": "search_contacts", "user_question": "帮我搜一下郑爽的号码", "arguments": {"contact_name": "郑爽"}}
+{"tool_name": "search_contacts", "user_question": "您好，能麻烦您帮我搜索一下联系人王小明吗？", "arguments": {"contact_name": "王小明"}}
+{"tool_name": "search_contacts", "user_question": "嘿，帮我查查胡歌的电话呗", "arguments": {"contact_name": "胡歌"}}
 {"tool_name": "search_contacts", "user_question": "帮我找个人", "arguments": {}}
-{"tool_name": "search_contacts", "user_question": "帮我翻翻通讯录里有没有叫小明的人？", "arguments": {"contact_name": "小明"}}
-{"tool_name": "search_contacts", "user_question": "您好，麻烦您帮我搜索一下李四的电话号码，谢谢。", "arguments": {"contact_name": "李四"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里有没有叫“张伟”的人，我上周跟他通过话但忘记存了。", "arguments": {"contact_name": "张伟"}}
-{"tool_name": "search_contacts", "user_question": "我正打算叫小明一起去吃火锅，帮我查一下他的手机号吧。", "arguments": {"contact_name": "小明"}}
-{"tool_name": "search_contacts", "user_question": "我最近想联系一下老王，但一时想不起他的全名了，只记得他叫王伟，你能帮我从通讯录里搜一下叫王伟的联系人看看有没有记录吗？", "arguments": {"contact_name": "王伟"}}
-{"tool_name": "search_contacts", "user_question": "帮我查个联系人吧", "arguments": {}}
-{"tool_name": "search_contacts", "user_question": "我的通讯录里好像存过一位叫李明的朋友，你能帮我仔细搜索一下他的名字或者他的手机号15812345678吗？", "arguments": {"contact_name": "李明, 15812345678"}}
-{"tool_name": "search_contacts", "user_question": "我的通讯录里好像存过一个叫张志强的号码，但我不确定是姓张还是姓章，而且只记得他的手机号末尾几位是1234，你能帮我用这个名字或者部分号码搜一下通讯录看看能不能找到他？", "arguments": {"contact_name": "张志强"}}
-{"tool_name": "search_contacts", "user_question": "帮我看看通讯录里的联系人", "arguments": {}}
-{"tool_name": "search_contacts", "user_question": "你好，我想帮我查一下我的通讯录里有没有一个叫张伟的人，我记得好像是之前存过的，但不太确定是哪个号码，能帮我搜一下吗？", "arguments": {"contact_name": "张伟"}}
-{"tool_name": "search_contacts", "user_question": "刚才开会时李经理让我联系王芳确认下周的行程，但我一时找不到她的号码了，帮我搜一下王芳的联系方式吧。", "arguments": {"contact_name": "王芳"}}
-{"tool_name": "search_contacts", "user_question": "请问能帮我查一下通讯录里李明的联系方式吗？", "arguments": {"contact_name": "李明"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下王大妈的电话呗", "arguments": {"contact_name": "王大妈"}}
-{"tool_name": "search_contacts", "user_question": "我正要打电话给小明的妈妈问问放学后一起玩，但翻通讯录找不到她姓名，你帮我搜一下“小明妈妈”看看通讯录里有没有。", "arguments": {"contact_name": "小明妈妈"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里手机号是13800138000的那个联系人叫什么名字", "arguments": {"contact_name": "13800138000"}}
-{"tool_name": "search_contacts", "user_question": "帮我查一下张伟的电话号码，就是上次聚会认识的那个", "arguments": {"contact_name": "张伟"}}
-{"tool_name": "search_contacts", "user_question": "我正在路上堵车，想提前联系小李告知迟到，帮我查一下他的号码。", "arguments": {"contact_name": "小李"}}
-{"tool_name": "search_contacts", "user_question": "我刚搬了新家，想给老同学打个电话通知他，帮我搜一下张三的联系方式。", "arguments": {"contact_name": "张三"}}
-{"tool_name": "search_contacts", "user_question": "帮我查查我的联系人里有没有姓王的", "arguments": {}}
-{"tool_name": "search_contacts", "user_question": "我最近换了个新手机，想把原来那个手机上存的一些联系人找回来，你能帮我查一下我表弟张伟的电话号码吗？我记得他好像是用北京号段的。", "arguments": {"contact_name": "张伟"}}
-{"tool_name": "search_contacts", "user_question": "查一下李四的号码", "arguments": {"contact_name": "李四"}}
-{"tool_name": "search_contacts", "user_question": "麻烦帮我查一下通讯录里有没有叫李晓明的联系人，我好像存过他的手机号码但记不太清了，或者是名字里带‘晓’字的也行，你帮我搜搜看吧。", "arguments": {"contact_name": "李晓明"}}
-{"tool_name": "search_contacts", "user_question": "我正在逛街，帮我查一下王芳的电话号码，我想叫她一起吃饭。", "arguments": {"contact_name": "王芳"}}
-{"tool_name": "search_contacts", "user_question": "你能帮我查一下张三的电话号码吗？", "arguments": {"contact_name": "张三"}}
-{"tool_name": "search_contacts", "user_question": "帮我查查通讯录里有没有姓张的", "arguments": {}}
-{"tool_name": "search_contacts", "user_question": "喂，帮我找一下李四的电话呗", "arguments": {"contact_name": "李四"}}
+{"tool_name": "search_contacts", "user_question": "你能帮我查一下陈浩的电话不？", "arguments": {"contact_name": "陈浩"}}
+{"tool_name": "search_contacts", "user_question": "你能帮我搜索一下联系人“赵六”吗？", "arguments": {"contact_name": "赵六"}}
+{"tool_name": "search_contacts", "user_question": "帮我查查老王叫啥来着，就那个联系人的名字", "arguments": {"contact_name": "老王"}}
+{"tool_name": "search_contacts", "user_question": "哥们儿，帮我搜下那个叫庞龙的联系人在哪？", "arguments": {"contact_name": "庞龙"}}
+{"tool_name": "search_contacts", "user_question": "帮我搜一下我的联系人", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "麻烦您帮我查找一下联系人王磊的电话号码，谢谢。", "arguments": {"contact_name": "王磊"}}
+{"tool_name": "search_contacts", "user_question": "请问能帮我查找一下联系人邱泽的电话吗？", "arguments": {"contact_name": "邱泽"}}
+{"tool_name": "search_contacts", "user_question": "余文怎么联系，帮我搜搜通讯录", "arguments": {"contact_name": "余文"}}
+{"tool_name": "search_contacts", "user_question": "麻烦您帮我查一下陆洋的电话号码，谢谢。", "arguments": {"contact_name": "陆洋"}}
+{"tool_name": "search_contacts", "user_question": "金鑫的号码给我看一下", "arguments": {"contact_name": "金鑫"}}
+{"tool_name": "search_contacts", "user_question": "你能帮我搜索一下通讯录里有没有叫田蜜的联系人吗？", "arguments": {"contact_name": "田蜜"}}
+{"tool_name": "search_contacts", "user_question": "你能帮我查一下贾玲的电话吗？", "arguments": {"contact_name": "贾玲"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里有没有叫赖晴的人？", "arguments": {"contact_name": "赖晴"}}
+{"tool_name": "search_contacts", "user_question": "请问能帮我查找一下联系人尹正的联系方式吗？", "arguments": {"contact_name": "尹正"}}
+{"tool_name": "search_contacts", "user_question": "你能帮我查一下白冰的手机号码吗？", "arguments": {"contact_name": "白冰"}}
+{"tool_name": "search_contacts", "user_question": "嘿，帮我找一下欧阳的电话。", "arguments": {"contact_name": "欧阳"}}
+{"tool_name": "search_contacts", "user_question": "帮我查查通讯录里的人", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "你能帮我查一下通讯录里郭强的电话号码吗？", "arguments": {"contact_name": "郭强"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里叫段涛的联系电话。", "arguments": {"contact_name": "段涛"}}
+{"tool_name": "search_contacts", "user_question": "曹阳的电话你有吗？帮我查查通讯录", "arguments": {"contact_name": "曹阳"}}
+{"tool_name": "search_contacts", "user_question": "麻烦帮我查一下通讯录里沈月的联系方式，谢谢。", "arguments": {"contact_name": "沈月"}}
+{"tool_name": "search_contacts", "user_question": "帮我查查魏晨的电话", "arguments": {"contact_name": "魏晨"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下通讯录里有没有叫蒋龙的联系人", "arguments": {"contact_name": "蒋龙"}}
+{"tool_name": "search_contacts", "user_question": "麻烦把潘婷的联系方式找出来", "arguments": {"contact_name": "潘婷"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下王经理的联系电话，我记不住他的号码了。", "arguments": {"contact_name": "王经理"}}
+{"tool_name": "search_contacts", "user_question": "哎，帮我翻翻通讯录，看看有没有温迪的电话？", "arguments": {"contact_name": "温迪"}}
+{"tool_name": "search_contacts", "user_question": "请问您能帮我搜索一下张三的联系方式吗？", "arguments": {"contact_name": "张三"}}
+{"tool_name": "search_contacts", "user_question": "帮我搜一下联系人", "arguments": {}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下那个曾华的电话号码呗", "arguments": {"contact_name": "曾华"}}
+{"tool_name": "search_contacts", "user_question": "查一下崔健的号码", "arguments": {"contact_name": "崔健"}}
+{"tool_name": "search_contacts", "user_question": "哎，帮我搜一下戴军的号呗", "arguments": {"contact_name": "戴军"}}
+{"tool_name": "search_contacts", "user_question": "帮我查一下王经理的手机号，他全名叫王建国。", "arguments": {"contact_name": "王建国"}}
